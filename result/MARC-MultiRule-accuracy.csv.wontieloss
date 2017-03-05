@@ -1,0 +1,7 @@
+dataset &  M-MultiRule & tie  & loss & omitted & p \\
+J48 auto & 8 & 5& 9 & 18 & 0.73319 \\
+PART auto & 5 & 6& 10 & 17 & 0.23047 \\
+RIPPER auto & 10 & 4& 8 & 18 & 0.75776 \\
+FURIA auto & 3 & 5& 13 & 0 & 0.02280 \\
+CBA & 10 & 5& 7 & 0 & 0.38069 \\
+MARC One Rule & 14 & 4& 4 & 0 & 0.00391 \\

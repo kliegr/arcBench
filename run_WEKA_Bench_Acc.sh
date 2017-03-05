@@ -1,0 +1,1 @@
+java -cp WekaBch/dist/WekaBench.jar wekabench.MetaSearchEval
