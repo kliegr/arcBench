@@ -2,6 +2,8 @@
 Benchmark suite for the MARC framework
 
 ##Preparing data
+Prerequisites include Python 2 with sci-kit learn and pandas.
+
  ```
  prepare_data.sh
  ```
@@ -19,6 +21,9 @@ data/output
 ```
 ## Benchmarks
 There are two types of benchmarks: benchmark of accuracy and rule cound ("acc") and of algorithm runtime ("scaling").
+
+Prerequisites include Java 8, R and  rMARC package installed in R.
+
 ###Running benchmarks - WEKA
 
 Weka implementations of reference algorithms  of the two benchmark suites are executed using
