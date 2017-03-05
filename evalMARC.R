@@ -1,7 +1,4 @@
 library(rMARC)
-library(rCBA)
-
-
 
 evalTimeMARC <- function(trainFold,testFold,foldsize,logpath,iterations,includeMARC)
 {
