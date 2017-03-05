@@ -38,8 +38,8 @@ The output is stored into
 The won-tie-loss matrix and Wilcoxon signed rank test are executed using `wontieloss.py`
 ###Running benchmarks  - MARC
 MARC benchmarks are run using functions defined in  `evalMARC.R`
-The scaling benchmark is run using `doEvalTime`.
-The default configuration for MARC One Rule is run with `doEvalAccMARCOneRule` and of MARC Multi Rule with `doEvalAccMARCMultiRule`.
+The scaling benchmark is run using `doEvalTime()`.
+The default configuration for MARC One Rule is run with `doEvalAccMARCOneRule()` and for MARC Multi Rule with `doEvalAccMARCMultiRule()`.
 The output is stored into
 ```
 /result
