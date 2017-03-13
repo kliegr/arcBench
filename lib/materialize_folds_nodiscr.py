@@ -12,7 +12,6 @@ from sklearn.base import TransformerMixin
 import MDLP as mdlp
 import DUMMY as dummy
 import IMPUTE as imp
-import DECTREE as dec
 import SAVE as sav
   
 from datasets import *
