@@ -1,6 +1,6 @@
-library(rMARC)
+library(qCBA)
 
-evalTimeMARC <- function(trainFold,testFold,foldsize,logpath,iterations,includeMARC)
+evalTimeQCBA <- function(trainFold,testFold,foldsize,logpath,iterations,includeQCBA)
 {
   
   logger<-"WARNING"
@@ -20,30 +20,30 @@ evalTimeMARC <- function(trainFold,testFold,foldsize,logpath,iterations,includeM
         ncolumns = 5,
         append = TRUE, sep = ",") 
   
-  if (!includeMARC) return()
+  if (!includeQCBA) return()
   
   start.time <- Sys.time()
   for (i in 1:iterations) 
     {
     .jinit(force.init = TRUE,parameters="-Xmx4g")
-    rmMARC <- marcExtend(cbaRuleModel=rmCBA,datadf=trainFold,loglevel = logger)
+    rmQCBA <- qcbaExtend(cbaRuleModel=rmCBA,datadf=trainFold,loglevel = logger)
   }
   end.time <- Sys.time()
   buildTime <- round(as.numeric((end.time - start.time)/iterations,units="secs"),2)
   
   start.time <- Sys.time()
-  prediction <- predict(rmMARC,testFold,testingType=testingType)
-  for (i in 1:iterations)  accuracy <- CBARuleModelAccuracy(prediction, testFold[[rmMARC@classAtt]])
+  prediction <- predict(rmQCBA,testFold,testingType=testingType)
+  for (i in 1:iterations)  accuracy <- CBARuleModelAccuracy(prediction, testFold[[rmQCBA@classAtt]])
   end.time <- Sys.time()
   predictTime <- round(as.numeric((end.time - start.time)/iterations,units="secs"),2)
   
   
-  write(c(foldsize,buildTime,predictTime,accuracy, "MARC"), file = logpath,
+  write(c(foldsize,buildTime,predictTime,accuracy, "QCBA"), file = logpath,
         ncolumns = 6,
         append = TRUE, sep = ",")  
 }
 
-evalMARC <- function(datasets,rulelearning_options=NULL, pruning_options=NULL,continuousPruning=FALSE, postpruning=FALSE, fuzzification=FALSE, annotate=FALSE,testingType="mixture", resultsFile="",basePath="",oneConfigResultFile="", cbaResultFile="", debug=FALSE)
+evalQCBA <- function(datasets,rulelearning_options=NULL, pruning_options=NULL,continuousPruning=FALSE, postpruning=FALSE, fuzzification=FALSE, annotate=FALSE,testingType="mixture", resultsFile="",basePath="",oneConfigResultFile="", cbaResultFile="", debug=FALSE)
 {
   if (oneConfigResultFile!="")
   {
@@ -61,9 +61,9 @@ evalMARC <- function(datasets,rulelearning_options=NULL, pruning_options=NULL,co
   
   for (dataset in datasets[1:length(datasets)]) {
     accSumCBA<- 0
-    accSumMARC<- 0
+    accSumQCBA<- 0
     ruleSumCBA <- 0
-    ruleSumMARC <- 0
+    ruleSumQCBA <- 0
     for (fold in 0:9)
     {
       message(paste("processing:", dataset,fold))
@@ -108,33 +108,33 @@ evalMARC <- function(datasets,rulelearning_options=NULL, pruning_options=NULL,co
                 '<entry key="Annotate">False</entry>',
                 '<entry key="DataTypes">', paste(dataTypes, collapse = ','),'</entry>',
                 '<entry key="TargetAttribute">', classAtt,'</entry>',
-                '<entry key="OutputPath">',dataset,fold,'-marc.arules</entry>',
+                '<entry key="OutputPath">',dataset,fold,'-qcba.arules</entry>',
                 "</properties>", sep="")
         
-        marcFilePath <-paste(basePath,"result/",dataset,fold,".xml",sep="")
-        write(x, file = marcFilePath,
+        qcbaFilePath <-paste(basePath,"result/",dataset,fold,".xml",sep="")
+        write(x, file = qcbaFilePath,
               ncolumns = 1,
               append = FALSE, sep = ",")        
       }
       
-      #Run and store results from MARC
-      rmMARC <- marcExtend(cbaRuleModel=rmCBA,datadf=trainFold,continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=fuzzification, annotate=annotate,loglevel = logger)
-      prediction <- predict(rmMARC,testFold,testingType=testingType)
-      acc<-CBARuleModelAccuracy(prediction, testFold[[rmMARC@classAtt]])
-      message(paste("MARC acc:", acc))
-      accSumMARC <-  accSumMARC+ acc
-      rules <- rmMARC@ruleCount
-      message(paste("MARC rules:",rules))
-      ruleSumMARC <- ruleSumMARC + rules
+      #Run and store results from QCBA
+      rmQCBA <- qcbaExtend(cbaRuleModel=rmCBA,datadf=trainFold,continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=fuzzification, annotate=annotate,loglevel = logger)
+      prediction <- predict(rmQCBA,testFold,testingType=testingType)
+      acc<-CBARuleModelAccuracy(prediction, testFold[[rmQCBA@classAtt]])
+      message(paste("QCBA acc:", acc))
+      accSumQCBA <-  accSumQCBA+ acc
+      rules <- rmQCBA@ruleCount
+      message(paste("QCBA rules:",rules))
+      ruleSumQCBA <- ruleSumQCBA + rules
     }
     accCBA <- accSumCBA/10
-    accMARC <- accSumMARC/10
+    accQCBA <- accSumQCBA/10
     rulesCBA<- ruleSumCBA/10
-    rulesMARC <-ruleSumMARC/10
+    rulesQCBA <-ruleSumQCBA/10
     
     if (resultsFile!="")
     {
-          write(c(dataset,accCBA,rulesCBA,accMARC,rulesMARC,rulelearning_options$target_rule_count,rulelearning_options$init_support,rulelearning_options$init_conf,rulelearning_options$conf_step,rulelearning_options$supp_step,rulelearning_options$minlen,rulelearning_options$init_maxlen,rulelearning_options$iteration_timeout,rulelearning_options$total_timeout,rulelearning_options$max_iterations,pruning_options$default_rule_pruning,pruning_options$rule_window,pruning_options$greedy_pruning,continuousPruning,postpruning,fuzzification,annotate,testingType,format(Sys.time(), "%X")), file = resultsFile,
+          write(c(dataset,accCBA,rulesCBA,accQCBA,rulesQCBA,rulelearning_options$target_rule_count,rulelearning_options$init_support,rulelearning_options$init_conf,rulelearning_options$conf_step,rulelearning_options$supp_step,rulelearning_options$minlen,rulelearning_options$init_maxlen,rulelearning_options$iteration_timeout,rulelearning_options$total_timeout,rulelearning_options$max_iterations,pruning_options$default_rule_pruning,pruning_options$rule_window,pruning_options$greedy_pruning,continuousPruning,postpruning,fuzzification,annotate,testingType,format(Sys.time(), "%X")), file = resultsFile,
           ncolumns = 24,
           append = TRUE, sep = ",")
     }
@@ -147,7 +147,7 @@ evalMARC <- function(datasets,rulelearning_options=NULL, pruning_options=NULL,co
     }    
     if (oneConfigResultFile!="")
     {
-      write(c(dataset,accMARC,rulesMARC), file = oneConfigResultFile,
+      write(c(dataset,accQCBA,rulesQCBA), file = oneConfigResultFile,
             ncolumns = 3,
             append = TRUE, sep = ",")     
     }
@@ -158,45 +158,45 @@ evalMARC <- function(datasets,rulelearning_options=NULL, pruning_options=NULL,co
 
 doEvalAccDetailed <- function()
 {
-  resultsFile="result/marc.csv"
+  resultsFile="result/qcba.csv"
   
   if(!file.exists(resultsFile)){
-    write(paste("dataset,accCBA,rulesCBA,accMARC,rulesMARC,target_rule_count,init_support,init_conf,conf_step,supp_step,minlen,init_maxlen,iteration_timeout,total_timeout,max_iterations,default_rule_pruning,rule_window,greedy_pruning,continuousPruning,postpruning,fuzzification,annotate,testingType,timestamp"), file = resultsFile,
+    write(paste("dataset,accCBA,rulesCBA,accQCBA,rulesQCBA,target_rule_count,init_support,init_conf,conf_step,supp_step,minlen,init_maxlen,iteration_timeout,total_timeout,max_iterations,default_rule_pruning,rule_window,greedy_pruning,continuousPruning,postpruning,fuzzification,annotate,testingType,timestamp"), file = resultsFile,
           ncolumns = 1,
           append = FALSE, sep = ",")
   }
   target_rule_count<-10000
   datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
-  evalMARC(datasets=datasets,rulelearning_options=list(target_rule_count = target_rule_count, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
+  evalQCBA(datasets=datasets,rulelearning_options=list(target_rule_count = target_rule_count, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
                                                        minlen = 2, init_maxlen = 3, iteration_timeout = 2, total_timeout = 100.0, max_iterations = 30, trim=TRUE), 
            pruning_options=list(default_rule_pruning=TRUE, rule_window=100,greedy_pruning=FALSE),
            continuousPruning=TRUE, postpruning=TRUE, fuzzification=TRUE, annotate=TRUE,testingType="mixture",basePath="",resultsFile=resultsFile)
 }
 
-doEvalAccMARCOneRule <- function()
+doEvalAccQCBA <- function()
 {
   
   datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
-  evalMARC(datasets=datasets,rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
+  evalQCBA(datasets=datasets,rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
                                                        minlen = 2, init_maxlen = 3, iteration_timeout = 2, total_timeout = 100.0, max_iterations = 30, trim=TRUE), 
            pruning_options=list(default_rule_pruning=TRUE, rule_window=100,greedy_pruning=FALSE),
-           continuousPruning=TRUE, postpruning=FALSE, fuzzification=FALSE, annotate=FALSE,testingType="oneRule",basePath="",resultsFile="",oneConfigResultFile="result/MARC-OneRule-accuracy.csv",cbaResultFile= "result/CBA-accuracy.csv")
+           continuousPruning=FALSE, postpruning=TRUE, fuzzification=FALSE, annotate=FALSE,testingType="oneRule",basePath="",resultsFile="",oneConfigResultFile="result/QCBA-OneRule-accuracy.csv",cbaResultFile= "result/CBA-accuracy.csv")
 }
 
 
-doEvalAccMARCMultiRule <- function()
+doEvalAccQCBAMultiRule <- function()
 {
   
   datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
-  evalMARC(datasets=datasets,rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
+  evalQCBA(datasets=datasets,rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
                                                        minlen = 2, init_maxlen = 3, iteration_timeout = 2, total_timeout = 100.0, max_iterations = 30, trim=TRUE), 
            pruning_options=list(default_rule_pruning=TRUE, rule_window=100,greedy_pruning=FALSE),
-           continuousPruning=FALSE, postpruning=TRUE, fuzzification=FALSE, annotate=TRUE,testingType="mixture",basePath="",resultsFile="",oneConfigResultFile="result/MARC-MultiRule-accuracy.csv",cbaResultFile= "")
+           continuousPruning=FALSE, postpruning=TRUE, fuzzification=FALSE, annotate=TRUE,testingType="mixture",basePath="",resultsFile="",oneConfigResultFile="result/QCBA-MultiRule-accuracy.csv",cbaResultFile= "")
 }
 
 doEvalTime <- function()
 {
-  logpath <- "result/MARC-scaling.csv"
+  logpath <- "result/QCBA-scaling.csv"
   write(c("foldsize","buildTime","predictTime","accuracy", "alg"), file = logpath,
         ncolumns = 6,
         append = TRUE, sep = ",")     
@@ -208,6 +208,6 @@ doEvalTime <- function()
     trainFold <- utils::read.csv(trainPath  , header  =TRUE, check.names = FALSE)
     testFold <- utils::read.csv(testPath  , header  =TRUE, check.names = FALSE)
     iterations<-1
-    evalTimeMARC(trainFold,testFold,foldsize,logpath,iterations=iterations,includeMARC=TRUE)
+    evalTimeQCBA(trainFold,testFold,foldsize,logpath,iterations=iterations,includeQCBA=TRUE)
   }
 }

@@ -36,10 +36,11 @@ The output is stored into
 /result
 ```
 The won-tie-loss matrix and Wilcoxon signed rank test are executed using `wontieloss.py`
-###Running benchmarks  - MARC
-MARC benchmarks are run using functions defined in  `evalMARC.R`
+
+###Running benchmarks  - QCBA
+QCBA benchmarks are run using functions defined in  `evalQCBA.R`
 The scaling benchmark is run using `doEvalTime()`.
-The default configuration for MARC One Rule is run with `doEvalAccMARCOneRule()` and for MARC Multi Rule with `doEvalAccMARCMultiRule()`.
+The default configuration for QCBA is run with `doEvalAccQCBA()` and for the experimental Multi Rule option with `doEvalAccQCBAMultiRule()`.
 The output is stored into
 ```
 /result
