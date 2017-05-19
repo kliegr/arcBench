@@ -1,5 +1,5 @@
-# marcbench
-Benchmark suite for the MARC framework
+# ARC bench
+Benchmark suite for the QCBA framework
 
 ##Preparing data
 Prerequisites include Python 2 with sci-kit learn and pandas.
@@ -22,7 +22,7 @@ data/output
 ## Benchmarks
 There are two types of benchmarks: benchmark of accuracy and rule cound ("acc") and of algorithm runtime ("scaling").
 
-Prerequisites include Java 8, R and  rMARC package installed in R.
+Prerequisites include Java 8, R and  qCBA package installed in R.
 
 ### Running benchmarks - WEKA
 
