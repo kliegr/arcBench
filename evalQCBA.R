@@ -50,19 +50,37 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=NUL
   detailed_result_file <- paste(basePath,.Platform$file.sep,"result",.Platform$file.sep,"summary.csv",sep="")
   cba_result_file <- paste(basePath,.Platform$file.sep,"result",.Platform$file.sep,experiment_name,"-cba.csv",sep="")
   qcba_result_file <- paste(basePath,.Platform$file.sep,"result",.Platform$file.sep,experiment_name,"-qcba.csv",sep="")
-
-  write(paste("dataset,accuracy,rules"), file = cba_result_file,
-        ncolumns = 1,
-        append = FALSE, sep = ",")
-  write(paste("dataset,accuracy,rules"), file = qcba_result_file,
+  
+  if (!file.exists(qcba_result_file))
+  {
+    write(paste("dataset,accuracy,rules"), file = qcba_result_file,
           ncolumns = 1,
           append = FALSE, sep = ",")
+    return();
+  }
+  if (!file.exists(cba_result_file))
+  {
+    write(paste("dataset,accuracy,rules"), file = cba_result_file,
+          ncolumns = 1,
+          append = FALSE, sep = ",")
+  }
+  
   write(paste("dataset;accCBA;rulesCBA;accQCBA;rulesQCBA;timestamp;",paste(names(as.list(match.call()))[-1:-2],collapse=";")), file = detailed_result_file,
           ncolumns = 1,
           append = FALSE, sep = ",")
 
   #process datasets
   for (dataset in datasets[1:length(datasets)]) {
+    # check if result already computed and skip if so
+    qcba_file_text <- readLines(qcba_result_file)
+    check_result <- TRUE %in% grepl(paste("^",dataset,",",sep=""),qcba_file_text)
+    if (isTRUE(check_result))
+    {
+      message(paste("Skipping dataset",dataset,"(already computed)"))
+      next
+    }
+    
+    # proceed to computation
     accSumCBA <- 0
     accSumQCBA <- 0
     ruleSumCBA <- 0
@@ -164,7 +182,7 @@ doEvalAccQCBA_TP_ConfImprovementAgainstSeedRule <- function()
 {
 
   datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
-  evalQCBA(datasets=datasets,rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
+  evalQCBA(datasets=datasets,experiment_name="TP_ConfImprovementAgainstSeedRule",rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
                                                        minlen = 2, init_maxlen = 3, iteration_timeout = 2, total_timeout = 100.0, max_iterations = 30, trim=FALSE),
            pruning_options=list(default_rule_pruning=TRUE, rule_window=100,greedy_pruning=FALSE), trim_literal_boundaries=TRUE,
            continuousPruning=FALSE, postpruning=TRUE, fuzzification=FALSE, annotate=FALSE,testingType="oneRule",extensionStrategy="ConfImprovementAgainstSeedRule",basePath="",resultsFile="",oneConfigResultFile="result/TP_ConfImprovementAgainstSeedRule.csv",cbaResultFile= "result/CBA-accuracy.csv")
@@ -174,7 +192,7 @@ doEvalAccQCBA_TCP_ConfImprovementAgainstSeedRule_nodefaultCBApruning <- function
 {
 
   datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
-  evalQCBA(datasets=datasets,rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
+  evalQCBA(datasets=datasets,experiment_name="TCP_ConfImprovementAgainstSeedRule_nodefaultCBApruning",rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
                                                        minlen = 2, init_maxlen = 3, iteration_timeout = 2, total_timeout = 100.0, max_iterations = 30, trim=FALSE),
            pruning_options=list(default_rule_pruning=FALSE, rule_window=100,greedy_pruning=FALSE), trim_literal_boundaries=TRUE,
            continuousPruning=TRUE, postpruning=TRUE, fuzzification=FALSE, annotate=FALSE,testingType="oneRule",
@@ -186,7 +204,7 @@ doEvalAccQCBA_TP_ConfImprovementAgainstSeedRule <- function()
 {
 
   datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
-  evalQCBA(datasets=datasets,rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
+  evalQCBA(datasets=datasets,experiment_name="TP_ConfImprovementAgainstSeedRule",rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
                                                        minlen = 2, init_maxlen = 3, iteration_timeout = 2, total_timeout = 100.0, max_iterations = 30, trim=FALSE),
            pruning_options=list(default_rule_pruning=TRUE, rule_window=100,greedy_pruning=FALSE), trim_literal_boundaries=TRUE,
            continuousPruning=FALSE, postpruning=TRUE, fuzzification=FALSE, annotate=FALSE,testingType="oneRule",
@@ -197,7 +215,7 @@ doEvalAccQCBA_T_ConfImprovementAgainstSeedRule <- function()
 {
 
   datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
-  evalQCBA(datasets=datasets,rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
+  evalQCBA(datasets=datasets,experiment_name="T_ConfImprovementAgainstSeedRule",rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
                                                        minlen = 2, init_maxlen = 3, iteration_timeout = 2, total_timeout = 100.0, max_iterations = 30, trim=FALSE),
            pruning_options=list(default_rule_pruning=TRUE, rule_window=100,greedy_pruning=FALSE), trim_literal_boundaries=TRUE,
            continuousPruning=FALSE, postpruning=FALSE, fuzzification=FALSE, annotate=FALSE,testingType="oneRule",
@@ -209,7 +227,7 @@ doEvalAccQCBA_C_ConfImprovementAgainstSeedRule_Notrim_literal_boundaries <- func
 {
 
   datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
-  evalQCBA(datasets=datasets,rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
+  evalQCBA(datasets=datasets,experiment_name="C_ConfImprovementAgainstSeedRule_Notrim_literal_boundaries",rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
                                                        minlen = 2, init_maxlen = 3, iteration_timeout = 2, total_timeout = 100.0, max_iterations = 30, trim=FALSE),
            pruning_options=list(default_rule_pruning=TRUE, rule_window=100,greedy_pruning=FALSE), trim_literal_boundaries=FALSE,
            continuousPruning=TRUE, postpruning=FALSE, fuzzification=FALSE, annotate=FALSE,testingType="oneRule",extensionStrategy="ConfImprovementAgainstSeedRule",basePath="",resultsFile="",oneConfigResultFile="result/QCBA-C-accuracy-ConfImprovementAgainstSeedRuleNotrim_literal_boundaries.csv",cbaResultFile= "result/CBA-accuracy.csv")
@@ -219,7 +237,7 @@ doEvalAccQCBA_C_MinConf <- function()
 {
 
   datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
-  evalQCBA(datasets=datasets,rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
+  evalQCBA(datasets=datasets,experiment_name="C_MinConf",rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
                                                        minlen = 2, init_maxlen = 3, iteration_timeout = 2, total_timeout = 100.0, max_iterations = 30, trim=FALSE),
            pruning_options=list(default_rule_pruning=TRUE, rule_window=100,greedy_pruning=FALSE), trim_literal_boundaries=TRUE,
            continuousPruning=TRUE, postpruning=FALSE, fuzzification=FALSE, annotate=FALSE,testingType="oneRule",extensionStrategy="MinConf",basePath="",resultsFile="",oneConfigResultFile="result/QCBA-C-MinConf.csv",cbaResultFile= "result/CBA-accuracy.csv")
@@ -230,7 +248,7 @@ doEvalAccQCBA_C_ConfImprovementAgainstLastConfirmedExtension <- function()
 {
 
   datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
-  evalQCBA(datasets=datasets,rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
+  evalQCBA(datasets=datasets,experiment_name="C_ConfImprovementAgainstLastConfirmedExtension",rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
                                                        minlen = 2, init_maxlen = 3, iteration_timeout = 2, total_timeout = 100.0, max_iterations = 30, trim=FALSE),
            pruning_options=list(default_rule_pruning=TRUE, rule_window=100,greedy_pruning=FALSE), trim_literal_boundaries=TRUE,
            continuousPruning=TRUE, postpruning=FALSE, fuzzification=FALSE, annotate=FALSE,testingType="oneRule",extensionStrategy="ConfImprovementAgainstLastConfirmedExtension",basePath="",resultsFile="",oneConfigResultFile="result/QCBA-C-accuracy.csv",cbaResultFile= "result/CBA-accuracy.csv")
@@ -240,7 +258,7 @@ doEvalAccQCBA_P <- function()
 {
 
   datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
-  evalQCBA(datasets=datasets,rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
+  evalQCBA(datasets=datasets,experiment_name="P",rulelearning_options=list(target_rule_count = 10000, init_support = 0.00, init_conf = 0.5, conf_step = 0.05, supp_step = 0.05,
                                                        minlen = 2, init_maxlen = 3, iteration_timeout = 2, total_timeout = 100.0, max_iterations = 30, trim=TRUE),
            pruning_options=list(default_rule_pruning=TRUE, rule_window=100,greedy_pruning=FALSE),
            continuousPruning=FALSE, postpruning=TRUE, fuzzification=FALSE, annotate=FALSE,testingType="oneRule",basePath="",resultsFile="",oneConfigResultFile="result/QCBA-P-accuracy.csv",cbaResultFile= "result/CBA-accuracy.csv")
@@ -344,3 +362,56 @@ doEvalAccQCBA_test<- function()
            pruning_options=list(default_rule_pruning=TRUE, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=TRUE,minImprovement=0,minCondImprovement=-1,minConf = 0.5,
            continuousPruning=FALSE, postpruning=TRUE, fuzzification=FALSE, annotate=FALSE,testingType="oneRule",basePath=".")
 }
+datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
+continuousPruning	<-	FALSE
+postpruning	<- FALSE
+default_rule_pruning	<- FALSE
+trim_literal_boundaries	<-	FALSE
+maxtime=1000
+target_rule_count=50000
+minImprovement=0
+minCondImprovement=-1
+minConf = 0.5
+extensionStrategy="ConfImprovementAgainstLastConfirmedExtension" # ConfImprovementAgainstLastConfirmedExtension, MinConf
+
+args <- commandArgs(trailingOnly = TRUE)
+experimentToRun=args[1]
+
+
+if (experimentToRun==1)
+{
+  evalQCBA(datasets=datasets,experiment_name="OnlyExtend",rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
+           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
+}
+
+default_rule_pruning	<- TRUE
+if (experimentToRun==2)
+{
+evalQCBA(datasets=datasets,experiment_name="DR",rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+         pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
+         continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
+}
+trim_literal_boundaries	<- TRUE
+if (experimentToRun==3)
+{
+evalQCBA(datasets=datasets,experiment_name="DR_TR_",rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+         pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
+         continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
+}
+postpruning <- TRUE
+if (experimentToRun==4)
+{
+evalQCBA(datasets=datasets,experiment_name="DR_TR_P",rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+         pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
+         continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
+}
+continuousPruning <- TRUE
+if (experimentToRun==5)
+{
+evalQCBA(datasets=datasets,experiment_name="DR_TR_P_C",rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+         pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
+         continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
+}
+
+
