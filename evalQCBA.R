@@ -43,11 +43,11 @@ evalTimeQCBA <- function(trainFold,testFold,foldsize,logpath,iterations,includeQ
         append = TRUE, sep = ",")
 }
 
-evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=NULL, pruning_options=NULL,trim_literal_boundaries = TRUE, continuousPruning=FALSE, postpruning=FALSE, fuzzification=FALSE, annotate=FALSE,testingType="mixture",basePath=".", minImprovement=0,minCondImprovement=-1,minConf = 0.5,  extensionStrategy="ConfImprovementAgainstLastConfirmedExtension",debug=FALSE)
+evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=NULL, pruning_options=NULL,extendType="numericOnly",defaultRuleOverlapPruning = "noPruning", trim_literal_boundaries = TRUE, continuousPruning=FALSE, postpruning=FALSE,  fuzzification=FALSE, annotate=FALSE,testingType="mixture",basePath=".", minImprovement=0,minCondImprovement=-1,minConf = 0.5,  extensionStrategy="ConfImprovementAgainstLastConfirmedExtension",debug=FALSE)
 {
   
   # Write headers for results
-  detailed_result_file <- paste(basePath,.Platform$file.sep,"result",.Platform$file.sep,"summary.csv",sep="")
+  #detailed_result_file <- paste(basePath,.Platform$file.sep,"result",.Platform$file.sep,"summary.csv",sep="")
   cba_result_file <- paste(basePath,.Platform$file.sep,"result",.Platform$file.sep,experiment_name,"-cba.csv",sep="")
   qcba_result_file <- paste(basePath,.Platform$file.sep,"result",.Platform$file.sep,experiment_name,"-qcba.csv",sep="")
   
@@ -65,9 +65,9 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=NUL
           append = FALSE, sep = ",")
   }
   
-  write(paste("dataset;accCBA;rulesCBA;accQCBA;rulesQCBA;timestamp;",paste(names(as.list(match.call()))[-1:-2],collapse=";")), file = detailed_result_file,
-          ncolumns = 1,
-          append = FALSE, sep = ",")
+#  write(paste("dataset;accCBA;rulesCBA;accQCBA;rulesQCBA;timestamp;",paste(names(as.list(match.call()))[-1:-2],collapse=";")), file = detailed_result_file,
+#          ncolumns = 1,
+#          append = FALSE, sep = ",")
 
   #process datasets
   for (dataset in datasets[1:length(datasets)]) {
@@ -108,37 +108,40 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=NUL
       message(paste("CBA acc:",acc))
       accSumCBA <- accSumCBA + acc
 
-      rulesPath <-paste(basePath,"result/",dataset,fold,".arules",sep="")
 
       #write debug information
-      if (debug){
+      if (debug==TRUE){
+        dir.create(file.path(basePath, "debug"), showWarnings = FALSE)
+        rulesPath <-paste(basePath,"/debug/",dataset,fold,".arules",sep="")
         write.csv(as(rmCBA@rules,"data.frame"), rulesPath, row.names=TRUE,quote = TRUE)
 
-
         x=paste('<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">',
-                "<properties>",
-                "<entry key=\"Method\">extend</entry>",
-                "<entry key=\"RulesPath\">", getwd(), "/",rulesPath, "</entry>",
-                "<entry key=\"TrainDataPath\">", getwd(),"/", trainPath,"</entry>",
-                "<entry key=\"ExtendRuleSortComparator\">MMACRuleComparator</entry>",
-                "<entry key=\"ExtendType\">numericOnly</entry>",
-                "<entry key=\"PruneAfterExtend\">True</entry>",
-                '<entry key="ContinuousPruning">False</entry>',
-                '<entry key="Fuzzification">False</entry>',
-                '<entry key="Annotate">False</entry>',
-                '<entry key="DataTypes">', paste(dataTypes, collapse = ','),'</entry>',
-                '<entry key="TargetAttribute">', classAtt,'</entry>',
-                '<entry key="OutputPath">',dataset,fold,'-qcba.arules</entry>',
+                "<properties>\n",
+                "<entry key=\"Method\">extend</entry>\n",
+                "<entry key=\"RulesPath\">", getwd(), "/",rulesPath, "</entry>\n",
+                "<entry key=\"TrainDataPath\">", getwd(),"/", trainPath,"</entry>\n",
+                "<entry key=\"ExtendRuleSortComparator\">MMACRuleComparator</entry>\n",
+                "<entry key=\"ExtendType\">",extendType,"</entry>\n",
+                "<entry key=\"Annotate\">",annotate, "</entry>\n",
+                "<entry key=\"ContinuousPruning\">",continuousPruning, "</entry>\n",
+                "<entry key=\"Trimming\">",trim_literal_boundaries, "</entry>\n",
+                "<entry key=\"Fuzzification\">",fuzzification, "</entry>\n",
+                "<entry key=\"DefaultRuleOverlapPruning\">",defaultRuleOverlapPruning, "</entry>\n",
+                "<entry key=\"Postpruning\">",postpruning, "</entry>\n",
+                "<entry key=\"MinCondImprovement\">",minCondImprovement, "</entry>\n",
+                "<entry key=\"DataTypes\">", paste(dataTypes, collapse = ','),'</entry>\n',
+                "<entry key=\"TargetAttribute\">", classAtt,'</entry>\n',
+                "<entry key=\"OutputPath\">", getwd(),"/debug/",dataset,fold,'-qcba.arules</entry>\n',
                 "</properties>", sep="")
 
-        qcbaFilePath <-paste(basePath,"result/",dataset,fold,".xml",sep="")
+        qcbaFilePath <-paste(basePath,"/debug/",dataset,fold,".xml",sep="")
         write(x, file = qcbaFilePath,
               ncolumns = 1,
               append = FALSE, sep = ",")
       }
-
       #Run and store results from QCBA
-      rmQCBA <- qcba(cbaRuleModel=rmCBA,datadf=trainFold,trim_literal_boundaries=trim_literal_boundaries,continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=fuzzification, annotate=annotate,
+      rmQCBA <- qcba(cbaRuleModel=rmCBA,datadf=trainFold,extend=extendType,defaultRuleOverlapPruning=defaultRuleOverlapPruning,trim_literal_boundaries=trim_literal_boundaries,
+                     continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=fuzzification, annotate=annotate,
                            minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,  extensionStrategy=extensionStrategy,createHistorySlot=global_createHistorySlot,
                            loglevel = logger)
       prediction <- predict(rmQCBA,testFold,testingType=testingType,loglevel=logger)
@@ -155,9 +158,9 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=NUL
     rulesQCBA <-ruleSumQCBA/10
 
     #write results
-    write(paste(paste(dataset,accCBA,rulesCBA,accQCBA,rulesQCBA,format(Sys.time(),"%X"),"",sep=";"),paste(as.list(match.call())[-1:-2],collapse=";")), file = detailed_result_file,
-    ncolumns = 1,
-    append = TRUE, sep = ";")
+    # write(paste(paste(dataset,accCBA,rulesCBA,accQCBA,rulesQCBA,format(Sys.time(),"%X"),"",sep=";"),paste(as.list(match.call())[-1:-2],collapse=";")), file = detailed_result_file,
+    # ncolumns = 1,
+    # append = TRUE, sep = ";")
     write(c(dataset,accCBA,rulesCBA), file = cba_result_file,
             ncolumns = 3,
             append = TRUE, sep = ",")
@@ -188,245 +191,188 @@ doEvalTime <- function()
 #doEvalTime()
 
 datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
-continuousPruning	<-	FALSE
-postpruning	<- FALSE
-default_rule_pruning	<- FALSE
-trim_literal_boundaries	<-	FALSE
-maxtime=1000
-target_rule_count=50000
-minImprovement=0
-minCondImprovement=-1
-minConf = 0.5
-extensionStrategy="ConfImprovementAgainstLastConfirmedExtension" # ConfImprovementAgainstLastConfirmedExtension, MinConf
+
+
 
 args <- commandArgs(trailingOnly = TRUE)
 if (is.null(args))
 {
-  args = c(70)
+  args = c(10)
 }
 experimentToRun=args[1]
 
-
 if (experimentToRun==1)
 {
+  target_rule_count=50000
+  extendType = "noExtend" #noExtend,numericOnly
+  continuousPruning	<-	FALSE
+  postpruning	<- FALSE
+  #activated def. pruning in CBA
+  default_rule_pruning	<- TRUE
+  trim_literal_boundaries	<-	FALSE
+  maxtime <- 1000
+  minCondImprovement <- -1
+  #activated def. pruning in QCBA
+  defaultRuleOverlapPruning  <- "transactionBased" #rangeBased,transactionBased,noPruning
+  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"CBA+dPr",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
+           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
+}
+
+
+if (experimentToRun==2)
+{
+  target_rule_count=50000
+  extendType = "numericOnly" #noExtend,numericOnly
+  continuousPruning	<-	FALSE
+  postpruning	<- TRUE
+  default_rule_pruning	<- FALSE
+  trim_literal_boundaries	<-	FALSE
+  maxtime <- 1000
+  minCondImprovement <- -1
+  defaultRuleOverlapPruning  <- "noPruning" #rangeBased,transactionBased,noPruning
+  
   evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"OnlyExtend",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
            pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
            continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
 }
 
-default_rule_pruning	<- TRUE
-if (experimentToRun==2)
-{
-evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"DR",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-         pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-         continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-trim_literal_boundaries	<- TRUE
+
 if (experimentToRun==3)
 {
-evalQCBA(datasets=datasets,paste(experimentToRun,"DR_TR_",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-         pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-         continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
+  target_rule_count=50000
+  extendType = "numericOnly" #noExtend,numericOnly
+  continuousPruning	<-	FALSE
+  postpruning	<- TRUE
+  default_rule_pruning	<- FALSE
+  trim_literal_boundaries	<-	TRUE
+  maxtime <- 1000
+  minCondImprovement <- -1
+  defaultRuleOverlapPruning  <- "noPruning" #rangeBased,transactionBased,noPruning
+  
+  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-P",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
+           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
 }
-postpruning <- TRUE
+
 if (experimentToRun==4)
 {
-evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"DR_TR_P",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-         pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-         continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
+  target_rule_count=50000
+  extendType = "numericOnly" #noExtend,numericOnly
+  continuousPruning	<-	FALSE
+  postpruning	<- TRUE
+  default_rule_pruning	<- FALSE
+  trim_literal_boundaries	<-	TRUE
+  maxtime <- 1000
+  minCondImprovement <- -1
+  defaultRuleOverlapPruning  <- "transactionBased" #rangeBased,transactionBased,noPruning
+  
+  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-P-TB",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
+           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
 }
-continuousPruning <- TRUE
+
 if (experimentToRun==5)
 {
-evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"DR_TR_P_C",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-         pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-         continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
+  target_rule_count=50000
+  extendType = "numericOnly" #noExtend,numericOnly
+  continuousPruning	<-	FALSE
+  postpruning	<- TRUE
+  default_rule_pruning	<- FALSE
+  trim_literal_boundaries	<-	TRUE
+  maxtime <- 1000
+  minCondImprovement <- -1
+  defaultRuleOverlapPruning  <- "transactionBasedAsFirstStep"
+  
+  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-P-TBfstep",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
+           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
 }
-continuousPruning <- FALSE
-postpruning <- FALSE
-default_rule_pruning	<- FALSE
-trim_literal_boundaries	<- TRUE
+
+
 if (experimentToRun==6)
 {
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+  target_rule_count=50000
+  extendType = "numericOnly" #noExtend,numericOnly
+  continuousPruning	<-	TRUE
+  postpruning	<- TRUE
+  default_rule_pruning	<- FALSE
+  trim_literal_boundaries	<-	TRUE
+  maxtime <- 1000
+  minCondImprovement <- -1
+  defaultRuleOverlapPruning  <- "noPruning" #rangeBased,transactionBased,noPruning
+  
+  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-P-C",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
            pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
            continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
 }
-postpruning <- TRUE
+
 if (experimentToRun==7)
 {
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR_P",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+  target_rule_count=50000
+  extendType = "numericOnly" #noExtend,numericOnly
+  continuousPruning	<-	TRUE
+  postpruning	<- TRUE
+  default_rule_pruning	<- FALSE
+  trim_literal_boundaries	<-	TRUE
+  maxtime <- 1000
+  minCondImprovement <- -1
+  defaultRuleOverlapPruning  <- "transactionBased" #rangeBased,transactionBased,noPruning
+  
+  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-P-C-TB",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
            pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
            continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
 }
 
-if (experimentToRun==70)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR_P-updatedDef",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-
-continuousPruning <- TRUE
 if (experimentToRun==8)
 {
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR_P_C",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+  target_rule_count=50000
+  extendType = "numericOnly" #noExtend,numericOnly
+  continuousPruning	<-	TRUE
+  postpruning	<- TRUE
+  default_rule_pruning	<- TRUE
+  trim_literal_boundaries	<-	TRUE
+  maxtime <- 1000
+  minCondImprovement <- -1
+  defaultRuleOverlapPruning  <- "transactionBased" #rangeBased,transactionBased,noPruning
+  
+  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-P-C-TB-DR",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
            pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
            continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
 }
-
-minCondImprovement <- -0.05
 
 if (experimentToRun==9)
 {
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR_P_C_mci-0.05",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+  target_rule_count=50000
+  extendType = "numericOnly" #noExtend,numericOnly
+  continuousPruning	<-	FALSE
+  postpruning	<- TRUE
+  default_rule_pruning	<- TRUE
+  trim_literal_boundaries	<-	TRUE
+  maxtime <- 1000
+  minCondImprovement <- -1
+  defaultRuleOverlapPruning  <- "transactionBased" #rangeBased,transactionBased,noPruning
+  
+  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-P-TB-DR",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
            pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
            continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
 }
-minCondImprovement<- -1
-continuousPruning <- FALSE
-postpruning <- FALSE
-default_rule_pruning	<- FALSE
-trim_literal_boundaries	<- FALSE
-minImprovement <-0
 
-#BEST - same accuracy as CBA (0.81, 20% less rules)
-postpruning <- TRUE
 if (experimentToRun==10)
 {
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"P",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-continuousPruning <- TRUE
-if (experimentToRun==11)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"P_C",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-
-minCondImprovement <- -0.05
-
-if (experimentToRun==12)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"C_mci-0.05",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-continuousPruning	<-	FALSE
-postpruning	<- FALSE
-default_rule_pruning	<- FALSE
-trim_literal_boundaries	<-	FALSE
-maxtime=1000
-target_rule_count=50000
-minImprovement=0
-minCondImprovement=-1
-minConf = 0.5
-extensionStrategy="ConfImprovementAgainstLastConfirmedExtension"
-
-
-if (experimentToRun==13)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"OnlyExtend-CIALCE",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
+  target_rule_count=50000
+  extendType = "numericOnly" #noExtend,numericOnly
+  continuousPruning	<-	FALSE
+  postpruning	<- TRUE
+  default_rule_pruning	<- TRUE
+  trim_literal_boundaries	<-	TRUE
+  maxtime <- 1000
+  minCondImprovement <- -1
+  defaultRuleOverlapPruning  <- "transactionBasedAsFirstStep"
+  
+  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-P-DR-TBfstep",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
            pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
            continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
 }
 
-trim_literal_boundaries<-TRUE
-if (experimentToRun==14)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-CIALCE",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-
-postpruning <- TRUE
-if (experimentToRun==15)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-P-CIALCE",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-continuousPruning <- TRUE
-if (experimentToRun==16)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-PC-CIALCE",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-
-trim_literal_boundaries<-FALSE
-postpruning <- TRUE
-if (experimentToRun==17)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"P-CIALCE",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-continuousPruning <- TRUE
-if (experimentToRun==18)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"PC-CIALCE",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-
-continuousPruning	<-	FALSE
-postpruning	<- FALSE
-default_rule_pruning	<- FALSE
-trim_literal_boundaries	<-	FALSE
-maxtime=1000
-target_rule_count=80000
-minImprovement=0
-minCondImprovement=-1
-minConf = 0.5
-extensionStrategy="ConfImprovementAgainstLastConfirmedExtension" # ConfImprovementAgainstLastConfirmedExtension, MinConf
-
-trim_literal_boundaries	<-	TRUE
-postpruning <- TRUE
-if (experimentToRun==19)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"P80k",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-target_rule_count=50000
-extensionStrategy <-"ConfImprovementAgainstSeedRule"
-if (experimentToRun==20)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-P-SR",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-
-target_rule_count=50000
-extensionStrategy <-"MinConf"
-if (experimentToRun==21)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR-P-MinConf",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
-
-
-
-continuousPruning	<-	FALSE
-postpruning	<- TRUE
-default_rule_pruning	<- FALSE
-trim_literal_boundaries	<-	TRUE
-maxtime=1000
-target_rule_count=50000
-minImprovement=0.05
-minCondImprovement=-1
-minConf = 0.5
-extensionStrategy="ConfImprovementAgainstLastConfirmedExtension" # ConfImprovementAgainstLastConfirmedExtension, MinConf
-
-
-if (experimentToRun==22)
-{
-  evalQCBA(datasets=datasets,experiment_name=paste(experimentToRun,"TR_P_mi0.05",sep = "-"),rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=target_rule_count, trim=TRUE, find_conf_supp_thresholds=FALSE),
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),trim_literal_boundaries=trim_literal_boundaries,minImprovement=minImprovement,minCondImprovement=minCondImprovement,minConf = minConf,
-           continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=FALSE, annotate=FALSE,extensionStrategy=extensionStrategy,testingType="oneRule",basePath=".")
-}
 
