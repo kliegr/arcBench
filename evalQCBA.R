@@ -1,6 +1,7 @@
 library(qCBA)
 library(stringr)
-foldsToProcess <-10
+foldsToProcess <-1
+onlyList <-FALSE
 logger<-"WARNING"
 global_createHistorySlot<-FALSE
 datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
@@ -12,7 +13,7 @@ target_rule_count=50000
 args <- commandArgs(trailingOnly = TRUE)
 if (is.null(args))
 {
-  args = c(33)
+  args = c(1)
 }
 experimentToRun=args[1]
 
@@ -58,7 +59,7 @@ evalTimeQCBA <- function(trainFold,testFold,foldsize,logpath,iterations,includeQ
 }
 
 
-evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE), pruning_options=NULL,extendType="numericOnly",defaultRuleOverlapPruning = "noPruning", attributePruning = FALSE, trim_literal_boundaries = TRUE, continuousPruning=FALSE, postpruning=FALSE,  fuzzification=FALSE, annotate=FALSE,testingType="oneRule",basePath=".", minImprovement=0,minCondImprovement=-1,minConf = 0.5,  extensionStrategy="ConfImprovementAgainstLastConfirmedExtension",debug=TRUE)
+evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE), pruning_options=NULL,extendType="numericOnly",defaultRuleOverlapPruning = "noPruning", attributePruning = FALSE, trim_literal_boundaries = TRUE, continuousPruning=FALSE, postpruning=FALSE,  fuzzification=FALSE, annotate=FALSE,testingType="oneRule",basePath=".", minImprovement=0,minCondImprovement=-1,minConf = 0.5,  extensionStrategy="ConfImprovementAgainstLastConfirmedExtension",debug=FALSE)
 {
   
   # Write headers for results
@@ -253,577 +254,47 @@ experimentName <- function(experimentToRun,extendType,default_rule_pruning,attri
   
    
 }
-if (experimentToRun==1)
-{
-  extendType = "noExtend" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- FALSE
-  #activated def. pruning in CBA
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	FALSE
 
-  #activated def. pruning in QCBA
-  defaultRuleOverlapPruning  <- "transactionBased" #rangeBased,transactionBased,noPruning
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
+
+
+NextendType = c("noExtend","numericOnly")
+NattributePruning	<-	c(TRUE,FALSE)
+NcontinuousPruning	<-	c(TRUE,FALSE)
+Npostpruning	<-	c(TRUE,FALSE)
+Ndefault_rule_pruning	<-	c(TRUE,FALSE)
+Ntrim_literal_boundaries		<-	c(TRUE,FALSE)
+NdefaultRuleOverlapPruning  <- c("transactionBased","rangeBased","noPruning")
+
+combination_no <- 1 #max 196
+for (extendType in NextendType){
+  for (attributePruning in  NattributePruning) {
+    for (continuousPruning in NcontinuousPruning ) {
+      for (postpruning in Npostpruning ) {
+        for (trim_literal_boundaries in Ntrim_literal_boundaries) {
+          for (default_rule_pruning in Ndefault_rule_pruning) {
+            for (defaultRuleOverlapPruning in NdefaultRuleOverlapPruning) {
+                experiment_name<-experimentName(combination_no,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
+                message(experiment_name)
+                if (!onlyList & experimentToRun==combination_no)
+                {
+                  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
+                           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
+                           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
+                           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
+                           postpruning=postpruning,basePath=".")                
+                }
+              combination_no<-combination_no+1
+            }
+            combination_no<-combination_no+1
+          }
+          combination_no<-combination_no+1
+        }
+        combination_no<-combination_no+1
+      }
+      combination_no<-combination_no+1
+    }
+    combination_no<-combination_no+1
+  }
+  combination_no<-combination_no+1
 }
-
-
-if (experimentToRun==2) 
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- TRUE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "noPruning" #rangeBased,transactionBased,noPruning
   
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-
-if (experimentToRun==3)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- TRUE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	TRUE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "noPruning" #rangeBased,transactionBased,noPruning
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==4)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- TRUE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	TRUE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "transactionBased" #rangeBased,transactionBased,noPruning
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==5)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- TRUE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	TRUE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "transactionBasedAsFirstStep"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-
-if (experimentToRun==6)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	TRUE
-  postpruning	<- TRUE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	TRUE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "noPruning" #rangeBased,transactionBased,noPruning
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==7)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	TRUE
-  postpruning	<- TRUE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	TRUE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "transactionBased" #rangeBased,transactionBased,noPruning
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==8)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	TRUE
-  postpruning	<- TRUE
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	TRUE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "transactionBased" #rangeBased,transactionBased,noPruning
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==9)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- TRUE
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	TRUE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "transactionBased" #rangeBased,transactionBased,noPruning
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==10)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- TRUE
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	TRUE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "transactionBasedAsFirstStep"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-  
-}
-
-if (experimentToRun==11)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- FALSE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "noPruning"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==12)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- FALSE
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "noPruning"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==13)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- FALSE
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "transactionBased"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-
-if (experimentToRun==14)
-{
-  extendType = "noExtend" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- FALSE
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "rangeBased"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==15)
-{
-  extendType = "noExtend" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- FALSE
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "transactionBased"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==16)
-{
-  extendType = "noExtend" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- FALSE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "noPruning"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-
-
-if (experimentToRun==17)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- FALSE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "rangeBased"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==18)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- TRUE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "rangeBased"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==19)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- TRUE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	TRUE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "rangeBased"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-
-if (experimentToRun==20)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- TRUE
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	TRUE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "rangeBased"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==21)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	TRUE
-  postpruning	<- TRUE
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	TRUE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "rangeBased"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==22)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- TRUE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "transactionBased" #rangeBased,transactionBased,noPruning
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-#test effect of refit
-if (experimentToRun==23)
-{
-  extendType = "noExtend" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- FALSE
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "noPruning"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==30)
-{
-  extendType = "noExtend" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- FALSE
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "noPruning"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning = attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==31)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	TRUE
-  postpruning	<- FALSE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "transactionBased"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning = attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-
-if (experimentToRun==32)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	TRUE
-  postpruning	<- TRUE
-  default_rule_pruning	<- FALSE
-  trim_literal_boundaries	<-	FALSE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "transactionBased"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning = attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
-if (experimentToRun==33)
-{
-  extendType = "numericOnly" #noExtend,numericOnly
-  attributePruning	<-	TRUE
-  continuousPruning	<-	FALSE
-  postpruning	<- TRUE
-  default_rule_pruning	<- TRUE
-  trim_literal_boundaries	<-	TRUE
-  maxtime <- 1000
-  minCondImprovement <- -1
-  defaultRuleOverlapPruning  <- "transactionBased"
-  
-  experiment_name<-experimentName(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
-  message(experiment_name)
-  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-           attributePruning = attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,
-           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-           postpruning=postpruning,basePath=".")
-}
