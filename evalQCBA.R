@@ -1,7 +1,16 @@
 library(qCBA)
 library(stringr)
-foldsToProcess <-1
-onlyList <-FALSE
+args <- commandArgs(trailingOnly = TRUE)
+onlyList <-TRUE
+if (is.null(args))
+{
+  args = c(125) #125
+}
+experimentToRun=args[1]
+
+
+foldsToProcess <- 10
+
 logger<-"WARNING"
 global_createHistorySlot<-FALSE
 datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
@@ -10,12 +19,6 @@ maxtime <- 1000
 minCondImprovement <- -1
 target_rule_count=50000
 
-args <- commandArgs(trailingOnly = TRUE)
-if (is.null(args))
-{
-  args = c(1)
-}
-experimentToRun=args[1]
 
 evalTimeQCBA <- function(trainFold,testFold,foldsize,logpath,iterations,includeQCBA)
 {
@@ -59,7 +62,7 @@ evalTimeQCBA <- function(trainFold,testFold,foldsize,logpath,iterations,includeQ
 }
 
 
-evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE), pruning_options=NULL,extendType="numericOnly",defaultRuleOverlapPruning = "noPruning", attributePruning = FALSE, trim_literal_boundaries = TRUE, continuousPruning=FALSE, postpruning=FALSE,  fuzzification=FALSE, annotate=FALSE,testingType="oneRule",basePath=".", minImprovement=0,minCondImprovement=-1,minConf = 0.5,  extensionStrategy="ConfImprovementAgainstLastConfirmedExtension",debug=FALSE)
+evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE), pruning_options=NULL,extendType="numericOnly",defaultRuleOverlapPruning = "noPruning", attributePruning = FALSE, trim_literal_boundaries = TRUE, continuousPruning=FALSE, postpruning="cba",  fuzzification=FALSE, annotate=FALSE,testingType="oneRule",basePath=".", minImprovement=0,minCondImprovement=-1,minConf = 0.5,  extensionStrategy="ConfImprovementAgainstLastConfirmedExtension",debug=FALSE)
 {
   
   # Write headers for results
@@ -237,10 +240,14 @@ experimentName <- function(experimentToRun,extendType,default_rule_pruning,attri
   {
     name <- paste(name,"C",sep="-")
   }  
-  if (postpruning)
+  if (postpruning == "cba")
   {
-    name <- paste(name,"P",sep="-")
+    name <- paste(name,"Pcba",sep="-")
   }   
+  if (postpruning == "greedy")
+  {
+    name <- paste(name,"Pgre",sep="-")
+  }
   if (attributePruning)
   {
     name <- paste(name,"A",sep="-")
@@ -260,17 +267,17 @@ experimentName <- function(experimentToRun,extendType,default_rule_pruning,attri
 NextendType = c("noExtend","numericOnly")
 NattributePruning	<-	c(TRUE,FALSE)
 NcontinuousPruning	<-	c(TRUE,FALSE)
-Npostpruning	<-	c(TRUE,FALSE)
+Npostpruning	<-	c("none","cba","greedy")
 Ndefault_rule_pruning	<-	c(TRUE,FALSE)
 Ntrim_literal_boundaries		<-	c(TRUE,FALSE)
 NdefaultRuleOverlapPruning  <- c("transactionBased","rangeBased","noPruning")
 
 combination_no <- 1 #max 196
 for (extendType in NextendType){
-  for (attributePruning in  NattributePruning) {
+  for (trim_literal_boundaries in Ntrim_literal_boundaries) {
     for (continuousPruning in NcontinuousPruning ) {
       for (postpruning in Npostpruning ) {
-        for (trim_literal_boundaries in Ntrim_literal_boundaries) {
+        for (attributePruning in  NattributePruning) {
           for (default_rule_pruning in Ndefault_rule_pruning) {
             for (defaultRuleOverlapPruning in NdefaultRuleOverlapPruning) {
                 experiment_name<-experimentName(combination_no,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
@@ -285,16 +292,10 @@ for (extendType in NextendType){
                 }
               combination_no<-combination_no+1
             }
-            combination_no<-combination_no+1
           }
-          combination_no<-combination_no+1
         }
-        combination_no<-combination_no+1
       }
-      combination_no<-combination_no+1
     }
-    combination_no<-combination_no+1
   }
-  combination_no<-combination_no+1
 }
   
