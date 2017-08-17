@@ -1,10 +1,10 @@
 library(qCBA)
 library(stringr)
 args <- commandArgs(trailingOnly = TRUE)
-onlyList <-TRUE
+onlyList <-FALSE
 if (is.null(args))
 {
-  args = c(125) #125
+  args = c(276) #125
 }
 experimentToRun=args[1]
 
@@ -270,7 +270,7 @@ NcontinuousPruning	<-	c(TRUE,FALSE)
 Npostpruning	<-	c("none","cba","greedy")
 Ndefault_rule_pruning	<-	c(TRUE,FALSE)
 Ntrim_literal_boundaries		<-	c(TRUE,FALSE)
-NdefaultRuleOverlapPruning  <- c("transactionBased","rangeBased","noPruning")
+NdefaultRuleOverlapPruning  <- c("DRPtrans","DRPrange","noPruning")
 
 combination_no <- 1 #max 196
 for (extendType in NextendType){
