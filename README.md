@@ -53,5 +53,5 @@ To obtain aggregate results for all datasets, execute:
 This will creat file `result/results.csv`, which contains one line for each configuration. 
 
 ## Precomputed results
-Note that the arcBench project is shipped with precomputed detailed and summary results in the `result` folder. 
+Note that the arcBench project is shipped with precomputed detailed and summary results in the `result` folder.  If you want to recompute the results, rename/remove these files.
 
