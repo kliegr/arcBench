@@ -2,6 +2,11 @@ library(qCBA)
 library(stringr)
 args <- commandArgs(trailingOnly = TRUE)
 onlyList <-FALSE
+# will store CBA result file and a QCBA configuration file ot the debug foler
+# QCBA can then be debugged by running the java project in an IDE using
+# java -jar AC1.jar config.xml
+
+debug <- FALSE
 if (is.null(args))
 {
   # default to nonexistent configuration  if no arguments are passed
@@ -193,7 +198,6 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
                 "<entry key=\"Method\">extend</entry>\n",
                 "<entry key=\"RulesPath\">", getwd(), "/",rulesPath, "</entry>\n",
                 "<entry key=\"TrainDataPath\">", getwd(),"/", trainPath,"</entry>\n",
-                "<entry key=\"ExtendRuleSortComparator\">MMACRuleComparator</entry>\n",
                 "<entry key=\"ExtendType\">",extendType,"</entry>\n",
                 "<entry key=\"Annotate\">",annotate, "</entry>\n",
                 "<entry key=\"ContinuousPruning\">",continuousPruning, "</entry>\n",
@@ -335,7 +339,7 @@ for (extendType in NextendType){
                            pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
                            attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,minImprovement=minImprovement,
                            defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-                           postpruning=postpruning,basePath=".")                
+                           postpruning=postpruning,basePath=".",debug=debug)                
                 }
               combination_no<-combination_no+1
             }

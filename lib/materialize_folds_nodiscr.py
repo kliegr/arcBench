@@ -18,12 +18,12 @@ from datasets import *
 
 if not os.path.exists("output"):
     os.makedirs("output")
-if not os.path.exists("folds_nodiscr"):
-    os.makedirs("folds_nodiscr")
-if not os.path.exists("folds_nodiscr/test"):
-    os.makedirs("folds_nodiscr/test")
-if not os.path.exists("folds_nodiscr/train"):
-    os.makedirs("folds_nodiscr/train")
+if not os.path.exists("folds"):
+    os.makedirs("folds")
+if not os.path.exists("folds/test"):
+    os.makedirs("folds/test")
+if not os.path.exists("folds/train"):
+    os.makedirs("folds/train")
 #uses a specific classifier, but the actual results of classification are discarded
 classifiers=[{"instance":DecisionTreeClassifier(random_state=0,max_depth=1,min_samples_split=100), "optimizedparameters":False, "requireDiscretized":False, "file":"results-pydectree-prediscretized"}]
 
@@ -54,11 +54,11 @@ for dataset in datasets:
     for i in range(0,10):        
         trainX = "output/"+dataset["filename"]+"_trainX_" + str(i)+".csv"
         trainY = "output/"+dataset["filename"]+"_trainY_" + str(i)+".csv"
-        trainOut = "folds_nodiscr/train/"+dataset["filename"]+ str(i)+".csv"
+        trainOut = "folds/train/"+dataset["filename"]+ str(i)+".csv"
         
         testX = "output/"+dataset["filename"]+"_testX_" + str(i)+".csv"
         testY = "output/"+dataset["filename"]+"_testY_" + str(i)+".csv"
-        testOut = "folds_nodiscr/test/"+dataset["filename"] + str(i)+".csv"
+        testOut = "folds/test/"+dataset["filename"] + str(i)+".csv"
         
         trainX_df = pd.read_csv(trainX, delimiter=",")      
         trainY_df = pd.read_csv(trainY, delimiter=",")      

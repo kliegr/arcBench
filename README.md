@@ -14,13 +14,14 @@ The benchmark uses standard open datasets from the UCI repository. To ensure tha
 The output is saved into 
 ```
 data/folds
-data/folds_nodiscr
 ```
 
 The process also creates a temporary folder
 ```
 data/output
 ```
+This folder is removed on script completion. 
+
 ## CBA and QCBA Benchmark - running 
 QCBA benchmark is run using functions defined in  `evalQCBA.R`.
 If evalQCBA.R is run without parameters, it will list all predefined experiments. 

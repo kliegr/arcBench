@@ -1,0 +1,7 @@
+duration,wage-increase-first-year,wage-increase-second-year,wage-increase-third-year,cost-of-living-adjustment,working-hours,pension,standby-pay,shift-differential,education-allowance,statutory-holidays,vacation,longterm-disability-assistance,contribution-to-dental-plan,bereavement-assistance,contribution-to-health-plan,class
+3.0,4.5,4.5,5.0,,40.0,,7.44444444444,4.93103448276,,12.0,average,,half,yes,half,good
+3.0,3.5,4.0,4.6,none,36.0,,7.44444444444,3.0,,13.0,generous,,,yes,full,good
+2.0,2.0,2.0,3.77692307692,none,40.0,none,7.44444444444,4.93103448276,no,11.0,average,yes,none,yes,full,bad
+2.0,2.5,3.0,3.77692307692,tcf,40.0,none,7.44444444444,4.93103448276,,11.0,below_average,,,yes,,bad
+2.0,4.5,4.0,3.77692307692,none,40.0,,7.44444444444,5.0,,11.0,average,,full,yes,full,good
+2.0,5.7,4.5,3.77692307692,none,40.0,ret_allw,7.44444444444,4.93103448276,,11.0,average,yes,full,yes,full,good
