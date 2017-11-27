@@ -2,16 +2,26 @@ library(qCBA)
 library(stringr)
 args <- commandArgs(trailingOnly = TRUE)
 onlyList <-FALSE
+
 # will store CBA result file and a QCBA configuration file ot the debug foler
 # QCBA can then be debugged by running the java project in an IDE using
 # java -jar AC1.jar config.xml
-
 debug <- FALSE
+
+minCondImprovement=-1
+minImprovement = 0
+
 if (is.null(args))
 {
   # default to nonexistent configuration  if no arguments are passed
   args = c(-1) 
+} else if (length(args)==3) {
+  minCondImprovement = args[2]
+  minImprovement = args[3]
 }
+message(paste("Using minCondImprovement", minCondImprovement))
+message(paste("Using minImprovement", minImprovement))
+
 experimentToRun=args[1]
 
 
@@ -26,8 +36,6 @@ global_target_rule_count=50000
 global_fuzzification <- FALSE
 global_annotate <- FALSE
 global_testingType <- "oneRule"
-global_minImprovement=0
-global_minCondImprovement=0
 global_minConf = 0.5
 global_extensionStrategy="ConfImprovementAgainstLastConfirmedExtension"
 global_continuousPruning	<- FALSE
@@ -95,8 +103,8 @@ evalTimeQCBA <- function(trainFold,testFold,foldsize,logpath,iterations,includeQ
     {
       
       rmQCBA <- qcba(cbaRuleModel=rmCBA,datadf=trainFold,extend=extendType,defaultRuleOverlapPruning=defaultRuleOverlapPruning,attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,
-                     continuousPruning=global_continuousPruning, postpruning=postpruning, fuzzification=global_fuzzification, annotate=global_annotate,minImprovement=global_minImprovement,
-                     minCondImprovement=global_minCondImprovement,  createHistorySlot=global_createHistorySlot,
+                     continuousPruning=global_continuousPruning, postpruning=postpruning, fuzzification=global_fuzzification, annotate=global_annotate,minImprovement=minImprovement,
+                     minCondImprovement=minCondImprovement,  createHistorySlot=global_createHistorySlot,
                      loglevel = logger)
     }
     end.time <- Sys.time()
@@ -278,7 +286,7 @@ doEvalTimeKDD <- function()
   }
 }
 
-experimentName <- function(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement)
+experimentName <- function(experimentToRun,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement,minImprovement)
 {
   name <- paste(experimentToRun,extendType,sep="-")
   if (default_rule_pruning)
@@ -311,10 +319,14 @@ experimentName <- function(experimentToRun,extendType,default_rule_pruning,attri
     name <- paste(name,defaultRuleOverlapPruning,sep="-")
   }
   name <- paste(name, "-mci=",minCondImprovement,sep="")
+  
+  if (minImprovement!=0)
+  {
+    name <- paste(name, "-mi=",minImprovement,sep="")
+  }
+  return(name)
 }
 
-minCondImprovement=-1
-minImprovement = 0
 NextendType = c("noExtend","numericOnly")
 NattributePruning	<-	c(TRUE,FALSE)
 NcontinuousPruning	<-	c(TRUE,FALSE)
@@ -331,7 +343,7 @@ for (extendType in NextendType){
         for (attributePruning in  NattributePruning) {
           for (default_rule_pruning in Ndefault_rule_pruning) {
             for (defaultRuleOverlapPruning in NdefaultRuleOverlapPruning) {
-                experiment_name<-experimentName(combination_no,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,global_minCondImprovement)
+                experiment_name<-experimentName(combination_no,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement,minImprovement)
                 message(experiment_name)
                 if (!onlyList & experimentToRun==combination_no)
                 {

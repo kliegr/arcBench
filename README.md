@@ -27,7 +27,7 @@ This folder is removed on script completion.
 QCBA benchmark is run using functions defined in  `evalQCBA.R`.
 If evalQCBA.R is run without parameters, it will list all predefined experiments. 
 
-To run experiments in the DMKD submission, use the following configuration numbers:
+To run experiments described in the thesis, use the following configuration numbers:
 
     Rscript evalQCBA.R 117 # refit (cba basline) 
     Rscript evalQCBA.R 120 # refit (#1) 
@@ -36,7 +36,7 @@ To run experiments in the DMKD submission, use the following configuration numbe
     Rscript evalQCBA.R 186 # refit + attribute pruning  + trimming + extension (#4)
     Rscript evalQCBA.R 198 # refit + attribute pruning  + trimming + extension + postpruning  (#5)
     Rscript evalQCBA.R 196 # refit + attribute pruning  + trimming + extension + postpruning + transaction-based default overlap pruning  (#6)
-    Rscript evalQCBA.R 197` refit + attribute pruning  + trimming + extension + postpruning + range-based default overlap pruning  (#7)
+    Rscript evalQCBA.R 197 #  refit + attribute pruning  + trimming + extension + postpruning + range-based default overlap pruning  (#7)
 
 For each configuration, the benchmark creates two files .cba and .qcba in the `result` subfolder. The .cba file contains results for CBA output and QCBA for the QCBA model. The difference between .cba output of runs 117 and all other runs  is that in run 117 the CBA execution includes default rule pruning. For all remaining runs, default rule pruning is optionally performed within QCBA postpruning step.
 
