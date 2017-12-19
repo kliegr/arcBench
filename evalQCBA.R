@@ -23,7 +23,7 @@ message(paste("Using minCondImprovement", minCondImprovement))
 message(paste("Using minImprovement", minImprovement))
 
 experimentToRun=args[1]
-
+experimentToRun = 0 #198
 
 foldsToProcess <- 10
 
@@ -39,11 +39,62 @@ global_testingType <- "oneRule"
 global_minConf = 0.5
 global_extensionStrategy="ConfImprovementAgainstLastConfirmedExtension"
 global_continuousPruning	<- FALSE
+
+
+evalAutoFitQCBA <- function(rmCBA,trainFold,classAtt){
+  
+  bestModel <-NULL
+  bestModelAcc <- -1
+  
+  NextendType = c("noExtend","numericOnly")
+  NattributePruning	<-	c(TRUE,FALSE)
+  NcontinuousPruning	<-	c(TRUE,FALSE)
+  Npostpruning	<-	c("none","cba")
+  Ndefault_rule_pruning	<-	c(TRUE,FALSE)
+  Ntrim_literal_boundaries		<-	c(TRUE,FALSE)
+  NdefaultRuleOverlapPruning  <- c("transactionBased","noPruning")
+  fuzzification <-FALSE
+  annotate <-FALSE
+  testingType <- "oneRule"
+  combination_no <- 1 #max 196
+  for (extendType in NextendType){
+    for (trim_literal_boundaries in Ntrim_literal_boundaries) {
+      for (continuousPruning in NcontinuousPruning ) {
+        for (postpruning in Npostpruning ) {
+          for (attributePruning in  NattributePruning) {
+            for (default_rule_pruning in Ndefault_rule_pruning) {
+              for (defaultRuleOverlapPruning in NdefaultRuleOverlapPruning) {
+                experiment_name<-experimentName(combination_no,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement,minImprovement)
+                message(experiment_name)
+                  rmQCBA <- qcba(cbaRuleModel=rmCBA,datadf=trainFold,extend=extendType,defaultRuleOverlapPruning=defaultRuleOverlapPruning,attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,
+                                 continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=fuzzification, annotate=annotate,minImprovement=minImprovement,
+                                 minCondImprovement=minCondImprovement,  createHistorySlot=global_createHistorySlot,
+                                 loglevel = logger)
+                  prediction <- predict(rmQCBA,trainFold,testingType=testingType)
+                  accuracy <- CBARuleModelAccuracy(prediction, trainFold[[classAtt]])
+                  if (accuracy>bestModelAcc)
+                  {
+                    message(paste("Current best with acc",accuracy))
+                    bestModelAcc<-accuracy
+                    bestModel <- rmQCBA
+                  }
+                }
+                combination_no<-combination_no+1
+            }
+          }
+        }
+      }
+    }
+  }
+  return(bestModel)
+}
+
+
 evalTimeQCBA <- function(trainFold,testFold,foldsize,logpath,iterations,includeQCBA)
 {
   classAtt <- colnames(trainFold)[length(trainFold)]
   start.time <- Sys.time()
-  for (i in 1:iterations)  rmCBA <- cba(trainFold, classAtt=classAtt,rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE),
+  for (i in 1:iterations)  rmCBA <- cba(trainFold, classAtt=classAtt,rulelearning_options=list(minsupp=0.001, minconf=0.1, minlen=1, maxlen=30, maxtime=1, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE),
                                         pruning_options=list(default_rule_pruning=TRUE, rule_window=100,greedy_pruning=FALSE))
   end.time <- Sys.time()
   buildTime <- round(as.numeric((end.time - start.time)/iterations,units="secs"),2)
@@ -124,7 +175,7 @@ evalTimeQCBA <- function(trainFold,testFold,foldsize,logpath,iterations,includeQ
 }
 
 
-evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE), pruning_options=NULL,extendType="numericOnly",defaultRuleOverlapPruning = "noPruning", attributePruning = FALSE, trim_literal_boundaries = TRUE, continuousPruning=FALSE, postpruning="cba",  fuzzification=FALSE, annotate=FALSE,testingType="oneRule",basePath=".", minImprovement=0,minCondImprovement=-1,minConf = 0.5,  extensionStrategy="ConfImprovementAgainstLastConfirmedExtension",debug=FALSE)
+evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE), pruning_options=NULL,extendType="numericOnly",defaultRuleOverlapPruning = "noPruning", attributePruning = FALSE, trim_literal_boundaries = TRUE, continuousPruning=FALSE, postpruning="cba",  fuzzification=FALSE, annotate=FALSE,testingType="oneRule",basePath=".", minImprovement=0,minCondImprovement=-1,minConf = 0.5,  extensionStrategy="ConfImprovementAgainstLastConfirmedExtension",debug=FALSE, auto=FALSE)
 {
   
   # Write headers for results
@@ -196,7 +247,7 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
       ruleLengthCBA<-ruleLengthCBA+avgRuleLengthCBA
 
       #write debug information
-      if (debug==TRUE){
+      if (debug==TRUE & auto==FALSE){
         dir.create(file.path(basePath, "debug"), showWarnings = FALSE)
         rulesPath <-paste(basePath,"/debug/",experiment_name,"-",dataset,fold,".arules",sep="")
         write.csv(as(rmCBA@rules,"data.frame"), rulesPath, row.names=TRUE,quote = TRUE)
@@ -227,10 +278,18 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
       }
       #Run and store results from QCBA
       start.time <- Sys.time()
-      rmQCBA <- qcba(cbaRuleModel=rmCBA,datadf=trainFold,extend=extendType,defaultRuleOverlapPruning=defaultRuleOverlapPruning,attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,
-                     continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=fuzzification, annotate=annotate,minImprovement=minImprovement,
-                           minCondImprovement=minCondImprovement,  createHistorySlot=global_createHistorySlot,
-                           loglevel = logger)
+      if (auto==FALSE)
+      {
+        rmQCBA <- qcba(cbaRuleModel=rmCBA,datadf=trainFold,extend=extendType,defaultRuleOverlapPruning=defaultRuleOverlapPruning,attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,
+                       continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=fuzzification, annotate=annotate,minImprovement=minImprovement,
+                       minCondImprovement=minCondImprovement,  createHistorySlot=global_createHistorySlot,
+                       loglevel = logger)
+      }
+      else
+      {
+        rmQCBA <-  evalAutoFitQCBA(rmCBA=rmCBA,trainFold=trainFold, classAtt=classAtt)
+      }
+
       buildTimeQCBA <- buildTimeQCBA + (Sys.time() - start.time)
       #counting commas gives for each rule one less number of literals
       avgRuleLengthQCBA <- (sum(unlist(lapply(rmQCBA@rules[1],str_count,pattern=",")))+
@@ -361,8 +420,13 @@ for (extendType in NextendType){
     }
   }
 }
-  
 
+if (experimentToRun==0)
+{
+  evalQCBA(datasets=datasets,auto=TRUE,basePath=".",debug=debug)           
+  
+}
+  
 if (experimentToRun==-1)
 {
   message("\n Pass experiment number as argument to run it.")
