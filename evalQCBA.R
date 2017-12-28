@@ -14,7 +14,7 @@ minImprovement = 0
 if (is.null(args))
 {
   # default to nonexistent configuration  if no arguments are passed
-  args = c(-1) 
+  args = c(-1)
 } else if (length(args)==3) {
   minCondImprovement = args[2]
   minImprovement = args[3]
@@ -23,7 +23,7 @@ message(paste("Using minCondImprovement", minCondImprovement))
 message(paste("Using minImprovement", minImprovement))
 
 experimentToRun=args[1]
-experimentToRun = 0 #198
+experimentToRun = -2 #198
 
 foldsToProcess <- 10
 
@@ -42,10 +42,10 @@ global_continuousPruning	<- FALSE
 
 
 evalAutoFitQCBA <- function(rmCBA,trainFold,classAtt){
-  
+
   bestModel <-NULL
   bestModelAcc <- -1
-  
+
   NextendType = c("noExtend","numericOnly")
   NattributePruning	<-	c(TRUE,FALSE)
   NcontinuousPruning	<-	c(TRUE,FALSE)
@@ -118,12 +118,12 @@ evalTimeQCBA <- function(trainFold,testFold,foldsize,logpath,iterations,includeQ
     if (qcbaConfID==1)
     {
       extendType = "noExtend"
-      attributePruning	<-FALSE  
+      attributePruning	<-FALSE
       postpruning	<-	"none"
       default_rule_pruning	<-	FALSE
       trim_literal_boundaries		<-	FALSE
       defaultRuleOverlapPruning  <- "noPruning"
-      
+
     }
     else if (qcbaConfID==2)
     {
@@ -149,10 +149,10 @@ evalTimeQCBA <- function(trainFold,testFold,foldsize,logpath,iterations,includeQ
     {
       defaultRuleOverlapPruning  <- c("rangeBased")
     }
-    
+
     for (i in 1:iterations)
     {
-      
+
       rmQCBA <- qcba(cbaRuleModel=rmCBA,datadf=trainFold,extend=extendType,defaultRuleOverlapPruning=defaultRuleOverlapPruning,attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,
                      continuousPruning=global_continuousPruning, postpruning=postpruning, fuzzification=global_fuzzification, annotate=global_annotate,minImprovement=minImprovement,
                      minCondImprovement=minCondImprovement,  createHistorySlot=global_createHistorySlot,
@@ -165,11 +165,11 @@ evalTimeQCBA <- function(trainFold,testFold,foldsize,logpath,iterations,includeQ
     for (i in 1:iterations)  accuracy <- CBARuleModelAccuracy(prediction, testFold[[rmQCBA@classAtt]])
     end.time <- Sys.time()
     predictTime <- round(as.numeric((end.time - start.time)/iterations,units="secs"),2)
-    
+
     write(c(foldsize,buildTime,predictTime,accuracy, paste("QCBA",qcbaConfID,sep="-")), file = logpath,
           ncolumns = 6,
           append = TRUE, sep = ",")
-    
+
   }
 
 }
@@ -177,11 +177,11 @@ evalTimeQCBA <- function(trainFold,testFold,foldsize,logpath,iterations,includeQ
 
 evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE), pruning_options=NULL,extendType="numericOnly",defaultRuleOverlapPruning = "noPruning", attributePruning = FALSE, trim_literal_boundaries = TRUE, continuousPruning=FALSE, postpruning="cba",  fuzzification=FALSE, annotate=FALSE,testingType="oneRule",basePath=".", minImprovement=0,minCondImprovement=-1,minConf = 0.5,  extensionStrategy="ConfImprovementAgainstLastConfirmedExtension",debug=FALSE, auto=FALSE)
 {
-  
+
   # Write headers for results
   cba_result_file <- paste(basePath,.Platform$file.sep,"result",.Platform$file.sep,experiment_name,"-cba.csv",sep="")
   qcba_result_file <- paste(basePath,.Platform$file.sep,"result",.Platform$file.sep,experiment_name,"-qcba.csv",sep="")
-  
+
   if (!file.exists(qcba_result_file))
   {
     write(paste("dataset,accuracy,rules,antlength,buildtime"), file = qcba_result_file,
@@ -205,7 +205,7 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
       message(paste("Skipping dataset",dataset,"(already computed)"))
       next
     }
-    
+
     # proceed to computation
     accSumCBA <- 0
     accSumQCBA <- 0
@@ -213,7 +213,7 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
     ruleSumQCBA <- 0
     ruleLengthCBA<-0
     ruleLengthQCBA<-0
-    
+
     buildTimeCBA<-0
     buildTimeQCBA<-0
     maxFoldIndex  <-foldsToProcess -1
@@ -231,7 +231,7 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
       start.time <- Sys.time()
       rmCBA <- cba(trainFold, classAtt=classAtt,rulelearning_options=rulelearning_options,pruning_options=pruning_options)
       buildTimeCBA <- buildTimeCBA + (Sys.time() - start.time)
-      
+
       #replace sapply(trainFold, class) with rmCBA@origDataTypes
       dataTypes <- rmCBA@attTypes
 
@@ -242,7 +242,7 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
       acc <- CBARuleModelAccuracy(prediction, testFold[[classAtt]])
       message(paste("CBA acc:",acc))
       accSumCBA <- accSumCBA + acc
-      
+
       avgRuleLengthCBA <- sum(rmCBA@rules@lhs@data)/length(rmCBA@rules)
       ruleLengthCBA<-ruleLengthCBA+avgRuleLengthCBA
 
@@ -310,7 +310,7 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
     rulesQCBA <-ruleSumQCBA/foldsToProcess
     ruleLengthCBA<- ruleLengthCBA/foldsToProcess
     ruleLengthQCBA <-ruleLengthQCBA/foldsToProcess
-    
+
 
     #write results
     # write(paste(paste(dataset,accCBA,rulesCBA,accQCBA,rulesQCBA,format(Sys.time(),"%X"),"",sep=";"),paste(as.list(match.call())[-1:-2],collapse=";")), file = detailed_result_file,
@@ -359,11 +359,11 @@ experimentName <- function(experimentToRun,extendType,default_rule_pruning,attri
   if (continuousPruning)
   {
     name <- paste(name,"C",sep="-")
-  }  
+  }
   if (postpruning == "cba")
   {
     name <- paste(name,"Pcba",sep="-")
-  }   
+  }
   if (postpruning == "greedy")
   {
     name <- paste(name,"Pgre",sep="-")
@@ -371,14 +371,14 @@ experimentName <- function(experimentToRun,extendType,default_rule_pruning,attri
   if (attributePruning)
   {
     name <- paste(name,"A",sep="-")
-  }   
-  
+  }
+
   if (defaultRuleOverlapPruning!="noPruning")
   {
     name <- paste(name,defaultRuleOverlapPruning,sep="-")
   }
   name <- paste(name, "-mci=",minCondImprovement,sep="")
-  
+
   if (minImprovement!=0)
   {
     name <- paste(name, "-mi=",minImprovement,sep="")
@@ -393,26 +393,43 @@ Npostpruning	<-	c("none","cba","greedy")
 Ndefault_rule_pruning	<-	c(TRUE,FALSE)
 Ntrim_literal_boundaries		<-	c(TRUE,FALSE)
 NdefaultRuleOverlapPruning  <- c("transactionBased","rangeBased","noPruning")
+rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE)
 
-combination_no <- 1 #max 196
-for (extendType in NextendType){
-  for (trim_literal_boundaries in Ntrim_literal_boundaries) {
-    for (continuousPruning in NcontinuousPruning ) {
-      for (postpruning in Npostpruning ) {
-        for (attributePruning in  NattributePruning) {
-          for (default_rule_pruning in Ndefault_rule_pruning) {
-            for (defaultRuleOverlapPruning in NdefaultRuleOverlapPruning) {
-                experiment_name<-experimentName(combination_no,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement,minImprovement)
-                message(experiment_name)
-                if (!onlyList & experimentToRun==combination_no)
-                {
-                  evalQCBA(datasets=datasets,extendType=extendType,experiment_name=experiment_name, 
-                           pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
-                           attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,minImprovement=minImprovement,
-                           defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning, 
-                           postpruning=postpruning,basePath=".",debug=debug)                
-                }
-              combination_no<-combination_no+1
+if (is.null(experimentToRun))
+{
+  message("\n Pass experiment number as argument to run it.")
+} else if (experimentToRun==-1)
+{
+  message("hyperparameter search with default CBA settings (rulelearning_options)")
+  evalQCBA(datasets=datasets,experiment_name="hyper1",rulelearning_options=rulelearning_options,auto=TRUE,basePath=".",debug=debug)
+} else if (experimentToRun==-2)
+{
+  message("hyperparameter search with extended CBA settings (rulelearning_options)")
+  rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=50, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE)
+  evalQCBA(datasets=datasets,experiment_name="hyper2",rulelearning_options=rulelearning_options,auto=TRUE,basePath=".",debug=debug)
+} else if (experimentToRun>1)
+{   
+  message("Running a specific experiment")
+  combination_no <- 1 #max 196
+  for (extendType in NextendType){
+    for (trim_literal_boundaries in Ntrim_literal_boundaries) {
+      for (continuousPruning in NcontinuousPruning ) {
+        for (postpruning in Npostpruning ) {
+          for (attributePruning in  NattributePruning) {
+            for (default_rule_pruning in Ndefault_rule_pruning) {
+              for (defaultRuleOverlapPruning in NdefaultRuleOverlapPruning) {
+                  experiment_name<-experimentName(combination_no,extendType,default_rule_pruning,attributePruning,trim_literal_boundaries,continuousPruning,postpruning,defaultRuleOverlapPruning,minCondImprovement,minImprovement)
+                  message(experiment_name)
+                  if (!onlyList & experimentToRun==combination_no)
+                  {
+                    evalQCBA(datasets=datasets,rulelearning_options=rulelearning_options,extendType=extendType,experiment_name=experiment_name,
+                             pruning_options=list(default_rule_pruning=default_rule_pruning, rule_window=100,greedy_pruning=FALSE),
+                             attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,minCondImprovement=minCondImprovement,minImprovement=minImprovement,
+                             defaultRuleOverlapPruning=defaultRuleOverlapPruning,continuousPruning=continuousPruning,
+                             postpruning=postpruning,basePath=".",debug=debug)
+                  }
+                combination_no<-combination_no+1
+              }
             }
           }
         }
@@ -421,13 +438,3 @@ for (extendType in NextendType){
   }
 }
 
-if (experimentToRun==0)
-{
-  evalQCBA(datasets=datasets,auto=TRUE,basePath=".",debug=debug)           
-  
-}
-  
-if (experimentToRun==-1)
-{
-  message("\n Pass experiment number as argument to run it.")
-}
