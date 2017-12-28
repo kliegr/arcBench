@@ -404,9 +404,18 @@ if (is.null(experimentToRun))
   evalQCBA(datasets=datasets,experiment_name="hyper1",rulelearning_options=rulelearning_options,auto=TRUE,basePath=".",debug=debug)
 } else if (experimentToRun==-2)
 {
-  message("hyperparameter search with extended CBA settings (rulelearning_options)")
+  message("hyperparameter search with extended CBA settings (maxlen=50)")
   rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=50, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE)
-  evalQCBA(datasets=datasets,experiment_name="hyper2",rulelearning_options=rulelearning_options,auto=TRUE,basePath=".",debug=debug)
+  evalQCBA(datasets=datasets,experiment_name="hyper2maxlen=50",rulelearning_options=rulelearning_options,auto=TRUE,basePath=".",debug=debug)
+} else if (experimentToRun==-3) {
+  message("hyperparameter search with extended CBA settings (minconf=0.1)")
+  rulelearning_options=list(minsupp=0.01, minconf=0.1, minlen=1, maxlen=5, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE)
+  evalQCBA(datasets=datasets,experiment_name="hyper3minconf=0.1",rulelearning_options=rulelearning_options,auto=TRUE,basePath=".",debug=debug)
+}  else if (experimentToRun==-4)
+{
+  message("hyperparameter search with extended CBA settings (minsupp=0.001)")
+  rulelearning_options=list(minsupp=0.001, minconf=0.5, minlen=1, maxlen=50, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE)
+  evalQCBA(datasets=datasets,experiment_name="hyper4minsupp=0.001",rulelearning_options=rulelearning_options,auto=TRUE,basePath=".",debug=debug)
 } else if (experimentToRun>1)
 {   
   message("Running a specific experiment")
