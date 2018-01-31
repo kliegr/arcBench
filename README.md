@@ -53,6 +53,25 @@ To obtain aggregate results for all datasets, execute:
    
 This will creat file `result/results.csv`, which contains one line for each configuration. 
 
+## Benchmark of Interpretable Decision Sets
+The repository also contains scripts for benchmarking the IDS algorithm:
+
+    IDS_deterministic_sensitivity_rule_count.py
+    IDS_deterministic_sensitivity_data_size.py
+    IDS_det_UCI.py
+
+The scripts do what the filename says: the first script bechmarks the time taken by IDS depending on the number of input rules. The second benchmark fixes the number of rules and varies the data size. The third script performs a proof of concept run on one fold from the UCI datasets. Due to the scalability limitations, this script times out on all datasets. 
+
+### Setup. The scripts expect that they are located in the same folder as checked out IDS repository (<a href="https://github.com/lvhimabindu/interpretable_decision_sets">official</a>, <a href="https://github.com/kliegr/interpretable_decision_sets">clone</a>).
+The `IDS_deterministic_local.py` file needs to be "patched" by removing any code after the last function (`deterministic_local_search`) is defined. 
+
+The results are saved to the `results` folder as
+    ids-rulecount.csv
+    ids-datasize.csv
+    ids-uci.csv
+
 ## Precomputed results
 Note that the arcBench project is shipped with precomputed detailed and summary results in the `result` folder.  If you want to recompute the results, rename/remove these files.
+
+
 

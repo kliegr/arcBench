@@ -18,7 +18,7 @@ print(len(list_of_rules))
 lambda_array = [0.5]*7     # use separate hyperparamter search routine
 epsilon = 0.05
 
-with open('result.csv', 'wb') as csvfile:
+with open('result/ids-rulecount.csv', 'wb') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
     writer.writerow(["filename","input_rules","sel_rules","obj_value","elaps_time"])
     for l in range(10,20)+range(20,100,10)+range(100,1100,100):

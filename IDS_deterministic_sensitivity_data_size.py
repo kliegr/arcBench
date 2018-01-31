@@ -20,7 +20,7 @@ lambda_array = [0.5]*7     # use separate hyperparamter search routine
 epsilon = 0.05
 
 #benchmark sensititivity to data size
-with open('result-datasize.csv', 'wb') as csvfile:
+with open('result/ids-datasize.csv', 'wb') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
     writer.writerow(["filename","datasize","input_rules","sel_rules","obj_value","elaps_time"])
     sublist = list_of_rules[0:100]
