@@ -23,7 +23,6 @@ message(paste("Using minCondImprovement", minCondImprovement))
 message(paste("Using minImprovement", minImprovement))
 
 experimentToRun=args[1]
-experimentToRun = -2 #198
 
 foldsToProcess <- 10
 
@@ -45,10 +44,8 @@ evalAutoFitQCBA <- function(rmCBA,trainFold,classAtt){
 
   bestModel <-NULL
   bestModelAcc <- -1
-
   NextendType = c("noExtend","numericOnly")
   NattributePruning	<-	c(TRUE,FALSE)
-  NcontinuousPruning	<-	c(TRUE,FALSE)
   Npostpruning	<-	c("none","cba")
   Ndefault_rule_pruning	<-	c(TRUE,FALSE)
   Ntrim_literal_boundaries		<-	c(TRUE,FALSE)
@@ -59,7 +56,6 @@ evalAutoFitQCBA <- function(rmCBA,trainFold,classAtt){
   combination_no <- 1 #max 196
   for (extendType in NextendType){
     for (trim_literal_boundaries in Ntrim_literal_boundaries) {
-      for (continuousPruning in NcontinuousPruning ) {
         for (postpruning in Npostpruning ) {
           for (attributePruning in  NattributePruning) {
             for (default_rule_pruning in Ndefault_rule_pruning) {
@@ -81,7 +77,6 @@ evalAutoFitQCBA <- function(rmCBA,trainFold,classAtt){
                 }
                 combination_no<-combination_no+1
             }
-          }
         }
       }
     }
@@ -404,8 +399,8 @@ if (is.null(experimentToRun))
   evalQCBA(datasets=datasets,experiment_name="hyper1",rulelearning_options=rulelearning_options,auto=TRUE,basePath=".",debug=debug)
 } else if (experimentToRun==-2)
 {
-  message("hyperparameter search with extended CBA settings (maxlen=50)")
-  rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=50, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE)
+  message("hyperparameter search with extended CBA settings (maxlen=10)")
+  rulelearning_options=list(minsupp=0.01, minconf=0.5, minlen=1, maxlen=10, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE)
   evalQCBA(datasets=datasets,experiment_name="hyper2maxlen=50",rulelearning_options=rulelearning_options,auto=TRUE,basePath=".",debug=debug)
 } else if (experimentToRun==-3) {
   message("hyperparameter search with extended CBA settings (minconf=0.1)")
@@ -414,10 +409,10 @@ if (is.null(experimentToRun))
 }  else if (experimentToRun==-4)
 {
   message("hyperparameter search with extended CBA settings (minsupp=0.001)")
-  rulelearning_options=list(minsupp=0.001, minconf=0.5, minlen=1, maxlen=50, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE)
+  rulelearning_options=list(minsupp=0.001, minconf=0.5, minlen=1, maxlen=5, maxtime=1000, target_rule_count=50000, trim=TRUE, find_conf_supp_thresholds=FALSE)
   evalQCBA(datasets=datasets,experiment_name="hyper4minsupp=0.001",rulelearning_options=rulelearning_options,auto=TRUE,basePath=".",debug=debug)
 } else if (experimentToRun>1)
-{   
+{
   message("Running a specific experiment")
   combination_no <- 1 #max 196
   for (extendType in NextendType){
