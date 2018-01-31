@@ -27,7 +27,7 @@ def IDS_det_dataset(filename):
     soln_set, obj_val = deterministic_local_search(list_of_rules, df, Y, lambda_array, epsilon)
     return (soln_set, obj_val)
 
-with open('uci.csv', 'wb') as csvfile:
+with open('result/ids-uci.csv', 'wb') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
     writer.writerow(["dataset","sel_rules","obj_value"])
 
