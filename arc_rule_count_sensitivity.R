@@ -1,5 +1,5 @@
 library(arc)
-library(tictoc)
+library(rCBA)
 dataset_path="data/folds/train/lymph0.csv"
 #data with discretization applied by external preprocessing
 trainFold <- utils::read.csv(dataset_path, header = TRUE, check.names = FALSE)
@@ -14,7 +14,7 @@ txns_discr <- as(trainFold, "transactions")
 #rule learning is performed on discretized datlibrary(microbenchmark::microbenchmark)a
 rules <- apriori(txns_discr, parameter =
                    list(confidence = 0, support= 0.01, minlen=1, maxlen=20), appearance=appearance)
-write(paste("dataset,input rules,output rules,time"), file = outputFileName,
+write(paste("dataset,input rules,output_rules_arc,output_rules_rcba,time_arc,time_rcba"), file = outputFileName,
       ncolumns = 1,
       append = FALSE, sep = ",")
 
@@ -23,6 +23,8 @@ for (i in c(10:19,seq(20,100,by=10),seq(200,1000,by=100),seq(2000,10000,by=1000)
 {
     message(paste("iteration",i))
     # we do ten iterations to have a more robust estimate
+  
+# arc
     ptm <- proc.time()
     for (j in 1:10)
     {
@@ -30,10 +32,19 @@ for (i in c(10:19,seq(20,100,by=10),seq(200,1000,by=100),seq(2000,10000,by=1000)
                     classAtt, cutp= list(), pruning_options=NULL)
     }
     proctime<- proc.time() - ptm
-    # proctime[3] returns cumulative sum of user times (https://stat.ethz.ch/R-manual/R-devel/library/base/html/proc.time.html)
-    dur<-proctime[3]/10
-    message (paste("CBA building (arc) took:", dur, " seconds"))
-    write(paste(dataset_path, i, length(rmCBA@rules), dur, sep = ","), file = outputFileName,
+    dur_arc<-proctime[3]/10 # proctime[3] returns cumulative sum of user times (https://stat.ethz.ch/R-manual/R-devel/library/base/html/proc.time.html)
+# end of arc
+#rCBA start        
+    ptm <- proc.time()
+    for (j in 1:10)
+    {
+      rmRCBA <- rCBA::pruning(trainFold, rules[0:i], method="m2cba")
+    }
+    proctime<- proc.time() - ptm
+    dur_rcba<-proctime[3]/10
+#    stop()
+#rCBA end
+    write(paste(dataset_path, i, length(rmCBA@rules),  nrow(rmRCBA), dur_arc, dur_rcba, sep = ","), file = outputFileName,
           ncolumns = 1,
           append = TRUE, sep = ",")
 }
