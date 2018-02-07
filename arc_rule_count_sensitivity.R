@@ -42,7 +42,6 @@ for (i in c(10:19,seq(20,100,by=10),seq(200,1000,by=100),seq(2000,10000,by=1000)
     }
     proctime<- proc.time() - ptm
     dur_rcba<-proctime[3]/10
-#    stop()
 #rCBA end
     write(paste(dataset_path, i, length(rmCBA@rules),  nrow(rmRCBA), dur_arc, dur_rcba, sep = ","), file = outputFileName,
           ncolumns = 1,
