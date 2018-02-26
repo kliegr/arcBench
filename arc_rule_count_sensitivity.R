@@ -46,7 +46,7 @@ for (i in c(10:19,seq(20,100,by=10),seq(200,1000,by=100),seq(2000,10000,by=1000)
     proctime<- proc.time() - ptm
     dur_arc<-proctime[3]/number_of_iterations # proctime[3] returns cumulative sum of user times (https://stat.ethz.ch/R-manual/R-devel/library/base/html/proc.time.html)
     arc_prediction = predict(rmCBA,testFold,discretize=FALSE)
-    acc_arc <- arc::CBARuleModelAccuracy(arc_prediction,testFold$class) # sum(testFold$class == arc_prediction)/length(testFold)        
+    acc_arc <- arc::CBARuleModelAccuracy(arc_prediction,testFold$class) # sum(testFold$class == arc_prediction)/length(arc_prediction)        
     message(paste("acc arc:", acc_arc))
 # end of arc
 #rCBA start        
@@ -58,7 +58,7 @@ for (i in c(10:19,seq(20,100,by=10),seq(200,1000,by=100),seq(2000,10000,by=1000)
     proctime<- proc.time() - ptm
     dur_rcba<-proctime[3]/number_of_iterations
     rcba_prediction = rCBA::classification(txns_discr_test,rmRCBA)
-    acc_rcba <- sum(testFold$class == rcba_prediction)/length(testFold)    
+    acc_rcba <-  arc::CBARuleModelAccuracy(rcba_prediction,testFold$class)  #sum(testFold$class == rcba_prediction)/length(rcba_prediction)
     message(paste("acc arc:", acc_rcba))
 #rCBA end
     
@@ -73,7 +73,7 @@ for (i in c(10:19,seq(20,100,by=10),seq(200,1000,by=100),seq(2000,10000,by=1000)
     }
     proctime<- proc.time() - ptm
     acba_prediction = predict(rmArulesCBA, txns_discr_test, method="first")
-    acc_acba <- sum(testFold$class == acba_prediction)/length(testFold)
+    acc_acba <-  arc::CBARuleModelAccuracy(acba_prediction,testFold$class)  #sum(testFold$class == acba_prediction)/length(acba_prediction)
     message(paste("acc arc:", acc_acba))
     dur_acba<-proctime[3]/number_of_iterations
     message(paste("acba finished"))
