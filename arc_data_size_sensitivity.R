@@ -2,6 +2,10 @@
 #install_github('ianjjohnson/arulesCBA', ref="time-trials", force=TRUE)
 #install_github('jaroslav-kuchar/rCBA', ref="develop")
 
+
+library(rJava)
+.jinit(force.init = TRUE, parameters="-Xmx8g")
+
 library(arc)
 library(rCBA)
 library(arulesCBA)
@@ -22,7 +26,7 @@ write(paste("dataset,input rows,input rules,output_rules_arc,output_rules_acba,o
 rule_count=100
 #we gradually increase the number of input rows and observe how run time changes
 trainFold_oversampled <- trainFold
-number_of_iterations<=1
+number_of_iterations <- 1
 for (i in seq(1,1000))
 {
   # double the dataset on each iteration
@@ -67,7 +71,7 @@ for (i in seq(1,1000))
     dur_acba<-proctime[3]/number_of_iterations
     message(paste("acba finished"))
 #arulesCBA end              
-        write(paste(dataset_path, nrow(trainFold_oversampled), length(subs_rules), length(rmCBA@rules), nrow(rmRCBA), length(rmArulesCBA$rules), dur_arc, dur_rcba, dur_acba, sep = ","), file = outputFileName,
+        write(paste(dataset_path, nrow(trainFold_oversampled), length(subs_rules), length(rmCBA@rules),  length(rmArulesCBA$rules),nrow(rmRCBA), dur_arc, dur_acba, dur_rcba , sep = ","), file = outputFileName,
           ncolumns = 1,
           append = TRUE, sep = ",")
 }

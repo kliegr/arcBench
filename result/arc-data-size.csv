@@ -1,5 +1,13 @@
-dataset,input rows,input rules,output_rules_arc,output_rules_rcba,time_arc,time_rcba
-data/folds/train/lymph0.csv,2080,100,10,10,0.2153,0.1451
-data/folds/train/lymph0.csv,4160,100,10,10,0.2685,0.2281
-data/folds/train/lymph0.csv,8320,100,10,10,0.388800000000001,0.4282
-data/folds/train/lymph0.csv,16640,100,10,10,0.614,0.945099999999999
+dataset,input rows,input rules,output_rules_arc,output_rules_acba,output_rules_rcba,time_arc,time_acba,time_rcba
+data/folds/train/lymph0.csv,260,100,10,3,10,0.482000000000003,0.130000000000003,0.25
+data/folds/train/lymph0.csv,520,100,10,1,10,0.587,0.247,0.175000000000001
+data/folds/train/lymph0.csv,1040,100,10,1,10,0.291,0.152000000000001,0.0889999999999986
+data/folds/train/lymph0.csv,2080,100,10,1,10,0.321000000000002,0.216999999999999,0.109999999999999
+data/folds/train/lymph0.csv,4160,100,10,1,10,0.361000000000001,0.245000000000001,0.167999999999999
+data/folds/train/lymph0.csv,8320,100,10,1,10,0.785,0.388999999999999,0.280000000000001
+data/folds/train/lymph0.csv,16640,100,10,1,10,1.307,0.854999999999997,0.575000000000003
+data/folds/train/lymph0.csv,33280,100,10,1,10,1.89,1.427,1.582
+data/folds/train/lymph0.csv,66560,100,10,1,10,2.46,2.933,3.74299999999999
+data/folds/train/lymph0.csv,133120,100,10,1,10,4.199,6.369,10.846
+data/folds/train/lymph0.csv,266240,100,10,1,10,7.361,12.155,37.146
+data/folds/train/lymph0.csv,532480,100,10,1,10,13.744,24.616,129.355
