@@ -44,17 +44,7 @@ for (i in seq(1,1000))
     proctime<- proc.time() - ptm
     dur_arc<-proctime[3]/number_of_iterations
 #arc end
-#qcba start
-# we do ten iterations to have a more robust estimate
-ptm <- proc.time()
-for (j in 1:number_of_iterations)
-{
-  rmCBA <- cba_manual(trainFold_oversampled,subs_rules, txns_discr, appearance$rhs,
-                      classAtt, cutp= list(), pruning_options=NULL)
-}
-proctime<- proc.time() - ptm
-dur_arc<-proctime[3]/number_of_iterations
-#qcba end    
+ 
 #rCBA start
     ptm <- proc.time()
     for (j in 1:number_of_iterations)
