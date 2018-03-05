@@ -2,7 +2,6 @@
 #install_github('ianjjohnson/arulesCBA', ref="time-trials", force=TRUE)
 #install_github('jaroslav-kuchar/rCBA', ref="develop")
 #install_github('kliegr/arc', force=TRUE)
-
 library(arc)
 library(rCBA)
 library(arulesCBA)
@@ -42,7 +41,7 @@ for (i in c(10:19,seq(20,100,by=10),seq(200,1000,by=100),seq(2000,10000,by=1000)
     for (j in 1:number_of_iterations)
     {
         rmCBA <- cba_manual(trainFold,rules[0:i], txns_discr, appearance$rhs,
-                    classAtt, cutp= list())
+                    classAtt, cutp= list(), pruning_options=NULL)
     }
     proctime<- proc.time() - ptm
     dur_arc<-proctime[3]/number_of_iterations # proctime[3] returns cumulative sum of user times (https://stat.ethz.ch/R-manual/R-devel/library/base/html/proc.time.html)

@@ -1,7 +1,7 @@
 #library(devtools)
 #install_github('ianjjohnson/arulesCBA', ref="time-trials", force=TRUE)
 #install_github('jaroslav-kuchar/rCBA', ref="develop")
-
+#install_github('kliegr/arc', force=TRUE)
 
 library(rJava)
 .jinit(force.init = TRUE, parameters="-Xmx16g")
@@ -27,7 +27,7 @@ rule_count=100
 #we gradually increase the number of input rows and observe how run time changes
 trainFold_oversampled <- trainFold
 number_of_iterations <- 10
-for (i in seq(1,1000))
+for (i in seq(1,11))
 {
   # double the dataset on each iteration
   trainFold_oversampled <- rbind(trainFold_oversampled,trainFold_oversampled)
