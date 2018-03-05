@@ -4,7 +4,7 @@
 
 
 library(rJava)
-.jinit(force.init = TRUE, parameters="-Xmx8g")
+.jinit(force.init = TRUE, parameters="-Xmx16g")
 
 library(arc)
 library(rCBA)
@@ -26,7 +26,7 @@ write(paste("dataset,input rows,input rules,output_rules_arc,output_rules_acba,o
 rule_count=100
 #we gradually increase the number of input rows and observe how run time changes
 trainFold_oversampled <- trainFold
-number_of_iterations <- 1
+number_of_iterations <- 10
 for (i in seq(1,1000))
 {
   # double the dataset on each iteration
@@ -54,6 +54,9 @@ for (i in seq(1,1000))
     for (j in 1:number_of_iterations)
     {
       rmRCBA <- rCBA::pruning(trainFold_oversampled, subs_rules, method="m2cba")
+      
+      J("java.lang.System")$gc()
+      gc()
     }
     proctime<- proc.time() - ptm
     dur_rcba<-proctime[3]/number_of_iterations
@@ -64,14 +67,14 @@ for (i in seq(1,1000))
     {
       message("starting arulesCBA")
       rmArulesCBA <- arulesCBA::CBA.internal(subs_rules, txns_discr, classAtt, disc.data, method="CBA",sort.rules = TRUE)
-      message(paste("number of input rules:",rule_count,", pruned rules in arulesCBA model:", length(rmArulesCBA$rules)))
+      message(paste("number of input rules:",rule_count,", pruned rules in arulesCBA model:", length(rmArulesCBA$rules)+1))
       message("arulesCBA finished")
     }
     proctime<- proc.time() - ptm
     dur_acba<-proctime[3]/number_of_iterations
     message(paste("acba finished"))
 #arulesCBA end              
-        write(paste(dataset_path, nrow(trainFold_oversampled), length(subs_rules), length(rmCBA@rules),  length(rmArulesCBA$rules),nrow(rmRCBA), dur_arc, dur_acba, dur_rcba , sep = ","), file = outputFileName,
+        write(paste(dataset_path, nrow(trainFold_oversampled), length(subs_rules), length(rmCBA@rules),  length(rmArulesCBA$rules)+1,nrow(rmRCBA), dur_arc, dur_acba, dur_rcba , sep = ","), file = outputFileName,
           ncolumns = 1,
           append = TRUE, sep = ",")
 }

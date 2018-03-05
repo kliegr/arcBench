@@ -1,6 +1,7 @@
 #library(devtools)
 #install_github('ianjjohnson/arulesCBA', ref="time-trials", force=TRUE)
 #install_github('jaroslav-kuchar/rCBA', ref="develop")
+#install_github('kliegr/arc', force=TRUE)
 
 library(arc)
 library(rCBA)
@@ -29,11 +30,11 @@ rules <- apriori(txns_discr, parameter =
 write(paste("dataset,input rules,output_rules_arc,output_rules_rcba,output_rules_acba,time_arc,time_rcba,time_acba,acc_arc,acc_rcba,acc_acba"), file = outputFileName,
       ncolumns = 1,
       append = FALSE, sep = ",")
-number_of_iterations = 1
+number_of_iterations = 10
 #we gradually increase number of input rules and observe how run time changes
 for (i in c(10:19,seq(20,100,by=10),seq(200,1000,by=100),seq(2000,10000,by=1000),seq(20000,100000,by=10000)))
 {
-    message(paste("iteration",i))
+    message(paste("input rules:",i))
     # we do ten iterations to have a more robust estimate
   
 # arc
@@ -41,7 +42,7 @@ for (i in c(10:19,seq(20,100,by=10),seq(200,1000,by=100),seq(2000,10000,by=1000)
     for (j in 1:number_of_iterations)
     {
         rmCBA <- cba_manual(trainFold,rules[0:i], txns_discr, appearance$rhs,
-                    classAtt, cutp= list(), pruning_options=NULL)
+                    classAtt, cutp= list())
     }
     proctime<- proc.time() - ptm
     dur_arc<-proctime[3]/number_of_iterations # proctime[3] returns cumulative sum of user times (https://stat.ethz.ch/R-manual/R-devel/library/base/html/proc.time.html)
