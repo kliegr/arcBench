@@ -12,9 +12,9 @@ library(arulesCBA)
 dataset_path <- "data/folds/train/lymph0.csv"
 #data with discretization applied by external preprocessing
 trainFold <- utils::read.csv(dataset_path, header = TRUE, check.names = FALSE)
-trainFold[,9] <- discretize(trainFold[,9], "frequency", categories=3)
-trainFold[,10] <- discretize(trainFold[,10], "frequency", categories=3)
-trainFold[,18] <- discretize(trainFold[,18], "frequency", categories=3)
+trainFold[,9] <- as.factor(trainFold[,9])
+trainFold[,10] <- as.factor(trainFold[,10])
+trainFold[,18] <- as.factor(trainFold[,18])
 disc.data <- lapply(trainFold, levels)
 classAtt <- "class"
 outputFileName <- "result/arc-data-size.csv"
@@ -26,11 +26,16 @@ write(paste("dataset,input rows,input rules,output_rules_arc,output_rules_acba,o
 rule_count=100
 #we gradually increase the number of input rows and observe how run time changes
 trainFold_oversampled <- trainFold
-number_of_iterations <- 10
-for (i in seq(1,11))
+number_of_iterations <- 1
+for (i in seq(1,14))
 {
   # double the dataset on each iteration
   trainFold_oversampled <- rbind(trainFold_oversampled,trainFold_oversampled)
+  message(nrow(trainFold_oversampled))
+#  if (nrow(trainFold_oversampled)<500000)
+#  {
+#    next
+#  }
   txns_discr <- as(trainFold_oversampled, "transactions")
 
     rules <- apriori(trainFold_oversampled, parameter =

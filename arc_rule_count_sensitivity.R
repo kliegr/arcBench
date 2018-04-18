@@ -9,11 +9,14 @@ dataset_path_train="data/folds/train/lymph0.csv"
 dataset_path_test="data/folds/test/lymph0.csv"
 #data with discretization applied by external preprocessing
 trainFold <- utils::read.csv(dataset_path_train, header = TRUE, check.names = FALSE)
+trainFold[,9] <- as.factor(trainFold[,9])
+trainFold[,10] <- as.factor(trainFold[,10])
+trainFold[,18] <- as.factor(trainFold[,18])
 testFold <- utils::read.csv(dataset_path_test, header = TRUE, check.names = FALSE)
+testFold[,9] <- as.factor(testFold[,9])
+testFold[,10] <- as.factor(testFold[,10])
+testFold[,18] <- as.factor(testFold[,18])
 data <- rbind(trainFold,testFold)
-data[,9] <- discretize(data[,9], "frequency", categories=3)
-data[,10] <- discretize(data[,10], "frequency", categories=3)
-data[,18] <- discretize(data[,18], "frequency", categories=3)
 disc.data <- lapply(data, levels)
 trainFold <- data[1:nrow(trainFold),]
 testFold <-data[(nrow(trainFold)+1):nrow(data),]
