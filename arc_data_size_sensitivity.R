@@ -79,7 +79,7 @@ for (i in seq(1,14))
     dur_acba<-proctime[3]/number_of_iterations
     message(paste("acba finished"))
 #arulesCBA end              
-        write(paste(dataset_path, nrow(trainFold_oversampled), length(subs_rules), length(rmCBA@rules),  length(rmArulesCBA$rules)+1,nrow(rmRCBA), dur_arc, dur_acba, dur_rcba , sep = ","), file = outputFileName,
+        write(paste(dataset_path, nrow(trainFold_oversampled), length(subs_rules), length(rmCBA@rules),  length(rmArulesCBA$rules)+1,length(rmRCBA), dur_arc, dur_acba, dur_rcba , sep = ","), file = outputFileName,
           ncolumns = 1,
           append = TRUE, sep = ",")
 }

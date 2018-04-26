@@ -83,7 +83,7 @@ for (i in c(10:19,seq(20,100,by=10),seq(200,1000,by=100),seq(2000,10000,by=1000)
     
 # end of arulesCBA           
     
-    write(paste(dataset_path_test, i, length(rmCBA@rules),  nrow(rmRCBA), length(rmArulesCBA$rules)+1, dur_arc, dur_rcba, dur_acba, acc_arc,acc_rcba,acc_acba, sep = ","), file = outputFileName,
+    write(paste(dataset_path_test, i, length(rmCBA@rules),  length(rmRCBA), length(rmArulesCBA$rules)+1, dur_arc, dur_rcba, dur_acba, acc_arc,acc_rcba,acc_acba, sep = ","), file = outputFileName,
           ncolumns = 1,
           append = TRUE, sep = ",")
 }
