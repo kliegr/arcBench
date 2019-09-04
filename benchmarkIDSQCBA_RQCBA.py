@@ -35,7 +35,7 @@ interval_reader.compile_reader()
 
 QuantitativeCAR.interval_reader = interval_reader
 
-basepath="/home/tomas/temp/arcBench/"
+basepath="./"
 unique_transactions= True
 
 def run1fold(basepath,datasetname, unique_transactions=True,runQCBA=False,saveIDSRules=True):
