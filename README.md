@@ -53,7 +53,7 @@ To obtain aggregate results for all datasets, execute:
    
 This will creat file `result/results.csv`, which contains one line for each configuration. 
 
-## Benchmark of Interpretable Decision Sets
+## Benchmark of Interpretable Decision Sets - implementation in https://github.com/lvhimabindu
 The repository also contains scripts for benchmarking the IDS algorithm:
 
     IDS_deterministic_sensitivity_rule_count.py
@@ -62,6 +62,7 @@ The repository also contains scripts for benchmarking the IDS algorithm:
 
 The scripts do what the filename says: the first script bechmarks the time taken by IDS depending on the number of input rules. The second benchmark fixes the number of rules and varies the data size. The third script performs a proof of concept run on one fold from the UCI datasets. Due to the scalability limitations, this script times out on all datasets. 
 
+## Benchmark of Interpretable Decision Sets - implementation in https://github.com/lvhimabindu/interpretable_decision_sets
 
 ### Setup
 The scripts expect that they are located in the same folder as checked out IDS repository (<a href="https://github.com/lvhimabindu/interpretable_decision_sets">official</a>, <a href="https://github.com/kliegr/interpretable_decision_sets">clone</a>).
@@ -71,5 +72,38 @@ The `IDS_deterministic_local.py` file needs to be "patched" by removing any code
 ## Precomputed results
 Note that the arcBench project is shipped with precomputed detailed and summary results in the `result` folder.  If you want to recompute the results, rename/remove these files.
 
+## Benchmark of Interpretable Decision Sets + QCBA
+This benchmark uses the IDS implementation at https://github.com/jirifilip/pyIDS.
+As QCBA implementation, two options are supported
+* Python implementation in https://github.com/jirifilip/pyARC.
+* R implementation in https://github.com/kliegr/QCBA.
 
+### IDS + QCBA (R)
+* Create materialized discretized folds with `preprocess_for_ids`. This will create 
 
+   data/folds_discr2/train/{dataset}{fold}.csv
+   data/folds_discr2/train/{dataset}{fold}.cutpoints
+   data/folds_discr2/test/{dataset}{fold}.csv
+ 
+ * Run `benchmarkIDSQCBA_RQCBA.py`. Make sure that `runQCBA = False` inside the script. This will run pyIDS using the discretized folds created in the previous step. 
+ 
+ The IDS model will be stored to 
+ 
+    idsModels/{dataset}{fold}.csv
+   
+ The model evaluation statistics against test data will be stored to:
+ 
+    ids/{dataset}-ids-result.csv
+    
+ * Run `idsqcba_experiments.R`
+ This will run QCBA implementation in R, loading the IDS result from file.
+ The model evaluation statistics against test data will be stored to:
+ 
+     ids/{dataset}-idsqcba-result.csv
+     
+     
+   data/folds_discr2/train/{dataset}{fold}.cutpoints
+   data/folds_discr2/test/{dataset}{fold}.csv
+
+### IDS + QCBA (Python)
+* Run `benchmarkIDSQCBA_RQCBA.py`. Make sure that `runQCBA = True` inside the script.
