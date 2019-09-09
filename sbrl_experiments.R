@@ -4,7 +4,6 @@ library(qCBA)
 library(rCBA)
 library(sbrl)
 library(stringr)
-setwd("/home/tomas/temp/arcBench")
 basePath="./"
 datasets <- c("hepatitis","ionosphere","sonar","spambase","australian", "breast-w", "colic", "credit-a", "credit-g", "diabetes", "heart-statlog")
 classAtt<-"label"
@@ -40,11 +39,11 @@ for (SBRL_rule_maxlen in SBRL_rule_maxlenRange){
       resultfolder=paste(defaultRuleOverlapPruning,"-Long/",sep="")
     }
     else{
-      resultfolder=paste(defaultRuleOverlapPruning,"-1/",sep="")
+      resultfolder=paste("SBRL_results",defaultRuleOverlapPruning,"-1/",sep="")
     }
     dir.create(file.path(basePath, resultfolder))
 
-    resultfile= paste(resultfolder,dataset, "-",SBRL_rule_maxlen,"-",defaultRuleOverlapPruning, "-result.csv",sep="")
+    resultfile= paste("SBRL_results",resultfolder,dataset, ".csv",sep="")
     if (file.exists(resultfile)) next;
     df <- data.frame(matrix(rep(0,12), ncol = 4, nrow = 4), row.names = c("accuracy","rulecount","rulelength","buildtime"))
     colnames(df)<-c("CBA","QCBA","SBRL","SBRLQCBA")  
