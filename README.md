@@ -107,3 +107,7 @@ As QCBA implementation, two options are supported
 
 ### IDS + QCBA (Python)
 * Run `benchmarkIDSQCBA_RQCBA.py`. Make sure that `runQCBA = True` inside the script.
+
+### SBRL + QCBA
+* Run sbrl_experiments.R
+* Run sbrl_aggregate.R
