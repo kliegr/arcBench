@@ -3,7 +3,8 @@
 import pandas as pd
 import pyarc
 from pyids import IDS
-from pyids.ids_classifier import mine_CARs
+from pyids.data_structures.ids_classifier import mine_CARs
+from pyids.rule_mining import RuleMiner
 from pyids.model_selection import mode
 import time
 import os
@@ -35,12 +36,11 @@ interval_reader.compile_reader()
 
 QuantitativeCAR.interval_reader = interval_reader
 
-basepath="./"
+basepath="/home/tomas/temp/arcBench/"
 unique_transactions= True
 
-def run1fold(basepath,datasetname, unique_transactions=True,runQCBA=False,saveIDSRules=True):
+def run1fold(basepath,datasetname, unique_transactions=True,runQCBA=False,saveIDSRules=True,useConfidenceForCandidateGeneration=True):
     df_stat = pd.DataFrame(columns=['ids','idsqcba'], index=["accuracy","rulecount","rulelength","buildtime"])
-
     if (runQCBA):        
         #python QCBA implementation uses custom discretization format
         data_train_disc = pd.read_csv(basepath+"data/folds_discr/train/{}.csv".format(datasetname))        
@@ -51,7 +51,7 @@ def run1fold(basepath,datasetname, unique_transactions=True,runQCBA=False,saveID
         quant_dataframe_test_undisc = QuantitativeDataFrame(data_test_undisc)
         quant_dataframe_train_undisc = QuantitativeDataFrame(data_train_undisc)
     else:
-        #R QCBA implementation uses different discretization format
+        #R QCBA implementation uses different discretization format, folds are generated with preprocess_for_ids.R
         data_train_disc = pd.read_csv(basepath+"data/folds_discr2/train/{}.csv".format(datasetname))        
         data_test_disc = pd.read_csv(basepath+"data/folds_discr2/test/{}.csv".format(datasetname))
 
@@ -62,16 +62,35 @@ def run1fold(basepath,datasetname, unique_transactions=True,runQCBA=False,saveID
     
     actual = quant_dataframe_test_disc.dataframe.iloc[:,-1].values
     
-    #learn rules for IDS
-    cars = mine_CARs(data_train_disc, 50, sample=True)
+
+    if useConfidenceForCandidateGeneration:
+        # mine_CARs learns initial candidate rules with CBA-like approach
+        # it uses unsupervised paramter tuning to determine conf, supp and len thresholds, 
+        # as described in Kliegr & Kuchar, 2019
+        # Because the subsequent optimization is slow, not all initial candidate rules can be passed to IDS.
+        # the sample parameter controls, how the subset of N rules will be selected from the initial candidates:
+        # sample=False: take top N rules according to CBA criteria. According to our experiments, this has better results
+        # sample=True: take random N rules
+
+        cars = mine_CARs(data_train_disc, 50, sample=False)
+    else:
+        # learn candidate rules using approach without min confidence described in Lakkaraju et al, 2-16
+        print("WARNING save any unsaved work")
+        print("WARNING candidate generation without minimum confidence and sampling may be too slow or memory intensive")
+        rm = RuleMiner()
+        cars = rm.mine_rules(data_train_disc, minsup=0.01) # the 0.01 threshold is from the IDS paper
+        print(len(cars))
+        print("rule mining finished")
+
+    
     #train IDS model
     ids = IDS()
     start = time.time()
-    ids.fit(class_association_rules=cars, quant_dataframe=quant_dataframe_train_disc, debug=False)
+    # all lambdas are set to the same value
+    ids.fit(class_association_rules=cars, lambda_array=7*[1], quant_dataframe=quant_dataframe_train_disc, debug=False)
     end = time.time()
     df_stat.loc["buildtime","ids"] = end-start
     #apply IDS model
-    # ?? bylo quant_dataframe_train_disc
     df_stat.loc["accuracy","ids"] =  ids.score(quant_dataframe_test_disc)    
     print("Acc IDS:",df_stat.loc["accuracy","ids"]  )
     df_stat.loc["rulecount","ids"] = len(ids.clf.rules)    
@@ -81,9 +100,11 @@ def run1fold(basepath,datasetname, unique_transactions=True,runQCBA=False,saveID
     avg_rule_legnth_ids = None
     print("Rule Count IDS:", df_stat.loc["rulecount","ids"])
     if (saveIDSRules):
-        idsRulesPath = basepath+"idsModels/{}.csv".format(datasetname)
+        idsRulesPath = basepath+"IDS_Models/{}.csv".format(datasetname)
         file = open(idsRulesPath,"w")
         txtexport="rules,suppport,confidence,lift\n"
+        #Before export, IDS sorts the rule by harmonic mean of support and confidence (st.hmean([self.car.support, self.car.confidence]))
+        #In this order, rules are also applied for prediction
         for r in ids.clf.rules:
             args = [r.car.antecedent.string(), "{" + r.car.consequent.string() + "}", r.car.support, r.car.confidence,0]
             txtexport = txtexport+ "\"{} => {}\",{:.2f},{:.2f},{:.2f} \n".format(*args) 
@@ -112,7 +133,6 @@ def run1fold(basepath,datasetname, unique_transactions=True,runQCBA=False,saveID
 
         #apply QCBA model        
         qclf = QuantitativeClassifier(rules, default_class)
-        # ?? Lze předat undisc data? bylo quant_dataframe_train_disc
         pred = qclf.predict(quant_dataframe_test_undisc) 
         
         #evaluate model - QCBA
@@ -122,12 +142,12 @@ def run1fold(basepath,datasetname, unique_transactions=True,runQCBA=False,saveID
         print("Rule Count IDS-QCBA:", df_stat.loc["rulecount","idsqcba"])
     return df_stat
 
-def mean_allfolds(dataset_name, start=0, end=10, unique_transactions=True,runQCBA=False):
+def mean_allfolds(dataset_name, start=0, end=10, unique_transactions=True,runQCBA=False,useConfidenceForCandidateGeneration=True):
     files = [ dataset_name + repr(i) for i in range(start, end) ]
     df_agg = None
     emptyDF = True
-    for file in files:
-        df_stats = run1fold(basepath,file, unique_transactions=unique_transactions,runQCBA=runQCBA)
+    for file in files:        
+        df_stats = run1fold(basepath,file, unique_transactions=unique_transactions,runQCBA=runQCBA,useConfidenceForCandidateGeneration=useConfidenceForCandidateGeneration)
         print("done", file)
         if emptyDF:
             df_agg = df_stats
@@ -142,22 +162,25 @@ def mean_allfolds(dataset_name, start=0, end=10, unique_transactions=True,runQCB
     print(df_agg)
     return df_agg
 
-datasets = ["australian","anneal","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel","hepatitis","hypothyroid"]    
+datasets = ["hypothyroid","australian","anneal","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","ionosphere","iris","labor","letter","lymph","segment","sonar","vehicle","vowel","hepatitis","spambase"]    
 
-resultFolder="ids"
 runQCBA = False
+useConfidenceForCandidateGeneration = True
 resultfilesuffix=""
-if not(runQCBA):
-    resultfilesuffix="-ids"
+if runQCBA:
+    resultFolder="IDSQCBA_results"
+else:
+    resultFolder="IDS_results"
+
 if not os.path.exists(resultFolder):
     os.makedirs(resultFolder)
 for dataset in datasets:
     print(dataset)
-    resultFile=resultFolder+"/"+dataset+resultfilesuffix+"-result.csv"
+    resultFile=resultFolder+"/"+dataset+".csv"
     if os.path.exists(resultFile):
         print("skipping already computed")
         continue
-    df_stats_per_dataset = mean_allfolds(dataset,runQCBA)    
+    df_stats_per_dataset = mean_allfolds(dataset, start=0,end=10, runQCBA=runQCBA,useConfidenceForCandidateGeneration=useConfidenceForCandidateGeneration)    
     df_stats_per_dataset.to_csv(resultFile)
     print("*****")
     print(df_stats_per_dataset)
