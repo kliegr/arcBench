@@ -1,0 +1,21 @@
+rules,suppport,confidence,lift
+"{Single_Epi_Cell_Size=[-Inf;2.5],Bare_Nuclei=[-Inf;1.5]} => {Class=benign}",0.52,1.00,0.00 
+"{Single_Epi_Cell_Size=[-Inf;2.5],Bare_Nuclei=[-Inf;1.5],Cell_Shape_Uniformity=[-Inf;2.5]} => {Class=benign}",0.47,1.00,0.00 
+"{Marginal_Adhesion=[-Inf;1.5],Bare_Nuclei=[-Inf;1.5],Normal_Nucleoli=[-Inf;2.5]} => {Class=benign}",0.45,1.00,0.00 
+"{Bare_Nuclei=[-Inf;1.5],Cell_Shape_Uniformity=[-Inf;2.5],Cell_Size_Uniformity=[-Inf;1.5]} => {Class=benign}",0.45,1.00,0.00 
+"{Marginal_Adhesion=[-Inf;1.5],Mitoses=[-Inf;1.5],Clump_Thickness=[-Inf;4.5]} => {Class=benign}",0.42,1.00,0.00 
+"{Marginal_Adhesion=[-Inf;1.5],Bare_Nuclei=[-Inf;1.5],Cell_Size_Uniformity=[-Inf;1.5]} => {Class=benign}",0.42,1.00,0.00 
+"{Marginal_Adhesion=[-Inf;1.5],Clump_Thickness=[-Inf;4.5],Normal_Nucleoli=[-Inf;2.5]} => {Class=benign}",0.41,1.00,0.00 
+"{Single_Epi_Cell_Size=[-Inf;2.5],Bare_Nuclei=[-Inf;1.5],Clump_Thickness=[-Inf;4.5]} => {Class=benign}",0.40,1.00,0.00 
+"{Marginal_Adhesion=[-Inf;1.5],Single_Epi_Cell_Size=[-Inf;2.5],Clump_Thickness=[-Inf;4.5]} => {Class=benign}",0.40,1.00,0.00 
+"{Bland_Chromatin=[-Inf;2.5],Bare_Nuclei=[-Inf;1.5]} => {Class=benign}",0.40,1.00,0.00 
+"{Bare_Nuclei=[-Inf;1.5],Clump_Thickness=[-Inf;4.5],Cell_Size_Uniformity=[-Inf;1.5]} => {Class=benign}",0.38,1.00,0.00 
+"{Single_Epi_Cell_Size=[-Inf;2.5],Bland_Chromatin=[-Inf;2.5],Bare_Nuclei=[-Inf;1.5]} => {Class=benign}",0.37,1.00,0.00 
+"{Marginal_Adhesion=[-Inf;1.5],Bland_Chromatin=[-Inf;2.5],Mitoses=[-Inf;1.5]} => {Class=benign}",0.36,1.00,0.00 
+"{Bland_Chromatin=[-Inf;2.5],Bare_Nuclei=[-Inf;1.5],Cell_Size_Uniformity=[-Inf;1.5]} => {Class=benign}",0.34,1.00,0.00 
+"{Bare_Nuclei=[-Inf;1.5],Bland_Chromatin=[-Inf;2.5],Clump_Thickness=[-Inf;4.5]} => {Class=benign}",0.31,1.00,0.00 
+"{Single_Epi_Cell_Size=[-Inf;2.5],Bland_Chromatin=(2.5;3.5],Normal_Nucleoli=[-Inf;2.5]} => {Class=benign}",0.16,1.00,0.00 
+"{Bland_Chromatin=(2.5;3.5],Cell_Shape_Uniformity=[-Inf;2.5]} => {Class=benign}",0.16,1.00,0.00 
+"{Single_Epi_Cell_Size=[-Inf;2.5],Bland_Chromatin=(2.5;3.5],Cell_Size_Uniformity=[-Inf;1.5]} => {Class=benign}",0.15,1.00,0.00 
+"{Bland_Chromatin=(2.5;3.5],Cell_Shape_Uniformity=[-Inf;2.5],Cell_Size_Uniformity=[-Inf;1.5]} => {Class=benign}",0.14,1.00,0.00 
+"{ } => {Class=benign}", 0,0,0

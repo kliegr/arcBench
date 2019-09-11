@@ -1,0 +1,33 @@
+age,sex,histologic-type,degree-of-diffe,bone,bone-marrow,lung,pleura,peritoneum,liver,brain,skin,neck,supraclavicular,axillar,mediastinum,abdominal,class
+30-59,male,epidermoid,well,yes,no,no,no,no,no,no,yes,yes,yes,no,no,no,lung
+30-59,male,epidermoid,,no,no,no,no,no,no,no,no,yes,no,no,no,no,head and neck
+>=60,male,adeno,well,no,no,no,no,no,yes,no,yes,no,no,no,no,no,rectum
+>=60,male,adeno,well,yes,no,no,no,no,no,no,no,no,no,no,no,no,prostate
+30-59,male,,poorly,no,no,no,no,yes,no,yes,yes,no,no,no,yes,yes,lung
+>=60,female,adeno,,no,no,no,no,no,yes,no,no,no,no,no,no,no,pancreas
+>=60,female,adeno,,no,no,no,no,no,no,no,no,no,no,no,yes,yes,gallbladder
+30-59,male,,poorly,no,no,no,no,no,no,no,no,yes,no,no,no,no,head and neck
+30-59,male,,poorly,yes,yes,yes,yes,yes,yes,no,no,no,no,no,yes,yes,lung
+30-59,female,adeno,,no,no,yes,no,no,yes,no,no,no,no,no,no,yes,corpus uteri
+>=60,female,adeno,well,no,no,no,no,yes,no,no,no,no,no,no,no,no,pancreas
+30-59,male,adeno,,no,no,no,no,no,no,no,no,no,no,yes,no,no,lung
+30-59,male,adeno,,no,no,yes,no,no,no,no,no,no,yes,no,no,no,lung
+30-59,female,adeno,fairly,no,no,no,no,yes,no,no,no,no,no,no,no,no,stomach
+30-59,female,adeno,,yes,no,no,yes,no,no,no,no,no,no,no,no,no,breast
+>=60,male,adeno,,no,no,no,no,yes,no,no,no,no,no,no,no,no,stomach
+>=60,female,adeno,poorly,no,no,no,yes,yes,no,no,no,no,no,no,no,no,ovary
+30-59,male,,poorly,no,no,no,no,no,no,yes,yes,no,yes,yes,yes,no,lung
+30-59,male,adeno,,no,no,no,yes,yes,yes,no,no,no,yes,no,no,yes,colon
+30-59,male,,poorly,yes,no,no,no,no,no,no,no,no,no,no,no,no,esophagus
+>=60,male,epidermoid,,no,no,no,no,no,no,no,no,no,no,no,no,yes,lung
+30-59,male,adeno,poorly,no,no,no,no,yes,yes,no,no,no,no,no,no,no,pancreas
+30-59,male,,,yes,no,yes,no,no,no,no,no,no,no,no,no,no,thyroid
+30-59,male,,,no,no,no,no,no,no,no,no,no,no,no,no,yes,stomach
+30-59,female,adeno,,yes,yes,no,no,yes,yes,no,no,no,no,yes,no,no,breast
+>=60,female,adeno,,no,no,yes,no,no,no,no,no,no,no,no,no,no,kidney
+30-59,female,adeno,,no,no,yes,no,yes,yes,no,no,no,no,no,no,yes,kidney
+30-59,male,adeno,,no,no,yes,yes,no,no,no,no,no,no,no,yes,yes,liver
+30-59,female,adeno,poorly,no,no,yes,no,yes,yes,no,no,no,no,no,yes,no,lung
+30-59,female,adeno,,no,no,no,no,no,no,no,no,no,yes,no,no,no,stomach
+30-59,female,adeno,well,no,no,no,no,yes,no,no,no,no,no,no,no,no,ovary
+30-59,female,adeno,well,no,no,no,yes,yes,no,no,no,no,no,no,no,no,ovary

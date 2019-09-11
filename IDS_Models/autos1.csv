@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{wheelBase=(97.25;98.6],numOfCylinders=four} => {XClass=2}",0.07,1.00,0.00 
+"{normalizedLosses=(96.5; Inf],make=peugot} => {XClass=0}",0.05,1.00,0.00 
+"{price=(8497; Inf],engineType=l} => {XClass=0}",0.05,1.00,0.00 
+"{numOfCylinders=four,engineType=l} => {XClass=0}",0.05,1.00,0.00 
+"{cityMpg=[-Inf;30.5],make=peugot} => {XClass=0}",0.05,1.00,0.00 
+"{engineType=l,height=(56.25; Inf]} => {XClass=0}",0.05,1.00,0.00 
+"{height=(52.45;54.85],length=(173.3;175.5]} => {XClass=0}",0.05,1.00,0.00 
+"{compressionRatio=[-Inf; Inf],make=peugot} => {XClass=0}",0.05,1.00,0.00 
+"{make=peugot} => {XClass=0}",0.05,1.00,0.00 
+"{make=peugot,height=(56.25; Inf]} => {XClass=0}",0.05,1.00,0.00 
+"{numOfDoors=four,engineType=ohcf} => {XClass=0}",0.05,1.00,0.00 
+"{curbWeight=(2216.5; Inf],engineType=l} => {XClass=0}",0.05,1.00,0.00 
+"{height=(54.85;55.55],wheelBase=(98.6;101.6]} => {XClass=0}",0.04,1.00,0.00 
+"{ } => {XClass=0}", 0,0,0

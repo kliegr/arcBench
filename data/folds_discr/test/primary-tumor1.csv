@@ -1,0 +1,39 @@
+age,sex,histologic-type,degree-of-diffe,bone,bone-marrow,lung,pleura,peritoneum,liver,brain,skin,neck,supraclavicular,axillar,mediastinum,abdominal,class
+30-59,female,adeno,well,no,no,no,no,no,no,no,no,no,yes,no,no,no,kidney
+30-59,male,epidermoid,poorly,no,no,no,no,no,yes,no,no,no,no,no,yes,no,lung
+>=60,female,,poorly,no,no,no,no,no,yes,no,no,no,no,no,no,no,gallbladder
+30-59,female,adeno,poorly,no,no,no,no,yes,yes,no,no,no,no,yes,yes,yes,breast
+30-59,female,adeno,well,no,no,no,no,yes,yes,no,no,no,no,no,no,yes,pancreas
+30-59,male,adeno,,no,no,no,yes,no,no,no,no,no,no,no,no,no,lung
+30-59,male,,poorly,no,no,no,no,no,no,no,no,yes,yes,no,yes,yes,lung
+30-59,male,adeno,fairly,no,no,yes,yes,no,no,no,no,no,no,no,no,no,testis
+30-59,female,adeno,,yes,no,no,no,no,yes,no,no,no,no,no,no,no,lung
+>=60,female,adeno,well,yes,no,no,no,no,no,no,no,no,no,no,no,no,thyroid
+30-59,female,epidermoid,poorly,no,no,no,no,no,yes,yes,no,no,no,no,yes,no,lung
+<30,male,adeno,well,no,no,no,no,yes,no,no,no,no,yes,no,no,no,stomach
+<30,female,,well,no,no,no,no,no,no,no,no,no,no,no,no,no,kidney
+<30,female,adeno,,yes,no,no,no,yes,no,no,no,yes,yes,yes,no,yes,stomach
+>=60,male,epidermoid,,no,no,no,no,no,no,no,no,yes,no,no,no,no,head and neck
+>=60,male,adeno,poorly,no,no,no,no,no,yes,no,no,no,no,no,no,no,stomach
+>=60,female,adeno,,no,no,no,no,no,yes,no,no,no,no,no,no,yes,gallbladder
+>=60,female,adeno,,no,no,no,no,no,yes,no,no,no,no,no,no,yes,colon
+>=60,female,adeno,,yes,no,yes,yes,no,yes,no,no,no,no,no,yes,yes,pancreas
+<30,male,anaplastic,poorly,no,no,no,no,no,no,no,no,no,yes,no,no,no,liver
+30-59,male,adeno,,yes,no,no,no,no,no,no,no,no,no,no,no,yes,esophagus
+30-59,male,,poorly,yes,no,no,no,yes,no,yes,no,no,no,no,yes,yes,lung
+<30,male,adeno,,no,no,no,no,yes,yes,no,yes,no,no,no,no,yes,kidney
+30-59,female,,poorly,no,no,yes,yes,yes,yes,no,yes,no,no,no,yes,yes,lung
+30-59,female,adeno,,no,no,yes,yes,yes,no,no,no,no,yes,no,no,no,breast
+30-59,female,adeno,well,no,no,no,yes,yes,no,no,no,no,no,no,no,no,stomach
+30-59,male,epidermoid,well,no,no,no,no,no,no,no,no,yes,no,no,no,no,head and neck
+>=60,female,adeno,,no,no,yes,no,no,no,no,no,no,no,no,no,no,duoden and sm.int
+>=60,female,,poorly,no,no,no,no,no,no,no,no,no,no,no,no,yes,ovary
+>=60,female,adeno,,no,no,yes,yes,no,yes,no,no,no,no,no,yes,yes,colon
+<30,male,,poorly,no,no,yes,no,no,no,no,no,no,no,no,no,no,lung
+30-59,female,adeno,,no,no,no,no,yes,no,no,no,no,no,no,no,no,ovary
+30-59,female,adeno,well,no,no,no,no,yes,no,no,no,no,no,no,no,no,ovary
+30-59,female,adeno,,no,no,no,no,no,no,no,no,no,no,yes,no,no,breast
+30-59,male,adeno,,yes,no,no,no,no,no,no,no,no,no,no,no,no,prostate
+30-59,male,adeno,well,yes,no,no,no,no,no,no,no,no,no,no,no,no,thyroid
+30-59,female,adeno,poorly,no,no,no,no,no,no,no,no,no,yes,no,no,no,lung
+>=60,female,adeno,fairly,no,no,no,no,yes,no,no,no,no,no,no,no,no,pancreas

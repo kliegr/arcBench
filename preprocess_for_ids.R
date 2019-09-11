@@ -4,15 +4,10 @@ library(qCBA)
 library(rCBA)
 library(sbrl)
 library(stringr)
-#library(reticulate)
 library(rlist)
-use_python("/home/tomas/anaconda3/bin/python3.6", required = T)
-py_config()
-source_python("test_func.py")
 x = 10
 
 
-setwd("/home/tomas/temp/arcBench")
 basePath="."
 datasets <- c("australian","anneal","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
 foldsToProcess <- 10
@@ -41,7 +36,6 @@ for (dataset in datasets[1:length(datasets)])
     write.csv(testFoldDisc,testDiscPath,quote=FALSE,row.names=FALSE)
     list.serialize(trainFoldDiscCutpoints,file=trainDiscCutpointsPath)
     #list.unserialize(file=trainDiscCutpointsPath)
-    #TODO save cutpoints
     
   }
 }

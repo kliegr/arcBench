@@ -1,0 +1,20 @@
+rules,suppport,confidence,lift
+"{petalwidth=[-Inf;0.8],sepallength=[-Inf;5.55]} => {class=Iris-setosa}",0.31,1.00,0.00 
+"{sepallength=(6.15; Inf],petalwidth=(1.75; Inf]} => {class=Iris-virginica}",0.24,1.00,0.00 
+"{sepallength=(6.15; Inf],petallength=(5.15; Inf]} => {class=Iris-virginica}",0.23,1.00,0.00 
+"{sepallength=(6.15; Inf],petalwidth=(1.75; Inf],petallength=(5.15; Inf]} => {class=Iris-virginica}",0.22,1.00,0.00 
+"{sepalwidth=[-Inf;3.35],petallength=(5.15; Inf]} => {class=Iris-virginica}",0.21,1.00,0.00 
+"{petallength=[-Inf;2.45],sepalwidth=(3.35; Inf]} => {class=Iris-setosa}",0.21,1.00,0.00 
+"{sepallength=(6.15; Inf],petalwidth=(1.75; Inf],sepalwidth=[-Inf;3.35],petallength=(5.15; Inf]} => {class=Iris-virginica}",0.19,1.00,0.00 
+"{petallength=[-Inf;2.45],petalwidth=[-Inf;0.8],sepalwidth=(3.35; Inf],sepallength=[-Inf;5.55]} => {class=Iris-setosa}",0.19,1.00,0.00 
+"{sepallength=(5.55;6.15],petallength=(2.45;4.75],sepalwidth=[-Inf;3.35]} => {class=Iris-versicolor}",0.14,1.00,0.00 
+"{petalwidth=(0.8;1.75],sepallength=(6.15; Inf],petallength=(2.45;4.75],sepalwidth=[-Inf;3.35]} => {class=Iris-versicolor}",0.07,1.00,0.00 
+"{sepallength=(6.15; Inf],petallength=(2.45;4.75],sepalwidth=[-Inf;3.35]} => {class=Iris-versicolor}",0.07,1.00,0.00 
+"{sepalwidth=(3.35; Inf],petallength=(5.15; Inf]} => {class=Iris-virginica}",0.03,1.00,0.00 
+"{sepallength=(6.15; Inf],petalwidth=(1.75; Inf],sepalwidth=(3.35; Inf],petallength=(5.15; Inf]} => {class=Iris-virginica}",0.03,1.00,0.00 
+"{sepallength=(6.15; Inf],petalwidth=(1.75; Inf],sepalwidth=(3.35; Inf]} => {class=Iris-virginica}",0.03,1.00,0.00 
+"{petallength=[-Inf;2.45],petalwidth=[-Inf;0.8],sepallength=(5.55;6.15]} => {class=Iris-setosa}",0.02,1.00,0.00 
+"{petallength=[-Inf;2.45],sepallength=(5.55;6.15],sepalwidth=(3.35; Inf]} => {class=Iris-setosa}",0.02,1.00,0.00 
+"{petalwidth=[-Inf;0.8],sepallength=(5.55;6.15]} => {class=Iris-setosa}",0.02,1.00,0.00 
+"{sepallength=(5.55;6.15],sepalwidth=(3.35; Inf]} => {class=Iris-setosa}",0.02,1.00,0.00 
+"{ } => {class=Iris-setosa}", 0,0,0

@@ -1,0 +1,28 @@
+age,sex,chest,resting_blood_pressure,serum_cholestoral,fasting_blood_sugar,resting_electrocardiographic_results,maximum_heart_rate_achieved,exercise_induced_angina,oldpeak,slope,number_of_major_vessels,thal,class
+(54.5; Inf],1,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],0,(1.7; Inf],(1.5; Inf],(0.5; Inf],[-Inf;4.5],present
+(54.5; Inf],0,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],1,[-Inf;1.7],[-Inf;1.5],(0.5; Inf],[-Inf;4.5],absent
+(54.5; Inf],0,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],(150.5; Inf],0,(1.7; Inf],(1.5; Inf],(0.5; Inf],(4.5; Inf],present
+[-Inf;54.5],1,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],1,(1.7; Inf],(1.5; Inf],(0.5; Inf],(4.5; Inf],present
+[-Inf;54.5],1,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],1,[-Inf; Inf],(150.5; Inf],1,(1.7; Inf],(1.5; Inf],[-Inf;0.5],(4.5; Inf],present
+[-Inf;54.5],1,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],(150.5; Inf],1,[-Inf;1.7],[-Inf;1.5],[-Inf;0.5],(4.5; Inf],absent
+(54.5; Inf],0,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],1,[-Inf; Inf],[-Inf;150.5],0,[-Inf;1.7],[-Inf;1.5],(0.5; Inf],[-Inf;4.5],absent
+[-Inf;54.5],1,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],1,[-Inf; Inf],(150.5; Inf],0,[-Inf;1.7],[-Inf;1.5],[-Inf;0.5],[-Inf;4.5],absent
+[-Inf;54.5],1,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],(150.5; Inf],0,[-Inf;1.7],[-Inf;1.5],[-Inf;0.5],[-Inf;4.5],present
+[-Inf;54.5],1,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],1,(1.7; Inf],(1.5; Inf],[-Inf;0.5],[-Inf;4.5],absent
+[-Inf;54.5],1,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],1,[-Inf;1.7],(1.5; Inf],[-Inf;0.5],[-Inf;4.5],absent
+[-Inf;54.5],1,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],(150.5; Inf],0,[-Inf;1.7],[-Inf;1.5],[-Inf;0.5],[-Inf;4.5],absent
+(54.5; Inf],1,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],1,(1.7; Inf],(1.5; Inf],(0.5; Inf],(4.5; Inf],present
+(54.5; Inf],0,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],0,(1.7; Inf],(1.5; Inf],(0.5; Inf],[-Inf;4.5],absent
+[-Inf;54.5],0,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],0,[-Inf;1.7],[-Inf;1.5],[-Inf;0.5],[-Inf;4.5],absent
+(54.5; Inf],0,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],(150.5; Inf],1,[-Inf;1.7],(1.5; Inf],[-Inf;0.5],[-Inf;4.5],present
+[-Inf;54.5],1,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],1,[-Inf; Inf],(150.5; Inf],0,[-Inf;1.7],(1.5; Inf],[-Inf;0.5],[-Inf;4.5],absent
+(54.5; Inf],1,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],1,(1.7; Inf],(1.5; Inf],(0.5; Inf],(4.5; Inf],present
+[-Inf;54.5],1,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],1,[-Inf; Inf],(150.5; Inf],0,[-Inf;1.7],(1.5; Inf],[-Inf;0.5],(4.5; Inf],absent
+(54.5; Inf],1,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],0,(1.7; Inf],(1.5; Inf],(0.5; Inf],(4.5; Inf],present
+(54.5; Inf],0,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],1,[-Inf; Inf],(150.5; Inf],0,[-Inf;1.7],[-Inf;1.5],[-Inf;0.5],[-Inf;4.5],absent
+[-Inf;54.5],1,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],0,[-Inf;1.7],(1.5; Inf],[-Inf;0.5],(4.5; Inf],present
+[-Inf;54.5],1,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],(150.5; Inf],0,[-Inf;1.7],[-Inf;1.5],[-Inf;0.5],[-Inf;4.5],absent
+(54.5; Inf],0,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],(150.5; Inf],0,(1.7; Inf],(1.5; Inf],(0.5; Inf],[-Inf;4.5],present
+(54.5; Inf],0,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],0,[-Inf;1.7],[-Inf;1.5],[-Inf;0.5],[-Inf;4.5],absent
+(54.5; Inf],0,[-Inf;3.5],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],(150.5; Inf],0,[-Inf;1.7],[-Inf;1.5],(0.5; Inf],[-Inf;4.5],absent
+(54.5; Inf],1,(3.5; Inf],[-Inf; Inf],[-Inf; Inf],0,[-Inf; Inf],[-Inf;150.5],1,[-Inf;1.7],(1.5; Inf],(0.5; Inf],(4.5; Inf],present

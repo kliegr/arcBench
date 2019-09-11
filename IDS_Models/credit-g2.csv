@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{savings_status=>=1000,property_magnitude=real estate} => {class=good}",0.02,1.00,0.00 
+"{checking_status=no checking,foreign_worker=no} => {class=good}",0.01,1.00,0.00 
+"{foreign_worker=no,num_dependents=2} => {class=good}",0.01,1.00,0.00 
+"{savings_status=>=1000,purpose=new car} => {class=good}",0.01,1.00,0.00 
+"{employment=<1,foreign_worker=no} => {class=good}",0.01,1.00,0.00 
+"{job=high qualif/self emp/mgmt,savings_status=500<=X<1000} => {class=good}",0.01,1.00,0.00 
+"{employment=<1,other_parties=guarantor} => {class=good}",0.01,1.00,0.00 
+"{savings_status=>=1000,purpose=used car} => {class=good}",0.01,1.00,0.00 
+"{employment=>=7,purpose=repairs} => {class=good}",0.00,1.00,0.00 
+"{foreign_worker=no,savings_status=100<=X<500} => {class=good}",0.00,1.00,0.00 
+"{savings_status=>=1000,foreign_worker=no} => {class=good}",0.00,1.00,0.00 
+"{savings_status=500<=X<1000,employment=unemployed} => {class=good}",0.00,1.00,0.00 
+"{savings_status=500<=X<1000,personal_status=male div/sep} => {class=good}",0.00,1.00,0.00 
+"{ } => {class=good}", 0,0,0

@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{mucous_membranes=pale pink,peristalsis=absent} => {surgical_lesion=yes}",0.06,1.00,0.00 
+"{outcome=died,mucous_membranes=pale pink} => {surgical_lesion=yes}",0.04,1.00,0.00 
+"{mucous_membranes=pale pink,pain=intermittent severe pain} => {surgical_lesion=yes}",0.04,1.00,0.00 
+"{pain=depressed,outcome=died} => {surgical_lesion=yes}",0.04,1.00,0.00 
+"{outcome=died,temp_extremities=cold} => {surgical_lesion=yes}",0.03,1.00,0.00 
+"{temp_extremities=normal,peristalsis=absent} => {surgical_lesion=yes}",0.03,1.00,0.00 
+"{mucous_membranes=pale pink,abdominal_distension=severe} => {surgical_lesion=yes}",0.03,1.00,0.00 
+"{pain=continuous severe pain,abdomen=distended small intestine} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{peripheral_pulse=reduced,rectal_examination=normal} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{pain=intermittent mild pain,outcome=died} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{outcome=euthanized,rectal_examination=normal} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{mucous_membranes=bright pink,abdomen=distended large intestine} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{peristalsis=normal,abdomen=normal} => {surgical_lesion=no}",0.02,1.00,0.00 
+"{ } => {surgical_lesion=yes}", 0,0,0

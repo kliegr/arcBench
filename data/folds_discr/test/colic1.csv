@@ -1,0 +1,39 @@
+surgery,Age,rectal_temperature,pulse,respiratory_rate,temp_extremities,peripheral_pulse,mucous_membranes,capillary_refill_time,pain,peristalsis,abdominal_distension,nasogastric_tube,nasogastric_reflux,nasogastric_reflux_PH,rectal_examination,abdomen,packed_cell_volume,total_protein,abdominocentesis_appearance,abdomcentesis_total_protein,outcome,surgical_lesion
+no,young,All,58.0_to_inf,All,normal,normal,bright pink,<3,alert no pain,hypomotile,slight,significant,,All,normal,normal,All,All,clear,All,died,no
+no,adult,All,58.0_to_inf,All,cool,reduced,pale cyanotic,>=3,depressed,absent,slight,,<1l,All,decreased,firm feces in large intestine,All,All,serosanguinous,All,euthanized,yes
+no,adult,All,58.0_to_inf,All,,reduced,bright red,>=3,,,none,none,>1l,All,,distended large intestine,All,All,cloudy,All,euthanized,no
+yes,adult,All,58.0_to_inf,All,,reduced,,<3,continuous severe pain,hypomotile,none,,none,All,normal,normal,All,All,clear,All,lived,yes
+no,adult,All,58.0_to_inf,All,cool,normal,pale pink,<3,intermittent mild pain,hypomotile,none,none,none,All,increased,other,All,All,,All,lived,no
+no,adult,All,58.0_to_inf,All,cold,reduced,pale cyanotic,>=3,continuous severe pain,absent,severe,none,none,All,absent,distended large intestine,All,All,serosanguinous,All,died,yes
+yes,adult,All,58.0_to_inf,All,normal,reduced,dark cyanotic,>=3,intermittent mild pain,absent,slight,slight,<1l,All,,distended small intestine,All,All,serosanguinous,All,lived,yes
+no,adult,All,-inf_to_58.0,All,,,,<3,,,,,,All,,,All,All,cloudy,All,euthanized,yes
+no,adult,All,58.0_to_inf,All,normal,normal,bright red,<3,intermittent mild pain,hypomotile,slight,slight,none,All,decreased,firm feces in large intestine,All,All,cloudy,All,lived,no
+no,adult,All,-inf_to_58.0,All,,,,,depressed,,,,<1l,All,normal,normal,All,All,,All,lived,yes
+yes,adult,All,58.0_to_inf,All,cold,reduced,pale cyanotic,>=3,continuous severe pain,absent,,,none,All,absent,distended large intestine,All,All,,All,euthanized,yes
+yes,adult,All,-inf_to_58.0,All,,reduced,pale pink,<3,,,,none,none,All,normal,,All,All,,All,lived,yes
+yes,adult,All,58.0_to_inf,All,normal,,normal pink,<3,continuous severe pain,hypomotile,none,,none,All,,,All,All,cloudy,All,lived,yes
+yes,adult,All,58.0_to_inf,All,,,dark cyanotic,>=3,intermittent severe pain,hypomotile,none,,>1l,All,normal,distended small intestine,All,All,cloudy,All,euthanized,yes
+yes,adult,All,-inf_to_58.0,All,normal,normal,normal pink,<3,alert no pain,normal,severe,slight,>1l,All,absent,distended large intestine,All,All,,All,lived,yes
+no,adult,All,58.0_to_inf,All,normal,normal,,<3,intermittent mild pain,hypomotile,,none,none,All,,,All,All,clear,All,lived,no
+yes,adult,All,58.0_to_inf,All,cool,reduced,dark cyanotic,<3,depressed,absent,severe,significant,>1l,All,absent,distended large intestine,All,All,,All,euthanized,no
+no,adult,All,-inf_to_58.0,All,cool,reduced,pale cyanotic,<3,alert no pain,absent,slight,slight,,All,,other,All,All,clear,All,lived,no
+yes,adult,All,-inf_to_58.0,All,,,,<3,,,,,,All,,,All,All,,All,died,yes
+yes,adult,All,58.0_to_inf,All,normal,reduced,pale pink,<3,continuous severe pain,hypomotile,none,none,none,All,decreased,,All,All,serosanguinous,All,euthanized,yes
+yes,adult,All,58.0_to_inf,All,normal,normal,bright red,>=3,intermittent mild pain,hypomotile,slight,slight,>1l,All,absent,distended small intestine,All,All,,All,lived,yes
+yes,adult,All,58.0_to_inf,All,cool,reduced,pale cyanotic,>=3,continuous severe pain,absent,severe,none,none,All,absent,,All,All,serosanguinous,All,lived,yes
+yes,adult,All,-inf_to_58.0,All,normal,normal,normal pink,<3,intermittent mild pain,hypomotile,moderate,none,>1l,All,absent,,All,All,clear,All,lived,yes
+no,adult,All,58.0_to_inf,All,cool,reduced,bright red,>=3,intermittent severe pain,hypomotile,severe,slight,none,All,absent,distended large intestine,All,All,,All,euthanized,no
+no,adult,All,58.0_to_inf,All,cool,reduced,dark cyanotic,<3,continuous severe pain,absent,none,,<1l,All,absent,,All,All,,All,died,no
+no,adult,All,-inf_to_58.0,All,,normal,normal pink,<3,intermittent severe pain,hypomotile,slight,none,none,All,absent,,All,All,,All,lived,no
+no,young,All,58.0_to_inf,All,,,,,,,,,,All,,,All,All,,All,lived,no
+no,adult,All,-inf_to_58.0,All,cool,normal,normal pink,<3,intermittent mild pain,hypomotile,none,slight,none,All,normal,,All,All,,All,euthanized,yes
+no,adult,All,-inf_to_58.0,All,warm,reduced,pale pink,<3,alert no pain,hypomotile,slight,significant,none,All,,,All,All,,All,lived,no
+yes,adult,All,-inf_to_58.0,All,,,normal pink,,alert no pain,hypermotile,,,,All,,,All,All,,All,lived,no
+no,adult,All,-inf_to_58.0,All,warm,normal,bright pink,<3,intermittent mild pain,,none,slight,,All,increased,,All,All,clear,All,lived,no
+yes,adult,All,58.0_to_inf,All,warm,reduced,pale pink,<3,intermittent severe pain,hypomotile,moderate,,,All,,,All,All,clear,All,died,yes
+yes,adult,All,58.0_to_inf,All,,,dark cyanotic,>=3,intermittent severe pain,absent,moderate,none,,All,absent,distended large intestine,All,All,,All,euthanized,yes
+yes,adult,All,58.0_to_inf,All,,normal,normal pink,,depressed,hypomotile,,,,All,absent,distended small intestine,All,All,,All,lived,yes
+yes,adult,All,58.0_to_inf,All,warm,,pale cyanotic,<3,intermittent mild pain,,moderate,,>1l,All,decreased,distended small intestine,All,All,cloudy,All,lived,yes
+yes,adult,All,-inf_to_58.0,All,warm,,pale pink,<3,depressed,hypomotile,,,,All,,,All,All,,All,euthanized,yes
+no,adult,All,-inf_to_58.0,All,cool,,normal pink,<3,intermittent mild pain,absent,moderate,slight,>1l,All,absent,distended large intestine,All,All,cloudy,All,lived,yes
+yes,adult,All,58.0_to_inf,All,cold,reduced,,>=3,depressed,absent,none,,,All,,,All,All,serosanguinous,All,lived,yes

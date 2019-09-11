@@ -1,0 +1,12 @@
+rules,suppport,confidence,lift
+"{petallength=[-Inf;2.45],petalwidth=[-Inf;0.8],sepallength=[-Inf;5.55]} => {class=Iris-setosa}",0.31,1.00,0.00 
+"{sepalwidth=(3.35; Inf],sepallength=[-Inf;5.55]} => {class=Iris-setosa}",0.18,1.00,0.00 
+"{sepallength=(5.55;6.15],petallength=(2.45;4.75]} => {class=Iris-versicolor}",0.13,1.00,0.00 
+"{petalwidth=(1.75; Inf],petallength=(4.75; Inf],sepalwidth=[-Inf;2.95]} => {class=Iris-virginica}",0.12,1.00,0.00 
+"{petalwidth=[-Inf;0.8],sepalwidth=(2.95;3.35]} => {class=Iris-setosa}",0.12,1.00,0.00 
+"{petalwidth=(1.75; Inf],sepalwidth=[-Inf;2.95]} => {class=Iris-virginica}",0.12,1.00,0.00 
+"{petallength=[-Inf;2.45],sepalwidth=(2.95;3.35]} => {class=Iris-setosa}",0.12,1.00,0.00 
+"{sepallength=(6.15; Inf],petalwidth=(1.75; Inf],sepalwidth=[-Inf;2.95]} => {class=Iris-virginica}",0.08,1.00,0.00 
+"{sepallength=(6.15; Inf],petalwidth=(1.75; Inf],petallength=(4.75; Inf],sepalwidth=[-Inf;2.95]} => {class=Iris-virginica}",0.08,1.00,0.00 
+"{petalwidth=(0.8;1.75],sepalwidth=(2.95;3.35],petallength=(2.45;4.75]} => {class=Iris-versicolor}",0.07,1.00,0.00 
+"{ } => {class=Iris-setosa}", 0,0,0

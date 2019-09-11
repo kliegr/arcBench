@@ -1,0 +1,15 @@
+lymphatics,block_of_affere,bl_of_lymph_c,bl_of_lymph_s,by_pass,extravasates,regeneration_of,early_uptake_in,lym_nodes_dimin,lym_nodes_enlar,changes_in_lym,defect_in_node,changes_in_node,changes_in_stru,special_forms,dislocation_of,exclusion_of_no,no_of_nodes_in,class
+deformed,no,no,no,no,no,no,no,-inf_to_1.5,-inf_to_2.5,oval,lac_central,lacunar,faint,chalices,yes,yes,-inf_to_3.5,malign_lymph
+arched,yes,no,no,no,no,no,yes,-inf_to_1.5,-inf_to_2.5,round,lacunar,lac_margin,faint,chalices,no,no,-inf_to_3.5,metastases
+deformed,yes,yes,yes,yes,yes,no,yes,-inf_to_1.5,-inf_to_2.5,round,lac_margin,lac_margin,coarse,vesicles,yes,yes,3.5_to_inf,metastases
+deformed,yes,no,no,no,yes,no,yes,-inf_to_1.5,-inf_to_2.5,round,lac_margin,lac_margin,grainy,chalices,yes,yes,-inf_to_3.5,metastases
+arched,no,no,no,no,no,no,yes,-inf_to_1.5,2.5_to_inf,round,lac_margin,lac_margin,reticular,vesicles,no,yes,3.5_to_inf,metastases
+deformed,yes,yes,yes,yes,yes,yes,yes,-inf_to_1.5,2.5_to_inf,round,lac_margin,lac_central,faint,vesicles,yes,yes,3.5_to_inf,malign_lymph
+arched,yes,no,no,no,no,no,yes,-inf_to_1.5,-inf_to_2.5,oval,lac_margin,lac_margin,grainy,vesicles,yes,yes,-inf_to_3.5,metastases
+deformed,no,no,no,no,yes,no,yes,-inf_to_1.5,2.5_to_inf,oval,lacunar,lacunar,coarse,vesicles,yes,yes,3.5_to_inf,malign_lymph
+arched,yes,no,no,yes,yes,no,no,-inf_to_1.5,-inf_to_2.5,oval,lac_central,lacunar,faint,vesicles,yes,yes,-inf_to_3.5,metastases
+deformed,no,no,no,no,no,yes,no,-inf_to_1.5,-inf_to_2.5,oval,lac_central,lac_margin,diluted,chalices,no,yes,-inf_to_3.5,metastases
+arched,no,no,no,no,no,no,yes,-inf_to_1.5,2.5_to_inf,oval,lacunar,lacunar,faint,vesicles,yes,yes,3.5_to_inf,malign_lymph
+displaced,no,no,no,no,yes,no,yes,-inf_to_1.5,2.5_to_inf,round,lac_central,lac_margin,drop_like,vesicles,yes,yes,3.5_to_inf,malign_lymph
+deformed,no,no,no,no,yes,no,yes,-inf_to_1.5,2.5_to_inf,round,lac_central,lacunar,coarse,vesicles,yes,yes,3.5_to_inf,malign_lymph
+arched,no,no,no,no,no,no,no,-inf_to_1.5,-inf_to_2.5,oval,lac_central,lac_margin,faint,chalices,yes,yes,-inf_to_3.5,metastases

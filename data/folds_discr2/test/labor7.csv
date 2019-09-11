@@ -1,0 +1,6 @@
+duration,wage.increase.first.year,wage.increase.second.year,wage.increase.third.year,cost.of.living.adjustment,working.hours,pension,standby.pay,shift.differential,education.allowance,statutory.holidays,vacation,longterm.disability.assistance,contribution.to.dental.plan,bereavement.assistance,contribution.to.health.plan,class
+[-Inf; Inf],(2.9; Inf],(3.25; Inf],[-Inf; Inf],none,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],,(10.5; Inf],generous,yes,full,,,good
+[-Inf; Inf],(2.9; Inf],(3.25; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf;10.5],generous,,half,,full,good
+[-Inf; Inf],(2.9; Inf],(3.25; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf;10.5],generous,,,,,good
+[-Inf; Inf],[-Inf;2.9],(3.25; Inf],[-Inf; Inf],tc,[-Inf; Inf],ret_allw,[-Inf; Inf],[-Inf; Inf],no,(10.5; Inf],generous,no,none,no,none,bad
+[-Inf; Inf],[-Inf;2.9],[-Inf;3.25],[-Inf; Inf],tc,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],,(10.5; Inf],average,,,yes,,bad

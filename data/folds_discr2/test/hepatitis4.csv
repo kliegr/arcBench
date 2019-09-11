@@ -1,0 +1,16 @@
+AGE,SEX,STEROID,ANTIVIRALS,FATIGUE,MALAISE,ANOREXIA,LIVER_BIG,LIVER_FIRM,SPLEEN_PALPABLE,SPIDERS,ASCITES,VARICES,BILIRUBIN,ALK_PHOSPHATE,SGOT,ALBUMIN,PROTIME,HISTOLOGY,Class
+[-Inf; Inf],male,no,no,no,no,no,yes,yes,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(2.65;3.85],(44; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.85; Inf],(44; Inf],no,LIVE
+[-Inf; Inf],female,no,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(2.65;3.85],(44; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,yes,,,,,,,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.85; Inf],(44; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,yes,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.85; Inf],(44; Inf],no,LIVE
+[-Inf; Inf],female,no,yes,yes,yes,yes,no,yes,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.85; Inf],(44; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.85; Inf],(44; Inf],yes,LIVE
+[-Inf; Inf],female,no,yes,no,no,no,no,yes,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(2.65;3.85],(44; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.85; Inf],(44; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,yes,yes,no,no,yes,yes,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(2.65;3.85],[-Inf;44],yes,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,yes,yes,yes,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.85; Inf],(44; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,no,no,no,yes,yes,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(2.65;3.85],(44; Inf],yes,DIE
+[-Inf; Inf],female,no,no,yes,yes,no,,,yes,no,yes,no,(1.35; Inf],[-Inf; Inf],[-Inf; Inf],(2.65;3.85],[-Inf;44],yes,DIE
+[-Inf; Inf],female,yes,no,yes,yes,yes,yes,no,no,yes,yes,yes,(1.35; Inf],[-Inf; Inf],[-Inf; Inf],(2.65;3.85],(44; Inf],yes,DIE
+[-Inf; Inf],female,no,no,yes,yes,no,no,yes,no,yes,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.85; Inf],(44; Inf],yes,LIVE

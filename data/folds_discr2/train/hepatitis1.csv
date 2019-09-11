@@ -1,0 +1,139 @@
+AGE,SEX,STEROID,ANTIVIRALS,FATIGUE,MALAISE,ANOREXIA,LIVER_BIG,LIVER_FIRM,SPLEEN_PALPABLE,SPIDERS,ASCITES,VARICES,BILIRUBIN,ALK_PHOSPHATE,SGOT,ALBUMIN,PROTIME,HISTOLOGY,Class
+[-Inf; Inf],male,no,no,no,no,no,no,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,no,no,no,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,,yes,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,no,yes,yes,no,yes,yes,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,DIE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,yes,no,no,no,no,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,yes,yes,no,no,yes,yes,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,yes,yes,no,no,yes,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,yes,no,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,yes,no,no,no,yes,no,no,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,yes,yes,yes,no,no,no,yes,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,yes,no,no,no,no,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],male,yes,yes,yes,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,yes,no,yes,yes,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],male,no,yes,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,yes,yes,yes,yes,yes,yes,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],male,yes,no,yes,no,no,yes,yes,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,no,no,no,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,yes,yes,yes,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,yes,yes,yes,no,yes,yes,no,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,DIE
+[-Inf; Inf],female,no,no,yes,yes,no,,,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,DIE
+[-Inf; Inf],male,yes,yes,yes,yes,yes,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],male,no,no,no,no,no,yes,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,no,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,DIE
+[-Inf; Inf],female,yes,no,yes,yes,yes,yes,no,yes,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],male,no,no,yes,yes,yes,no,yes,yes,yes,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,no,yes,yes,yes,yes,yes,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,yes,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,no,no,no,yes,yes,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],male,yes,no,yes,yes,no,yes,yes,no,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,yes,yes,yes,yes,yes,no,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,yes,yes,no,no,yes,yes,yes,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,yes,yes,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,,,,,,,,,,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,yes,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,yes,yes,yes,no,no,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],male,no,no,yes,yes,no,yes,no,yes,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,yes,yes,no,no,yes,no,yes,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,no,no,no,no,yes,yes,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,yes,yes,no,no,yes,yes,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,DIE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,yes,no,no,yes,no,yes,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,DIE
+[-Inf; Inf],female,yes,no,yes,yes,yes,,,,,,,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,yes,yes,yes,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,yes,yes,yes,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,no,no,no,yes,yes,yes,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,DIE
+[-Inf; Inf],male,no,yes,no,no,no,yes,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,no,no,no,yes,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,yes,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],male,yes,no,yes,yes,no,yes,yes,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,yes,yes,yes,yes,no,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,yes,no,yes,no,yes,no,no,yes,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,yes,no,yes,yes,yes,yes,yes,no,yes,yes,yes,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,no,no,yes,yes,yes,yes,yes,no,yes,yes,yes,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,no,no,yes,yes,yes,no,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],male,no,no,yes,no,no,no,yes,yes,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,yes,yes,no,yes,yes,no,yes,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,yes,no,no,no,no,,,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,no,no,no,yes,no,no,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,no,yes,yes,yes,yes,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,no,yes,yes,yes,yes,no,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,no,yes,yes,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,no,no,yes,no,yes,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,yes,no,yes,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,no,no,yes,yes,no,yes,yes,no,yes,yes,yes,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,no,no,yes,yes,no,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,yes,yes,yes,yes,yes,no,yes,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,no,no,,,yes,yes,yes,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,no,no,yes,yes,yes,yes,no,no,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,yes,no,no,no,no,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,yes,yes,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,yes,yes,yes,no,yes,no,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,no,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,no,no,yes,yes,yes,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],no,LIVE
+[-Inf; Inf],female,no,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],male,yes,no,yes,no,no,yes,no,no,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,no,,,no,yes,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,yes,no,yes,no,no,no,yes,no,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,yes,no,yes,no,yes,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,no,no,yes,yes,yes,yes,no,no,yes,yes,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,yes,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,no,no,yes,no,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,yes,yes,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],male,yes,no,yes,yes,yes,no,yes,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,yes,yes,no,yes,yes,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,no,no,yes,yes,no,yes,no,no,no,yes,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,no,yes,no,no,yes,yes,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,yes,yes,no,yes,no,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,yes,no,yes,yes,yes,yes,yes,no,yes,no,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,yes,yes,no,no,yes,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,no,no,no,yes,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,yes,no,yes,no,no,no,yes,yes,yes,yes,yes,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,no,yes,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,yes,no,yes,no,yes,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,no,yes,yes,no,yes,yes,yes,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,yes,yes,no,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,yes,no,yes,no,yes,no,yes,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,no,,,yes,no,yes,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,yes,yes,yes,no,yes,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,yes,yes,no,no,yes,yes,no,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,no,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,yes,,,,,,,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,no,no,no,no,no,yes,,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,yes,yes,no,no,yes,yes,yes,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,yes,no,no,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,no,no,yes,yes,no,no,yes,no,yes,no,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],male,no,no,yes,no,no,yes,no,yes,yes,no,yes,(1.41353383458; Inf],[-Inf; Inf],[-Inf; Inf],(3.85934959349; Inf],[-Inf; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,no,yes,yes,yes,no,[-Inf;1.41353383458],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85934959349],[-Inf; Inf],yes,DIE

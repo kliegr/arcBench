@@ -1,0 +1,380 @@
+age,sex,on.thyroxine,query.on.thyroxine,on.antithyroid.medication,sick,pregnant,thyroid.surgery,I131.treatment,query.hypothyroid,query.hyperthyroid,lithium,goitre,tumor,hypopituitary,psych,TSH.measured,TSH,T3.measured,T3,TT4.measured,TT4,T4U.measured,T4U,FTI.measured,FTI,TBG.measured,referral.source,Class
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(48.5;64.5],f,other,negative
+[-Inf; Inf],M,f,t,f,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],M,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,compensated_hypothyroid
+[-Inf; Inf],F,f,t,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],f,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,compensated_hypothyroid
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,t,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,t,f,f,f,f,f,f,t,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(64.5;85.5],f,STMW,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,compensated_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,t,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(41.5; Inf],t,[-Inf;0.55],t,[-Inf;18.5],t,[-Inf; Inf],t,[-Inf;48.5],f,other,primary_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,(6.05;22.5],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,compensated_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(0.55;1.05],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],f,[-Inf; Inf],f,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(64.5;85.5],f,SVI,compensated_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHD,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(0.55;1.05],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,t,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(22.5;41.5],t,(1.05; Inf],t,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,compensated_hypothyroid
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,t,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(48.5;64.5],f,SVI,primary_hypothyroid
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,t,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,t,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,t,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],M,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(64.5;85.5],f,SVI,compensated_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHD,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(22.5;41.5],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,SVI,primary_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],F,f,f,t,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,t,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(0.55;1.05],t,(52.5;68.5],t,[-Inf; Inf],t,(64.5;85.5],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,t,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,compensated_hypothyroid
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],M,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,(6.05;22.5],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,compensated_hypothyroid
+[-Inf; Inf],F,f,f,f,f,f,f,t,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,STMW,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(41.5; Inf],t,(0.55;1.05],t,[-Inf;18.5],t,[-Inf; Inf],t,[-Inf;48.5],f,other,primary_hypothyroid
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,t,t,f,f,f,f,f,f,f,f,t,f,f,f,f,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],M,f,f,f,t,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(41.5; Inf],t,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,compensated_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,t,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(0.55;1.05],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHD,compensated_hypothyroid
+[-Inf; Inf],M,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,t,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(85.5;114.5],f,STMW,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,t,f,f,f,f,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,f,f,f,t,f,f,f,f,f,f,f,t,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,t,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,t,f,f,t,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,t,f,f,f,f,f,f,f,f,t,(41.5; Inf],t,[-Inf;0.55],t,(18.5;52.5],t,[-Inf; Inf],t,[-Inf;48.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,t,f,f,t,(6.05;22.5],f,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,compensated_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,compensated_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHD,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,t,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(64.5;85.5],f,STMW,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,STMW,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,t,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(0.55;1.05],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,t,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,t,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(48.5;64.5],f,SVHC,primary_hypothyroid
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,t,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(41.5; Inf],t,(1.05; Inf],t,(18.5;52.5],t,[-Inf; Inf],t,[-Inf;48.5],f,STMW,primary_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(48.5;64.5],f,other,negative
+[-Inf; Inf],,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,t,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,t,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(0.55;1.05],t,(18.5;52.5],t,[-Inf; Inf],t,(64.5;85.5],f,SVI,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,t,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,t,f,f,t,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(41.5; Inf],t,(0.55;1.05],t,(18.5;52.5],t,[-Inf; Inf],t,[-Inf;48.5],f,other,primary_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,t,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,t,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(22.5;41.5],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,SVI,compensated_hypothyroid
+[-Inf; Inf],F,f,f,f,t,f,f,f,f,f,f,f,t,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],t,(0.55;1.05],t,(52.5;68.5],t,[-Inf; Inf],t,(48.5;64.5],f,SVI,primary_hypothyroid
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,t,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,compensated_hypothyroid
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,t,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,t,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],t,(18.5;52.5],t,[-Inf; Inf],t,(48.5;64.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,t,f,f,f,f,f,f,t,f,f,f,f,f,f,t,(22.5;41.5],t,(0.55;1.05],t,(18.5;52.5],t,[-Inf; Inf],t,(48.5;64.5],f,other,primary_hypothyroid
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(0.55;1.05],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,t,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,[-Inf;0.55],t,(18.5;52.5],t,[-Inf; Inf],t,(64.5;85.5],f,SVI,negative
+[-Inf; Inf],,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],,f,f,f,f,t,f,f,f,f,f,f,t,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,STMW,negative
+[-Inf; Inf],M,f,f,f,f,f,f,t,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,t,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,STMW,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,t,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(64.5;85.5],f,STMW,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],,t,f,f,f,f,t,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,STMW,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,f,f,f,f,f,t,t,(6.05;22.5],t,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(64.5;85.5],f,SVHC,compensated_hypothyroid
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,t,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,t,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(68.5;89.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,compensated_hypothyroid
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,t,f,f,f,f,f,f,t,(22.5;41.5],t,(0.55;1.05],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,SVI,compensated_hypothyroid
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(22.5;41.5],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,compensated_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,t,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],f,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVHC,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVHC,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,[-Inf;6.05],f,(1.05; Inf],t,(52.5;68.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(0.55;1.05],t,(89.5;148.5],f,[-Inf; Inf],f,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(0.55;1.05],t,(89.5;148.5],t,[-Inf; Inf],t,(114.5; Inf],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(6.05;22.5],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,other,compensated_hypothyroid
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,SVI,negative
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(41.5; Inf],t,(0.55;1.05],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,f,t,f,f,t,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(64.5;85.5],f,other,negative
+[-Inf; Inf],F,t,f,f,f,t,f,f,f,t,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(68.5;89.5],t,[-Inf; Inf],t,(64.5;85.5],f,STMW,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(0.55;1.05],t,(18.5;52.5],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative
+[-Inf; Inf],M,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,(41.5; Inf],t,(0.55;1.05],t,[-Inf;18.5],t,[-Inf; Inf],t,[-Inf;48.5],f,SVI,primary_hypothyroid
+[-Inf; Inf],F,f,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],t,(1.05; Inf],t,(89.5;148.5],t,[-Inf; Inf],t,(85.5;114.5],f,other,negative
+[-Inf; Inf],F,t,f,f,f,f,f,f,f,f,f,f,f,f,f,t,[-Inf;6.05],f,(1.05; Inf],t,(148.5; Inf],t,[-Inf; Inf],t,(114.5; Inf],f,other,negative

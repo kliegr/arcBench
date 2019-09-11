@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{formability=(1.5;2.113243762],surface.quality=E} => {class=3}",0.24,1.00,0.00 
+"{product.type=C,hardness=(22.5;75]} => {class=3}",0.15,1.00,0.00 
+"{packing=[-Inf; Inf],hardness=(22.5;75]} => {class=3}",0.15,1.00,0.00 
+"{enamelability=[-Inf;1.83333333334],hardness=(22.5;75]} => {class=3}",0.15,1.00,0.00 
+"{hardness=(22.5;75],bore=[-Inf; Inf]} => {class=3}",0.15,1.00,0.00 
+"{thick=(0.6005;0.7995],shape=SHEET} => {class=3}",0.14,1.00,0.00 
+"{formability=(1.5;2.113243762],thick=(0.6005;0.7995]} => {class=3}",0.14,1.00,0.00 
+"{thick=[-Inf;0.4755],hardness=[-Inf;22.5]} => {class=3}",0.08,1.00,0.00 
+"{strength=[-Inf;375],family=TN} => {class=5}",0.07,1.00,0.00 
+"{product.type=C,family=TN} => {class=5}",0.07,1.00,0.00 
+"{enamelability=[-Inf;1.83333333334],family=TN} => {class=5}",0.07,1.00,0.00 
+"{bw.me=B,surface.quality=E} => {class=3}",0.07,1.00,0.00 
+"{surface.quality=F} => {class=3}",0.07,1.00,0.00 
+"{ } => {class=3}", 0,0,0

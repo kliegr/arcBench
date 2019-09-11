@@ -1,0 +1,15 @@
+lymphatics,block_of_affere,bl_of_lymph_c,bl_of_lymph_s,by_pass,extravasates,regeneration_of,early_uptake_in,lym_nodes_dimin,lym_nodes_enlar,changes_in_lym,defect_in_node,changes_in_node,changes_in_stru,special_forms,dislocation_of,exclusion_of_no,no_of_nodes_in,class
+arched,no,no,no,no,yes,no,yes,[-Inf;1.5],[-Inf;2.5],oval,lac_margin,lac_margin,drop_like,vesicles,no,yes,[-Inf;3.5],malign_lymph
+arched,no,no,no,no,no,no,yes,[-Inf;1.5],[-Inf;2.5],oval,lac_central,lacunar,faint,vesicles,yes,yes,[-Inf;3.5],malign_lymph
+arched,no,no,no,no,no,no,yes,[-Inf;1.5],(2.5; Inf],oval,lacunar,lacunar,reticular,vesicles,yes,yes,(3.5; Inf],malign_lymph
+displaced,no,no,no,no,no,no,yes,[-Inf;1.5],(2.5; Inf],oval,lac_central,lacunar,faint,vesicles,yes,yes,(3.5; Inf],malign_lymph
+arched,yes,no,no,no,yes,no,yes,[-Inf;1.5],[-Inf;2.5],round,lac_margin,lac_margin,diluted,vesicles,yes,yes,[-Inf;3.5],metastases
+deformed,yes,yes,no,no,yes,no,no,[-Inf;1.5],[-Inf;2.5],round,lac_margin,lac_margin,diluted,chalices,no,yes,[-Inf;3.5],metastases
+arched,yes,no,no,no,yes,no,yes,[-Inf;1.5],[-Inf;2.5],oval,lac_margin,lac_margin,coarse,chalices,no,yes,[-Inf;3.5],metastases
+deformed,yes,yes,no,yes,yes,no,yes,[-Inf;1.5],(2.5; Inf],oval,lacunar,lac_margin,coarse,no,yes,yes,[-Inf;3.5],metastases
+arched,yes,yes,no,no,no,no,yes,[-Inf;1.5],[-Inf;2.5],oval,lac_central,lac_margin,faint,chalices,yes,yes,[-Inf;3.5],metastases
+arched,yes,no,no,no,yes,no,yes,[-Inf;1.5],(2.5; Inf],round,lac_margin,lac_central,faint,vesicles,yes,yes,[-Inf;3.5],malign_lymph
+deformed,no,no,no,no,yes,no,yes,[-Inf;1.5],[-Inf;2.5],oval,lac_central,lac_margin,faint,chalices,yes,yes,[-Inf;3.5],malign_lymph
+deformed,yes,no,no,no,no,no,no,[-Inf;1.5],[-Inf;2.5],oval,lac_margin,lac_margin,drop_like,vesicles,no,no,[-Inf;3.5],metastases
+displaced,yes,no,no,yes,yes,no,yes,[-Inf;1.5],(2.5; Inf],round,lac_central,lac_margin,coarse,vesicles,yes,yes,[-Inf;3.5],metastases
+deformed,yes,yes,no,yes,no,no,yes,[-Inf;1.5],[-Inf;2.5],oval,lac_margin,lac_margin,faint,vesicles,no,yes,[-Inf;3.5],metastases

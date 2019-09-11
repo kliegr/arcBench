@@ -1,0 +1,16 @@
+AGE,SEX,STEROID,ANTIVIRALS,FATIGUE,MALAISE,ANOREXIA,LIVER_BIG,LIVER_FIRM,SPLEEN_PALPABLE,SPIDERS,ASCITES,VARICES,BILIRUBIN,ALK_PHOSPHATE,SGOT,ALBUMIN,PROTIME,HISTOLOGY,Class
+All,male,no,no,no,no,no,no,no,no,no,no,no,-inf_to_1.65,All,All,3.85396825397_to_inf,44.5_to_inf,no,LIVE
+All,female,yes,no,no,no,no,yes,no,no,no,no,no,-inf_to_1.65,All,All,3.85396825397_to_inf,44.5_to_inf,no,LIVE
+All,female,no,no,yes,no,yes,yes,no,yes,yes,no,no,-inf_to_1.65,All,All,-inf_to_3.85396825397,44.5_to_inf,no,DIE
+All,male,no,yes,no,no,no,yes,no,no,no,no,no,-inf_to_1.65,All,All,3.85396825397_to_inf,44.5_to_inf,no,LIVE
+All,female,no,yes,yes,yes,no,yes,no,no,no,no,no,-inf_to_1.65,All,All,3.85396825397_to_inf,44.5_to_inf,no,LIVE
+All,female,yes,no,yes,no,no,yes,no,no,yes,no,no,-inf_to_1.65,All,All,3.85396825397_to_inf,44.5_to_inf,no,DIE
+All,female,no,no,no,no,no,yes,no,no,no,no,no,-inf_to_1.65,All,All,3.85396825397_to_inf,44.5_to_inf,no,LIVE
+All,female,yes,no,yes,yes,no,yes,yes,yes,yes,yes,no,-inf_to_1.65,All,All,-inf_to_3.85396825397,44.5_to_inf,yes,LIVE
+All,female,no,yes,no,no,no,yes,no,no,no,no,no,-inf_to_1.65,All,All,3.85396825397_to_inf,-inf_to_44.5,no,LIVE
+All,female,yes,yes,no,no,no,yes,no,no,no,no,no,-inf_to_1.65,All,All,3.85396825397_to_inf,44.5_to_inf,no,LIVE
+All,male,no,no,yes,yes,no,yes,no,yes,no,no,no,-inf_to_1.65,All,All,-inf_to_3.85396825397,44.5_to_inf,no,LIVE
+All,female,yes,no,no,no,no,yes,no,no,no,no,no,-inf_to_1.65,All,All,3.85396825397_to_inf,44.5_to_inf,no,LIVE
+All,female,no,no,no,no,no,yes,no,no,no,no,no,-inf_to_1.65,All,All,3.85396825397_to_inf,44.5_to_inf,no,LIVE
+All,female,no,no,yes,no,no,yes,no,no,yes,no,no,-inf_to_1.65,All,All,3.85396825397_to_inf,44.5_to_inf,yes,LIVE
+All,female,yes,no,yes,yes,yes,yes,no,no,yes,yes,no,1.65_to_inf,All,All,-inf_to_3.85396825397,44.5_to_inf,yes,DIE

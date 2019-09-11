@@ -1,0 +1,69 @@
+A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,class
+b,[-Inf;38.96],[-Inf;4.02],u,g,c,h,(1.02; Inf],t,f,[-Inf;0.5],f,g,(111; Inf],[-Inf;492],+
+b,(38.96; Inf],(4.02; Inf],u,g,e,h,(1.02; Inf],t,t,(2.5; Inf],f,g,[-Inf;111],[-Inf;492],+
+b,(38.96; Inf],(4.02; Inf],u,g,x,h,(1.02; Inf],t,t,(2.5; Inf],f,g,[-Inf;111],[-Inf;492],+
+b,(38.96; Inf],(4.02; Inf],u,g,i,bb,(1.02; Inf],t,t,(2.5; Inf],t,g,[-Inf;111],(492; Inf],+
+b,[-Inf;38.96],[-Inf;4.02],u,g,w,v,(1.02; Inf],t,t,(2.5; Inf],t,g,(111; Inf],[-Inf;492],+
+b,[-Inf;38.96],[-Inf;4.02],y,p,cc,v,[-Inf;1.02],t,t,(0.5;2.5],f,g,(111; Inf],(492; Inf],+
+b,[-Inf;38.96],[-Inf;4.02],u,g,w,h,[-Inf;1.02],t,t,(0.5;2.5],f,g,(111; Inf],[-Inf;492],+
+b,[-Inf;38.96],[-Inf;4.02],u,g,w,v,[-Inf;1.02],t,f,[-Inf;0.5],t,g,(111; Inf],[-Inf;492],+
+b,(38.96; Inf],[-Inf;4.02],u,g,i,h,(1.02; Inf],t,f,[-Inf;0.5],t,g,(111; Inf],[-Inf;492],+
+b,(38.96; Inf],(4.02; Inf],y,p,c,v,(1.02; Inf],f,f,[-Inf;0.5],f,g,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],(4.02; Inf],u,g,q,v,[-Inf;1.02],t,t,(0.5;2.5],f,g,(111; Inf],[-Inf;492],-
+b,(38.96; Inf],[-Inf;4.02],y,p,x,h,(1.02; Inf],t,f,[-Inf;0.5],t,g,(111; Inf],[-Inf;492],-
+a,[-Inf;38.96],[-Inf;4.02],u,g,w,v,[-Inf;1.02],t,f,[-Inf;0.5],f,s,(111; Inf],[-Inf;492],+
+a,[-Inf;38.96],(4.02; Inf],u,g,w,v,(1.02; Inf],t,t,(2.5; Inf],t,g,[-Inf;111],(492; Inf],+
+a,(38.96; Inf],(4.02; Inf],u,g,c,v,(1.02; Inf],t,t,(2.5; Inf],f,g,[-Inf;111],(492; Inf],+
+b,[-Inf;38.96],(4.02; Inf],u,g,m,h,(1.02; Inf],t,t,(2.5; Inf],t,g,[-Inf;111],[-Inf;492],+
+b,[-Inf;38.96],(4.02; Inf],u,g,q,v,[-Inf;1.02],t,f,[-Inf;0.5],t,g,[-Inf;111],[-Inf;492],+
+b,[-Inf;38.96],(4.02; Inf],u,g,q,h,(1.02; Inf],t,f,[-Inf;0.5],f,g,[-Inf;111],[-Inf;492],+
+b,[-Inf;38.96],[-Inf;4.02],y,p,w,v,[-Inf;1.02],t,f,[-Inf;0.5],t,g,(111; Inf],(492; Inf],+
+a,[-Inf;38.96],(4.02; Inf],u,g,q,h,(1.02; Inf],t,t,(0.5;2.5],f,g,[-Inf;111],[-Inf;492],+
+b,[-Inf;38.96],[-Inf;4.02],y,p,aa,v,(1.02; Inf],t,t,(2.5; Inf],t,g,(111; Inf],(492; Inf],+
+b,(38.96; Inf],(4.02; Inf],u,g,cc,h,(1.02; Inf],t,t,(2.5; Inf],t,g,(111; Inf],[-Inf;492],+
+b,[-Inf;38.96],[-Inf;4.02],u,g,cc,v,[-Inf;1.02],t,t,(2.5; Inf],f,g,[-Inf;111],(492; Inf],+
+b,[-Inf;38.96],[-Inf;4.02],u,g,x,h,(1.02; Inf],t,t,(2.5; Inf],t,g,(111; Inf],(492; Inf],+
+b,[-Inf;38.96],(4.02; Inf],u,g,x,v,[-Inf;1.02],t,t,(2.5; Inf],f,g,(111; Inf],[-Inf;492],+
+a,[-Inf;38.96],(4.02; Inf],u,g,i,v,[-Inf;1.02],f,f,[-Inf;0.5],f,g,(111; Inf],(492; Inf],-
+b,[-Inf;38.96],[-Inf;4.02],u,g,d,h,(1.02; Inf],f,f,[-Inf;0.5],t,g,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],[-Inf;4.02],y,p,c,v,[-Inf;1.02],f,f,[-Inf;0.5],f,g,(111; Inf],(492; Inf],-
+b,[-Inf;38.96],[-Inf;4.02],y,p,e,dd,[-Inf;1.02],f,f,[-Inf;0.5],f,g,[-Inf;111],[-Inf;492],-
+b,[-Inf;38.96],[-Inf;4.02],u,g,c,v,(1.02; Inf],f,f,[-Inf;0.5],t,g,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],(4.02; Inf],u,g,c,v,[-Inf;1.02],f,t,(0.5;2.5],f,g,[-Inf;111],(492; Inf],-
+b,(38.96; Inf],(4.02; Inf],u,g,aa,v,[-Inf;1.02],f,f,[-Inf;0.5],f,g,[-Inf;111],[-Inf;492],-
+b,(38.96; Inf],[-Inf;4.02],u,g,d,v,[-Inf;1.02],f,f,[-Inf;0.5],f,g,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],[-Inf;4.02],u,g,d,v,[-Inf;1.02],f,f,[-Inf;0.5],t,g,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],(4.02; Inf],u,g,e,dd,[-Inf;1.02],f,f,[-Inf;0.5],t,g,(111; Inf],(492; Inf],-
+a,[-Inf;38.96],[-Inf;4.02],y,p,e,dd,[-Inf;1.02],f,f,[-Inf;0.5],f,g,(111; Inf],[-Inf;492],-
+b,(38.96; Inf],(4.02; Inf],u,g,i,bb,(1.02; Inf],f,f,[-Inf;0.5],t,g,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],(4.02; Inf],u,g,k,v,(1.02; Inf],f,f,[-Inf;0.5],t,g,[-Inf;111],(492; Inf],-
+b,[-Inf;38.96],[-Inf;4.02],u,g,c,v,[-Inf;1.02],f,t,(0.5;2.5],f,g,(111; Inf],(492; Inf],-
+b,[-Inf;38.96],[-Inf;4.02],u,g,c,v,(1.02; Inf],f,f,[-Inf;0.5],f,p,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],[-Inf;4.02],u,g,c,v,[-Inf;1.02],f,f,[-Inf;0.5],f,g,[-Inf;111],[-Inf;492],-
+b,[-Inf;38.96],[-Inf;4.02],u,g,ff,ff,[-Inf;1.02],f,t,(2.5; Inf],f,g,(111; Inf],(492; Inf],-
+b,[-Inf;38.96],[-Inf;4.02],y,p,i,v,[-Inf;1.02],f,f,[-Inf;0.5],t,g,(111; Inf],(492; Inf],-
+b,[-Inf;38.96],[-Inf;4.02],y,p,k,v,[-Inf;1.02],f,f,[-Inf;0.5],f,g,(111; Inf],(492; Inf],-
+b,[-Inf;38.96],[-Inf;4.02],u,g,c,v,(1.02; Inf],t,t,(2.5; Inf],t,g,(111; Inf],(492; Inf],+
+a,[-Inf;38.96],[-Inf;4.02],u,g,q,v,(1.02; Inf],t,f,[-Inf;0.5],t,g,(111; Inf],[-Inf;492],-
+b,(38.96; Inf],[-Inf;4.02],u,g,i,bb,[-Inf;1.02],t,f,[-Inf;0.5],f,g,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],[-Inf;4.02],y,p,cc,v,(1.02; Inf],t,f,[-Inf;0.5],t,g,[-Inf;111],[-Inf;492],-
+a,[-Inf;38.96],(4.02; Inf],u,g,cc,h,(1.02; Inf],t,t,(2.5; Inf],f,g,(111; Inf],[-Inf;492],+
+b,[-Inf;38.96],[-Inf;4.02],u,g,x,h,(1.02; Inf],t,f,[-Inf;0.5],f,g,[-Inf;111],(492; Inf],+
+b,[-Inf;38.96],(4.02; Inf],u,g,w,h,(1.02; Inf],t,t,(2.5; Inf],t,g,(111; Inf],[-Inf;492],+
+b,(38.96; Inf],[-Inf;4.02],y,p,c,v,[-Inf;1.02],t,t,(2.5; Inf],t,g,(111; Inf],[-Inf;492],+
+b,(38.96; Inf],[-Inf;4.02],u,g,e,v,[-Inf;1.02],f,t,(0.5;2.5],f,s,(111; Inf],[-Inf;492],+
+b,(38.96; Inf],(4.02; Inf],u,g,x,h,(1.02; Inf],t,t,(2.5; Inf],t,g,[-Inf;111],(492; Inf],+
+b,[-Inf;38.96],[-Inf;4.02],u,g,c,bb,[-Inf;1.02],t,f,[-Inf;0.5],f,g,(111; Inf],[-Inf;492],+
+b,[-Inf;38.96],[-Inf;4.02],u,g,c,h,[-Inf;1.02],t,f,[-Inf;0.5],f,g,(111; Inf],[-Inf;492],-
+b,(38.96; Inf],(4.02; Inf],u,g,x,bb,[-Inf;1.02],f,f,[-Inf;0.5],t,g,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],(4.02; Inf],u,g,c,bb,[-Inf;1.02],f,t,(0.5;2.5],t,g,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],[-Inf;4.02],u,g,i,v,(1.02; Inf],f,t,(0.5;2.5],t,g,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],(4.02; Inf],u,g,aa,v,[-Inf;1.02],f,f,[-Inf;0.5],f,g,[-Inf;111],[-Inf;492],-
+b,[-Inf;38.96],(4.02; Inf],u,g,aa,v,[-Inf;1.02],f,f,[-Inf;0.5],t,g,[-Inf;111],[-Inf;492],-
+a,[-Inf;38.96],[-Inf;4.02],u,g,c,v,(1.02; Inf],f,t,(0.5;2.5],t,g,[-Inf;111],[-Inf;492],-
+b,[-Inf;38.96],[-Inf;4.02],u,g,d,h,[-Inf;1.02],f,f,[-Inf;0.5],t,s,(111; Inf],[-Inf;492],-
+a,[-Inf;38.96],(4.02; Inf],u,g,q,h,[-Inf;1.02],f,t,(2.5; Inf],t,g,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],(4.02; Inf],u,g,m,v,[-Inf;1.02],f,t,(0.5;2.5],f,g,[-Inf;111],[-Inf;492],-
+a,[-Inf;38.96],(4.02; Inf],u,g,ff,ff,[-Inf;1.02],f,f,[-Inf;0.5],f,g,[-Inf;111],[-Inf;492],-
+b,[-Inf;38.96],[-Inf;4.02],y,p,d,v,[-Inf;1.02],f,f,[-Inf;0.5],f,g,(111; Inf],[-Inf;492],-
+b,[-Inf;38.96],(4.02; Inf],y,p,e,h,(1.02; Inf],f,f,[-Inf;0.5],f,g,(111; Inf],[-Inf;492],-

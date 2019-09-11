@@ -1,0 +1,16 @@
+AGE,SEX,STEROID,ANTIVIRALS,FATIGUE,MALAISE,ANOREXIA,LIVER_BIG,LIVER_FIRM,SPLEEN_PALPABLE,SPIDERS,ASCITES,VARICES,BILIRUBIN,ALK_PHOSPHATE,SGOT,ALBUMIN,PROTIME,HISTOLOGY,Class
+(30.5; Inf],female,yes,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.8528; Inf],(44.5; Inf],no,LIVE
+(30.5; Inf],female,yes,yes,yes,no,no,yes,yes,no,yes,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(2.65;3.8528],(44.5; Inf],no,LIVE
+(30.5; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.8528; Inf],(44.5; Inf],no,LIVE
+(30.5; Inf],female,yes,yes,yes,yes,no,no,yes,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.8528; Inf],(44.5; Inf],no,LIVE
+(30.5; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.8528; Inf],(44.5; Inf],no,LIVE
+(30.5; Inf],female,yes,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.8528; Inf],(44.5; Inf],no,LIVE
+(30.5; Inf],female,no,no,yes,yes,no,no,yes,no,yes,no,no,(1.35; Inf],[-Inf; Inf],[-Inf; Inf],(2.65;3.8528],(44.5; Inf],no,DIE
+(30.5; Inf],female,no,no,yes,yes,yes,yes,yes,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.8528; Inf],(44.5; Inf],no,LIVE
+(30.5; Inf],female,no,yes,yes,yes,no,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.8528; Inf],(44.5; Inf],no,LIVE
+[-Inf;30.5],female,no,no,yes,yes,yes,yes,yes,no,no,no,no,(1.35; Inf],[-Inf; Inf],[-Inf; Inf],(3.8528; Inf],(44.5; Inf],no,LIVE
+[-Inf;30.5],female,yes,no,yes,yes,yes,yes,yes,no,yes,yes,yes,(1.35; Inf],[-Inf; Inf],[-Inf; Inf],(2.65;3.8528],(44.5; Inf],yes,DIE
+(30.5; Inf],female,no,yes,yes,yes,no,yes,no,no,yes,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(2.65;3.8528],[-Inf;44.5],yes,DIE
+(30.5; Inf],female,no,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(2.65;3.8528],(44.5; Inf],yes,LIVE
+(30.5; Inf],female,yes,yes,no,no,no,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.8528; Inf],(44.5; Inf],yes,LIVE
+(30.5; Inf],female,no,no,yes,no,no,yes,no,no,no,no,no,[-Inf;1.35],[-Inf; Inf],[-Inf; Inf],(3.8528; Inf],(44.5; Inf],yes,LIVE

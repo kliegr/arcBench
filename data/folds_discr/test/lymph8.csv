@@ -1,0 +1,17 @@
+lymphatics,block_of_affere,bl_of_lymph_c,bl_of_lymph_s,by_pass,extravasates,regeneration_of,early_uptake_in,lym_nodes_dimin,lym_nodes_enlar,changes_in_lym,defect_in_node,changes_in_node,changes_in_stru,special_forms,dislocation_of,exclusion_of_no,no_of_nodes_in,class
+displaced,yes,no,no,yes,yes,no,yes,All,2.5_to_inf,round,lac_central,lacunar,diluted,vesicles,yes,yes,-inf_to_3.5,malign_lymph
+deformed,no,no,no,yes,yes,yes,no,All,-inf_to_2.5,bean,lacunar,no,diluted,vesicles,no,no,3.5_to_inf,fibrosis
+deformed,no,no,no,no,no,no,no,All,-inf_to_2.5,oval,lac_central,lac_margin,diluted,no,yes,yes,-inf_to_3.5,metastases
+deformed,yes,no,no,no,yes,no,no,All,-inf_to_2.5,oval,lac_central,lac_margin,coarse,no,yes,yes,-inf_to_3.5,metastases
+arched,yes,no,no,yes,yes,no,no,All,2.5_to_inf,round,lac_central,lac_margin,coarse,vesicles,no,no,-inf_to_3.5,metastases
+deformed,yes,no,no,yes,yes,no,yes,All,2.5_to_inf,round,lacunar,lac_margin,coarse,chalices,yes,yes,-inf_to_3.5,metastases
+arched,yes,no,no,no,no,no,no,All,-inf_to_2.5,round,lac_margin,lac_margin,grainy,chalices,yes,yes,-inf_to_3.5,metastases
+arched,no,no,no,no,no,no,yes,All,2.5_to_inf,round,lac_central,lac_central,diluted,vesicles,yes,yes,3.5_to_inf,malign_lymph
+arched,no,no,no,no,no,no,yes,All,2.5_to_inf,oval,lac_margin,lac_margin,faint,vesicles,yes,yes,-inf_to_3.5,malign_lymph
+displaced,yes,no,no,no,yes,no,no,All,2.5_to_inf,round,lac_central,lac_margin,faint,vesicles,yes,yes,-inf_to_3.5,metastases
+displaced,yes,yes,no,yes,yes,no,yes,All,-inf_to_2.5,oval,lacunar,no,drop_like,no,yes,yes,-inf_to_3.5,malign_lymph
+normal,no,no,no,no,yes,no,yes,All,-inf_to_2.5,oval,no,no,grainy,no,no,no,-inf_to_3.5,normal
+arched,yes,no,no,no,no,no,yes,All,-inf_to_2.5,round,lac_margin,lac_margin,diluted,chalices,no,yes,-inf_to_3.5,metastases
+arched,yes,no,no,no,no,no,no,All,-inf_to_2.5,round,lac_margin,lac_margin,drop_like,vesicles,no,yes,-inf_to_3.5,metastases
+displaced,yes,yes,yes,yes,yes,no,yes,All,2.5_to_inf,round,lac_central,lac_central,stripped,vesicles,yes,yes,3.5_to_inf,malign_lymph
+deformed,yes,no,no,yes,yes,no,yes,All,-inf_to_2.5,oval,lac_central,lac_margin,diluted,chalices,yes,yes,3.5_to_inf,malign_lymph

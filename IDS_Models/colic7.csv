@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{pain=continuous severe pain,abdominal_distension=moderate} => {surgical_lesion=yes}",0.05,1.00,0.00 
+"{temp_extremities=normal,abdomen=distended small intestine} => {surgical_lesion=yes}",0.04,1.00,0.00 
+"{rectal_examination=absent,temp_extremities=cold} => {surgical_lesion=yes}",0.03,1.00,0.00 
+"{outcome=died,temp_extremities=cold} => {surgical_lesion=yes}",0.03,1.00,0.00 
+"{abdominal_distension=severe,outcome=lived} => {surgical_lesion=yes}",0.03,1.00,0.00 
+"{abdomen=distended small intestine,mucous_membranes=pale cyanotic} => {surgical_lesion=yes}",0.03,1.00,0.00 
+"{pain=intermittent severe pain,abdomen=distended small intestine} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{abdominal_distension=severe,abdominocentesis_appearance=serosanguinous} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{temp_extremities=normal,pain=intermittent severe pain} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{pain=intermittent severe pain,abdominal_distension=none} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{pain=alert no pain,mucous_membranes=pale pink} => {surgical_lesion=no}",0.02,1.00,0.00 
+"{rectal_examination=normal,abdomen=firm feces in large intestine} => {surgical_lesion=no}",0.02,1.00,0.00 
+"{rectal_examination=normal,peristalsis=absent} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{ } => {surgical_lesion=yes}", 0,0,0

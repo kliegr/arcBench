@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{outcome=died,abdomen=distended small intestine} => {surgical_lesion=yes}",0.05,1.00,0.00 
+"{pain=continuous severe pain,peristalsis=hypomotile} => {surgical_lesion=yes}",0.04,1.00,0.00 
+"{abdominal_distension=none,abdomen=distended small intestine} => {surgical_lesion=yes}",0.03,1.00,0.00 
+"{mucous_membranes=pale pink,abdominal_distension=severe} => {surgical_lesion=yes}",0.03,1.00,0.00 
+"{pain=intermittent severe pain,abdomen=distended small intestine} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{abdominal_distension=slight,peristalsis=hypermotile} => {surgical_lesion=no}",0.02,1.00,0.00 
+"{mucous_membranes=normal pink,outcome=died} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{outcome=euthanized,rectal_examination=normal} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{abdomen=distended large intestine,rectal_examination=normal} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{pain=alert no pain,mucous_membranes=pale pink} => {surgical_lesion=no}",0.02,1.00,0.00 
+"{rectal_examination=normal,peristalsis=absent} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{temp_extremities=normal,pain=intermittent severe pain} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{pain=alert no pain,pulse=(58; Inf]} => {surgical_lesion=no}",0.02,1.00,0.00 
+"{ } => {surgical_lesion=yes}", 0,0,0

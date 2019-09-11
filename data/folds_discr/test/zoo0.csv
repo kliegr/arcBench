@@ -1,0 +1,13 @@
+hair,feathers,eggs,milk,airborne,aquatic,predator,toothed,backbone,breathes,venomous,fins,legs,tail,domestic,catsize,class
+True,False,False,True,False,False,True,True,True,True,False,False,4,False,False,True,mammal
+False,False,True,False,False,True,True,True,True,False,False,True,0,True,False,True,fish
+False,True,True,False,True,False,False,False,True,True,False,False,2,True,True,False,bird
+True,False,False,True,False,False,True,True,True,True,False,False,2,False,True,True,mammal
+True,False,False,True,False,False,False,True,True,True,False,False,4,True,True,False,mammal
+False,False,True,False,False,True,True,False,False,False,False,False,6,False,False,False,invertebrate
+True,False,False,True,False,False,True,True,True,True,False,False,4,True,False,False,mammal
+False,False,True,False,False,True,True,True,True,True,False,False,4,True,False,False,amphibian
+True,False,False,True,False,False,False,True,True,True,False,False,4,True,True,True,mammal
+False,False,True,False,False,True,False,True,True,False,False,True,0,True,False,False,fish
+False,True,True,False,True,True,True,False,True,True,False,False,2,True,False,False,bird
+False,False,True,False,False,False,False,False,True,True,False,False,4,True,False,True,reptile

@@ -1,0 +1,16 @@
+AGE,SEX,STEROID,ANTIVIRALS,FATIGUE,MALAISE,ANOREXIA,LIVER_BIG,LIVER_FIRM,SPLEEN_PALPABLE,SPIDERS,ASCITES,VARICES,BILIRUBIN,ALK_PHOSPHATE,SGOT,ALBUMIN,PROTIME,HISTOLOGY,Class
+[-Inf; Inf],male,no,no,no,no,no,no,no,no,no,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],(3.85396825397; Inf],(44.5; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],(3.85396825397; Inf],(44.5; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,no,yes,yes,no,yes,yes,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85396825397],(44.5; Inf],no,DIE
+[-Inf; Inf],male,no,yes,no,no,no,yes,no,no,no,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],(3.85396825397; Inf],(44.5; Inf],no,LIVE
+[-Inf; Inf],female,no,yes,yes,yes,no,yes,no,no,no,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],(3.85396825397; Inf],(44.5; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,no,no,yes,no,no,yes,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],(3.85396825397; Inf],(44.5; Inf],no,DIE
+[-Inf; Inf],female,no,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],(3.85396825397; Inf],(44.5; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,no,yes,yes,yes,yes,yes,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85396825397],(44.5; Inf],yes,LIVE
+[-Inf; Inf],female,no,yes,no,no,no,yes,no,no,no,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],(3.85396825397; Inf],[-Inf;44.5],no,LIVE
+[-Inf; Inf],female,yes,yes,no,no,no,yes,no,no,no,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],(3.85396825397; Inf],(44.5; Inf],no,LIVE
+[-Inf; Inf],male,no,no,yes,yes,no,yes,no,yes,no,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85396825397],(44.5; Inf],no,LIVE
+[-Inf; Inf],female,yes,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],(3.85396825397; Inf],(44.5; Inf],no,LIVE
+[-Inf; Inf],female,no,no,no,no,no,yes,no,no,no,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],(3.85396825397; Inf],(44.5; Inf],no,LIVE
+[-Inf; Inf],female,no,no,yes,no,no,yes,no,no,yes,no,no,[-Inf;1.65],[-Inf; Inf],[-Inf; Inf],(3.85396825397; Inf],(44.5; Inf],yes,LIVE
+[-Inf; Inf],female,yes,no,yes,yes,yes,yes,no,no,yes,yes,no,(1.65; Inf],[-Inf; Inf],[-Inf; Inf],[-Inf;3.85396825397],(44.5; Inf],yes,DIE

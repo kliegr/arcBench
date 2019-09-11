@@ -1,0 +1,38 @@
+surgery,Age,rectal_temperature,pulse,respiratory_rate,temp_extremities,peripheral_pulse,mucous_membranes,capillary_refill_time,pain,peristalsis,abdominal_distension,nasogastric_tube,nasogastric_reflux,nasogastric_reflux_PH,rectal_examination,abdomen,packed_cell_volume,total_protein,abdominocentesis_appearance,abdomcentesis_total_protein,outcome,surgical_lesion
+no,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],cool,reduced,,>=3,continuous severe pain,absent,severe,,,[-Inf; Inf],decreased,distended large intestine,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],died,no
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],,,pale cyanotic,<3,intermittent mild pain,absent,slight,,,[-Inf; Inf],absent,other,[-Inf; Inf],[-Inf; Inf],cloudy,[-Inf; Inf],euthanized,no
+yes,young,[-Inf; Inf],(58; Inf],[-Inf; Inf],cold,normal,dark cyanotic,>=3,depressed,absent,severe,none,>1l,[-Inf; Inf],decreased,,[-Inf; Inf],[-Inf; Inf],serosanguinous,[-Inf; Inf],died,yes
+no,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],warm,normal,pale pink,<3,depressed,hypomotile,slight,slight,none,[-Inf; Inf],decreased,firm feces in large intestine,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,no
+no,young,[-Inf; Inf],(58; Inf],[-Inf; Inf],normal,,normal pink,<3,continuous severe pain,hypomotile,none,slight,none,[-Inf; Inf],decreased,,[-Inf; Inf],[-Inf; Inf],clear,[-Inf; Inf],lived,no
+no,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],warm,,bright pink,<3,depressed,hypermotile,slight,none,none,[-Inf; Inf],absent,distended small intestine,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,yes
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],normal,normal,bright red,>=3,continuous severe pain,absent,severe,significant,none,[-Inf; Inf],absent,distended small intestine,[-Inf; Inf],[-Inf; Inf],cloudy,[-Inf; Inf],lived,yes
+no,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],normal,normal,normal pink,<3,intermittent mild pain,hypomotile,slight,none,none,[-Inf; Inf],normal,firm feces in large intestine,[-Inf; Inf],[-Inf; Inf],clear,[-Inf; Inf],lived,no
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],warm,,bright pink,<3,continuous severe pain,hypomotile,moderate,slight,>1l,[-Inf; Inf],,,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],died,yes
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],cold,reduced,pale pink,,continuous severe pain,absent,moderate,slight,,[-Inf; Inf],absent,distended small intestine,[-Inf; Inf],[-Inf; Inf],serosanguinous,[-Inf; Inf],died,yes
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],warm,normal,bright pink,<3,intermittent mild pain,,,slight,,[-Inf; Inf],absent,,[-Inf; Inf],[-Inf; Inf],clear,[-Inf; Inf],died,yes
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],cool,reduced,pale pink,meaning unknown,continuous severe pain,hypomotile,moderate,significant,>1l,[-Inf; Inf],absent,distended large intestine,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],died,yes
+no,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],normal,normal,normal pink,<3,alert no pain,hypermotile,none,,,[-Inf; Inf],,,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,no
+no,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],warm,normal,pale pink,<3,alert no pain,hypomotile,slight,none,none,[-Inf; Inf],normal,distended large intestine,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,no
+no,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],normal,normal,pale pink,<3,alert no pain,hypomotile,slight,,,[-Inf; Inf],normal,,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,no
+no,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],cool,reduced,pale cyanotic,>=3,intermittent mild pain,absent,moderate,,<1l,[-Inf; Inf],absent,distended large intestine,[-Inf; Inf],[-Inf; Inf],clear,[-Inf; Inf],euthanized,yes
+,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],cool,normal,pale pink,<3,intermittent severe pain,hypomotile,none,slight,none,[-Inf; Inf],decreased,distended large intestine,[-Inf; Inf],[-Inf; Inf],cloudy,[-Inf; Inf],,yes
+yes,young,[-Inf; Inf],(58; Inf],[-Inf; Inf],cool,reduced,pale pink,<3,continuous severe pain,hypermotile,moderate,slight,>1l,[-Inf; Inf],increased,,[-Inf; Inf],[-Inf; Inf],cloudy,[-Inf; Inf],died,yes
+no,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],,,,,alert no pain,hypermotile,,none,none,[-Inf; Inf],normal,,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,no
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],cool,reduced,pale cyanotic,>=3,,absent,severe,slight,none,[-Inf; Inf],,,[-Inf; Inf],[-Inf; Inf],serosanguinous,[-Inf; Inf],lived,yes
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],cool,reduced,bright red,>=3,depressed,absent,moderate,,<1l,[-Inf; Inf],absent,distended small intestine,[-Inf; Inf],[-Inf; Inf],cloudy,[-Inf; Inf],died,yes
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],normal,normal,pale pink,<3,intermittent severe pain,absent,moderate,slight,none,[-Inf; Inf],decreased,distended large intestine,[-Inf; Inf],[-Inf; Inf],clear,[-Inf; Inf],died,yes
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],cool,reduced,bright red,>=3,,hypomotile,moderate,slight,<1l,[-Inf; Inf],absent,distended large intestine,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],euthanized,yes
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],cool,reduced,,<3,intermittent severe pain,hypomotile,severe,,,[-Inf; Inf],,,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,yes
+yes,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],normal,normal,bright red,<3,intermittent severe pain,hypomotile,none,slight,<1l,[-Inf; Inf],normal,,[-Inf; Inf],[-Inf; Inf],cloudy,[-Inf; Inf],died,yes
+no,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],normal,normal,normal pink,<3,depressed,hypomotile,slight,slight,none,[-Inf; Inf],decreased,distended large intestine,[-Inf; Inf],[-Inf; Inf],clear,[-Inf; Inf],lived,no
+yes,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],cool,normal,bright pink,<3,intermittent mild pain,hypomotile,moderate,slight,none,[-Inf; Inf],normal,distended large intestine,[-Inf; Inf],[-Inf; Inf],cloudy,[-Inf; Inf],lived,yes
+no,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],warm,normal,pale pink,<3,intermittent mild pain,hypomotile,slight,none,none,[-Inf; Inf],normal,distended large intestine,[-Inf; Inf],[-Inf; Inf],clear,[-Inf; Inf],lived,no
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],warm,reduced,normal pink,<3,,hypomotile,none,none,>1l,[-Inf; Inf],normal,distended large intestine,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,yes
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],cool,reduced,pale cyanotic,>=3,continuous severe pain,absent,severe,significant,<1l,[-Inf; Inf],absent,distended small intestine,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,yes
+no,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],warm,normal,bright pink,<3,alert no pain,hypermotile,,,,[-Inf; Inf],normal,normal,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,no
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],cool,,normal pink,<3,,absent,,significant,>1l,[-Inf; Inf],,distended large intestine,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,yes
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],cool,reduced,pale cyanotic,>=3,continuous severe pain,absent,moderate,slight,none,[-Inf; Inf],absent,distended small intestine,[-Inf; Inf],[-Inf; Inf],cloudy,[-Inf; Inf],lived,yes
+yes,adult,[-Inf; Inf],(58; Inf],[-Inf; Inf],cool,normal,bright red,>=3,intermittent severe pain,hypomotile,moderate,slight,<1l,[-Inf; Inf],absent,distended small intestine,[-Inf; Inf],[-Inf; Inf],serosanguinous,[-Inf; Inf],died,yes
+no,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],normal,normal,normal pink,,intermittent mild pain,normal,none,none,none,[-Inf; Inf],decreased,firm feces in large intestine,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,no
+no,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],cool,reduced,pale pink,,,hypermotile,none,slight,none,[-Inf; Inf],absent,,[-Inf; Inf],[-Inf; Inf],cloudy,[-Inf; Inf],lived,no
+yes,adult,[-Inf; Inf],[-Inf;58],[-Inf; Inf],normal,normal,normal pink,<3,alert no pain,normal,none,none,none,[-Inf; Inf],normal,distended large intestine,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],lived,yes

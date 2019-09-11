@@ -85,29 +85,35 @@ As QCBA implementation, two options are supported
    data/folds_discr2/train/{dataset}{fold}.cutpoints
    data/folds_discr2/test/{dataset}{fold}.csv
  
- * Run `benchmarkIDSQCBA_RQCBA.py`. Make sure that `runQCBA = False` inside the script. This will run pyIDS using the discretized folds created in the previous step. 
+ * Run `evalIDS_QCBA.py`. Make sure that `runQCBA = False` inside the script. This will run pyIDS using the discretized folds created in the previous step. 
  
  The IDS model will be stored to 
  
-    idsModels/{dataset}{fold}.csv
+    IDS_Models/{dataset}{fold}.csv
    
  The model evaluation statistics against test data will be stored to:
  
-    ids/{dataset}-ids-result.csv
+    IDS_results/IDS.csv
     
- * Run `idsqcba_experiments.R`
+ * Run `evalIDS_QCBA.R`
  This will run QCBA implementation in R, loading the IDS result from file.
  The model evaluation statistics against test data will be stored to:
  
-     ids/{dataset}-idsqcba-result.csv
-     
-     
-   data/folds_discr2/train/{dataset}{fold}.cutpoints
-   data/folds_discr2/test/{dataset}{fold}.csv
+     IDSQCBA_results/IDSQCBA_R.csv
+          
 
 ### IDS + QCBA (Python)
-* Run `benchmarkIDSQCBA_RQCBA.py`. Make sure that `runQCBA = True` inside the script.
+* Run `evalIDS_QCBA.py`. Make sure that `runQCBA = True` inside the script.
+
+This option needs to be retested after recent changes in QCBA implementation in pyARC.
 
 ### SBRL + QCBA
-* Run sbrl_experiments.R
-* Run sbrl_aggregate.R
+* Run evalSBRL_QCBA.R
+
+The model evaluation statistics against test data will be stored to:
+
+    SBRL_results/{algorithm}-{maxantlength}.csv
+
+Where algorithm is one of {CBA,QCBA,SBRL,SBRLQCBA} and maxlength (maximum antecedent length) one of {1, Long}.
+The settings of maxlength affects SBRL and consequently SBRLQCBA.
+The Long option has different meaning for individual datasets. Refer to `evalSBRL_QCBA.R` for specific values.

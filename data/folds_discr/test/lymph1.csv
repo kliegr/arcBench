@@ -1,0 +1,15 @@
+lymphatics,block_of_affere,bl_of_lymph_c,bl_of_lymph_s,by_pass,extravasates,regeneration_of,early_uptake_in,lym_nodes_dimin,lym_nodes_enlar,changes_in_lym,defect_in_node,changes_in_node,changes_in_stru,special_forms,dislocation_of,exclusion_of_no,no_of_nodes_in,class
+arched,no,no,no,no,yes,no,yes,-inf_to_1.5,2.5_to_inf,round,lacunar,lacunar,coarse,vesicles,yes,yes,3.5_to_inf,malign_lymph
+arched,no,no,no,no,no,no,no,-inf_to_1.5,-inf_to_2.5,bean,no,no,drop_like,no,yes,yes,-inf_to_3.5,metastases
+arched,yes,no,no,no,no,no,yes,-inf_to_1.5,2.5_to_inf,round,lac_margin,lac_margin,drop_like,chalices,no,yes,-inf_to_3.5,metastases
+deformed,no,no,no,no,no,no,yes,-inf_to_1.5,-inf_to_2.5,oval,lacunar,lac_margin,grainy,no,yes,yes,-inf_to_3.5,metastases
+deformed,no,no,no,yes,no,no,yes,-inf_to_1.5,-inf_to_2.5,round,lac_margin,lac_margin,diluted,vesicles,no,no,-inf_to_3.5,metastases
+displaced,yes,no,no,no,no,no,yes,-inf_to_1.5,-inf_to_2.5,oval,lacunar,lacunar,drop_like,chalices,no,no,-inf_to_3.5,metastases
+displaced,yes,no,no,no,yes,no,yes,-inf_to_1.5,2.5_to_inf,round,lac_margin,lac_margin,stripped,vesicles,yes,yes,-inf_to_3.5,malign_lymph
+arched,no,no,no,no,no,no,yes,-inf_to_1.5,-inf_to_2.5,oval,lac_margin,lac_margin,diluted,vesicles,no,no,-inf_to_3.5,malign_lymph
+arched,no,no,no,no,yes,no,yes,-inf_to_1.5,-inf_to_2.5,oval,lacunar,lac_central,faint,no,yes,yes,-inf_to_3.5,malign_lymph
+arched,yes,yes,yes,yes,yes,no,no,-inf_to_1.5,-inf_to_2.5,oval,lac_central,lac_margin,faint,chalices,yes,yes,-inf_to_3.5,metastases
+arched,no,no,no,no,yes,no,yes,-inf_to_1.5,2.5_to_inf,round,lac_central,lacunar,faint,vesicles,yes,yes,-inf_to_3.5,malign_lymph
+arched,no,no,no,no,no,no,no,-inf_to_1.5,-inf_to_2.5,oval,lacunar,lac_margin,drop_like,no,yes,yes,-inf_to_3.5,metastases
+displaced,no,no,no,no,no,no,yes,-inf_to_1.5,2.5_to_inf,round,lacunar,lacunar,coarse,chalices,yes,yes,-inf_to_3.5,metastases
+deformed,yes,no,no,no,no,no,yes,-inf_to_1.5,2.5_to_inf,oval,lacunar,lac_central,faint,vesicles,yes,yes,-inf_to_3.5,malign_lymph

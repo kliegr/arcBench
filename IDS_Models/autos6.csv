@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{length=(168.75;169.05],fuelType=gas} => {XClass=3}",0.05,1.00,0.00 
+"{numOfDoors=two,length=(168.75;169.05]} => {XClass=3}",0.05,1.00,0.00 
+"{length=(168.75;169.05],aspiration=std} => {XClass=3}",0.05,1.00,0.00 
+"{curbWeight=(2216.5; Inf],length=(168.75;169.05]} => {XClass=3}",0.05,1.00,0.00 
+"{cityMpg=[-Inf;30.5],length=(168.75;169.05]} => {XClass=3}",0.05,1.00,0.00 
+"{compressionRatio=[-Inf; Inf],length=(168.75;169.05]} => {XClass=3}",0.05,1.00,0.00 
+"{length=(168.75;169.05],bore=(3.16; Inf]} => {XClass=3}",0.05,1.00,0.00 
+"{stroke=[-Inf; Inf],length=(168.75;169.05]} => {XClass=3}",0.05,1.00,0.00 
+"{make=subaru,numOfDoors=four} => {XClass=0}",0.04,1.00,0.00 
+"{wheelBase=(95.5;97.25],engineType=ohcf} => {XClass=0}",0.04,1.00,0.00 
+"{width=(64.3; Inf],engineType=l} => {XClass=0}",0.04,1.00,0.00 
+"{wheelBase=(95.5;97.25],height=[-Inf;50.35]} => {XClass=3}",0.04,1.00,0.00 
+"{engineSize=(105.5; Inf],engineType=l} => {XClass=0}",0.04,1.00,0.00 
+"{ } => {XClass=0}", 0,0,0

@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{thick=(0.6005;0.7995],formability=(1.5;2.10416666666]} => {class=3}",0.15,1.00,0.00 
+"{hardness=(22.5;75]} => {class=3}",0.15,1.00,0.00 
+"{hardness=(22.5;75],carbon=[-Inf;3.5]} => {class=3}",0.15,1.00,0.00 
+"{hardness=(22.5;75],steel=A} => {class=3}",0.13,1.00,0.00 
+"{thick=[-Inf;0.4755],hardness=[-Inf;22.5]} => {class=3}",0.08,1.00,0.00 
+"{bl=Y,surface.quality=E} => {class=3}",0.07,1.00,0.00 
+"{surface.quality=E,bf=Y} => {class=3}",0.07,1.00,0.00 
+"{condition=S,formability=(2.10416666666;2.60416666666]} => {class=3}",0.07,1.00,0.00 
+"{surface.quality=E,formability=(2.60416666666; Inf]} => {class=3}",0.07,1.00,0.00 
+"{packing=[-Inf; Inf],surface.quality=F} => {class=3}",0.06,1.00,0.00 
+"{surface.quality=F,strength=[-Inf;375]} => {class=3}",0.06,1.00,0.00 
+"{surface.quality=F} => {class=3}",0.06,1.00,0.00 
+"{condition=S,hardness=(22.5;75]} => {class=3}",0.06,1.00,0.00 
+"{ } => {class=3}", 0,0,0

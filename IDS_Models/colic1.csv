@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{outcome=died,nasogastric_tube=slight} => {surgical_lesion=yes}",0.08,1.00,0.00 
+"{abdomen=distended small intestine,peristalsis=absent} => {surgical_lesion=yes}",0.06,1.00,0.00 
+"{outcome=died,mucous_membranes=pale pink} => {surgical_lesion=yes}",0.05,1.00,0.00 
+"{pain=depressed,outcome=died} => {surgical_lesion=yes}",0.05,1.00,0.00 
+"{nasogastric_tube=slight,mucous_membranes=pale cyanotic} => {surgical_lesion=yes}",0.05,1.00,0.00 
+"{mucous_membranes=pale pink,pain=intermittent severe pain} => {surgical_lesion=yes}",0.04,1.00,0.00 
+"{abdomen=distended small intestine,mucous_membranes=pale cyanotic} => {surgical_lesion=yes}",0.04,1.00,0.00 
+"{abdominal_distension=moderate,rectal_examination=normal} => {surgical_lesion=yes}",0.03,1.00,0.00 
+"{pain=continuous severe pain,nasogastric_reflux=>1l} => {surgical_lesion=yes}",0.03,1.00,0.00 
+"{mucous_membranes=pale pink,abdominal_distension=severe} => {surgical_lesion=yes}",0.03,1.00,0.00 
+"{pain=alert no pain,mucous_membranes=pale pink} => {surgical_lesion=no}",0.02,1.00,0.00 
+"{outcome=died,rectal_examination=normal} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{nasogastric_reflux=>1l,abdominocentesis_appearance=serosanguinous} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{ } => {surgical_lesion=yes}", 0,0,0

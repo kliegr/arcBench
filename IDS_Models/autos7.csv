@@ -1,0 +1,17 @@
+rules,suppport,confidence,lift
+"{compressionRatio=[-Inf; Inf],make=peugot} => {XClass=0}",0.05,1.00,0.00 
+"{wheelBase=(100.1; Inf],engineType=l} => {XClass=0}",0.05,1.00,0.00 
+"{driveWheels=rwd,engineType=l} => {XClass=0}",0.05,1.00,0.00 
+"{numOfDoors=four,engineType=l} => {XClass=0}",0.05,1.00,0.00 
+"{peakRpm=[-Inf; Inf],make=peugot} => {XClass=0}",0.05,1.00,0.00 
+"{price=(8497; Inf],engineType=l} => {XClass=0}",0.05,1.00,0.00 
+"{make=peugot,price=(8497; Inf]} => {XClass=0}",0.05,1.00,0.00 
+"{engineType=l,horsepower=(87; Inf]} => {XClass=0}",0.05,1.00,0.00 
+"{length=(186.65; Inf],engineType=l} => {XClass=0}",0.05,1.00,0.00 
+"{bore=(3.16; Inf],make=peugot} => {XClass=0}",0.05,1.00,0.00 
+"{height=[-Inf;50.35],numOfCylinders=four} => {XClass=3}",0.05,1.00,0.00 
+"{length=(168.75;169.05],bore=(3.16; Inf]} => {XClass=3}",0.04,1.00,0.00 
+"{length=(168.75;169.05]} => {XClass=3}",0.04,1.00,0.00 
+"{curbWeight=(2216.5; Inf],length=(168.75;169.05]} => {XClass=3}",0.04,1.00,0.00 
+"{length=(168.75;169.05],fuelType=gas} => {XClass=3}",0.04,1.00,0.00 
+"{ } => {XClass=0}", 0,0,0

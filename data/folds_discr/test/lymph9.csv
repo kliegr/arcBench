@@ -1,0 +1,15 @@
+lymphatics,block_of_affere,bl_of_lymph_c,bl_of_lymph_s,by_pass,extravasates,regeneration_of,early_uptake_in,lym_nodes_dimin,lym_nodes_enlar,changes_in_lym,defect_in_node,changes_in_node,changes_in_stru,special_forms,dislocation_of,exclusion_of_no,no_of_nodes_in,class
+arched,no,no,no,no,no,no,no,-inf_to_1.5,-inf_to_2.5,round,lac_margin,lac_margin,faint,vesicles,no,no,-inf_to_2.5,metastases
+arched,no,no,no,no,no,no,yes,-inf_to_1.5,2.5_to_inf,oval,lac_central,lacunar,faint,vesicles,yes,yes,2.5_to_inf,malign_lymph
+arched,no,no,no,no,no,no,yes,-inf_to_1.5,2.5_to_inf,oval,lac_central,lac_central,coarse,vesicles,yes,yes,2.5_to_inf,malign_lymph
+arched,yes,yes,no,yes,yes,no,yes,-inf_to_1.5,2.5_to_inf,oval,lac_central,lac_margin,diluted,no,yes,yes,2.5_to_inf,metastases
+deformed,yes,no,no,no,no,no,yes,-inf_to_1.5,-inf_to_2.5,round,lac_margin,lac_margin,faint,chalices,yes,yes,-inf_to_2.5,metastases
+arched,yes,yes,no,no,yes,no,no,-inf_to_1.5,-inf_to_2.5,round,lacunar,lac_margin,drop_like,chalices,no,no,-inf_to_2.5,metastases
+displaced,no,no,no,no,yes,no,yes,-inf_to_1.5,2.5_to_inf,round,lac_central,lacunar,diluted,vesicles,yes,yes,-inf_to_2.5,malign_lymph
+displaced,yes,no,no,no,no,no,yes,-inf_to_1.5,-inf_to_2.5,oval,lacunar,lac_central,faint,no,no,yes,-inf_to_2.5,malign_lymph
+deformed,yes,yes,no,no,yes,no,no,-inf_to_1.5,2.5_to_inf,oval,lac_margin,lac_margin,coarse,vesicles,no,yes,-inf_to_2.5,metastases
+arched,no,no,no,no,no,no,no,-inf_to_1.5,-inf_to_2.5,oval,lacunar,lac_margin,faint,chalices,no,yes,-inf_to_2.5,metastases
+arched,yes,yes,no,yes,yes,yes,yes,-inf_to_1.5,2.5_to_inf,oval,lacunar,lacunar,coarse,vesicles,yes,yes,2.5_to_inf,malign_lymph
+displaced,yes,yes,no,no,no,no,yes,-inf_to_1.5,-inf_to_2.5,oval,lacunar,lac_margin,drop_like,chalices,yes,yes,-inf_to_2.5,metastases
+arched,yes,no,no,no,no,no,yes,-inf_to_1.5,-inf_to_2.5,oval,lacunar,lac_margin,faint,vesicles,no,yes,-inf_to_2.5,metastases
+arched,no,no,no,no,no,no,yes,-inf_to_1.5,2.5_to_inf,round,lacunar,lac_margin,coarse,vesicles,yes,yes,-inf_to_2.5,malign_lymph

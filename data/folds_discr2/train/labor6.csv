@@ -1,0 +1,52 @@
+duration,wage.increase.first.year,wage.increase.second.year,wage.increase.third.year,cost.of.living.adjustment,working.hours,pension,standby.pay,shift.differential,education.allowance,statutory.holidays,vacation,longterm.disability.assistance,contribution.to.dental.plan,bereavement.assistance,contribution.to.health.plan,class
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],average,,,yes,,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],ret_allw,[-Inf; Inf],[-Inf; Inf],yes,[-Inf; Inf],below_average,,full,,full,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],generous,yes,half,yes,half,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],tc,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],yes,[-Inf; Inf],,,,yes,,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],average,,half,yes,half,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],tc,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],generous,yes,none,yes,half,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],below_average,,,,,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],yes,[-Inf; Inf],below_average,yes,half,yes,,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],generous,yes,full,,,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],generous,,,yes,full,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],,,full,,,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],no,[-Inf; Inf],below_average,no,half,,half,bad
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],tcf,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],generous,,full,yes,full,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],no,[-Inf; Inf],generous,,,,,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],average,,full,yes,,good
+[-Inf; Inf],[-Inf;2.9],(2.75; Inf],[-Inf; Inf],tc,[-Inf; Inf],ret_allw,[-Inf; Inf],[-Inf; Inf],no,[-Inf; Inf],below_average,yes,half,,none,bad
+[-Inf; Inf],[-Inf;2.9],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],none,[-Inf; Inf],[-Inf; Inf],yes,[-Inf; Inf],average,no,none,no,none,bad
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],generous,,full,,full,good
+[-Inf; Inf],[-Inf;2.9],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],none,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],below_average,,,,,bad
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],tcf,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],,,,,,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],generous,,half,,full,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],generous,,,,,good
+[-Inf; Inf],[-Inf;2.9],[-Inf;2.75],[-Inf; Inf],none,[-Inf; Inf],none,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],below_average,,half,yes,full,bad
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],tcf,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],yes,[-Inf; Inf],below_average,yes,none,,half,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],yes,[-Inf; Inf],generous,,,yes,full,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],no,[-Inf; Inf],below_average,yes,full,yes,full,good
+[-Inf; Inf],[-Inf;2.9],[-Inf;2.75],[-Inf; Inf],,[-Inf; Inf],none,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],average,,,yes,full,bad
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],no,[-Inf; Inf],average,,half,,,good
+[-Inf; Inf],(2.9; Inf],[-Inf;2.75],[-Inf; Inf],tc,[-Inf; Inf],none,[-Inf; Inf],[-Inf; Inf],no,[-Inf; Inf],below_average,yes,half,yes,full,bad
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],none,[-Inf; Inf],[-Inf; Inf],no,[-Inf; Inf],below_average,no,none,,none,bad
+[-Inf; Inf],[-Inf;2.9],[-Inf;2.75],[-Inf; Inf],none,[-Inf; Inf],none,[-Inf; Inf],[-Inf; Inf],no,[-Inf; Inf],average,yes,none,yes,full,bad
+[-Inf; Inf],[-Inf;2.9],(2.75; Inf],[-Inf; Inf],tc,[-Inf; Inf],ret_allw,[-Inf; Inf],[-Inf; Inf],no,[-Inf; Inf],generous,no,none,no,none,bad
+[-Inf; Inf],[-Inf;2.9],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],no,[-Inf; Inf],below_average,yes,half,,none,bad
+[-Inf; Inf],[-Inf;2.9],[-Inf;2.75],[-Inf; Inf],,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],average,,,yes,none,bad
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],average,yes,full,yes,half,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],none,[-Inf; Inf],[-Inf; Inf],yes,[-Inf; Inf],average,no,none,no,none,bad
+[-Inf; Inf],[-Inf;2.9],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],yes,[-Inf; Inf],generous,yes,none,yes,full,bad
+[-Inf; Inf],[-Inf;2.9],[-Inf;2.75],[-Inf; Inf],tc,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],average,,,yes,,bad
+[-Inf; Inf],[-Inf;2.9],(2.75; Inf],[-Inf; Inf],tcf,[-Inf; Inf],none,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],below_average,,,yes,,bad
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],none,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],below_average,no,none,,none,bad
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],no,[-Inf; Inf],below_average,no,half,,half,bad
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],average,,full,yes,full,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],tcf,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],,yes,half,,half,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],ret_allw,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],average,yes,full,yes,full,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],,yes,full,,,good
+[-Inf; Inf],[-Inf;2.9],(2.75; Inf],[-Inf; Inf],tcf,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],yes,[-Inf; Inf],,yes,half,yes,,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],tcf,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],generous,,,yes,full,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],average,yes,full,,full,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],none,[-Inf; Inf],empl_contr,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],generous,yes,,,full,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],average,,half,yes,half,good
+[-Inf; Inf],(2.9; Inf],(2.75; Inf],[-Inf; Inf],,[-Inf; Inf],,[-Inf; Inf],[-Inf; Inf],,[-Inf; Inf],generous,yes,full,yes,full,good

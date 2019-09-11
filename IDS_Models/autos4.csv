@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{engineSize=(103; Inf],make=peugot} => {XClass=0}",0.06,1.00,0.00 
+"{curbWeight=(2216.5; Inf],engineType=l} => {XClass=0}",0.06,1.00,0.00 
+"{driveWheels=rwd,make=peugot} => {XClass=0}",0.06,1.00,0.00 
+"{engineLocation=front,make=peugot} => {XClass=0}",0.06,1.00,0.00 
+"{make=peugot} => {XClass=0}",0.06,1.00,0.00 
+"{make=peugot,engineType=l} => {XClass=0}",0.06,1.00,0.00 
+"{width=(64.3; Inf],make=peugot} => {XClass=0}",0.06,1.00,0.00 
+"{driveWheels=rwd,engineType=l} => {XClass=0}",0.06,1.00,0.00 
+"{make=peugot,numOfCylinders=four} => {XClass=0}",0.06,1.00,0.00 
+"{bore=(3.255; Inf],engineType=l} => {XClass=0}",0.06,1.00,0.00 
+"{make=peugot,height=(56.25; Inf]} => {XClass=0}",0.05,1.00,0.00 
+"{length=(168.75;169.05],highwayMpg=[-Inf;29.5]} => {XClass=3}",0.05,1.00,0.00 
+"{driveWheels=rwd,length=(168.75;169.05]} => {XClass=3}",0.05,1.00,0.00 
+"{ } => {XClass=0}", 0,0,0
