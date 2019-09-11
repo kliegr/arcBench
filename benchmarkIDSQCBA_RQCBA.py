@@ -36,7 +36,7 @@ interval_reader.compile_reader()
 
 QuantitativeCAR.interval_reader = interval_reader
 
-basepath="/home/tomas/temp/arcBench/"
+basepath="./"
 unique_transactions= True
 
 def run1fold(basepath,datasetname, unique_transactions=True,runQCBA=False,saveIDSRules=True,useConfidenceForCandidateGeneration=True):
@@ -162,11 +162,11 @@ def mean_allfolds(dataset_name, start=0, end=10, unique_transactions=True,runQCB
     print(df_agg)
     return df_agg
 
-datasets = ["hypothyroid","australian","anneal","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","ionosphere","iris","labor","letter","lymph","segment","sonar","vehicle","vowel","hepatitis","spambase"]    
+datasets = ["iris","australian","anneal","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","ionosphere","labor","letter","lymph","segment","sonar","vehicle","vowel","hepatitis","spambase","hypothyroid"]    
 
 runQCBA = False
 useConfidenceForCandidateGeneration = True
-resultfilesuffix=""
+separateFilePerDataset=False
 if runQCBA:
     resultFolder="IDSQCBA_results"
 else:
@@ -176,13 +176,53 @@ if not os.path.exists(resultFolder):
     os.makedirs(resultFolder)
 for dataset in datasets:
     print(dataset)
-    resultFile=resultFolder+"/"+dataset+".csv"
-    if os.path.exists(resultFile):
-        print("skipping already computed")
-        continue
+    
+    # Check if already computed
+    if separateFilePerDataset:
+        resultFile=resultFolder+"/"+dataset+".csv"
+        if os.path.exists(resultFile):
+            print("skipping already computed")
+            continue    
+    else:
+        resultFileIDS=resultFolder+"/IDS.csv"        
+
+        if runQCBA:
+            resultFileIDSQCBA=resultFolder+"/IDSQCBAPy.csv"
+            file = open(resultFileIDSQCBA,"w+")
+            strings = file.read()
+            if len(strings)==0:
+                file.write("dataset,accuracy,rules,antlength,buildtime\n")
+            file.close()                
+            if  "\n" + dataset +"," in strings:
+                print("skipping QCBA already computed")
+                continue
+        file = open(resultFileIDS,"r+")
+        strings = file.read()
+        if len(strings)==0:
+            print("initializing result file")
+            file.write("dataset,accuracy,rules,antlength,buildtime\n")
+        file.close()                
+        if "\n" + dataset +"," in strings:
+            print("skipping IDS already computed")
+            continue        
+
+    
+    # Compute            
     df_stats_per_dataset = mean_allfolds(dataset, start=0,end=10, runQCBA=runQCBA,useConfidenceForCandidateGeneration=useConfidenceForCandidateGeneration)    
-    df_stats_per_dataset.to_csv(resultFile)
     print("*****")
     print(df_stats_per_dataset)
     print("******")
+
+    # Save
+    if separateFilePerDataset:
+        df_stats_per_dataset.to_csv(resultFile)
+    else:
+        df_stats_per_dataset
+        file = open(resultFileIDS,"a")
+        file.write(dataset + "," + str(df_stats_per_dataset.loc["accuracy","ids"]) + "," + str(df_stats_per_dataset.loc["rulecount","ids"]) + "," + str(df_stats_per_dataset.loc["rulelength","ids"]) +"," + str(df_stats_per_dataset.loc["buildtime","ids"])  + "\n")
+        file.close()
+        if runQCBA:
+            file = open(resultFileIDSQCBA,"a")
+            file.write(dataset + "," + str(df_stats_per_dataset.loc["accuracy","idsqcba"]) + "," + str(df_stats_per_dataset.loc["rulecount","idsqcba"]) + "," + str(df_stats_per_dataset.loc["rulelength","idsqcba"])+"," + str(df_stats_per_dataset.loc["buildtime","idsqcba"])  + "\n")
+            file.close()
 

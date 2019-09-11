@@ -10,7 +10,9 @@ classAtt<-"label"
 foldsToProcess <- 10
 maxFoldIndex  <-foldsToProcess -1
 iterations <-1
-
+resultfolder = "./SBRL_results/"
+algs <- c("CBA","QCBA","SBRL","SBRLQCBA")  
+dir.create(file.path(basePath, resultfolder))
 #METAPARAM SETTING
 SBRL_rule_maxlenRange=c(1,10)
 defaultRuleOverlapPruningRange=c("transactionBased","noPruning")
@@ -36,17 +38,33 @@ for (SBRL_rule_maxlen in SBRL_rule_maxlenRange){
       {
         SBRL_rule_maxlen<-2
       }   
-      resultfolder=paste(defaultRuleOverlapPruning,"-Long/",sep="")
+      config="Long"
     }
     else{
-      resultfolder=paste("SBRL_results",defaultRuleOverlapPruning,"-1/",sep="")
+      config="1"
     }
-    dir.create(file.path(basePath, resultfolder))
+    for (alg in algs)
+    {
+      resultfile = paste(resultfolder,alg,"-", config, ".csv",sep="")
+      
+      if (!file.exists(resultfile))
+      {
+        write(paste("dataset,accuracy,rules,antlength,buildtime"), file = resultfile,
+              ncolumns = 1,
+              append = FALSE, sep = ",")
+      }   
+      file_text <- readLines(resultfile)
+      check_result <- TRUE %in% grepl(paste("^",dataset,",",sep=""),file_text)
+      if (isTRUE(check_result))
+      {
+        message(paste("Skipping dataset",dataset, "with config:", config, "(already computed)"))
+        next
+      }      
+    }
+    
 
-    resultfile= paste("SBRL_results",resultfolder,dataset, ".csv",sep="")
-    if (file.exists(resultfile)) next;
     df <- data.frame(matrix(rep(0,12), ncol = 4, nrow = 4), row.names = c("accuracy","rulecount","rulelength","buildtime"))
-    colnames(df)<-c("CBA","QCBA","SBRL","SBRLQCBA")  
+    colnames(df)<-algs
     for (fold in 0:maxFoldIndex)
     {
       message(paste("processing:", dataset,fold))
@@ -182,7 +200,13 @@ for (SBRL_rule_maxlen in SBRL_rule_maxlenRange){
     }
     df<- df * 1/foldsToProcess
     print(df)
-    write.csv(df, file=resultfile)
+    for (alg in algs)
+    {
+      resultfile = paste(resultfolder,alg,"-", config, ".csv",sep="")
+      write(c(dataset,df["accuracy",alg],df["rulecount",alg],df["rulelength",alg],df["buildtime",alg]), file =resultfile,
+            ncolumns = 5,
+            append = TRUE, sep = ",") 
+    }
   }
  }
 }
