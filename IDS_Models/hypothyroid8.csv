@@ -1,0 +1,12 @@
+rules,suppport,confidence,lift
+"{TSH=[-Inf;6.05],TT4=(89.5;146.5]} => {Class=negative}",0.60,1.00,0.00 
+"{TSH=[-Inf;6.05],TT4=(71.5;89.5]} => {Class=negative}",0.15,1.00,0.00 
+"{goitre=f,TT4=(146.5; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{TT4=(146.5; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{TSH=[-Inf;6.05],TT4=(146.5; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{TSH.measured=f,T4U=[-Inf; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{TSH.measured=f,thyroid.surgery=f} => {Class=negative}",0.10,1.00,0.00 
+"{query.hypothyroid=f,TT4=(146.5; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{T3=(1.05; Inf],TSH.measured=f} => {Class=negative}",0.10,1.00,0.00 
+"{TT4=(146.5; Inf],pregnant=f} => {Class=negative}",0.10,1.00,0.00 
+"{ } => {Class=negative}", 0,0,0

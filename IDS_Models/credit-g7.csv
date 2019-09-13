@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{property_magnitude=real estate,foreign_worker=no} => {class=good}",0.02,1.00,0.00 
+"{checking_status=no checking,foreign_worker=no} => {class=good}",0.01,1.00,0.00 
+"{savings_status=>=1000,property_magnitude=car} => {class=good}",0.01,1.00,0.00 
+"{checking_status=>=200,property_magnitude=life insurance} => {class=good}",0.01,1.00,0.00 
+"{purpose=retraining,other_parties=none} => {class=good}",0.01,1.00,0.00 
+"{installment_commitment=[-Inf; Inf],purpose=retraining} => {class=good}",0.01,1.00,0.00 
+"{purpose=furniture/equipment,other_parties=guarantor} => {class=good}",0.01,1.00,0.00 
+"{savings_status=500<=X<1000,property_magnitude=no known property} => {class=good}",0.01,1.00,0.00 
+"{purpose=used car,savings_status=100<=X<500} => {class=good}",0.01,1.00,0.00 
+"{other_parties=co applicant,savings_status=no known savings} => {class=good}",0.01,1.00,0.00 
+"{credit_history=all paid,property_magnitude=life insurance} => {class=bad}",0.01,1.00,0.00 
+"{purpose=retraining,job=unskilled resident} => {class=good}",0.01,1.00,0.00 
+"{housing=for free,savings_status=500<=X<1000} => {class=good}",0.00,1.00,0.00 
+"{ } => {class=good}", 0,0,0

@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{MAX.LENGTH.ASPECT.RATIO=[-Inf;7.5],PR.AXIS.ASPECT.RATIO=(68.5;86.5]} => {Class=bus}",0.07,1.00,0.00 
+"{MAX.LENGTH.ASPECT.RATIO=[-Inf;7.5],COMPACTNESS=(98.5; Inf]} => {Class=bus}",0.06,1.00,0.00 
+"{MAX.LENGTH.ASPECT.RATIO=[-Inf;7.5],SCALED.VARIANCE_MAJOR=(242; Inf]} => {Class=bus}",0.03,1.00,0.00 
+"{SCALED.VARIANCE_MINOR=(761.5; Inf],COMPACTNESS=(98.5; Inf]} => {Class=bus}",0.03,1.00,0.00 
+"{COMPACTNESS=(98.5; Inf],ELONGATEDNESS=[-Inf;29.5]} => {Class=bus}",0.03,1.00,0.00 
+"{SCALED.VARIANCE_MINOR=(761.5; Inf],DISTANCE.CIRCULARITY=(92.5; Inf]} => {Class=bus}",0.03,1.00,0.00 
+"{SCATTER.RATIO=(230.5; Inf],DISTANCE.CIRCULARITY=(92.5; Inf]} => {Class=bus}",0.03,1.00,0.00 
+"{SCALED.VARIANCE_MINOR=(761.5; Inf],PR.AXIS.RECTANGULARITY=(25.5; Inf]} => {Class=bus}",0.03,1.00,0.00 
+"{SCATTER.RATIO=(230.5; Inf],SKEWNESS.ABOUT_MAJOR=(74.5; Inf]} => {Class=bus}",0.03,1.00,0.00 
+"{COMPACTNESS=(98.5; Inf],PR.AXIS.RECTANGULARITY=(25.5; Inf]} => {Class=bus}",0.03,1.00,0.00 
+"{SCATTER.RATIO=(230.5; Inf],ELONGATEDNESS=[-Inf;29.5]} => {Class=bus}",0.03,1.00,0.00 
+"{MAX.LENGTH.ASPECT.RATIO=[-Inf;7.5],PR.AXIS.RECTANGULARITY=(25.5; Inf]} => {Class=bus}",0.03,1.00,0.00 
+"{SCATTER.RATIO=(230.5; Inf],SKEWNESS.ABOUT_MINOR=[-Inf;11.5]} => {Class=bus}",0.03,1.00,0.00 
+"{ } => {Class=bus}", 0,0,0

@@ -1,0 +1,17 @@
+rules,suppport,confidence,lift
+"{TSH=[-Inf;6.05],TT4=(89.5;148.5]} => {Class=negative}",0.61,1.00,0.00 
+"{T3.measured=f,TSH=[-Inf;6.05]} => {Class=negative}",0.19,1.00,0.00 
+"{TSH=[-Inf;6.05],TT4=(68.5;89.5]} => {Class=negative}",0.16,1.00,0.00 
+"{TSH.measured=f,hypopituitary=f} => {Class=negative}",0.10,1.00,0.00 
+"{TSH.measured=f,T4U=[-Inf; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{goitre=f,TSH.measured=f} => {Class=negative}",0.10,1.00,0.00 
+"{TSH.measured=f,referral.source=other} => {Class=negative}",0.10,1.00,0.00 
+"{TSH.measured=f,sick=f} => {Class=negative}",0.10,1.00,0.00 
+"{goitre=f,TT4=(148.5; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{TT4=(148.5; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{query.on.thyroxine=f,TT4=(148.5; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{TT4=(148.5; Inf],sick=f} => {Class=negative}",0.10,1.00,0.00 
+"{tumor=f,TSH.measured=f} => {Class=negative}",0.10,1.00,0.00 
+"{TT4=(148.5; Inf],psych=f} => {Class=negative}",0.09,1.00,0.00 
+"{query.hypothyroid=f,TT4=(148.5; Inf]} => {Class=negative}",0.09,1.00,0.00 
+"{ } => {Class=negative}", 0,0,0

@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{Feature.1=[-Inf;-0.1235],Feature.2=[-Inf;0.4725]} => {Class=hid}",0.04,1.00,0.00 
+"{Feature.1=[-Inf;-0.1235],Feature.6=(-0.6605;0.4795]} => {Class=hid}",0.02,1.00,0.00 
+"{Sex=Female,Feature.1=[-Inf;-0.1235]} => {Class=hid}",0.02,1.00,0.00 
+"{Feature.3=(0.149;0.829],Feature.0=[-Inf;-4.6685]} => {Class=hud}",0.02,1.00,0.00 
+"{Feature.6=(0.4795; Inf],Feature.1=[-Inf;-0.1235]} => {Class=hid}",0.02,1.00,0.00 
+"{Feature.1=(-0.1235;0.4245],Feature.0=(-4.2625;-3.525]} => {Class=hid}",0.01,1.00,0.00 
+"{Feature.4=(-0.7345;0.3855],Feature.2=(1.086; Inf]} => {Class=hid}",0.01,1.00,0.00 
+"{Feature.1=[-Inf;-0.1235],Feature.0=(-4.2625;-3.525]} => {Class=hid}",0.01,1.00,0.00 
+"{Feature.1=(3.1765; Inf],Feature.3=(0.829; Inf]} => {Class=hod}",0.01,1.00,0.00 
+"{Feature.4=[-Inf;-1.1765],Speaker.Number=Mike} => {Class=hod}",0.01,1.00,0.00 
+"{Speaker.Number=Mark,Feature.5=(1.451; Inf]} => {Class=hid}",0.01,1.00,0.00 
+"{Speaker.Number=Sue,Feature.0=[-Inf;-4.6685]} => {Class=hid}",0.01,1.00,0.00 
+"{Speaker.Number=Sarah,Feature.7=[-Inf;-0.597]} => {Class=hid}",0.01,1.00,0.00 
+"{ } => {Class=hAd}", 0,0,0

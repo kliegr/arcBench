@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{changes_in_node=lac_central,lym_nodes_enlar=(2.5; Inf]} => {class=malign_lymph}",0.13,1.00,0.00 
+"{bl_of_lymph_c=yes,changes_in_node=lac_margin} => {class=metastases}",0.11,1.00,0.00 
+"{changes_in_node=lac_central,block_of_affere=no} => {class=malign_lymph}",0.10,1.00,0.00 
+"{changes_in_node=lac_central,defect_in_node=lacunar} => {class=malign_lymph}",0.05,1.00,0.00 
+"{changes_in_stru=stripped} => {class=malign_lymph}",0.04,1.00,0.00 
+"{changes_in_stru=stripped,lymphatics=displaced} => {class=malign_lymph}",0.04,1.00,0.00 
+"{changes_in_stru=stripped,regeneration_of=no} => {class=malign_lymph}",0.04,1.00,0.00 
+"{changes_in_stru=stripped,bl_of_lymph_s=no} => {class=malign_lymph}",0.03,1.00,0.00 
+"{changes_in_stru=stripped,extravasates=yes} => {class=malign_lymph}",0.03,1.00,0.00 
+"{changes_in_stru=stripped,by_pass=no} => {class=malign_lymph}",0.03,1.00,0.00 
+"{changes_in_stru=coarse,lymphatics=displaced} => {class=metastases}",0.03,1.00,0.00 
+"{extravasates=yes,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}",0.03,1.00,0.00 
+"{regeneration_of=yes,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}",0.03,1.00,0.00 
+"{ } => {class=metastases}", 0,0,0

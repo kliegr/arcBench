@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{checking_status=0<=X<200,credit_amount=(10918; Inf]} => {class=bad}",0.02,1.00,0.00 
+"{other_parties=guarantor,num_dependents=2} => {class=good}",0.01,1.00,0.00 
+"{purpose=furniture/equipment,other_parties=guarantor} => {class=good}",0.01,1.00,0.00 
+"{purpose=used car,credit_history=delayed previously} => {class=good}",0.01,1.00,0.00 
+"{job=high qualif/self emp/mgmt,savings_status=500<=X<1000} => {class=good}",0.01,1.00,0.00 
+"{savings_status=>=1000,checking_status=<0} => {class=good}",0.01,1.00,0.00 
+"{purpose=retraining,job=unskilled resident} => {class=good}",0.00,1.00,0.00 
+"{foreign_worker=no,checking_status=>=200} => {class=good}",0.00,1.00,0.00 
+"{property_magnitude=no known property,other_payment_plans=stores} => {class=bad}",0.00,1.00,0.00 
+"{savings_status=500<=X<1000,personal_status=male div/sep} => {class=good}",0.00,1.00,0.00 
+"{credit_history=no credits/all paid,job=high qualif/self emp/mgmt} => {class=bad}",0.00,1.00,0.00 
+"{foreign_worker=no,purpose=radio/tv} => {class=good}",0.00,1.00,0.00 
+"{savings_status=>=1000,checking_status=>=200} => {class=good}",0.00,1.00,0.00 
+"{ } => {class=good}", 0,0,0

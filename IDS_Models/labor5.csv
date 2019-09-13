@@ -1,0 +1,14 @@
+rules,suppport,confidence,lift
+"{wage.increase.first.year=(2.9; Inf],duration=[-Inf; Inf],vacation=generous} => {class=good}",0.27,1.00,0.00 
+"{wage.increase.first.year=(2.9; Inf],working.hours=[-Inf; Inf],vacation=generous} => {class=good}",0.27,1.00,0.00 
+"{wage.increase.first.year=(2.9; Inf],vacation=generous} => {class=good}",0.27,1.00,0.00 
+"{wage.increase.first.year=(2.9; Inf],shift.differential=[-Inf; Inf],vacation=generous} => {class=good}",0.27,1.00,0.00 
+"{standby.pay=[-Inf; Inf],contribution.to.dental.plan=full,statutory.holidays=[-Inf; Inf]} => {class=good}",0.25,1.00,0.00 
+"{contribution.to.dental.plan=full,wage.increase.second.year=[-Inf; Inf],duration=[-Inf; Inf]} => {class=good}",0.25,1.00,0.00 
+"{contribution.to.dental.plan=full,working.hours=[-Inf; Inf],wage.increase.first.year=(2.9; Inf]} => {class=good}",0.25,1.00,0.00 
+"{contribution.to.dental.plan=full,wage.increase.second.year=[-Inf; Inf],shift.differential=[-Inf; Inf]} => {class=good}",0.25,1.00,0.00 
+"{standby.pay=[-Inf; Inf],contribution.to.dental.plan=full,wage.increase.first.year=(2.9; Inf]} => {class=good}",0.25,1.00,0.00 
+"{contribution.to.dental.plan=full,duration=[-Inf; Inf],shift.differential=[-Inf; Inf]} => {class=good}",0.25,1.00,0.00 
+"{contribution.to.dental.plan=full,wage.increase.second.year=[-Inf; Inf],wage.increase.third.year=[-Inf; Inf]} => {class=good}",0.25,1.00,0.00 
+"{contribution.to.dental.plan=full,duration=[-Inf; Inf],statutory.holidays=[-Inf; Inf]} => {class=good}",0.25,1.00,0.00 
+"{ } => {class=good}", 0,0,0

@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{Feature.1=[-Inf;-0.1235],Feature.8=[-Inf;0.122]} => {Class=hid}",0.05,1.00,0.00 
+"{Feature.0=[-Inf;-4.6685],Feature.2=[-Inf;0.4725]} => {Class=hud}",0.02,1.00,0.00 
+"{Feature.1=[-Inf;-0.1235],Feature.6=(-0.6605;0.489]} => {Class=hid}",0.02,1.00,0.00 
+"{Feature.0=[-Inf;-4.6685],Feature.3=(-0.0225;0.829]} => {Class=hud}",0.02,1.00,0.00 
+"{Feature.4=(0.5375; Inf],Feature.7=[-Inf;-0.69]} => {Class=hid}",0.02,1.00,0.00 
+"{Sex=Female,Feature.2=(1.086; Inf]} => {Class=hid}",0.01,1.00,0.00 
+"{Feature.6=(-1.0235;-0.6605],Feature.2=(1.086; Inf]} => {Class=hid}",0.01,1.00,0.00 
+"{Feature.0=[-Inf;-4.6685],Feature.3=[-Inf;-0.0225]} => {Class=hud}",0.01,1.00,0.00 
+"{Feature.2=(1.086; Inf],Feature.8=[-Inf;0.122]} => {Class=hid}",0.01,1.00,0.00 
+"{Feature.6=(-1.0235;-0.6605],Feature.7=[-Inf;-0.69]} => {Class=hid}",0.01,1.00,0.00 
+"{Feature.6=(-1.2535;-1.0235],Sex=Male} => {Class=hOd}",0.01,1.00,0.00 
+"{Feature.1=(2.1435;3.0665],Feature.0=(-2.1225;-1.6645]} => {Class=hAd}",0.01,1.00,0.00 
+"{Feature.1=(0.4245;0.519],Feature.5=(1.451; Inf]} => {Class=hId}",0.01,1.00,0.00 
+"{ } => {Class=hAd}", 0,0,0

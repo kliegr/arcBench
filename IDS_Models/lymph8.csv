@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{by_pass=yes,changes_in_node=lac_margin} => {class=metastases}",0.14,1.00,0.00 
+"{no_of_nodes_in=[-Inf;3.5],by_pass=yes} => {class=metastases}",0.13,1.00,0.00 
+"{changes_in_node=lac_central,lym_nodes_enlar=(2.5; Inf]} => {class=malign_lymph}",0.12,1.00,0.00 
+"{changes_in_stru=coarse,special_forms=chalices} => {class=metastases}",0.06,1.00,0.00 
+"{special_forms=no,changes_in_node=lac_margin} => {class=metastases}",0.05,1.00,0.00 
+"{defect_in_node=lac_margin,changes_in_stru=coarse} => {class=metastases}",0.05,1.00,0.00 
+"{changes_in_stru=grainy,changes_in_lym=round} => {class=metastases}",0.05,1.00,0.00 
+"{changes_in_stru=stripped,bl_of_lymph_s=no} => {class=malign_lymph}",0.04,1.00,0.00 
+"{defect_in_node=lac_margin,changes_in_stru=grainy} => {class=metastases}",0.04,1.00,0.00 
+"{lym_nodes_enlar=(2.5; Inf],changes_in_stru=stripped} => {class=malign_lymph}",0.04,1.00,0.00 
+"{by_pass=yes,changes_in_stru=grainy} => {class=metastases}",0.03,1.00,0.00 
+"{changes_in_stru=stripped,lymphatics=displaced} => {class=malign_lymph}",0.03,1.00,0.00 
+"{changes_in_stru=coarse,exclusion_of_no=no} => {class=metastases}",0.03,1.00,0.00 
+"{ } => {class=metastases}", 0,0,0

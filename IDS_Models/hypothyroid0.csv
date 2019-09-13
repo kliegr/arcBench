@@ -1,0 +1,16 @@
+rules,suppport,confidence,lift
+"{TSH=[-Inf;6.05],referral.source=SVI} => {Class=negative}",0.25,1.00,0.00 
+"{TSH=[-Inf;6.05],TT4=(68.5;89.5]} => {Class=negative}",0.16,1.00,0.00 
+"{TSH=[-Inf;6.05],on.thyroxine=t} => {Class=negative}",0.11,1.00,0.00 
+"{TT4=(148.5; Inf],T4U=[-Inf; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{hypopituitary=f,TT4=(148.5; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{TT4.measured=t,TT4=(148.5; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{I131.treatment=f,TSH.measured=f} => {Class=negative}",0.10,1.00,0.00 
+"{TSH.measured=f} => {Class=negative}",0.10,1.00,0.00 
+"{thyroid.surgery=f,TT4=(148.5; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{T3=(1.05; Inf],TT4=(148.5; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{I131.treatment=f,TT4=(148.5; Inf]} => {Class=negative}",0.10,1.00,0.00 
+"{on.antithyroid.medication=f,TSH.measured=f} => {Class=negative}",0.10,1.00,0.00 
+"{goitre=f,TSH.measured=f} => {Class=negative}",0.09,1.00,0.00 
+"{TT4=(148.5; Inf],psych=f} => {Class=negative}",0.09,1.00,0.00 
+"{ } => {Class=negative}", 0,0,0

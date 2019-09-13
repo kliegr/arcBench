@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{Mg=[-Inf;2.695],Ba=(0.335; Inf],Ca=(8.315;10.075]} => {Type=headlamps}",0.11,1.00,0.00 
+"{RI=[-Inf;1.517335],Ca=(8.315;10.075],Al=(1.775; Inf]} => {Type=headlamps}",0.10,1.00,0.00 
+"{Ba=(0.335; Inf],K=[-Inf;0.055],Al=(1.775; Inf]} => {Type=headlamps}",0.09,1.00,0.00 
+"{Ba=(0.335; Inf],K=[-Inf;0.055]} => {Type=headlamps}",0.09,1.00,0.00 
+"{Ba=[-Inf;0.335],Ca=(7.02;8.315],RI=(1.517335;1.51798]} => {Type=build wind float}",0.03,1.00,0.00 
+"{Mg=(2.695; Inf],Ca=(7.02;8.315],Al=(1.775; Inf]} => {Type=build wind non-float}",0.03,1.00,0.00 
+"{Fe=[-Inf; Inf],Ca=(7.02;8.315],RI=(1.517335;1.51798]} => {Type=build wind float}",0.03,1.00,0.00 
+"{Si=[-Inf; Inf],K=[-Inf;0.055],Al=(1.39;1.775]} => {Type=tableware}",0.03,1.00,0.00 
+"{Ca=(7.02;8.315],Al=(1.775; Inf],Na=[-Inf;13.785]} => {Type=build wind non-float}",0.03,1.00,0.00 
+"{Si=[-Inf; Inf],K=(0.615;0.745],Al=(1.775; Inf]} => {Type=build wind non-float}",0.03,1.00,0.00 
+"{Ba=[-Inf;0.335],K=[-Inf;0.055],Al=(1.39;1.775]} => {Type=tableware}",0.03,1.00,0.00 
+"{RI=[-Inf;1.517335],K=(0.615;0.745],Al=(1.775; Inf]} => {Type=build wind non-float}",0.03,1.00,0.00 
+"{Na=(13.785; Inf],K=[-Inf;0.055],Al=(1.39;1.775]} => {Type=tableware}",0.03,1.00,0.00 
+"{ } => {Type=build wind non-float}", 0,0,0

@@ -1,0 +1,21 @@
+rules,suppport,confidence,lift
+"{value.mean=(101.7777; Inf],rawred.mean=(67.83335; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{rawblue.mean=(101.7777; Inf],intensity.mean=(82.9815; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{region.pixel.count=9,intensity.mean=(82.9815; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{region.pixel.count=9,rawblue.mean=(101.7777; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{rawgreen.mean=(71.27775; Inf],rawblue.mean=(101.7777; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{value.mean=(101.7777; Inf],region.pixel.count=9} => {class=sky}",0.14,1.00,0.00 
+"{value.mean=(101.7777; Inf],short.line.density.2=[-Inf;0.0555555]} => {class=sky}",0.14,1.00,0.00 
+"{short.line.density.2=[-Inf;0.0555555],intensity.mean=(82.9815; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{hue.mean=(0.64353; Inf]} => {class=grass}",0.14,1.00,0.00 
+"{hue.mean=(0.64353; Inf],short.line.density.2=[-Inf;0.0555555]} => {class=grass}",0.14,1.00,0.00 
+"{hue.mean=(0.64353; Inf],exblue.mean=[-Inf;-0.111111]} => {class=grass}",0.13,1.00,0.00 
+"{short.line.density.2=[-Inf;0.0555555],exblue.mean=[-Inf;-0.111111]} => {class=grass}",0.13,1.00,0.00 
+"{short.line.density.5=[-Inf;0.0555555],intensity.mean=(82.9815; Inf]} => {class=sky}",0.13,1.00,0.00 
+"{rawblue.mean=(101.7777; Inf],short.line.density.5=[-Inf;0.0555555]} => {class=sky}",0.13,1.00,0.00 
+"{region.centroid.row=(162.5;210.5],hue.mean=(-2.094395;-1.84966]} => {class=path}",0.11,1.00,0.00 
+"{region.centroid.row=(162.5;210.5],rawgreen.mean=(36.05555;55.83335]} => {class=path}",0.11,1.00,0.00 
+"{hue.mean=(-2.41102;-2.245545],rawblue.mean=(101.7777; Inf]} => {class=sky}",0.10,1.00,0.00 
+"{rawred.mean=(67.83335; Inf],exred.mean=[-Inf;-30.27775]} => {class=sky}",0.10,1.00,0.00 
+"{value.mean=(101.7777; Inf],exred.mean=[-Inf;-30.27775]} => {class=sky}",0.10,1.00,0.00 
+"{ } => {class=brickface}", 0,0,0

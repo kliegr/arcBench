@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{savings_status=>=1000,credit_history=critical/other existing credit} => {class=good}",0.02,1.00,0.00 
+"{foreign_worker=no,job=unskilled resident} => {class=good}",0.01,1.00,0.00 
+"{employment=>=7,personal_status=male mar/wid} => {class=good}",0.01,1.00,0.00 
+"{savings_status=>=1000,job=unskilled resident} => {class=good}",0.01,1.00,0.00 
+"{foreign_worker=no,savings_status=no known savings} => {class=good}",0.01,1.00,0.00 
+"{job=high qualif/self emp/mgmt,savings_status=500<=X<1000} => {class=good}",0.01,1.00,0.00 
+"{credit_history=no credits/all paid,housing=for free} => {class=bad}",0.01,1.00,0.00 
+"{savings_status=>=1000,checking_status=<0} => {class=good}",0.01,1.00,0.00 
+"{foreign_worker=no,purpose=radio/tv} => {class=good}",0.00,1.00,0.00 
+"{employment=<1,purpose=domestic appliance} => {class=good}",0.00,1.00,0.00 
+"{foreign_worker=no,savings_status=100<=X<500} => {class=good}",0.00,1.00,0.00 
+"{job=unemp/unskilled non res,other_payment_plans=bank} => {class=good}",0.00,1.00,0.00 
+"{num_dependents=2,personal_status=male div/sep} => {class=good}",0.00,1.00,0.00 
+"{ } => {class=good}", 0,0,0

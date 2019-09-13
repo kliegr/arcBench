@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{word_freq_650=(0.01; Inf],word_freq_hpl=(0.12; Inf]} => {class=0}",0.08,1.00,0.00 
+"{word_freq_lab=(0.115; Inf],word_freq_edu=[-Inf;0.125]} => {class=0}",0.07,1.00,0.00 
+"{word_freq_labs=(0.005; Inf],word_freq_85=(0.195; Inf]} => {class=0}",0.06,1.00,0.00 
+"{word_freq_650=(0.01; Inf],word_freq_hp=(1.495; Inf]} => {class=0}",0.06,1.00,0.00 
+"{word_freq_table=[-Inf; Inf],word_freq_meeting=(0.455; Inf]} => {class=0}",0.05,1.00,0.00 
+"{word_freq_meeting=(0.455; Inf]} => {class=0}",0.05,1.00,0.00 
+"{word_freq_000=[-Inf;0.125],word_freq_meeting=(0.455; Inf]} => {class=0}",0.05,1.00,0.00 
+"{word_freq_telnet=(0.045; Inf],word_freq_labs=(0.005; Inf]} => {class=0}",0.05,1.00,0.00 
+"{word_freq_lab=(0.115; Inf],word_freq_your=[-Inf;0.395]} => {class=0}",0.05,1.00,0.00 
+"{word_freq_415=[-Inf;0.195],word_freq_meeting=(0.455; Inf]} => {class=0}",0.05,1.00,0.00 
+"{word_freq_mail=[-Inf;0.045],word_freq_meeting=(0.455; Inf]} => {class=0}",0.05,1.00,0.00 
+"{word_freq_george=(0.005; Inf],word_freq_650=(0.01; Inf]} => {class=0}",0.05,1.00,0.00 
+"{word_freq_george=(0.005; Inf],word_freq_labs=(0.005; Inf]} => {class=0}",0.05,1.00,0.00 
+"{ } => {class=0}", 0,0,0

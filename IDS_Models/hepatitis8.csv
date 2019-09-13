@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{HISTOLOGY=no,FATIGUE=no} => {Class=LIVE}",0.19,1.00,0.00 
+"{ANTIVIRALS=yes,PROTIME=(44.5; Inf]} => {Class=LIVE}",0.13,1.00,0.00 
+"{LIVER_BIG=no,BILIRUBIN=[-Inf;1.65]} => {Class=LIVE}",0.12,1.00,0.00 
+"{SEX=male,SGOT=[-Inf; Inf]} => {Class=LIVE}",0.09,1.00,0.00 
+"{ASCITES=no,SEX=male} => {Class=LIVE}",0.09,1.00,0.00 
+"{LIVER_BIG=no,SPIDERS=no} => {Class=LIVE}",0.07,1.00,0.00 
+"{SEX=male,LIVER_FIRM=yes} => {Class=LIVE}",0.06,1.00,0.00 
+"{SEX=male,MALAISE=no} => {Class=LIVE}",0.05,1.00,0.00 
+"{SEX=male,ALBUMIN=[-Inf;3.85396825397]} => {Class=LIVE}",0.04,1.00,0.00 
+"{LIVER_FIRM=no,SEX=male} => {Class=LIVE}",0.04,1.00,0.00 
+"{ANTIVIRALS=yes,ANOREXIA=yes} => {Class=LIVE}",0.03,1.00,0.00 
+"{SEX=male,LIVER_BIG=no} => {Class=LIVE}",0.02,1.00,0.00 
+"{PROTIME=[-Inf;44.5],FATIGUE=no} => {Class=LIVE}",0.01,1.00,0.00 
+"{ } => {Class=LIVE}", 0,0,0

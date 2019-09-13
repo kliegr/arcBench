@@ -1,0 +1,20 @@
+rules,suppport,confidence,lift
+"{Si=[-Inf; Inf],Ba=(0.335; Inf],Na=(14.065; Inf]} => {Type=headlamps}",0.10,1.00,0.00 
+"{Ba=(0.335; Inf],Na=(14.065; Inf],Fe=[-Inf; Inf]} => {Type=headlamps}",0.10,1.00,0.00 
+"{Ca=(8.315;10.055],RI=[-Inf;1.51734],Al=(1.775; Inf]} => {Type=headlamps}",0.10,1.00,0.00 
+"{Ca=(8.315;10.055],Na=(14.065; Inf],Al=(1.775; Inf]} => {Type=headlamps}",0.09,1.00,0.00 
+"{Ca=(8.315;10.055],Ba=(0.335; Inf],Na=(14.065; Inf]} => {Type=headlamps}",0.09,1.00,0.00 
+"{Ba=(0.335; Inf],Na=(14.065; Inf],RI=[-Inf;1.51734]} => {Type=headlamps}",0.09,1.00,0.00 
+"{RI=[-Inf;1.51734],K=[-Inf;0.055],Al=(1.775; Inf]} => {Type=headlamps}",0.08,1.00,0.00 
+"{Ca=(8.315;10.055],Ba=(0.335; Inf],K=[-Inf;0.055]} => {Type=headlamps}",0.08,1.00,0.00 
+"{Ba=(0.335; Inf],RI=[-Inf;1.51734],K=[-Inf;0.055]} => {Type=headlamps}",0.08,1.00,0.00 
+"{Ca=(8.315;10.055],K=[-Inf;0.055],Al=(1.775; Inf]} => {Type=headlamps}",0.08,1.00,0.00 
+"{Si=[-Inf; Inf],Ba=(0.335; Inf],K=[-Inf;0.055]} => {Type=headlamps}",0.08,1.00,0.00 
+"{Fe=[-Inf; Inf],Ca=(7.02;8.315],RI=(1.51734;1.517985]} => {Type=build wind float}",0.03,1.00,0.00 
+"{Ba=[-Inf;0.335],Ca=(7.02;8.315],Al=(1.775; Inf]} => {Type=build wind non-float}",0.03,1.00,0.00 
+"{Ca=(7.02;8.315],Al=[-Inf;1.39],RI=(1.51734;1.517985]} => {Type=build wind float}",0.03,1.00,0.00 
+"{Si=[-Inf; Inf],Ca=(7.02;8.315],Al=(1.775; Inf]} => {Type=build wind non-float}",0.03,1.00,0.00 
+"{Si=[-Inf; Inf],Ca=(7.02;8.315],RI=(1.51734;1.517985]} => {Type=build wind float}",0.03,1.00,0.00 
+"{Fe=[-Inf; Inf],Ca=(7.02;8.315],Al=(1.775; Inf]} => {Type=build wind non-float}",0.03,1.00,0.00 
+"{Ca=(7.02;8.315],Na=[-Inf;14.065],RI=(1.51734;1.517985]} => {Type=build wind float}",0.03,1.00,0.00 
+"{ } => {Type=build wind non-float}", 0,0,0

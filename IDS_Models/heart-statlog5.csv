@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{chest=(3.5; Inf],resting_blood_pressure=[-Inf; Inf],fasting_blood_sugar=1} => {class=present}",0.05,1.00,0.00 
+"{chest=(3.5; Inf],fasting_blood_sugar=1,age=[-Inf; Inf]} => {class=present}",0.05,1.00,0.00 
+"{exercise_induced_angina=1,fasting_blood_sugar=1,thal=(4.5; Inf]} => {class=present}",0.04,1.00,0.00 
+"{sex=0,chest=(3.5; Inf],thal=(4.5; Inf]} => {class=present}",0.04,1.00,0.00 
+"{chest=[-Inf;3.5],slope=[-Inf;1.5],exercise_induced_angina=1} => {class=absent}",0.03,1.00,0.00 
+"{sex=0,number_of_major_vessels=(0.5; Inf],thal=(4.5; Inf]} => {class=present}",0.03,1.00,0.00 
+"{oldpeak=[-Inf;1.7],chest=(3.5; Inf],fasting_blood_sugar=1} => {class=present}",0.03,1.00,0.00 
+"{thal=(4.5; Inf],maximum_heart_rate_achieved=[-Inf;147.5],fasting_blood_sugar=1} => {class=present}",0.03,1.00,0.00 
+"{sex=0,thal=(4.5; Inf],oldpeak=(1.7; Inf]} => {class=present}",0.02,1.00,0.00 
+"{sex=0,slope=[-Inf;1.5],exercise_induced_angina=1} => {class=absent}",0.02,1.00,0.00 
+"{oldpeak=(1.7; Inf],maximum_heart_rate_achieved=[-Inf;147.5],fasting_blood_sugar=1} => {class=present}",0.02,1.00,0.00 
+"{sex=0,oldpeak=(1.7; Inf],fasting_blood_sugar=1} => {class=present}",0.01,1.00,0.00 
+"{exercise_induced_angina=0,chest=(3.5; Inf],fasting_blood_sugar=1} => {class=present}",0.01,1.00,0.00 
+"{ } => {class=absent}", 0,0,0

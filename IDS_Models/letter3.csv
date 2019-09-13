@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{y.ege=[-Inf;0.5],xybar=[-Inf;2.5]} => {class=L}",0.01,1.00,0.00 
+"{width=[-Inf;0.5],y.box=[-Inf; Inf]} => {class=I}",0.01,1.00,0.00 
+"{width=[-Inf;0.5],x2ybr=(5.5;6.5]} => {class=I}",0.01,1.00,0.00 
+"{width=[-Inf;0.5],xy2br=(7.5;8.5]} => {class=I}",0.01,1.00,0.00 
+"{yegvx=(7.5;8.5],width=[-Inf;0.5]} => {class=I}",0.01,1.00,0.00 
+"{xegvy=(7.5;8.5],xybar=[-Inf;2.5]} => {class=L}",0.01,1.00,0.00 
+"{width=[-Inf;0.5],y.ege=[-Inf;0.5]} => {class=I}",0.01,1.00,0.00 
+"{x.bar=[-Inf;0.5],xybar=[-Inf;2.5]} => {class=L}",0.01,1.00,0.00 
+"{y2bar=(5.5;6.5],y.bar=[-Inf;1.5]} => {class=L}",0.01,1.00,0.00 
+"{y2bar=(0.5;1.5],x2ybr=(0.5;2.5]} => {class=A}",0.01,1.00,0.00 
+"{y2bar=(12.5; Inf],xegvy=(7.5;8.5]} => {class=Z}",0.01,1.00,0.00 
+"{x.ege=[-Inf;0.5],y2bar=(12.5; Inf]} => {class=Z}",0.01,1.00,0.00 
+"{y.ege=(3.5;4.5],xy2br=(13.5;14.5]} => {class=C}",0.01,1.00,0.00 
+"{ } => {class=U}", 0,0,0

@@ -1,0 +1,15 @@
+rules,suppport,confidence,lift
+"{foreign_worker=no,personal_status=male single} => {class=good}",0.02,1.00,0.00 
+"{purpose=retraining,housing=own} => {class=good}",0.01,1.00,0.00 
+"{savings_status=>=1000,checking_status=<0} => {class=good}",0.01,1.00,0.00 
+"{other_parties=co applicant,savings_status=no known savings} => {class=good}",0.01,1.00,0.00 
+"{purpose=retraining,job=unskilled resident} => {class=good}",0.01,1.00,0.00 
+"{employment=4<=X<7,other_payment_plans=stores} => {class=good}",0.00,1.00,0.00 
+"{job=unemp/unskilled non res,own_telephone=yes} => {class=good}",0.00,1.00,0.00 
+"{property_magnitude=car,purpose=repairs} => {class=good}",0.00,1.00,0.00 
+"{credit_history=no credits/all paid,housing=for free} => {class=bad}",0.00,1.00,0.00 
+"{savings_status=500<=X<1000,other_payment_plans=stores} => {class=good}",0.00,1.00,0.00 
+"{purpose=other,employment=unemployed} => {class=good}",0.00,1.00,0.00 
+"{savings_status=500<=X<1000,personal_status=male div/sep} => {class=good}",0.00,1.00,0.00 
+"{foreign_worker=no,savings_status=100<=X<500} => {class=good}",0.00,1.00,0.00 
+"{ } => {class=good}", 0,0,0

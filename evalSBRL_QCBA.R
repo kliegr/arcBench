@@ -5,7 +5,7 @@ library(rCBA)
 library(sbrl)
 library(stringr)
 basePath="./"
-datasets <- c("hepatitis","ionosphere","sonar","spambase","australian", "breast-w", "colic", "credit-a", "credit-g", "diabetes", "heart-statlog")
+datasets <- c("hepatitis","ionosphere","sonar","spambase","australian", "breast-w", "colic", "credit-a",  "diabetes", "heart-statlog","credit-g")
 classAtt<-"label"
 foldsToProcess <- 10
 maxFoldIndex  <-foldsToProcess -1
@@ -24,10 +24,15 @@ for (SBRL_rule_maxlen in SBRL_rule_maxlenRange){
     # some datasets would fail with the full max length
     if (SBRL_rule_maxlen==10)
     {
+      maxlen_adjusted=10
       if (dataset=="hepatitis")
       {
         maxlen_adjusted<-5
       }
+      if (dataset=="credit-g")
+      {
+        maxlen_adjusted<-5
+      }      
       if (dataset=="sonar")
       {
         maxlen_adjusted<-3
@@ -43,6 +48,7 @@ for (SBRL_rule_maxlen in SBRL_rule_maxlenRange){
       config="Long"
     }
     else{
+      maxlen_adjusted=1
       config="1"
     }
     print(config)
