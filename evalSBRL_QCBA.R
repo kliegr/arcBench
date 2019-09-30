@@ -45,11 +45,12 @@ for (SBRL_rule_maxlen in SBRL_rule_maxlenRange){
       {
         maxlen_adjusted<-2
       }   
-      config="Long"
+      config=paste(defaultRuleOverlapPruning,"-Long",sep="")
     }
     else{
       maxlen_adjusted=1
-      config="1"
+      config=paste(defaultRuleOverlapPruning,"-1",sep="")
+
     }
     print(config)
     skip=FALSE 
@@ -84,10 +85,10 @@ for (SBRL_rule_maxlen in SBRL_rule_maxlenRange){
     {
       message(paste("processing:", dataset,fold))
       
-      trainPath <- paste(basePath,.Platform$file.sep,"data",.Platform$file.sep,"folds",.Platform$file.sep,"train",.Platform$file.sep,dataset, fold, ".csv", sep="")
-      testPath <- paste(basePath,.Platform$file.sep,"data",.Platform$file.sep,"folds",.Platform$file.sep,"test",.Platform$file.se,dataset, fold, ".csv", sep="")
-      trainFold <- utils::read.csv(trainPath  , header  =TRUE, check.names = TRUE)
-      testFold <- utils::read.csv(testPath  , header  =TRUE, check.names = TRUE)
+      trainPath <- paste(basePath,.Platform$file.sep,"data",.Platform$file.sep,"folds_nodiscr",.Platform$file.sep,"train",.Platform$file.sep,dataset, fold, ".csv", sep="")
+      testPath <- paste(basePath,.Platform$file.sep,"data",.Platform$file.sep,"folds_nodiscr",.Platform$file.sep,"test",.Platform$file.se,dataset, fold, ".csv", sep="")
+      trainFold <- utils::read.csv(trainPath, header=TRUE, check.names = TRUE)
+      testFold <- utils::read.csv(testPath, header=TRUE, check.names = TRUE)
       
       # RENAME TARGET as per sbrl requirements both in TRAIN and TEST fold
       orignames<-colnames(trainFold)

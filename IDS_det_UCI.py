@@ -34,7 +34,7 @@ with open('result/ids-uci.csv', 'wb') as csvfile:
     for dataset in datasets:  
         try: 
             with timeout(seconds=1800):
-                filename = "data/folds/test/"+dataset+"0.csv"
+                filename = "data/folds_nodiscr/test/"+dataset+"0.csv"
                 soln_set, obj_val=IDS_det_dataset(filename)
                 writer.writerow([dataset,len(soln_set)])
                 csvfile.flush()

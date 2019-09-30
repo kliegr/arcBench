@@ -1,0 +1,101 @@
+checking_status,duration,credit_history,purpose,credit_amount,savings_status,employment,installment_commitment,personal_status,other_parties,residence_since,property_magnitude,age,other_payment_plans,housing,existing_credits,job,num_dependents,own_telephone,foreign_worker,class
+0<=X<200,12.0,existing paid,new car,1295.0,<100,<1,3.0,female div/dep/mar,none,1.0,car,25.0,none,rent,1.0,skilled,1.0,none,yes,bad
+<0,48.0,existing paid,business,4308.0,<100,<1,3.0,female div/dep/mar,none,4.0,life insurance,24.0,none,rent,1.0,skilled,1.0,none,yes,bad
+<0,30.0,no credits/all paid,business,8072.0,no known savings,<1,2.0,male single,none,3.0,car,25.0,bank,own,3.0,skilled,1.0,none,yes,good
+0<=X<200,7.0,existing paid,radio/tv,2415.0,<100,1<=X<4,3.0,male single,guarantor,2.0,real estate,34.0,none,own,1.0,skilled,1.0,none,yes,good
+0<=X<200,9.0,existing paid,radio/tv,458.0,<100,1<=X<4,4.0,male single,none,3.0,real estate,24.0,none,own,1.0,skilled,1.0,none,yes,good
+0<=X<200,27.0,delayed previously,used car,5965.0,<100,>=7,1.0,male single,none,2.0,car,30.0,none,own,2.0,high qualif/self emp/mgmt,1.0,yes,yes,good
+no checking,6.0,all paid,new car,783.0,no known savings,1<=X<4,1.0,male single,guarantor,2.0,real estate,26.0,stores,own,1.0,unskilled resident,2.0,none,yes,good
+0<=X<200,12.0,existing paid,radio/tv,6468.0,no known savings,unemployed,2.0,male single,none,1.0,no known property,52.0,none,own,1.0,high qualif/self emp/mgmt,1.0,yes,yes,bad
+0<=X<200,48.0,no credits/all paid,business,14421.0,<100,1<=X<4,2.0,male single,none,2.0,car,25.0,none,own,1.0,skilled,1.0,yes,yes,bad
+no checking,27.0,existing paid,repairs,5190.0,no known savings,>=7,4.0,male single,none,4.0,life insurance,48.0,none,own,4.0,skilled,2.0,yes,yes,good
+no checking,12.0,existing paid,radio/tv,2171.0,<100,<1,2.0,female div/dep/mar,none,2.0,car,29.0,bank,own,1.0,skilled,1.0,none,yes,good
+0<=X<200,12.0,existing paid,new car,1007.0,>=1000,1<=X<4,4.0,male mar/wid,none,1.0,real estate,22.0,none,own,1.0,skilled,1.0,none,yes,good
+no checking,36.0,existing paid,used car,8133.0,<100,1<=X<4,1.0,female div/dep/mar,none,2.0,life insurance,30.0,bank,own,1.0,skilled,1.0,none,yes,good
+no checking,12.0,critical/other existing credit,business,1412.0,<100,1<=X<4,4.0,female div/dep/mar,guarantor,2.0,real estate,29.0,none,own,2.0,high qualif/self emp/mgmt,1.0,yes,yes,good
+<0,12.0,critical/other existing credit,used car,1409.0,<100,>=7,4.0,male single,none,3.0,real estate,54.0,none,own,1.0,skilled,1.0,none,yes,good
+0<=X<200,54.0,no credits/all paid,business,15945.0,<100,<1,3.0,male single,none,4.0,no known property,58.0,none,rent,1.0,skilled,1.0,yes,yes,bad
+no checking,12.0,critical/other existing credit,education,2012.0,no known savings,4<=X<7,4.0,female div/dep/mar,none,2.0,car,61.0,none,own,1.0,skilled,1.0,none,yes,good
+0<=X<200,36.0,existing paid,radio/tv,2323.0,<100,4<=X<7,4.0,male single,none,4.0,car,24.0,none,rent,1.0,skilled,1.0,none,yes,good
+>=200,15.0,existing paid,education,392.0,<100,<1,4.0,female div/dep/mar,none,4.0,life insurance,23.0,none,rent,1.0,skilled,1.0,yes,yes,good
+<0,33.0,critical/other existing credit,furniture/equipment,4281.0,500<=X<1000,1<=X<4,1.0,female div/dep/mar,none,4.0,car,23.0,none,own,2.0,skilled,1.0,none,yes,bad
+<0,21.0,existing paid,radio/tv,1835.0,<100,1<=X<4,3.0,female div/dep/mar,none,2.0,real estate,25.0,none,own,2.0,skilled,1.0,yes,yes,bad
+no checking,60.0,existing paid,radio/tv,10144.0,100<=X<500,4<=X<7,2.0,female div/dep/mar,none,4.0,real estate,21.0,none,own,1.0,skilled,1.0,yes,yes,good
+0<=X<200,36.0,existing paid,radio/tv,4795.0,<100,<1,4.0,female div/dep/mar,none,1.0,no known property,30.0,none,own,1.0,high qualif/self emp/mgmt,1.0,yes,yes,good
+no checking,12.0,critical/other existing credit,new car,682.0,100<=X<500,4<=X<7,4.0,female div/dep/mar,none,3.0,car,51.0,none,own,2.0,skilled,1.0,yes,yes,good
+0<=X<200,24.0,critical/other existing credit,used car,7758.0,>=1000,>=7,2.0,female div/dep/mar,none,4.0,no known property,29.0,none,rent,1.0,skilled,1.0,none,yes,good
+no checking,18.0,critical/other existing credit,new car,1055.0,<100,<1,4.0,female div/dep/mar,none,1.0,life insurance,30.0,none,own,2.0,skilled,1.0,none,yes,good
+<0,15.0,no credits/all paid,new car,950.0,<100,>=7,4.0,male single,none,3.0,car,33.0,none,rent,2.0,skilled,2.0,none,yes,bad
+0<=X<200,18.0,delayed previously,furniture/equipment,4297.0,<100,>=7,4.0,male div/sep,none,3.0,no known property,40.0,none,own,1.0,high qualif/self emp/mgmt,1.0,yes,yes,bad
+no checking,12.0,critical/other existing credit,new car,1495.0,<100,>=7,4.0,male single,none,1.0,real estate,38.0,none,own,2.0,unskilled resident,2.0,none,yes,good
+<0,18.0,no credits/all paid,business,3104.0,<100,4<=X<7,3.0,male single,none,1.0,life insurance,31.0,bank,own,1.0,skilled,1.0,yes,yes,good
+no checking,12.0,existing paid,radio/tv,707.0,<100,1<=X<4,4.0,male single,none,2.0,real estate,30.0,bank,own,2.0,skilled,1.0,none,yes,good
+<0,12.0,existing paid,furniture/equipment,7865.0,<100,>=7,4.0,male single,none,4.0,no known property,53.0,none,for free,1.0,high qualif/self emp/mgmt,1.0,yes,yes,bad
+no checking,9.0,existing paid,new car,2507.0,500<=X<1000,>=7,2.0,male single,none,4.0,no known property,51.0,none,for free,1.0,unskilled resident,1.0,none,yes,good
+<0,30.0,existing paid,radio/tv,2522.0,<100,>=7,1.0,male single,guarantor,3.0,life insurance,39.0,none,own,1.0,skilled,2.0,none,yes,good
+<0,24.0,existing paid,new car,915.0,no known savings,>=7,4.0,female div/dep/mar,none,2.0,car,29.0,bank,own,1.0,skilled,1.0,none,yes,bad
+>=200,24.0,existing paid,furniture/equipment,1925.0,<100,1<=X<4,2.0,male single,none,2.0,real estate,26.0,none,own,1.0,skilled,1.0,none,yes,good
+<0,6.0,critical/other existing credit,new car,666.0,>=1000,4<=X<7,3.0,female div/dep/mar,none,4.0,real estate,39.0,none,own,2.0,unskilled resident,1.0,yes,yes,good
+<0,30.0,existing paid,repairs,11998.0,<100,<1,1.0,male div/sep,none,1.0,no known property,34.0,none,own,1.0,unskilled resident,1.0,yes,yes,bad
+0<=X<200,48.0,delayed previously,other,7582.0,100<=X<500,unemployed,2.0,male single,none,4.0,no known property,31.0,none,for free,1.0,high qualif/self emp/mgmt,1.0,yes,yes,good
+<0,24.0,delayed previously,radio/tv,1024.0,<100,<1,4.0,male mar/wid,none,4.0,real estate,48.0,stores,own,1.0,skilled,1.0,none,yes,bad
+no checking,10.0,existing paid,new car,1287.0,no known savings,>=7,4.0,male single,co applicant,2.0,life insurance,45.0,none,own,1.0,unskilled resident,1.0,none,no,good
+no checking,6.0,existing paid,furniture/equipment,1543.0,>=1000,1<=X<4,4.0,male div/sep,none,2.0,real estate,33.0,none,own,1.0,skilled,1.0,none,yes,good
+<0,18.0,existing paid,furniture/equipment,2659.0,>=1000,1<=X<4,4.0,male single,none,2.0,car,28.0,none,own,1.0,skilled,1.0,none,yes,good
+0<=X<200,9.0,existing paid,furniture/equipment,959.0,<100,1<=X<4,1.0,female div/dep/mar,none,2.0,car,29.0,none,own,1.0,skilled,1.0,none,no,bad
+no checking,12.0,existing paid,radio/tv,776.0,<100,1<=X<4,4.0,male mar/wid,none,2.0,real estate,28.0,none,own,1.0,skilled,1.0,none,yes,good
+>=200,12.0,existing paid,radio/tv,3399.0,no known savings,>=7,2.0,male single,none,3.0,car,37.0,none,own,1.0,high qualif/self emp/mgmt,1.0,none,yes,good
+no checking,12.0,existing paid,business,1542.0,<100,4<=X<7,2.0,male single,none,4.0,car,36.0,none,own,1.0,skilled,1.0,yes,yes,good
+<0,36.0,existing paid,new car,3249.0,<100,4<=X<7,2.0,male single,none,4.0,no known property,39.0,bank,for free,1.0,high qualif/self emp/mgmt,2.0,yes,yes,good
+<0,12.0,existing paid,furniture/equipment,2578.0,<100,unemployed,3.0,female div/dep/mar,none,4.0,no known property,55.0,none,for free,1.0,high qualif/self emp/mgmt,1.0,none,yes,good
+0<=X<200,12.0,existing paid,new car,1223.0,<100,>=7,1.0,male div/sep,none,1.0,real estate,46.0,none,rent,2.0,skilled,1.0,none,yes,bad
+0<=X<200,18.0,critical/other existing credit,business,1887.0,no known savings,1<=X<4,4.0,male mar/wid,none,4.0,real estate,28.0,bank,own,2.0,skilled,1.0,none,yes,good
+0<=X<200,24.0,existing paid,radio/tv,2039.0,<100,<1,1.0,male mar/wid,none,1.0,life insurance,22.0,none,own,1.0,skilled,1.0,yes,yes,bad
+no checking,21.0,existing paid,new car,2782.0,500<=X<1000,4<=X<7,1.0,female div/dep/mar,none,2.0,car,31.0,bank,own,1.0,high qualif/self emp/mgmt,1.0,none,yes,good
+<0,12.0,existing paid,used car,3386.0,<100,>=7,3.0,male single,none,4.0,no known property,35.0,none,for free,1.0,skilled,1.0,yes,yes,bad
+<0,6.0,existing paid,domestic appliance,343.0,<100,<1,4.0,female div/dep/mar,none,1.0,real estate,27.0,none,own,1.0,skilled,1.0,none,yes,good
+no checking,48.0,delayed previously,radio/tv,7238.0,no known savings,>=7,3.0,male single,none,3.0,car,32.0,bank,own,2.0,skilled,2.0,none,yes,good
+no checking,6.0,critical/other existing credit,radio/tv,1237.0,100<=X<500,1<=X<4,1.0,female div/dep/mar,none,1.0,life insurance,27.0,none,own,2.0,skilled,1.0,none,yes,good
+0<=X<200,24.0,critical/other existing credit,radio/tv,1216.0,100<=X<500,<1,4.0,male single,none,4.0,no known property,38.0,bank,own,2.0,skilled,2.0,none,yes,bad
+no checking,39.0,existing paid,used car,8588.0,100<=X<500,>=7,4.0,male single,none,2.0,car,45.0,none,own,1.0,high qualif/self emp/mgmt,1.0,yes,yes,good
+0<=X<200,15.0,existing paid,new car,2631.0,100<=X<500,1<=X<4,2.0,female div/dep/mar,none,4.0,car,28.0,none,rent,2.0,skilled,1.0,yes,yes,bad
+no checking,24.0,existing paid,radio/tv,1311.0,100<=X<500,4<=X<7,4.0,male mar/wid,none,3.0,life insurance,26.0,none,own,1.0,skilled,1.0,yes,yes,good
+no checking,24.0,critical/other existing credit,new car,2022.0,<100,1<=X<4,4.0,female div/dep/mar,none,4.0,car,37.0,none,own,1.0,skilled,1.0,yes,yes,good
+0<=X<200,12.0,critical/other existing credit,new car,1995.0,100<=X<500,<1,4.0,male single,none,1.0,car,27.0,none,own,1.0,skilled,1.0,none,yes,good
+no checking,21.0,no credits/all paid,new car,5003.0,no known savings,1<=X<4,1.0,female div/dep/mar,none,4.0,life insurance,29.0,bank,own,2.0,skilled,1.0,yes,yes,bad
+0<=X<200,36.0,existing paid,new car,12389.0,no known savings,1<=X<4,1.0,male single,none,4.0,no known property,37.0,none,for free,1.0,skilled,1.0,yes,yes,bad
+0<=X<200,18.0,critical/other existing credit,new car,1056.0,<100,>=7,3.0,male single,guarantor,3.0,real estate,30.0,bank,own,2.0,skilled,1.0,none,yes,bad
+no checking,21.0,existing paid,business,1572.0,>=1000,>=7,4.0,female div/dep/mar,none,4.0,real estate,36.0,bank,own,1.0,unskilled resident,1.0,none,yes,good
+0<=X<200,24.0,no credits/all paid,business,4241.0,<100,1<=X<4,1.0,male single,none,4.0,real estate,36.0,none,own,3.0,unskilled resident,1.0,yes,yes,bad
+0<=X<200,60.0,delayed previously,radio/tv,9157.0,no known savings,1<=X<4,2.0,male single,none,2.0,no known property,27.0,none,for free,1.0,high qualif/self emp/mgmt,1.0,none,yes,good
+<0,12.0,existing paid,furniture/equipment,1858.0,<100,<1,4.0,female div/dep/mar,none,1.0,car,22.0,none,rent,1.0,skilled,1.0,none,yes,good
+>=200,6.0,existing paid,furniture/equipment,2116.0,<100,1<=X<4,2.0,male single,none,2.0,real estate,41.0,none,own,1.0,skilled,1.0,yes,yes,good
+0<=X<200,15.0,existing paid,radio/tv,1444.0,no known savings,<1,4.0,male single,none,1.0,life insurance,23.0,none,own,1.0,skilled,1.0,none,yes,good
+no checking,12.0,existing paid,radio/tv,1493.0,<100,<1,4.0,female div/dep/mar,none,3.0,car,34.0,none,own,1.0,skilled,2.0,none,yes,good
+<0,12.0,existing paid,education,684.0,<100,1<=X<4,4.0,male single,none,4.0,car,40.0,none,rent,1.0,unskilled resident,2.0,none,yes,bad
+0<=X<200,36.0,delayed previously,new car,8086.0,100<=X<500,>=7,2.0,male single,none,4.0,car,42.0,none,own,4.0,high qualif/self emp/mgmt,1.0,yes,yes,bad
+0<=X<200,18.0,critical/other existing credit,furniture/equipment,6361.0,<100,>=7,2.0,male single,none,1.0,no known property,41.0,none,own,1.0,skilled,1.0,yes,yes,good
+>=200,10.0,critical/other existing credit,radio/tv,1347.0,no known savings,4<=X<7,4.0,male single,none,2.0,life insurance,27.0,none,own,2.0,skilled,1.0,yes,yes,good
+0<=X<200,30.0,delayed previously,business,2503.0,100<=X<500,>=7,4.0,male single,none,2.0,life insurance,41.0,stores,own,2.0,skilled,1.0,none,yes,good
+0<=X<200,24.0,delayed previously,radio/tv,6403.0,<100,<1,1.0,male single,none,2.0,car,33.0,none,own,1.0,skilled,1.0,none,yes,good
+0<=X<200,24.0,existing paid,used car,11560.0,<100,1<=X<4,1.0,female div/dep/mar,none,4.0,car,23.0,none,rent,2.0,high qualif/self emp/mgmt,1.0,none,yes,bad
+<0,24.0,all paid,new car,2325.0,100<=X<500,4<=X<7,2.0,male single,none,3.0,car,32.0,bank,own,1.0,skilled,1.0,none,yes,good
+<0,13.0,critical/other existing credit,business,1797.0,<100,<1,3.0,male single,none,1.0,life insurance,28.0,bank,own,2.0,unskilled resident,1.0,none,yes,good
+no checking,12.0,critical/other existing credit,furniture/equipment,1258.0,<100,<1,2.0,female div/dep/mar,none,4.0,life insurance,22.0,none,rent,2.0,unskilled resident,1.0,none,yes,good
+no checking,18.0,critical/other existing credit,furniture/equipment,3780.0,<100,<1,3.0,male div/sep,none,2.0,car,35.0,none,own,2.0,high qualif/self emp/mgmt,1.0,yes,yes,good
+0<=X<200,24.0,existing paid,radio/tv,5084.0,no known savings,>=7,2.0,female div/dep/mar,none,4.0,car,42.0,none,own,1.0,skilled,1.0,yes,yes,good
+no checking,15.0,critical/other existing credit,furniture/equipment,3343.0,<100,1<=X<4,4.0,male single,none,2.0,no known property,28.0,none,for free,1.0,skilled,1.0,yes,yes,good
+no checking,10.0,existing paid,furniture/equipment,2210.0,<100,1<=X<4,2.0,male single,none,2.0,real estate,25.0,bank,rent,1.0,unskilled resident,1.0,none,yes,bad
+no checking,24.0,existing paid,used car,7814.0,<100,4<=X<7,3.0,male single,none,3.0,car,38.0,none,own,1.0,high qualif/self emp/mgmt,1.0,yes,yes,good
+0<=X<200,36.0,critical/other existing credit,used car,5800.0,<100,1<=X<4,3.0,male single,none,4.0,car,34.0,none,own,2.0,skilled,1.0,yes,yes,good
+<0,16.0,critical/other existing credit,new car,2625.0,<100,>=7,2.0,male single,guarantor,4.0,life insurance,43.0,bank,rent,1.0,skilled,1.0,yes,yes,bad
+no checking,36.0,critical/other existing credit,used car,10477.0,no known savings,>=7,2.0,male single,none,4.0,no known property,42.0,none,for free,2.0,skilled,1.0,none,yes,good
+no checking,15.0,delayed previously,used car,3594.0,<100,<1,1.0,female div/dep/mar,none,2.0,life insurance,46.0,none,own,2.0,unskilled resident,1.0,none,yes,good
+no checking,18.0,critical/other existing credit,furniture/equipment,1817.0,<100,1<=X<4,4.0,female div/dep/mar,none,2.0,no known property,28.0,none,own,2.0,skilled,1.0,none,yes,good
+0<=X<200,9.0,existing paid,radio/tv,1670.0,<100,<1,4.0,female div/dep/mar,none,2.0,car,22.0,none,own,1.0,skilled,1.0,yes,yes,bad
+no checking,24.0,existing paid,furniture/equipment,929.0,no known savings,4<=X<7,4.0,male single,none,2.0,car,31.0,stores,own,1.0,skilled,1.0,yes,yes,good
+0<=X<200,48.0,no credits/all paid,new car,8358.0,500<=X<1000,<1,1.0,female div/dep/mar,none,1.0,car,30.0,none,own,2.0,skilled,1.0,none,yes,good
+0<=X<200,27.0,critical/other existing credit,radio/tv,2520.0,500<=X<1000,1<=X<4,4.0,male single,none,2.0,life insurance,23.0,none,own,2.0,unskilled resident,1.0,none,yes,bad
+<0,11.0,critical/other existing credit,new car,3939.0,<100,1<=X<4,1.0,male single,none,2.0,real estate,40.0,none,own,2.0,unskilled resident,2.0,none,yes,good
+no checking,24.0,critical/other existing credit,furniture/equipment,2028.0,<100,4<=X<7,2.0,male single,none,2.0,life insurance,30.0,none,own,2.0,unskilled resident,1.0,none,yes,good
+no checking,13.0,existing paid,radio/tv,1409.0,100<=X<500,unemployed,2.0,female div/dep/mar,none,4.0,real estate,64.0,none,own,1.0,skilled,1.0,none,yes,good

@@ -46,8 +46,8 @@ def run1fold(basepath,datasetname, unique_transactions=True,runQCBA=False,saveID
         #python QCBA implementation uses custom discretization format
         data_train_disc = pd.read_csv(basepath+"data/folds_discr/train/{}.csv".format(datasetname))        
         data_test_disc = pd.read_csv(basepath+"data/folds_discr/test/{}.csv".format(datasetname))
-        data_test_undisc = pd.read_csv(basepath+"data/folds/test/{}.csv".format(datasetname))
-        data_train_undisc = pd.read_csv(basepath+"data/folds/train/{}.csv".format(datasetname))
+        data_test_undisc = pd.read_csv(basepath+"data/folds_nodiscr/test/{}.csv".format(datasetname))
+        data_train_undisc = pd.read_csv(basepath+"data/folds_nodiscr/train/{}.csv".format(datasetname))
         
         quant_dataframe_test_undisc = QuantitativeDataFrame(data_test_undisc)
         quant_dataframe_train_undisc = QuantitativeDataFrame(data_train_undisc)

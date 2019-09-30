@@ -1,16 +1,19 @@
 import os
 import pandas as pd
+import re
 from scipy.stats import  wilcoxon
-os.chdir("result")
+os.chdir("CBA_results")
 
 main="117-noExtend-D-mci=0-cba.csv"
 roundingPlaces=3
 df_reference=pd.read_csv(main,delimiter=",",index_col=False,engine="python")
 first=True
-resultFile="results.csv"
+resultFile="summary.csv"
 if os.path.isfile(resultFile):
     os.remove(resultFile) 
 for filename in os.listdir("."):
+    if not re.search("^\d+", filename): 
+        continue
     if filename.endswith(".csv"): 
         print("processing " + filename)
         df = pd.read_csv(filename)
@@ -37,4 +40,4 @@ for filename in os.listdir("."):
     else:
         continue
 
-print("written results to: result/"+ resultFile)
+print("written results to: CBA_results/"+ resultFile)

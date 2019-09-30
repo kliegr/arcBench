@@ -9,7 +9,7 @@ library(rJava)
 library(arc)
 library(rCBA)
 library(arulesCBA)
-dataset_path <- "data/folds/train/lymph0.csv"
+dataset_path <- "data/folds_nodiscr/train/lymph0.csv"
 #data with discretization applied by external preprocessing
 trainFold <- utils::read.csv(dataset_path, header = TRUE, check.names = FALSE)
 trainFold[,9] <- as.factor(trainFold[,9])

@@ -5,8 +5,8 @@
 library(arc)
 library(rCBA)
 library(arulesCBA)
-dataset_path_train="data/folds/train/lymph0.csv"
-dataset_path_test="data/folds/test/lymph0.csv"
+dataset_path_train="data/folds_nodiscr/train/lymph0.csv"
+dataset_path_test="data/folds_nodiscr/test/lymph0.csv"
 #data with discretization applied by external preprocessing
 trainFold <- utils::read.csv(dataset_path_train, header = TRUE, check.names = FALSE)
 trainFold[,9] <- as.factor(trainFold[,9])

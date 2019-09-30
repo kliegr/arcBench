@@ -1,0 +1,15 @@
+lymphatics,block_of_affere,bl_of_lymph_c,bl_of_lymph_s,by_pass,extravasates,regeneration_of,early_uptake_in,lym_nodes_dimin,lym_nodes_enlar,changes_in_lym,defect_in_node,changes_in_node,changes_in_stru,special_forms,dislocation_of,exclusion_of_no,no_of_nodes_in,class
+arched,no,no,no,no,yes,no,yes,1,3,oval,lacunar,lacunar,coarse,vesicles,no,yes,5,malign_lymph
+displaced,no,no,no,yes,yes,no,yes,1,3,round,lac_margin,lac_central,diluted,vesicles,yes,yes,4,malign_lymph
+arched,no,no,no,no,no,no,no,1,2,round,lacunar,lacunar,faint,no,yes,no,1,metastases
+arched,no,no,no,no,no,no,yes,1,2,oval,lacunar,lacunar,coarse,no,yes,no,2,metastases
+arched,yes,no,no,no,no,no,yes,1,3,round,lac_margin,lac_margin,grainy,chalices,yes,no,1,metastases
+displaced,yes,no,no,yes,yes,no,yes,1,4,round,lac_central,lac_margin,coarse,chalices,yes,yes,2,metastases
+arched,no,no,no,no,no,no,yes,1,2,oval,lac_central,lac_central,faint,chalices,no,yes,2,malign_lymph
+displaced,no,no,no,no,no,no,yes,1,3,oval,lacunar,lac_central,drop_like,chalices,yes,no,1,malign_lymph
+deformed,yes,no,no,no,yes,no,yes,1,2,oval,lacunar,lac_central,faint,vesicles,no,yes,3,malign_lymph
+arched,yes,no,no,no,yes,no,yes,1,3,round,lac_central,lacunar,faint,vesicles,yes,yes,2,malign_lymph
+arched,yes,no,no,no,no,no,yes,1,2,round,lac_margin,lac_margin,diluted,vesicles,no,yes,1,metastases
+deformed,yes,no,no,no,no,no,yes,1,2,oval,lacunar,lacunar,diluted,no,no,no,1,metastases
+deformed,no,no,no,no,no,no,no,1,2,round,lac_margin,lac_margin,coarse,vesicles,no,yes,2,metastases
+arched,yes,no,no,no,yes,no,no,1,2,oval,lacunar,lac_margin,diluted,chalices,no,yes,2,metastases

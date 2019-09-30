@@ -1,0 +1,16 @@
+AGE,SEX,STEROID,ANTIVIRALS,FATIGUE,MALAISE,ANOREXIA,LIVER_BIG,LIVER_FIRM,SPLEEN_PALPABLE,SPIDERS,ASCITES,VARICES,BILIRUBIN,ALK_PHOSPHATE,SGOT,ALBUMIN,PROTIME,HISTOLOGY,Class
+39,female,no,yes,no,no,no,no,yes,no,no,no,no,1.3,78.0,30.0,4.4,85.0,no,LIVE
+38,female,no,no,yes,yes,yes,yes,no,no,no,yes,no,2.0,72.0,89.0,2.9,46.0,no,LIVE
+22,male,yes,yes,yes,no,no,yes,no,no,no,no,no,0.9,48.0,20.0,4.2,64.0,no,LIVE
+41,male,yes,yes,yes,yes,yes,yes,no,no,no,no,no,0.7,81.0,53.0,5.0,74.0,no,LIVE
+35,female,yes,no,yes,no,no,yes,no,no,no,no,no,0.9,58.0,92.0,4.3,73.0,no,LIVE
+23,female,yes,no,yes,yes,yes,yes,no,yes,no,no,no,1.3,194.0,150.0,4.1,90.0,no,LIVE
+56,female,no,no,yes,no,no,yes,no,no,no,no,no,0.7,71.0,18.0,4.4,100.0,no,LIVE
+32,female,yes,no,no,no,no,yes,no,no,no,no,no,0.7,102.0,64.0,4.0,90.0,no,LIVE
+24,female,yes,no,no,no,no,yes,no,no,no,no,no,0.8,82.0,39.0,4.3,60.5454545455,no,LIVE
+47,female,yes,no,no,no,no,yes,no,no,yes,no,yes,2.0,84.0,23.0,4.2,66.0,yes,DIE
+35,female,no,no,yes,no,no,,,yes,yes,yes,no,1.5,138.0,58.0,2.6,60.5454545455,yes,DIE
+57,female,no,no,yes,yes,no,yes,no,no,yes,yes,no,4.6,82.0,55.0,3.3,30.0,yes,DIE
+36,female,no,no,yes,yes,yes,no,yes,no,yes,no,yes,1.7,295.0,60.0,2.7,60.5454545455,yes,LIVE
+51,female,yes,no,yes,no,no,yes,yes,yes,yes,no,yes,1.0,105.0,20.0,3.0,63.0,yes,LIVE
+44,female,yes,no,yes,no,no,yes,yes,no,no,no,no,0.9,126.0,142.0,4.3,60.5454545455,yes,LIVE

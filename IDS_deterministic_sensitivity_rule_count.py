@@ -1,6 +1,6 @@
 from IDS_deterministic_local import *
 
-filename='data/folds/test/labor0.csv'
+filename='data/folds_nodiscr/test/labor0.csv'
 df = pd.read_csv(filename)
 df1 = df.iloc[:,-1]
 cl_name=df.columns.tolist()[len(df.columns)-1]

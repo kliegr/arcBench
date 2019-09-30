@@ -1,35 +1,77 @@
-
-basefolder<-"SBRL_results"
-result <- data.frame(matrix(rep(0,20), ncol = 4, nrow = 5), row.names = c("accuracy (macro average)","won/tie/loss","avg number of rules","avg conditions / rule","avg conditions / model"))
-df_base <- NULL
-colnames(result)<-c("only SBRL (1)","SBRL+QCBA (1)","only SBRL (long)","SBRL+QCBA (long)")
-filenames<-c("SBRL-1.csv","SBRLQCBA-1.csv","SBRL-Long.csv","SBRLQCBA-Long.csv")
-baseforWontieloss<-c(TRUE,FALSE,TRUE,FALSE,FALSE)
-col=0
-for (filename in filenames)
+library(tidyverse)
+wontieloss <- function (baseforWontieloss,basefolder,filenames,col_names)
 {
-  col=col+1
-  df<-read_csv(paste(basefolder,"/",filename,sep=""))
-  result[1,col]<-round(mean(df$accuracy),2)
-  if (baseforWontieloss[col])
+  statistics<-c("accuracy (macro average)","won/tie/loss", "p-value", "avg number of rules","avg conditions / rule","avg conditions / model","median build time [s]", "avg build time norm")
+  result <- data.frame(matrix(rep(0,length(col_names)*length(statistics)), ncol = length(col_names), nrow = length(statistics)), row.names = statistics)
+  df_base <- NULL
+  colnames(result) <- col_names
+  col=0
+  for (filename in filenames)
   {
-    result[2,col] <- ""
-    df_base <- df
-  }
-  else{
-    merged <- merge(df,df_base,by="dataset",suffixes=c("_QCBA","_base"))
-    merged$accuracy_QCBA<-round(merged$accuracy_QCBA,2)
-    merged$accuracy_base<-round(merged$accuracy_base,2)
-    sbrlqcbawon <-sum(merged$accuracy_QCBA>merged$accuracy_base)
-    sbrlqcbatie <-sum(merged$accuracy_QCBA==merged$accuracy_base)
-    sbrlqcbaloss <-sum(merged$accuracy_QCBA<merged$accuracy_base)
-    result[2,col] <- c(paste(sbrlqcbawon,"/",sbrlqcbatie,"/",sbrlqcbaloss))  
-    df_base <- NULL
-  }
-  result[3,col]<-round(mean(df$rules),1)
-  result[4,col]<-round(mean(df$antlength),1)
-  result[5,col]<-round(mean(df$rules)*mean(df$antlength),1)
+    message(filename)
+    col=col+1
+    df<-read_csv(paste(basefolder,"/",filename,sep=""))
+    result[1,col]<-round(mean(df$accuracy),2)
+    if (baseforWontieloss[col])
+    {
+      result[2,col] <- ""
+      df_base <- df
+    }
+    else{
+      colnames(df)
+      colnames(df_base)
+      merged <- merge(df,df_base,by="dataset",suffixes=c("_QCBA","_base"))
+      merged$accuracy_QCBA<-round(merged$accuracy_QCBA,2)
+      merged$accuracy_base<-round(merged$accuracy_base,2)
+      pValue <- wilcox.test(merged$accuracy_QCBA, merged$accuracy_base, paired=TRUE)$p.value
+      qcbawon <-sum(merged$accuracy_QCBA>merged$accuracy_base)
+      qcbatie <-sum(merged$accuracy_QCBA==merged$accuracy_base)
+      qcbaloss <-sum(merged$accuracy_QCBA<merged$accuracy_base)
+      result[2,col] <- c(paste(qcbawon,"/",qcbatie,"/",qcbaloss))  
+      result[3,col] <- round(pValue,5)
+    }
+    result[4,col]<-round(mean(df$rules),1)
+    result[5,col]<-round(mean(df$antlength),1)
+    result[6,col]<-round(mean(df$rules)*mean(df$antlength),1)
+    buildtime<-round(median(df$buildtime),1)
+    result[7,col]<-buildtime
+    if (baseforWontieloss[col])
+    {
+      result[8,col]<-1.0
+      buildtimeRef <-mean(df$buildtime)
+    }
+    else 
+    {
+      result[8,col]<-round(mean(df$buildtime)/buildtimeRef,2)
+    }
+  }  
+  write.csv(result,paste(basefolder,"/stats.csv",sep=""))
+  return(result)
 }
+
+
+# CBA 
+baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE)
+basefolder<-"CBA_results"
+filenames<-c("117-noExtend-D-mci=0-cba.csv","120-noExtend-mci=0-qcba.csv", "114-noExtend-A-mci=0-qcba.csv", "42-noExtend-T-A-mci=0-qcba.csv", "186-numericOnly-T-A-mci=0-qcba.csv",  "198-numericOnly-T-Pcba-A-mci=0-qcba.csv", "196-numericOnly-T-Pcba-A-transactionBased-mci=0-qcba.csv", "197-numericOnly-T-Pcba-A-rangeBased-mci=0-qcba.csv")
+col_names<-c("only CBA","CBA+QCBA #1 (+ refit)","CBA+QCBA #2 (+att pruning)", "CBA+QCBA #3 (+trimming)","CBA+QCBA #4 (+extension)","CBA+QCBA #5 (+postpruning)","CBA+QCBA #6 (+tran. based pruning)","CBA+QCBA #7 (+rangeBased pruning)")
+result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names)
 result
 
 
+# SBRL 
+#SBRL+QCBA is compared against SBRL only,
+#i.e. TRUE means that SBRL-1.csv will be used as a base accuracy to compare against for both SBRLQCBA-noPruning-1.csv and SBRLQCBA-transactionBased-1.csv
+baseforWontieloss<-c(TRUE,FALSE,FALSE,TRUE,FALSE,FALSE)
+basefolder<-"SBRL_results"
+filenames<-c("SBRL-1.csv","SBRLQCBA-noPruning-1.csv", "SBRLQCBA-transactionBased-1.csv","SBRL-Long.csv", "SBRLQCBA-noPruning-Long.csv","SBRLQCBA-transactionBased-Long.csv")
+col_names<-c("only SBRL (Short)","SBRL+QCBA (Short) #5","SBRL+QCBA (Short) #6","only SBRL (long)","SBRL+QCBA (long) #5","SBRL+QCBA (long) #6")
+result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names)
+result
+# IDS
+baseforWontieloss<-c(TRUE,FALSE,FALSE)
+basefolder<-"IDS_results"
+filenames<-c("IDS.csv","IDSQCBA_R_noPruning.csv", "IDSQCBA_R_transactionBased.csv")
+col_names<-c("only IDS","IDS+QCBA #5","IDS+QCBA #6")
+result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names)
+result
