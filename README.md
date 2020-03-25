@@ -112,13 +112,11 @@ To obtain aggregate results for all datasets:
 
     Rscript aggregateResults.R
 
-To obtain comparison between individual algorithms:
+#### Alternative Python implementations
 
     python wontieloss_WEKA.py
 
-#### Alternative Python implementations
-
     python summarize.py
    
-Note that this feature is in development.
+Note that these scripts are obsololete / in development.
 

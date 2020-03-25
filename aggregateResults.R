@@ -1,7 +1,15 @@
 library(tidyverse)
-wontieloss <- function (baseforWontieloss,basefolder,filenames,col_names)
+wontieloss <- function (baseforWontieloss,basefolder,filenames,col_names,extrastats=TRUE, decreaseInModelSize=FALSE)
 {
-  statistics<-c("accuracy (macro average)","won/tie/loss", "p-value", "avg number of rules","avg conditions / rule","avg conditions / model","median build time [s]", "avg build time norm")
+  statistics<-c("accuracy (macro average)","won/tie/loss", "p-value (accuracy difference)")
+  if (extrastats)
+  {
+    statistics <-  c(statistics, "avg number of rules","avg conditions / rule","avg conditions / model","median build time [s]", "avg build time norm")  
+  }
+  if (decreaseInModelSize)
+  {
+    statistics <-  c(statistics,"decrease in model size (avg)", "decrease in model size (max)","decrease in model size (min)")
+  }
   result <- data.frame(matrix(rep(0,length(col_names)*length(statistics)), ncol = length(col_names), nrow = length(statistics)), row.names = statistics)
   df_base <- NULL
   colnames(result) <- col_names
@@ -27,22 +35,31 @@ wontieloss <- function (baseforWontieloss,basefolder,filenames,col_names)
       qcbawon <-sum(merged$accuracy_QCBA>merged$accuracy_base)
       qcbatie <-sum(merged$accuracy_QCBA==merged$accuracy_base)
       qcbaloss <-sum(merged$accuracy_QCBA<merged$accuracy_base)
-      result[2,col] <- c(paste(qcbawon,"/",qcbatie,"/",qcbaloss))  
+      result[2,col] <- c(paste0(qcbawon,"/",qcbatie,"/",qcbaloss))  
       result[3,col] <- round(pValue,5)
+      if(decreaseInModelSize)
+      {
+        result[4,col]<-paste(round(1-mean(merged$rules_QCBA * merged$antlength_QCBA)/(mean(merged$rules_base  * merged$antlength_base)),2)*100, "%")
+        result[5,col]<-paste(round(1-min((merged$rules_QCBA * merged$antlength_QCBA)/(merged$rules_base  * merged$antlength_base)),2)*100, "%")
+        result[6,col]<-paste(round(1-max((merged$rules_QCBA * merged$antlength_QCBA)/(merged$rules_base  * merged$antlength_base)),2)*100, "%")
+      }
     }
-    result[4,col]<-round(mean(df$rules),1)
-    result[5,col]<-round(mean(df$antlength),1)
-    result[6,col]<-round(mean(df$rules)*mean(df$antlength),1)
-    buildtime<-round(median(df$buildtime),1)
-    result[7,col]<-buildtime
-    if (baseforWontieloss[col])
+    if (extrastats)
     {
-      result[8,col]<-1.0
-      buildtimeRef <-mean(df$buildtime)
-    }
-    else 
-    {
-      result[8,col]<-round(mean(df$buildtime)/buildtimeRef,2)
+      result[4,col]<-round(mean(df$rules),1)
+      result[5,col]<-round(mean(df$antlength),1)
+      result[6,col]<-round(mean(df$rules)*mean(df$antlength),1)
+      buildtime<-round(median(df$buildtime),1)
+      result[7,col]<-buildtime
+      if (baseforWontieloss[col])
+      {
+        result[8,col]<-1.0
+        buildtimeRef <-mean(df$buildtime)
+      }
+      else 
+      {
+        result[8,col]<-round(mean(df$buildtime)/buildtimeRef,2)
+      }
     }
   }  
   write.csv(result,paste(basefolder,"/stats.csv",sep=""))
@@ -75,3 +92,23 @@ filenames<-c("IDS.csv","IDSQCBA_R_noPruning.csv", "IDSQCBA_R_transactionBased.cs
 col_names<-c("only IDS","IDS+QCBA #5","IDS+QCBA #6")
 result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names)
 result
+
+
+
+# summary of effects of postprocessing by QCBA#5 
+baseforWontieloss<-c(TRUE,FALSE,TRUE,FALSE,TRUE,FALSE)
+basefolder<-"."
+filenames<-c( "CBA_results/117-noExtend-D-mci=0-cba.csv","CBA_results/198-numericOnly-T-Pcba-A-mci=0-qcba.csv", "SBRL_results/SBRL-Long.csv", "SBRL_results/SBRLQCBA-noPruning-Long.csv", "IDS_results/IDS.csv", "IDS_results/IDSQCBA_R_noPruning.csv"  )
+col_names<-c("CBA","CBA+QCBA#5","SBRL","SBRL+QCBA#5" ,"IDS","IDS+QCBA#5")
+result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names,extrastats=FALSE,decreaseInModelSize=TRUE)
+result
+
+
+# QCBA#5 against other symbolic learners
+baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE)
+basefolder<-"WEKA_results"
+filenames<-c("../CBA_results/198-numericOnly-T-Pcba-A-mci=0-qcba.csv",  "J48-accuracy.csv","PART-accuracy.csv", "RIPPER-accuracy.csv", "FURIA-accuracy_missing_omitted.csv")
+col_names<-c("CBA+QCBA #5","J48","PART","RIPPER", "FURIA")
+result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names,extrastats=FALSE)
+result
+
