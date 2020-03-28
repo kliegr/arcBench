@@ -39,9 +39,9 @@ wontieloss <- function (baseforWontieloss,basefolder,filenames,col_names,extrast
       result[3,col] <- round(pValue,5)
       if(decreaseInModelSize)
       {
-        result[4,col]<-paste(round(1-mean(merged$rules_QCBA * merged$antlength_QCBA)/(mean(merged$rules_base  * merged$antlength_base)),2)*100, "%")
-        result[5,col]<-paste(round(1-min((merged$rules_QCBA * merged$antlength_QCBA)/(merged$rules_base  * merged$antlength_base)),2)*100, "%")
-        result[6,col]<-paste(round(1-max((merged$rules_QCBA * merged$antlength_QCBA)/(merged$rules_base  * merged$antlength_base)),2)*100, "%")
+        result[4,col]<-paste(round(1-mean((merged$rules_QCBA * merged$antlength_QCBA)/(merged$rules_base  * merged$antlength_base)),4)*100, "%")
+        result[5,col]<-paste(round(1-min((merged$rules_QCBA * merged$antlength_QCBA)/(merged$rules_base  * merged$antlength_base)),4)*100, "%")
+        result[6,col]<-paste(round(1-max((merged$rules_QCBA * merged$antlength_QCBA)/(merged$rules_base  * merged$antlength_base)),4)*100, "%")
       }
     }
     if (extrastats)
