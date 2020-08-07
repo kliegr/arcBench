@@ -1,4 +1,4 @@
-"","CBA+QCBA #5","J48","PART","RIPPER","FURIA"
-"accuracy (macro average)","0.81","0.84","0.85","0.79","0.85"
-"won/tie/loss","","9/1/12","8/5/8","6/4/12","12/4/5"
-"p-value (accuracy difference)","0","0.43206","0.65867","0.15666","0.18255"
+"","CBA+QCBA #5","CORELS","J48","PART","RIPPER","FURIA"
+"accuracy (macro average)","0.81","0.81","0.84","0.85","0.79","0.85"
+"won/tie/loss","","1/1/9","9/1/12","8/5/8","6/4/12","12/4/5"
+"p-value (accuracy difference)","0","0.05248","0.43206","0.65867","0.15666","0.18255"
