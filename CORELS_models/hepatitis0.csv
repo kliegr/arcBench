@@ -1,0 +1,5 @@
+RULELIST:
+if [ASCITES_yes && ALBUMIN_[-Inf;3.86532258065]]:
+  prediction = True
+else 
+  prediction = False

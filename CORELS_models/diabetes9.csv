@@ -1,0 +1,7 @@
+RULELIST:
+if [plas_(154.5; Inf] && mass_(27.85; Inf]]:
+  prediction = False
+else if [insu_(121; Inf] && age_(28.5; Inf]]:
+  prediction = False
+else 
+  prediction = True

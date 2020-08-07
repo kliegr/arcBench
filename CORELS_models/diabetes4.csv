@@ -1,0 +1,9 @@
+RULELIST:
+if [age_[-Inf;28.5] && not plas_(159.5; Inf]]:
+  prediction = True
+else if [plas_(99.5;127.5] && not pedi_(0.5275; Inf]]:
+  prediction = True
+else if [mass_(27.85; Inf] && not plas_[-Inf;99.5]]:
+  prediction = False
+else 
+  prediction = True

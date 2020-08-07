@@ -1,0 +1,5 @@
+RULELIST:
+if [a18_(-0.805795;0.99361] && not a05_[-Inf;0.04144]]:
+  prediction = False
+else 
+  prediction = True

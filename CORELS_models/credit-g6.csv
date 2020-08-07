@@ -1,0 +1,5 @@
+RULELIST:
+if [checking_status_<0 && duration_(15.5; Inf]]:
+  prediction = True
+else 
+  prediction = False

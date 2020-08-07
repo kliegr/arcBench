@@ -1,0 +1,7 @@
+RULELIST:
+if [not FATIGUE_yes && not HISTOLOGY_yes]:
+  prediction = False
+else if [PROTIME_(44.5; Inf] && not ALBUMIN_[-Inf;2.85]]:
+  prediction = False
+else 
+  prediction = True

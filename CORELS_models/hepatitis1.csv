@@ -1,0 +1,5 @@
+RULELIST:
+if [ASCITES_yes && BILIRUBIN_(1.41353383458; Inf]]:
+  prediction = True
+else 
+  prediction = False

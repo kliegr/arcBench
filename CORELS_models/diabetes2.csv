@@ -1,0 +1,7 @@
+RULELIST:
+if [plas_(123.5;154.5] && mass_[-Inf;27.85]]:
+  prediction = True
+else if [not plas_(101.5;123.5] && not plas_[-Inf;101.5]]:
+  prediction = False
+else 
+  prediction = True

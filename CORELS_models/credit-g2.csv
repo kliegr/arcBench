@@ -1,0 +1,5 @@
+RULELIST:
+if [checking_status_<0 && not credit_history_critical/other existing credit]:
+  prediction = True
+else 
+  prediction = False

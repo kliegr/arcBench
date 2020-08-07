@@ -1,0 +1,7 @@
+RULELIST:
+if [not sex_1 && not slope_(1.5; Inf]]:
+  prediction = True
+else if [exercise_induced_angina_0 && number_of_major_vessels_[-Inf;0.5]]:
+  prediction = True
+else 
+  prediction = False

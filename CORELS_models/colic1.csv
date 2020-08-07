@@ -1,0 +1,5 @@
+RULELIST:
+if [surgery_no && outcome_lived]:
+  prediction = True
+else 
+  prediction = False

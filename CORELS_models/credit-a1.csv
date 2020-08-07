@@ -1,0 +1,5 @@
+RULELIST:
+if [A9_t && A13_g]:
+  prediction = True
+else 
+  prediction = False

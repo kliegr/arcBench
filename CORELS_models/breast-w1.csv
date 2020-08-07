@@ -1,0 +1,5 @@
+RULELIST:
+if [not Cell_Size_Uniformity_(4.5; Inf] && not Bare_Nuclei_(5.5; Inf]]:
+  prediction = True
+else 
+  prediction = False

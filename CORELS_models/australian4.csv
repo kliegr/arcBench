@@ -1,0 +1,5 @@
+RULELIST:
+if [X8_-1]:
+  prediction = True
+else 
+  prediction = False

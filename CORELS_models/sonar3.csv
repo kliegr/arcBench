@@ -1,0 +1,7 @@
+RULELIST:
+if [not attribute_48_[-Inf;0.07585] && not attribute_54_[-Inf;0.0225]]:
+  prediction = True
+else if [attribute_11_(0.19795; Inf] && attribute_49_(0.02305; Inf]]:
+  prediction = True
+else 
+  prediction = False

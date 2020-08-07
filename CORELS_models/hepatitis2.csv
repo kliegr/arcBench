@@ -1,0 +1,7 @@
+RULELIST:
+if [not VARICES_no && not HISTOLOGY_yes]:
+  prediction = False
+else if [not LIVER_FIRM_yes && not SPIDERS_no]:
+  prediction = True
+else 
+  prediction = False

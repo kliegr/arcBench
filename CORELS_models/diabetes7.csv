@@ -1,0 +1,7 @@
+RULELIST:
+if [preg_[-Inf;6.5] && plas_(99.5;123.5]]:
+  prediction = True
+else if [mass_(27.35; Inf] && not plas_[-Inf;99.5]]:
+  prediction = False
+else 
+  prediction = True

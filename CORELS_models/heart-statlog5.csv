@@ -1,0 +1,7 @@
+RULELIST:
+if [thal_(4.5; Inf] && not chest_[-Inf;3.5]]:
+  prediction = False
+else if [slope_(1.5; Inf] && number_of_major_vessels_(0.5; Inf]]:
+  prediction = False
+else 
+  prediction = True

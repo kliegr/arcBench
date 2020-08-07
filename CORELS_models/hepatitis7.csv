@@ -1,0 +1,7 @@
+RULELIST:
+if [not ALBUMIN_(2.65;3.8508] && not ALBUMIN_(3.8508; Inf]]:
+  prediction = True
+else if [MALAISE_yes && PROTIME_[-Inf;44.5]]:
+  prediction = True
+else 
+  prediction = False

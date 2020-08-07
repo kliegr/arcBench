@@ -1,0 +1,5 @@
+RULELIST:
+if [A9_f && not A13_p]:
+  prediction = False
+else 
+  prediction = True

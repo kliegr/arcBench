@@ -1,0 +1,7 @@
+RULELIST:
+if [oldpeak_(1.7; Inf] && not exercise_induced_angina_0]:
+  prediction = False
+else if [chest_(3.5; Inf] && number_of_major_vessels_(0.5; Inf]]:
+  prediction = False
+else 
+  prediction = True

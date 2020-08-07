@@ -1,0 +1,7 @@
+RULELIST:
+if [not Normal_Nucleoli_(2.5;9.5] && not Normal_Nucleoli_[-Inf;2.5]]:
+  prediction = False
+else if [not Clump_Thickness_(6.5; Inf] && not Bare_Nuclei_(5.5; Inf]]:
+  prediction = True
+else 
+  prediction = False
