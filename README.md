@@ -106,6 +106,16 @@ These benchmarks are implemented on top of the  WEKA framework:
 
     bash evalWEKA.sh 
 
+## Benchmark against CORELS
+Requires https://github.com/corels/pycorels
+
+    python evalCORELS.py
+    
+This scripts also adds one-hot-encoded data into 
+```
+data/folds/folds_discr_dumm
+```
+
 ## Analysis of results
 
 To obtain aggregate results for all datasets:
@@ -118,5 +128,5 @@ To obtain aggregate results for all datasets:
 
     python summarize.py
    
-Note that these scripts are obsololete / in development.
+Note that Alternative Python implementations scripts are obsolete.
 
