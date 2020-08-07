@@ -28,20 +28,20 @@ wontieloss <- function (baseforWontieloss,basefolder,filenames,col_names,extrast
     else{
       colnames(df)
       colnames(df_base)
-      merged <- merge(df,df_base,by="dataset",suffixes=c("_QCBA","_base"))
-      merged$accuracy_QCBA<-round(merged$accuracy_QCBA,2)
+      merged <- merge(df,df_base,by="dataset",suffixes=c("_current","_base"))
+      merged$accuracy_currrent<-round(merged$accuracy_currrent,2)
       merged$accuracy_base<-round(merged$accuracy_base,2)
-      pValue <- wilcox.test(merged$accuracy_QCBA, merged$accuracy_base, paired=TRUE)$p.value
-      qcbawon <-sum(merged$accuracy_QCBA>merged$accuracy_base)
-      qcbatie <-sum(merged$accuracy_QCBA==merged$accuracy_base)
-      qcbaloss <-sum(merged$accuracy_QCBA<merged$accuracy_base)
+      pValue <- wilcox.test(merged$accuracy_currrent, merged$accuracy_base, paired=TRUE)$p.value
+      qcbawon <-sum(merged$accuracy_currrent>merged$accuracy_base)
+      qcbatie <-sum(merged$accuracy_currrent==merged$accuracy_base)
+      qcbaloss <-sum(merged$accuracy_currrent<merged$accuracy_base)
       result[2,col] <- c(paste0(qcbawon,"/",qcbatie,"/",qcbaloss))  
       result[3,col] <- round(pValue,5)
       if(decreaseInModelSize)
       {
-        result[4,col]<-paste(round(1-mean((merged$rules_QCBA * merged$antlength_QCBA)/(merged$rules_base  * merged$antlength_base)),4)*100, "%")
-        result[5,col]<-paste(round(1-min((merged$rules_QCBA * merged$antlength_QCBA)/(merged$rules_base  * merged$antlength_base)),4)*100, "%")
-        result[6,col]<-paste(round(1-max((merged$rules_QCBA * merged$antlength_QCBA)/(merged$rules_base  * merged$antlength_base)),4)*100, "%")
+        result[4,col]<-paste(round(1-mean((merged$rules_currrent * merged$rules_currrent)/(merged$rules_base  * merged$antlength_base)),4)*100, "%")
+        result[5,col]<-paste(round(1-min((merged$rules_currrent * merged$rules_currrent)/(merged$rules_base  * merged$antlength_base)),4)*100, "%")
+        result[6,col]<-paste(round(1-max((merged$rules_currrent * merged$rules_currrent)/(merged$rules_base  * merged$antlength_base)),4)*100, "%")
       }
     }
     if (extrastats)
@@ -65,7 +65,6 @@ wontieloss <- function (baseforWontieloss,basefolder,filenames,col_names,extrast
   write.csv(result,paste(basefolder,"/stats.csv",sep=""))
   return(result)
 }
-
 
 # CBA 
 baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE)
@@ -103,12 +102,11 @@ col_names<-c("CBA","CBA+QCBA#5","SBRL","SBRL+QCBA#5" ,"IDS","IDS+QCBA#5")
 result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names,extrastats=FALSE,decreaseInModelSize=TRUE)
 result
 
-
 # QCBA#5 against other symbolic learners
-baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE)
+baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE,FALSE)
 basefolder<-"WEKA_results"
-filenames<-c("../CBA_results/198-numericOnly-T-Pcba-A-mci=0-qcba.csv",  "J48-accuracy.csv","PART-accuracy.csv", "RIPPER-accuracy.csv", "FURIA-accuracy_missing_omitted.csv")
-col_names<-c("CBA+QCBA #5","J48","PART","RIPPER", "FURIA")
+filenames<-c("../CBA_results/198-numericOnly-T-Pcba-A-mci=0-qcba.csv", "../CORELS_results/CORELS.csv",  "J48-accuracy.csv","PART-accuracy.csv", "RIPPER-accuracy.csv", "FURIA-accuracy_missing_omitted.csv")
+col_names<-c("CBA+QCBA #5","CORELS", "J48","PART","RIPPER", "FURIA")
 result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names,extrastats=FALSE)
 result
 
