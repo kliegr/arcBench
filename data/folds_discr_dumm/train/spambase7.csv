@@ -1,0 +1,5 @@
+RULELIST:
+if [word_freq_remove_[-Inf;0.01] && X.char_freq_..24._[-Inf;0.0125]]:
+  prediction = True
+else 
+  prediction = False
