@@ -1,6 +1,7 @@
 library(qCBA)
 library(stringr)
 args <- commandArgs(trailingOnly = TRUE)
+
 onlyList <-FALSE
 
 # will store CBA result file and a QCBA configuration file ot the debug foler
@@ -15,20 +16,34 @@ if (is.null(args))
 {
   # default to nonexistent configuration  if no arguments are passed
   args = c(-1)
-} else if (length(args)==3) {
-  minCondImprovement = args[2]
-  minImprovement = args[3]
+} else if (length(args)==3|length(args)==5) {
+  minCondImprovement = as.double(args[2])
+  minImprovement = as.double(args[3])
 }
 message(paste("Using minCondImprovement", minCondImprovement))
 message(paste("Using minImprovement", minImprovement))
 
 experimentToRun=args[1]
+datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
+output_fname_tag <- ""
+if (length(args)==5)
+{
+  warning("overriding datasets")
+  datasets <- unlist(strsplit(args[4], split = ";"))
+  output_fname_tag <- args[5]
+  message(paste("tag",output_fname_tag))
+}
+#datasets with binary class
+#output_fname_tag <- "exp"
+#datasets <- c("hepatitis","ionosphere","sonar","spambase","australian","breast-w","colic","credit-a","diabetes","heart-statlog","credit-g")
+#experimentToRun <-c(197)
+#
 
 foldsToProcess <- 10
 
 logger<-"WARNING"
 global_createHistorySlot<-FALSE
-datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
+
 #common settings
 global_maxtime <- 1000
 global_target_rule_count=50000
@@ -48,10 +63,11 @@ evalAutoFitQCBA <- function(rmCBA,trainFold,classAtt){
   NattributePruning	<-	c(TRUE,FALSE)
   Npostpruning	<-	c("none","cba")
   Ndefault_rule_pruning	<-	c(TRUE,FALSE)
-  Ntrim_literal_boundaries		<-	c(TRUE,FALSE)
+  Ntrim_arliteral_boundaries		<-	c(TRUE,FALSE)
   NdefaultRuleOverlapPruning  <- c("transactionBased","noPruning")
   fuzzification <-FALSE
   annotate <-FALSE
+  continuousPruning <-FALSE #added in Aug. 2020
   testingType <- "oneRule"
   combination_no <- 1 #max 196
   for (extendType in NextendType){
@@ -174,18 +190,18 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
 {
 
   # Write headers for results
-  cba_result_file <- paste(basePath,.Platform$file.sep,"CBA_results",.Platform$file.sep,experiment_name,"-cba.csv",sep="")
-  qcba_result_file <- paste(basePath,.Platform$file.sep,"CBA_results",.Platform$file.sep,experiment_name,"-qcba.csv",sep="")
+  cba_result_file <- paste(basePath,.Platform$file.sep,"CBA_results",.Platform$file.sep,experiment_name,"-cba",output_fname_tag,".csv",sep="")
+  qcba_result_file <- paste(basePath,.Platform$file.sep,"CBA_results",.Platform$file.sep,experiment_name,"-qcba",output_fname_tag,".csv",sep="")
 
   if (!file.exists(qcba_result_file))
   {
-    write(paste("dataset,accuracy,rules,antlength,buildtime"), file = qcba_result_file,
+    write(paste("dataset,accuracy,rules,antlength,buildtime,auc"), file = qcba_result_file,
           ncolumns = 1,
           append = FALSE, sep = ",")
   }
   if (!file.exists(cba_result_file))
   {
-    write(paste("dataset,accuracy,rules,antlength,buildtime"), file = cba_result_file,
+    write(paste("dataset,accuracy,rules,antlength,buildtime,auc"), file = cba_result_file,
           ncolumns = 1,
           append = FALSE, sep = ",")
   }
@@ -204,6 +220,8 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
     # proceed to computation
     accSumCBA <- 0
     accSumQCBA <- 0
+    aucSumQCBA <-0
+    aucSumCBA <-0
     ruleSumCBA <- 0
     ruleSumQCBA <- 0
     ruleLengthCBA<-0
@@ -221,7 +239,14 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
       testFold <- utils::read.csv(testPath  , header  =TRUE, check.names = FALSE)
       classAtt <- colnames(trainFold)[length(trainFold)]
       set.seed(111)
-
+      if(!is.factor(trainFold[[classAtt]]))
+      {
+        trainFold[[classAtt]] <- as.factor(trainFold[[classAtt]])
+      }
+      if(!is.factor(testFold[[classAtt]]))
+      {
+        testFold[[classAtt]] <- as.factor(testFold[[classAtt]])
+      }
       #Run and store results from CBA
       start.time <- Sys.time()
       rmCBA <- cba(trainFold, classAtt=classAtt,rulelearning_options=rulelearning_options,pruning_options=pruning_options)
@@ -236,6 +261,24 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
       prediction <- predict(rmCBA,testFold)
       acc <- CBARuleModelAccuracy(prediction, testFold[[classAtt]])
       message(paste("CBA acc:",acc))
+      #NEW ROC
+      auc<-0
+      if (length(levels(trainFold[[classAtt]])) == 2)
+      {
+        positiveClass<-levels(testFold[[classAtt]])[2]
+        confidences <- predict(rmCBA,testFold,outputConfidenceScores=TRUE,positiveClass=positiveClass)
+        target<-droplevels(factor(testFold[[classAtt]],ordered = TRUE,levels=levels(testFold[[classAtt]])))
+        pred <- ROCR::prediction(confidences, target)
+        roc <- ROCR::performance(pred, "tpr", "fpr")
+        auc <- ROCR::performance(pred, "auc")
+        auc <- unlist(auc@y.values)
+        message(paste("CBA auc:",auc))
+      }
+      aucSumCBA <- aucSumCBA + auc
+
+      # END NEW
+
+
       accSumCBA <- accSumCBA + acc
 
       avgRuleLengthCBA <- sum(rmCBA@rules@lhs@data)/length(rmCBA@rules)
@@ -275,6 +318,7 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
       start.time <- Sys.time()
       if (auto==FALSE)
       {
+
         rmQCBA <- qcba(cbaRuleModel=rmCBA,datadf=trainFold,extend=extendType,defaultRuleOverlapPruning=defaultRuleOverlapPruning,attributePruning=attributePruning,trim_literal_boundaries=trim_literal_boundaries,
                        continuousPruning=continuousPruning, postpruning=postpruning, fuzzification=fuzzification, annotate=annotate,minImprovement=minImprovement,
                        minCondImprovement=minCondImprovement,  createHistorySlot=global_createHistorySlot,
@@ -298,7 +342,31 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
       rules <- rmQCBA@ruleCount
       message(paste("QCBA rules:",rules))
       ruleSumQCBA <- ruleSumQCBA + rules
+      #NEW ROC
+      auc_qcba_fold<-0
+      if (length(levels(trainFold[[classAtt]]))== 2)
+      {
+        positiveClass_qcba<-levels(testFold[[classAtt]])[2]
+        confidences_qcba <- predict(rmQCBA,testFold,testingType=testingType,loglevel=logger,outputConfidenceScores=TRUE,positiveClass=positiveClass)
+        target_qcba<-droplevels(factor(testFold[[classAtt]],ordered = TRUE,levels=levels(testFold[[classAtt]])))
+        pred_qcba <- ROCR::prediction(confidences_qcba, target_qcba)
+        roc_qcba <- ROCR::performance(pred_qcba, "tpr", "fpr")
+        plot=FALSE
+        if (plot)
+        {
+          plot(roc_qcba, lwd=2, colorize=TRUE)
+          lines(x=c(0, 1), y=c(0, 1), col="black", lwd=1)
+        }
+        auc_qcba_fold <- ROCR::performance(pred_qcba, "auc")
+        auc_qcba_fold <- unlist(auc_qcba_fold@y.values)
+        message(paste("QCBA auc:",auc_qcba_fold))
+      }
+      aucSumQCBA <- aucSumQCBA + auc_qcba_fold
+
+      # END NEW
     }
+    aucQCBA <-aucSumQCBA/foldsToProcess
+    aucCBA <- aucSumCBA/foldsToProcess
     accCBA <- accSumCBA/foldsToProcess
     accQCBA <- accSumQCBA/foldsToProcess
     rulesCBA<- ruleSumCBA/foldsToProcess
@@ -313,11 +381,11 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
     # append = TRUE, sep = ";")
     buildTimeCBA <- round(as.numeric(buildTimeCBA/foldsToProcess,units="secs"),2)
     buildTimeQCBA <- round(as.numeric(buildTimeQCBA/foldsToProcess,units="secs"),2)
-    write(c(dataset,accCBA,rulesCBA,ruleLengthCBA,buildTimeCBA), file = cba_result_file,
-            ncolumns = 5,
+    write(c(dataset,accCBA,rulesCBA,ruleLengthCBA,buildTimeCBA,aucCBA), file = cba_result_file,
+            ncolumns = 6,
             append = TRUE, sep = ",")
-    write(c(dataset,accQCBA,rulesQCBA,ruleLengthQCBA,buildTimeQCBA), file = qcba_result_file,
-            ncolumns = 5,
+    write(c(dataset,accQCBA,rulesQCBA,ruleLengthQCBA,buildTimeQCBA,aucQCBA), file = qcba_result_file,
+            ncolumns = 6,
             append = TRUE, sep = ",")
   }
 }
