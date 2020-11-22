@@ -78,7 +78,7 @@ wontieloss <- function(baseforWontieloss,basefolder,filenames,col_names,extrasta
 # CBA # auc datasets
 baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE)
 basefolder<-"CBA_results"
-filenames<-c("117-noExtend-D-mci=-1-cba_auc_ordered.csv","120-noExtend-mci=-1-qcba_auc_ordered.csv", "114-noExtend-A-mci=-1-qcba_auc_ordered.csv", "42-noExtend-T-A-mci=-1-qcba_auc_ordered.csv", "186-numericOnly-T-A-mci=-1-qcba_auc_ordered.csv",  "198-numericOnly-T-Pcba-A-mci=-1-qcba_auc_ordered.csv", "196-numericOnly-T-Pcba-A-transactionBased-mci=-1-qcba_auc_ordered.csv", "197-numericOnly-T-Pcba-A-rangeBased-mci=-1-qcba_auc_ordered.csv")
+filenames<-c("117-noExtend-D-mci=-1-cba.csv","120-noExtend-mci=-1-qcba.csv", "114-noExtend-A-mci=-1-qcba.csv", "42-noExtend-T-A-mci=-1-qcba.csv", "186-numericOnly-T-A-mci=-1-qcba.csv",  "198-numericOnly-T-Pcba-A-mci=-1-qcba.csv", "196-numericOnly-T-Pcba-A-transactionBased-mci=-1-qcba.csv", "197-numericOnly-T-Pcba-A-rangeBased-mci=-1-qcba.csv")
 col_names<-c("only CBA","CBA+QCBA #1 (+ refit)","CBA+QCBA #2 (+att pruning)", "CBA+QCBA #3 (+trimming)","CBA+QCBA #4 (+extension)","CBA+QCBA #5 (+postpruning)","CBA+QCBA #6 (+tran. based pruning)","CBA+QCBA #7 (+rangeBased pruning)")
 result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names, extrastats=TRUE,decreaseInModelSize=FALSE, AUC=TRUE)
 result
