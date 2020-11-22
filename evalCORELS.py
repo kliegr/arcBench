@@ -65,6 +65,7 @@ def mean_allfolds(dataset_name, start=0, end=10):
     return df_agg
 
 if __name__ == '__main__':
+    print("Postprocessing by QCBA not yet supported")
     if not os.path.exists(basepath + modelFolder):
         os.makedirs(basepath + modelFolder)
     if saveRules and not os.path.exists(basepath +resultFolder):
