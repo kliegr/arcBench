@@ -1,4 +1,7 @@
-
+#sbrl is not in current CRAN, but can be installed with
+#library(devtools)
+#install_github("cran/sbrl")
+#this may not run on new versions of R (i.e. R 4 is not supported)
 
 library(qCBA)
 library(rCBA)
