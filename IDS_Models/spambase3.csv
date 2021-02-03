@@ -1,15 +1,19 @@
 rules,suppport,confidence,lift
-"{word_freq_85=(0.195; Inf],word_freq_hpl=(0.12; Inf]} => {class=0}",0.08,1.00,0.00 
-"{word_freq_650=(0.01; Inf],word_freq_labs=(0.125; Inf]} => {class=0}",0.06,1.00,0.00 
-"{word_freq_85=(0.195; Inf],word_freq_labs=(0.125; Inf]} => {class=0}",0.06,1.00,0.00 
-"{word_freq_table=[-Inf; Inf],word_freq_meeting=(0.455; Inf]} => {class=0}",0.06,1.00,0.00 
-"{word_freq_3d=[-Inf;0.365],word_freq_meeting=(0.455; Inf]} => {class=0}",0.06,1.00,0.00 
-"{word_freq_meeting=(0.455; Inf]} => {class=0}",0.06,1.00,0.00 
-"{word_freq_credit=[-Inf;0.075],word_freq_meeting=(0.455; Inf]} => {class=0}",0.06,1.00,0.00 
-"{word_freq_direct=[-Inf;1.67],word_freq_meeting=(0.455; Inf]} => {class=0}",0.06,1.00,0.00 
-"{word_freq_remove=[-Inf;0.01],word_freq_meeting=(0.455; Inf]} => {class=0}",0.06,1.00,0.00 
-"{word_freq_cs=[-Inf;0.01],word_freq_meeting=(0.455; Inf]} => {class=0}",0.05,1.00,0.00 
-"{word_freq_hpl=(0.12; Inf],word_freq_george=(0.44; Inf]} => {class=0}",0.05,1.00,0.00 
-"{word_freq_people=[-Inf;0.115],word_freq_meeting=(0.455; Inf]} => {class=0}",0.05,1.00,0.00 
-"{X.char_freq_..24.=[-Inf;0.0125],word_freq_meeting=(0.455; Inf]} => {class=0}",0.05,1.00,0.00 
+"{word_freq_order=[-Inf;0.045],word_freq_george=(0.44; Inf],word_freq_3d=[-Inf;0.365]} => {class=0}",0.14,1.00,0.00 
+"{word_freq_order=[-Inf;0.045],word_freq_george=(0.44; Inf],word_freq_credit=[-Inf;0.075]} => {class=0}",0.13,1.00,0.00 
+"{word_freq_receive=[-Inf;0.045],word_freq_order=[-Inf;0.045],word_freq_george=(0.44; Inf]} => {class=0}",0.13,1.00,0.00 
+"{word_freq_order=[-Inf;0.045],word_freq_internet=[-Inf;0.045],word_freq_george=(0.44; Inf]} => {class=0}",0.13,1.00,0.00 
+"{word_freq_order=[-Inf;0.045],word_freq_george=(0.44; Inf],X.char_freq_..24.=[-Inf;0.0125]} => {class=0}",0.13,1.00,0.00 
+"{word_freq_business=[-Inf;0.065],word_freq_order=[-Inf;0.045],word_freq_george=(0.44; Inf]} => {class=0}",0.13,1.00,0.00 
+"{word_freq_people=[-Inf;0.115],word_freq_order=[-Inf;0.045],word_freq_george=(0.44; Inf]} => {class=0}",0.13,1.00,0.00 
+"{word_freq_order=[-Inf;0.045],word_freq_george=(0.44; Inf],word_freq_direct=[-Inf;1.67]} => {class=0}",0.13,1.00,0.00 
+"{X.char_freq_..23.=[-Inf;0.0075],word_freq_order=[-Inf;0.045],word_freq_george=(0.44; Inf]} => {class=0}",0.12,1.00,0.00 
+"{word_freq_order=[-Inf;0.045],word_freq_data=[-Inf;0.085],word_freq_george=(0.44; Inf]} => {class=0}",0.12,1.00,0.00 
+"{word_freq_table=[-Inf; Inf],word_freq_george=(0.44; Inf],X.char_freq_..21.=[-Inf;0.005]} => {class=0}",0.11,1.00,0.00 
+"{word_freq_george=(0.44; Inf],word_freq_3d=[-Inf;0.365],X.char_freq_..21.=[-Inf;0.005]} => {class=0}",0.11,1.00,0.00 
+"{word_freq_receive=[-Inf;0.045],word_freq_george=(0.44; Inf],X.char_freq_..21.=[-Inf;0.005]} => {class=0}",0.11,1.00,0.00 
+"{word_freq_remove=[-Inf;0.01],word_freq_george=(0.44; Inf],X.char_freq_..21.=[-Inf;0.005]} => {class=0}",0.11,1.00,0.00 
+"{word_freq_george=(0.44; Inf],X.char_freq_..21.=[-Inf;0.005],word_freq_parts=[-Inf;0.52]} => {class=0}",0.11,1.00,0.00 
+"{word_freq_internet=[-Inf;0.045],word_freq_george=(0.44; Inf],X.char_freq_..21.=[-Inf;0.005]} => {class=0}",0.11,1.00,0.00 
+"{word_freq_business=[-Inf;0.065],word_freq_george=(0.44; Inf],X.char_freq_..21.=[-Inf;0.005]} => {class=0}",0.11,1.00,0.00 
 "{ } => {class=0}", 0,0,0

@@ -1,0 +1,19 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{attribute_12=[-Inf;0.206],attribute_21=[-Inf;0.7326],attribute_45=[-Inf;0.396]} => {Class=Rock}",0.223404258489609,1,1,42
+"2","{attribute_11=[-Inf;0.1675],attribute_21=[-Inf;0.8017],attribute_46=[-Inf;0.2414]} => {Class=Rock}",0.218085110187531,1,1,6
+"3","{attribute_11=[-Inf;0.1675],attribute_21=[-Inf;0.8017],attribute_49=[-Inf;0.0681]} => {Class=Rock}",0.218085110187531,1,1,2
+"4","{attribute_9=[-Inf;0.2353],attribute_12=[-Inf;0.1554],attribute_49=[-Inf;0.0445]} => {Class=Rock}",0.196808516979218,1,1,7
+"5","{attribute_13=[-Inf;0.1608],attribute_21=[-Inf;0.7326],attribute_28=[-Inf;0.9957]} => {Class=Rock}",0.175531908869743,1,1,1
+"6","{attribute_11=[-Inf;0.1786],attribute_14=[-Inf;0.1951],attribute_28=[0.0832;0.9957]} => {Class=Rock}",0.175531908869743,1,1,1
+"7","{attribute_21=[-Inf;0.8443],attribute_36=[0.4787;Inf],attribute_46=[-Inf;0.2216]} => {Class=Rock}",0.175531908869743,1,1,8
+"8","{attribute_4=[-Inf;0.0581],attribute_12=[0.0259;0.1935],attribute_51=[-Inf;0.0132]} => {Class=Rock}",0.159574463963509,1,1,1
+"9","{attribute_21=[-Inf;0.696],attribute_48=[-Inf;0.0755],attribute_52=[-Inf;0.0093]} => {Class=Rock}",0.15425531566143,1,1,4
+"10","{attribute_5=[-Inf;0.0416],attribute_9=[-Inf;0.135],attribute_45=[-Inf;0.396]} => {Class=Rock}",0.143617019057274,1,1,2
+"11","{attribute_13=[-Inf;0.2249],attribute_48=[-Inf;0.0762],attribute_51=[-Inf;0.0132]} => {Class=Rock}",0.143617019057274,1,1,1
+"12","{attribute_47=[-Inf;0.0624],attribute_52=[-Inf;0.0094],attribute_54=[-Inf;0.0226]} => {Class=Rock}",0.132978722453117,1,1,2
+"13","{attribute_5=[-Inf;0.0403],attribute_45=[-Inf;0.396],attribute_52=[-Inf;0.0095]} => {Class=Rock}",0.117021277546883,1,1,2
+"14","{attribute_9=[-Inf;0.116],attribute_36=[0.5071;Inf],attribute_45=[-Inf;0.3955]} => {Class=Rock}",0.117021277546883,1,1,1
+"15","{attribute_21=[-Inf;0.7352],attribute_36=[0.4593;Inf],attribute_45=[-Inf;0.3754]} => {Class=Rock}",0.180851057171822,0.971428573131561,0.5,1
+"16","{attribute_10=[-Inf;0.2127],attribute_51=[-Inf;0.0132],attribute_52=[-Inf;0.0093]} => {Class=Rock}",0.180851057171822,0.971428573131561,0.75,3
+"17","{attribute_4=[-Inf;0.0627],attribute_36=[0.4775;Inf],attribute_45=[-Inf;0.3955]} => {Class=Rock}",0.180851057171822,0.971428573131561,0.5,1
+"18","{} => {Class=Mine}",0.531914889812469,0.531914889812469,0.97,97

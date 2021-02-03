@@ -1,15 +1,20 @@
 rules,suppport,confidence,lift
-"{attribute_9=(0.10785; Inf],attribute_45=(0.38545; Inf]} => {Class=Mine}",0.15,1.00,0.00 
-"{attribute_44=(0.4271; Inf],attribute_13=(0.16265; Inf]} => {Class=Mine}",0.11,1.00,0.00 
-"{attribute_44=(0.4271; Inf],attribute_9=(0.10785; Inf]} => {Class=Mine}",0.11,1.00,0.00 
-"{attribute_20=[-Inf;0.51445],attribute_47=[-Inf;0.06235]} => {Class=Rock}",0.11,1.00,0.00 
-"{attribute_45=(0.38545; Inf],attribute_20=(0.51445; Inf]} => {Class=Mine}",0.09,1.00,0.00 
-"{attribute_36=(0.5047; Inf],attribute_47=[-Inf;0.06235]} => {Class=Rock}",0.06,1.00,0.00 
-"{attribute_44=(0.4271; Inf],attribute_4=(0.052; Inf]} => {Class=Mine}",0.05,1.00,0.00 
-"{attribute_44=(0.4271; Inf],attribute_35=[-Inf;0.19475]} => {Class=Mine}",0.05,1.00,0.00 
-"{attribute_44=(0.4271; Inf],attribute_28=(0.9233; Inf]} => {Class=Mine}",0.04,1.00,0.00 
-"{attribute_44=(0.4271; Inf],attribute_49=[-Inf;0.04525]} => {Class=Mine}",0.03,1.00,0.00 
-"{attribute_37=[-Inf;0.3766],attribute_36=(0.5047; Inf]} => {Class=Rock}",0.02,1.00,0.00 
-"{attribute_47=[-Inf;0.06235],attribute_48=(0.07585; Inf]} => {Class=Mine}",0.01,1.00,0.00 
-"{attribute_44=(0.4271; Inf],attribute_47=[-Inf;0.06235]} => {Class=Mine}",0.01,1.00,0.00 
+"{attribute_36=[-Inf;0.5047],attribute_11=(0.19615; Inf],attribute_47=(0.06235; Inf],attribute_51=(0.01365; Inf]} => {Class=Mine}",0.24,1.00,0.00 
+"{attribute_11=(0.19615; Inf],attribute_47=(0.06235; Inf],attribute_51=(0.01365; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.24,1.00,0.00 
+"{attribute_9=(0.10785; Inf],attribute_49=(0.04525; Inf],attribute_51=(0.01365; Inf],attribute_12=(0.16505; Inf]} => {Class=Mine}",0.22,1.00,0.00 
+"{attribute_11=(0.19615; Inf],attribute_51=(0.01365; Inf],attribute_46=(0.07315; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.22,1.00,0.00 
+"{attribute_48=(0.07585; Inf],attribute_51=(0.01365; Inf],attribute_15=[-Inf; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_48=(0.07585; Inf],attribute_51=(0.01365; Inf],attribute_50=[-Inf; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_48=(0.07585; Inf],attribute_51=(0.01365; Inf],attribute_7=[-Inf; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_48=(0.07585; Inf],attribute_51=(0.01365; Inf],attribute_47=(0.06235; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_48=(0.07585; Inf],attribute_51=(0.01365; Inf],attribute_32=[-Inf; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_48=(0.07585; Inf],attribute_59=[-Inf; Inf],attribute_51=(0.01365; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_48=(0.07585; Inf],attribute_51=(0.01365; Inf],attribute_2=[-Inf; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_48=(0.07585; Inf],attribute_51=(0.01365; Inf],attribute_43=[-Inf; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_48=(0.07585; Inf],attribute_58=[-Inf; Inf],attribute_51=(0.01365; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_33=[-Inf; Inf],attribute_48=(0.07585; Inf],attribute_51=(0.01365; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_48=(0.07585; Inf],attribute_26=[-Inf; Inf],attribute_51=(0.01365; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_48=(0.07585; Inf],attribute_51=(0.01365; Inf],attribute_34=[-Inf; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_36=[-Inf;0.5047],attribute_48=(0.07585; Inf],attribute_51=(0.01365; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
+"{attribute_48=(0.07585; Inf],attribute_51=(0.01365; Inf],attribute_42=[-Inf; Inf],attribute_37=[-Inf;0.3766]} => {Class=Mine}",0.21,1.00,0.00 
 "{ } => {Class=Mine}", 0,0,0

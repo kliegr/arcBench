@@ -1,0 +1,9 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{pension=,longterm-disability-assistance=} => {class=good}",0.39215686917305,1,1,20
+"2","{wage-increase-first-year=[2.8;Inf],longterm-disability-assistance=} => {class=good}",0.39215686917305,1,1,1
+"3","{pension=,education-allowance=} => {class=good}",0.352941185235977,1,1,3
+"4","{wage-increase-first-year=[2.8;Inf],bereavement-assistance=yes} => {class=good}",0.333333343267441,1,1,5
+"5","{wage-increase-first-year=[2.1;Inf],vacation=generous} => {class=good}",0.274509817361832,1,1,2
+"6","{wage-increase-first-year=[2.1;Inf],contribution-to-health-plan=full} => {class=good}",0.254901975393295,1,1,1
+"7","{vacation=} => {class=good}",0.0784313753247261,1,1,1
+"8","{} => {class=bad}",0.352941185235977,0.352941185235977,1,18

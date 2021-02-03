@@ -1,0 +1,32 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{K=[-Inf;Inf],Ba=[0.4;1.71]} => {Type=headlamps}",0.11458333581686,1,1,22
+"2","{Ca=[-Inf;Inf],Ba=[0.4;1.71]} => {Type=headlamps}",0.11458333581686,1,NA,0
+"3","{Na=[12.86;Inf],Al=[1.79;Inf],Ca=[8.21;10.09]} => {Type=headlamps}",0.109375,1,1,1
+"4","{RI=[-Inf;Inf],Mg=[-Inf;2.2],Ca=[7.78;9.69]} => {Type=headlamps}",0.109375,1,1,1
+"5","{RI=[1.51711;1.51797],Ca=[-Inf;8.52]} => {Type=build wind float}",0.0833333358168602,1,1,16
+"6","{Mg=[-Inf;3.53],Al=[-Inf;1.49],K=[0.02;0.49]} => {Type=build wind non-float}",0.0625,1,1,12
+"7","{Na=[-Inf;14.46],Al=[-Inf;1.49],Ca=[10.56;Inf]} => {Type=build wind non-float}",0.0520833320915699,1,1,3
+"8","{Na=[-Inf;14.46],Mg=[-Inf;Inf],Al=[-Inf;1.49],Ca=[10.56;Inf]} => {Type=build wind non-float}",0.0520833320915699,1,NA,0
+"9","{RI=[1.51768;Inf],Ca=[6.65;8.41]} => {Type=build wind non-float}",0.046875,1,1,9
+"10","{Mg=[-Inf;Inf],Al=[1.63;Inf],Ca=[7.08;8.27]} => {Type=build wind non-float}",0.046875,1,1,9
+"11","{Na=[13.73;Inf],Mg=[-Inf;3.8],K=[-Inf;0],Ba=[-Inf;0.53]} => {Type=tableware}",0.0416666679084301,1,1,8
+"12","{Mg=[-Inf;3.8],K=[-Inf;0],Ca=[-Inf;10.88],Ba=[-Inf;0.53]} => {Type=tableware}",0.0364583320915699,1,NA,0
+"13","{Al=[1.05;Inf],Ca=[11.22;12.24]} => {Type=containers}",0.03125,1,1,6
+"14","{Na=[11.56;14.14],Mg=[-Inf;3.47],Al=[1.8;Inf],Ba=[-Inf;0.56]} => {Type=containers}",0.026041666045785,1,1,5
+"15","{RI=[-Inf;Inf],Mg=[-Inf;2.96],Al=[1.83;Inf],K=[0.97;Inf]} => {Type=containers}",0.020833333954215,1,1,1
+"16","{Mg=[2.68;3.89],K=[-Inf;0.05]} => {Type=build wind float}",0.015625,1,1,3
+"17","{RI=[-Inf;Inf],Na=[14.32;Inf],K=[0.17;Inf]} => {Type=headlamps}",0.015625,1,1,1
+"18","{Mg=[-Inf;Inf],Ca=[-Inf;5.79]} => {Type=headlamps}",0.0104166669771075,1,NA,0
+"19","{Na=[-Inf;Inf],Mg=[-Inf;Inf],Ca=[7.08;7.36]} => {Type=build wind non-float}",0.0104166669771075,1,NA,0
+"20","{RI=[1.51707;1.518],Al=[0.66;1.51]} => {Type=build wind float}",0.16145832836628,0.939393937587738,0.888888888888889,16
+"21","{RI=[1.51574;1.51732],Mg=[-Inf;Inf],Al=[1.41;1.74]} => {Type=build wind non-float}",0.140625,0.931034505367279,0.916666666666667,22
+"22","{Mg=[1.78;Inf],Al=[1.41;Inf],Ca=[6.47;8.35]} => {Type=build wind non-float}",0.16145832836628,0.911764681339264,0,0
+"23","{RI=[-Inf;1.51736],Mg=[1.78;Inf],Ca=[6.47;8.32]} => {Type=build wind non-float}",0.15625,0.882352948188782,0,0
+"24","{RI=[1.51735;1.51797]} => {Type=build wind float}",0.15625,0.857142865657806,0,0
+"25","{Na=[-Inf;Inf],Al=[1.79;Inf],K=[0.09;0.73]} => {Type=build wind non-float}",0.03125,0.857142865657806,1,1
+"26","{RI=[1.51796;Inf],Mg=[2.41;Inf],Al=[1.36;1.62]} => {Type=build wind non-float}",0.026041666045785,0.833333313465118,0.75,3
+"27","{RI=[1.51778;Inf],Al=[1.36;1.62],K=[0.02;Inf],Ca=[8.44;11.22]} => {Type=build wind non-float}",0.026041666045785,0.833333313465118,NA,0
+"28","{Na=[12.3;14.01],Mg=[2.68;3.93],Al=[-Inf;1.41],Ca=[8.34;10.56]} => {Type=build wind float}",0.234375,0.75,0.67741935483871,21
+"29","{RI=[1.51299;1.51732],Mg=[1.78;Inf],Ba=[-Inf;0.67]} => {Type=build wind non-float}",0.1875,0.734693884849548,0,0
+"30","{Mg=[2.68;3.89],Al=[-Inf;1.41],Ca=[8.34;10.56]} => {Type=build wind float}",0.260416656732559,0.724637687206268,0.6,3
+"31","{} => {Type=build wind non-float}",0.354166656732559,0.354166656732559,0.75,3

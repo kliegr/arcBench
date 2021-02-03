@@ -1,0 +1,6 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{chest=[-Inf;3],maximum_heart_rate_achieved=[99;Inf],sex=0} => {class=absent}",0.181069955229759,1,1,44
+"2","{chest=[-Inf;3],sex=0,thal=[3;6]} => {class=absent}",0.176954731345177,1,1,1
+"3","{oldpeak=[1.8;Inf],thal=[6;Inf],chest=[2;4]} => {class=present}",0.160493820905685,1,1,39
+"4","{oldpeak=[1.1;Inf],thal=[6;Inf],number_of_major_vessels=[1;Inf]} => {class=present}",0.15226337313652,1,1,7
+"5","{} => {class=absent}",0.555555582046509,0.555555582046509,0.592105263157895,90

@@ -1,22 +1,17 @@
 rules,suppport,confidence,lift
-"{make=peugot,numOfDoors=four} => {XClass=0}",0.06,1.00,0.00 
-"{engineSize=(105.5; Inf],engineType=l} => {XClass=0}",0.06,1.00,0.00 
-"{engineType=l,horsepower=(87; Inf]} => {XClass=0}",0.06,1.00,0.00 
-"{cityMpg=[-Inf;28.5],make=peugot} => {XClass=0}",0.06,1.00,0.00 
-"{length=(186.65; Inf],make=peugot} => {XClass=0}",0.06,1.00,0.00 
-"{length=(186.65; Inf],engineType=l} => {XClass=0}",0.06,1.00,0.00 
-"{price=(8303.5; Inf],engineType=l} => {XClass=0}",0.06,1.00,0.00 
-"{cityMpg=[-Inf;28.5],engineType=l} => {XClass=0}",0.06,1.00,0.00 
-"{curbWeight=(2215; Inf],engineType=l} => {XClass=0}",0.06,1.00,0.00 
-"{price=(8303.5; Inf],make=peugot} => {XClass=0}",0.06,1.00,0.00 
-"{driveWheels=rwd,engineType=l} => {XClass=0}",0.06,1.00,0.00 
-"{make=peugot,wheelBase=(100.1; Inf]} => {XClass=0}",0.06,1.00,0.00 
-"{bore=(3.255; Inf],make=peugot} => {XClass=0}",0.06,1.00,0.00 
-"{peakRpm=[-Inf; Inf],make=peugot} => {XClass=0}",0.06,1.00,0.00 
-"{stroke=[-Inf; Inf],make=peugot} => {XClass=0}",0.06,1.00,0.00 
-"{make=subaru,wheelBase=(94.8;97.25]} => {XClass=0}",0.05,1.00,0.00 
-"{engineType=ohcf,wheelBase=(94.8;97.25]} => {XClass=0}",0.05,1.00,0.00 
-"{length=(171.85;186.65],make=subaru} => {XClass=0}",0.05,1.00,0.00 
-"{numOfDoors=four,engineType=ohcf} => {XClass=0}",0.05,1.00,0.00 
-"{bodyStyle=wagon,wheelBase=(94.8;97.25]} => {XClass=0}",0.04,1.00,0.00 
+"{engineSize=(85;105.5],width=(63.7;64.3],wheelBase=(92.15;94.8],peakRpm=[-Inf; Inf]} => {XClass=1}",0.17,1.00,0.00 
+"{engineSize=(85;105.5],width=(63.7;64.3],stroke=[-Inf; Inf],wheelBase=(92.15;94.8]} => {XClass=1}",0.17,1.00,0.00 
+"{engineSize=(85;105.5],width=(63.7;64.3],numOfCylinders=four,wheelBase=(92.15;94.8]} => {XClass=1}",0.17,1.00,0.00 
+"{engineSize=(85;105.5],width=(63.7;64.3],wheelBase=(92.15;94.8],compressionRatio=[-Inf; Inf]} => {XClass=1}",0.17,1.00,0.00 
+"{width=(63.7;64.3],wheelBase=(92.15;94.8],curbWeight=[-Inf;2215],engineLocation=front} => {XClass=1}",0.16,1.00,0.00 
+"{engineSize=(85;105.5],width=(63.7;64.3],wheelBase=(92.15;94.8],fuelType=gas} => {XClass=1}",0.16,1.00,0.00 
+"{wheelBase=(92.15;94.8],width=(63.7;64.3],engineType=ohc,curbWeight=[-Inf;2215]} => {XClass=1}",0.16,1.00,0.00 
+"{width=(63.7;64.3],bore=[-Inf;3.255],wheelBase=(92.15;94.8],curbWeight=[-Inf;2215]} => {XClass=1}",0.16,1.00,0.00 
+"{width=(63.7;64.3],bore=[-Inf;3.255],wheelBase=(92.15;94.8],price=[-Inf;8303.5]} => {XClass=1}",0.16,1.00,0.00 
+"{width=(63.7;64.3],wheelBase=(92.15;94.8],driveWheels=fwd,highwayMpg=(29.5; Inf]} => {XClass=1}",0.15,1.00,0.00 
+"{wheelBase=(92.15;94.8],width=(63.7;64.3],price=[-Inf;8303.5],cityMpg=(28.5; Inf]} => {XClass=1}",0.15,1.00,0.00 
+"{width=(63.7;64.3],wheelBase=(92.15;94.8],cityMpg=(28.5; Inf]} => {XClass=1}",0.15,1.00,0.00 
+"{width=(63.7;64.3],normalizedLosses=(96.5; Inf],wheelBase=(92.15;94.8],cityMpg=(28.5; Inf]} => {XClass=1}",0.15,1.00,0.00 
+"{width=(63.7;64.3],wheelBase=(92.15;94.8],horsepower=[-Inf;87],cityMpg=(28.5; Inf]} => {XClass=1}",0.15,1.00,0.00 
+"{width=(63.7;64.3],aspiration=std,wheelBase=(92.15;94.8],cityMpg=(28.5; Inf]} => {XClass=1}",0.15,1.00,0.00 
 "{ } => {XClass=0}", 0,0,0

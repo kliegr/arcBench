@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{pulse=[54;Inf],capillary_refill_time=<3,surgery=yes,outcome=lived} => {surgical_lesion=yes}",0.12688821554184,1,1,42
+"2","{pulse=[60;Inf],surgery=yes,peripheral_pulse=normal} => {surgical_lesion=yes}",0.0996978878974915,1,1,17
+"3","{outcome=lived,surgery=no,pain=alert no pain} => {surgical_lesion=no}",0.0996978878974915,1,1,33
+"4","{} => {surgical_lesion=yes}",0.631419956684113,0.631419956684113,0.627615062761506,150

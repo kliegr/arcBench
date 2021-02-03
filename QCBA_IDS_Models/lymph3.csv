@@ -1,0 +1,4 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{block_of_affere=yes,special_forms=chalices,no_of_nodes_in=[-Inf;3]} => {class=metastases}",0.20149253308773,1,1,27
+"2","{special_forms=vesicles,dislocation_of=yes,block_of_affere=no} => {class=malign_lymph}",0.17910447716713,1,1,24
+"3","{} => {class=metastases}",0.544776141643524,0.544776141643524,0.55421686746988,46

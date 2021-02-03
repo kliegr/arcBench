@@ -1,15 +1,20 @@
 rules,suppport,confidence,lift
-"{property_magnitude=real estate,foreign_worker=no} => {class=good}",0.02,1.00,0.00 
-"{checking_status=no checking,foreign_worker=no} => {class=good}",0.01,1.00,0.00 
-"{savings_status=>=1000,property_magnitude=car} => {class=good}",0.01,1.00,0.00 
-"{checking_status=>=200,property_magnitude=life insurance} => {class=good}",0.01,1.00,0.00 
-"{purpose=retraining,other_parties=none} => {class=good}",0.01,1.00,0.00 
-"{installment_commitment=[-Inf; Inf],purpose=retraining} => {class=good}",0.01,1.00,0.00 
-"{purpose=furniture/equipment,other_parties=guarantor} => {class=good}",0.01,1.00,0.00 
-"{savings_status=500<=X<1000,property_magnitude=no known property} => {class=good}",0.01,1.00,0.00 
-"{purpose=used car,savings_status=100<=X<500} => {class=good}",0.01,1.00,0.00 
-"{other_parties=co applicant,savings_status=no known savings} => {class=good}",0.01,1.00,0.00 
-"{credit_history=all paid,property_magnitude=life insurance} => {class=bad}",0.01,1.00,0.00 
-"{purpose=retraining,job=unskilled resident} => {class=good}",0.01,1.00,0.00 
-"{housing=for free,savings_status=500<=X<1000} => {class=good}",0.00,1.00,0.00 
+"{property_magnitude=real estate,other_payment_plans=none,duration=[-Inf;15.5],checking_status=no checking} => {class=good}",0.06,1.00,0.00 
+"{other_payment_plans=none,credit_history=critical/other existing credit,checking_status=no checking,purpose=radio/tv} => {class=good}",0.05,1.00,0.00 
+"{other_payment_plans=none,purpose=used car,residence_since=[-Inf; Inf],checking_status=no checking} => {class=good}",0.05,1.00,0.00 
+"{property_magnitude=real estate,other_payment_plans=none,personal_status=male single,checking_status=no checking} => {class=good}",0.05,1.00,0.00 
+"{credit_amount=[-Inf;10918],other_payment_plans=none,purpose=used car,checking_status=no checking} => {class=good}",0.05,1.00,0.00 
+"{credit_history=critical/other existing credit,duration=[-Inf;15.5],job=skilled,checking_status=no checking} => {class=good}",0.05,1.00,0.00 
+"{credit_history=critical/other existing credit,job=skilled,checking_status=no checking,purpose=radio/tv} => {class=good}",0.04,1.00,0.00 
+"{own_telephone=yes,duration=[-Inf;15.5],job=skilled,checking_status=no checking} => {class=good}",0.04,1.00,0.00 
+"{purpose=used car,installment_commitment=[-Inf; Inf],checking_status=no checking,personal_status=male single} => {class=good}",0.04,1.00,0.00 
+"{purpose=used car,personal_status=male single,foreign_worker=yes,checking_status=no checking} => {class=good}",0.04,1.00,0.00 
+"{purpose=new car,duration=[-Inf;15.5],checking_status=no checking,other_parties=none} => {class=good}",0.04,1.00,0.00 
+"{employment=4<=X<7,installment_commitment=[-Inf; Inf],own_telephone=yes,checking_status=no checking} => {class=good}",0.04,1.00,0.00 
+"{employment=4<=X<7,own_telephone=yes,residence_since=[-Inf; Inf],checking_status=no checking} => {class=good}",0.04,1.00,0.00 
+"{housing=own,savings_status=no known savings,credit_history=critical/other existing credit,other_payment_plans=none} => {class=good}",0.04,1.00,0.00 
+"{purpose=used car,personal_status=male single,checking_status=no checking,other_parties=none} => {class=good}",0.04,1.00,0.00 
+"{housing=own,property_magnitude=real estate,checking_status=no checking,purpose=radio/tv} => {class=good}",0.03,1.00,0.00 
+"{property_magnitude=car,credit_history=critical/other existing credit,duration=(15.5; Inf],checking_status=no checking} => {class=good}",0.03,1.00,0.00 
+"{num_dependents=1,other_payment_plans=none,purpose=used car,checking_status=no checking} => {class=good}",0.04,1.00,0.00 
 "{ } => {class=good}", 0,0,0

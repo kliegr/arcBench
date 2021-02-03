@@ -1,0 +1,8 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{width=[63.8;72.3],height=[52;59.8],wheelBase=[95.3;97.2]} => {XClass=0}",0.119565218687057,1,1,22
+"2","{height=[52;59.8],wheelBase=[95.1;97.2],cityMpg=[-Inf;30]} => {XClass=0}",0.108695648610592,1,1,2
+"3","{height=[51;59.8],normalizedLosses=[85;231],wheelBase=[91.3;94.5],numOfDoors=two} => {XClass=1}",0.0923913046717644,1,1,17
+"4","{length=[141.1;173.5],highwayMpg=[-Inf;28],bore=[2.91;Inf]} => {XClass=3}",0.0869565233588219,1,1,16
+"5","{numOfCylinders=four,normalizedLosses=[77;93],numOfDoors=four} => {XClass=0}",0.0869565233588219,1,1,2
+"6","{length=[141.1;178.4],height=[-Inf;50.2]} => {XClass=3}",0.0815217420458794,1,1,2
+"7","{} => {XClass=0}",0.326086968183517,0.326086968183517,0.276422764227642,34

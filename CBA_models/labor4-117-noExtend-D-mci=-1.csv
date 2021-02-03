@@ -1,0 +1,11 @@
+"rules" "support" "confidence" "coverage" "lift" "count" "lhs_length" "orderedConf" "orderedSupp" "cumulativeConf"
+"696" "{pension=,education-allowance=} => {class=good}" 0.372549019607843 1 0.372549019607843 1.54545454545455 19 2 1 19 1
+"686" "{pension=,longterm-disability-assistance=} => {class=good}" 0.352941176470588 1 0.352941176470588 1.54545454545455 18 2 1 4 1
+"689" "{wage-increase-second-year=(3.25; Inf],longterm-disability-assistance=} => {class=good}" 0.352941176470588 1 0.352941176470588 1.54545454545455 18 2 1 1 1
+"668" "{wage-increase-second-year=(3.25; Inf],bereavement-assistance=yes} => {class=good}" 0.294117647058824 1 0.294117647058824 1.54545454545455 15 2 1 5 1
+"6223" "{wage-increase-first-year=(2.9; Inf],wage-increase-second-year=(3.25; Inf],longterm-disability-assistance=yes} => {class=good}" 0.254901960784314 1 0.254901960784314 1.54545454545455 13 3 1 3 1
+"13" "{pension=none} => {class=bad}" 0.176470588235294 1 0.176470588235294 2.83333333333333 9 1 1 9 1
+"7" "{longterm-disability-assistance=no} => {class=bad}" 0.137254901960784 1 0.137254901960784 2.83333333333333 7 1 1 3 1
+"8" "{contribution-to-health-plan=none} => {class=bad}" 0.137254901960784 1 0.137254901960784 2.83333333333333 7 1 1 3 1
+"5" "{vacation=} => {class=good}" 0.117647058823529 1 0.117647058823529 1.54545454545455 6 1 1 1 1
+"0" "{} => {class=bad}" 0.352941176470588 0.352941176470588 1 1 18 0 1 3 1

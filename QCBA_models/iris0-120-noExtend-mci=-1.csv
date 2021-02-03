@@ -1,0 +1,13 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{petallength=[-Inf;1.9]} => {class=Iris-setosa}",0.333333343267441,1,1,45
+"2","{sepallength=[6.3;Inf],petalwidth=[1.8;Inf]} => {class=Iris-virginica}",0.237037032842636,1,1,32
+"3","{sepallength=[5.6;6.2],petallength=[3;4.7]} => {class=Iris-versicolor}",0.148148149251938,1,1,20
+"4","{sepalwidth=[-Inf;2.9],petalwidth=[1.8;Inf]} => {class=Iris-virginica}",0.118518516421318,1,1,6
+"5","{sepalwidth=[3;3.3],petallength=[3;4.7]} => {class=Iris-versicolor}",0.0814814791083336,1,1,7
+"6","{sepallength=[6.3;Inf],petallength=[3;4.7]} => {class=Iris-versicolor}",0.0740740746259689,1,1,4
+"7","{petallength=[3;4.7]} => {class=Iris-versicolor}",0.296296298503876,0.97560977935791,0.9,9
+"8","{petalwidth=[1.8;Inf]} => {class=Iris-virginica}",0.296296298503876,0.97560977935791,0.666666666666667,2
+"9","{sepallength=[6.3;Inf],sepalwidth=[3;3.3],petallength=[4.8;Inf]} => {class=Iris-virginica}",0.140740737318993,0.949999988079071,0.5,1
+"10","{sepallength=[6.3;Inf],petallength=[4.8;Inf]} => {class=Iris-virginica}",0.251851856708527,0.918918907642365,0.333333333333333,1
+"11","{sepallength=[5.6;6.2],petalwidth=[1;1.7]} => {class=Iris-versicolor}",0.155555561184883,0.91304349899292,0.333333333333333,1
+"12","{} => {class=Iris-setosa}",0.333333343267441,0.333333343267441,NA,0

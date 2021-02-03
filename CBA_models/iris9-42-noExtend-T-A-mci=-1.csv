@@ -1,0 +1,12 @@
+"rules" "support" "confidence" "coverage" "lift" "count" "lhs_length" "orderedConf" "orderedSupp" "cumulativeConf"
+"9" "{petallength=[-Inf;2.45]} => {class=Iris-setosa}" 0.333333333333333 1 0.333333333333333 3 45 1 1 45 1
+"32" "{sepallength=(6.15; Inf],petalwidth=(1.75; Inf]} => {class=Iris-virginica}" 0.251851851851852 1 0.251851851851852 3 34 2 1 34 1
+"19" "{sepallength=(5.55;6.15],petallength=(2.45;4.75]} => {class=Iris-versicolor}" 0.133333333333333 1 0.133333333333333 3 18 2 1 18 1
+"35" "{sepalwidth=[-Inf;2.95],petalwidth=(1.75; Inf]} => {class=Iris-virginica}" 0.118518518518519 1 0.118518518518519 3 16 2 1 5 1
+"37" "{sepalwidth=(2.95;3.35],petalwidth=(0.8;1.75]} => {class=Iris-versicolor}" 0.0814814814814815 1 0.0814814814814815 3 11 2 1 7 1
+"28" "{sepallength=(6.15; Inf],petallength=(2.45;4.75]} => {class=Iris-versicolor}" 0.0740740740740741 1 0.0740740740740741 3 10 2 1 6 1
+"4" "{petalwidth=(1.75; Inf]} => {class=Iris-virginica}" 0.311111111111111 0.976744186046512 0.318518518518519 2.93023255813953 42 1 0.75 3 0.991596638655462
+"3" "{petallength=(2.45;4.75]} => {class=Iris-versicolor}" 0.288888888888889 0.975 0.296296296296296 2.925 39 1 0.909090909090909 10 0.984615384615385
+"21" "{sepallength=(5.55;6.15],petalwidth=(0.8;1.75]} => {class=Iris-versicolor}" 0.140740740740741 0.95 0.148148148148148 2.85 19 2 0.5 1 0.977272727272727
+"5" "{petalwidth=(0.8;1.75]} => {class=Iris-versicolor}" 0.325925925925926 0.936170212765957 0.348148148148148 2.80851063829787 44 1 0.666666666666667 2 NA
+"0" "{} => {class=Iris-versicolor}" 0.333333333333333 0.333333333333333 1 1 45 0 NA NA 0.97037037037037

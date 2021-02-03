@@ -1,0 +1,6 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{chest=[-Inf;3],sex=0,fasting_blood_sugar=0,maximum_heart_rate_achieved=[99;Inf]} => {class=absent}",0.172839507460594,1,1,42
+"2","{chest=[-Inf;3],number_of_major_vessels=0,sex=0} => {class=absent}",0.144032925367355,1,1,3
+"3","{sex=0,age=[-Inf;54],thal=[3;6]} => {class=absent}",0.135802462697029,1,1,8
+"4","{sex=0,age=[-Inf;57],exercise_induced_angina=0} => {class=absent}",0.127572014927864,1,1,1
+"5","{} => {class=present}",0.444444447755814,0.444444447755814,0.571428571428571,108

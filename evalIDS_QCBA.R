@@ -1,11 +1,8 @@
-
-
 library(qCBA)
 library(rCBA)
 library(sbrl)
 library(stringr)
 library(rlist)
-
 
 #patched frameToRules from rCBA package
 frameToRules <- function(model){
@@ -47,32 +44,34 @@ frameToRules <- function(model){
 }
 iterations <-1
 basePath="."
-datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
+datasets <- c("australian","anneal","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
 foldsToProcess <- 10
 maxFoldIndex  <-foldsToProcess -1
 defaultRuleOverlapPruningRange=c("transactionBased","noPruning")
 basePath="./"
 IDSModelsFolder<-paste(basePath,"IDS_Models",sep="")
 resultFolder <- "IDS_results"
+modelsFolder <- "QCBA_IDS_Models"
 
 for (defaultRuleOverlapPruning in defaultRuleOverlapPruningRange)
 {
-  
+
   mainresultfile <-  paste(resultFolder,"/","IDSQCBA_R_",defaultRuleOverlapPruning,".csv",sep="")
   dir.create(file.path(basePath, resultFolder))
-  
+  dir.create(file.path(basePath, modelsFolder))
+
   if (!file.exists(mainresultfile))
   {
     write(paste("dataset,accuracy,rules,antlength,buildtime"), file = mainresultfile,
           ncolumns = 1,
           append = FALSE, sep = ",")
   }
-  
+
   for (dataset in datasets[1:length(datasets)])
   {
     #resultfile= paste("./IDSQCBA_results/",dataset, ".csv",sep="")
     #if (file.exists(resultfile)) next;
-    
+
     file_text <- readLines(mainresultfile)
     check_result <- TRUE %in% grepl(paste("^",dataset,",",sep=""),file_text)
     if (isTRUE(check_result))
@@ -80,24 +79,24 @@ for (defaultRuleOverlapPruning in defaultRuleOverlapPruningRange)
       message(paste("Skipping dataset",dataset,"(already computed)"))
       next
     }
-    
+
     df <- data.frame(matrix(rep(0,12), ncol = 1, nrow = 4), row.names = c("accuracy","rulecount","rulelength","buildtime"))
-    colnames(df)<-c("IDSQCBA") 
-    
+    colnames(df)<-c("IDSQCBA")
+
     for (fold in 0:maxFoldIndex)
     {
       message(paste("loading IDS rules:", dataset,fold))
       idsRulesPath <- paste(IDSModelsFolder,.Platform$file.sep,dataset, fold, ".csv", sep="")
-      
+
       testPath <- paste(basePath,.Platform$file.sep,"data",.Platform$file.sep,"folds_nodiscr",.Platform$file.sep,"test",.Platform$file.se,dataset, fold, ".csv", sep="")
       testFold <- utils::read.csv(testPath  , header  =TRUE, check.names = TRUE)
       trainPath <- paste(basePath,.Platform$file.sep,"data",.Platform$file.sep,"folds_nodiscr",.Platform$file.sep,"train",.Platform$file.sep,dataset, fold, ".csv", sep="")
       trainFold <- utils::read.csv(trainPath  , header  =TRUE, check.names = TRUE)
       classAtt<- tail(colnames(trainFold),n=1)
-      
+
       trainDiscCutpointsPath <- paste(basePath,.Platform$file.sep,"data",.Platform$file.sep,"folds_discr2",.Platform$file.sep,"train",.Platform$file.sep,dataset, fold, ".cutpoints", sep="")
       trainFoldDiscCutpoints <- list.unserialize(file=trainDiscCutpointsPath)
-  
+
       dfRulesIDS <- utils::read.csv(idsRulesPath , header  =TRUE, check.names = TRUE)
       rm_ids <- CBARuleModel()
       rm_ids@rules <- frameToRules(dfRulesIDS)
@@ -108,7 +107,7 @@ for (defaultRuleOverlapPruning in defaultRuleOverlapPruningRange)
       start.time <- Sys.time()
       for (i in 1:iterations) rmQCBA_ids <- qcba(cbaRuleModel=rm_ids,datadf=trainFold, extend="numericOnly",defaultRuleOverlapPruning=defaultRuleOverlapPruning,attributePruning=TRUE,trim_literal_boundaries=TRUE,
                          continuousPruning=FALSE, postpruning="cba", minImprovement=0,
-                         minCondImprovement=-1,            loglevel = "WARNING")    
+                         minCondImprovement=-1,            loglevel = "WARNING")
       end.time <- Sys.time()
       df["buildtime","IDSQCBA"] <-df["buildtime","IDSQCBA"]  + round(as.numeric((end.time - start.time)/iterations,units="secs"),2)
       prediction <- predict(rmQCBA_ids,testFold)
@@ -119,12 +118,13 @@ for (defaultRuleOverlapPruning in defaultRuleOverlapPruningRange)
                     # assuming the last rule has antecedent length zero - not counting its length
                     nrow(rmQCBA_ids@rules)-1)/nrow(rmQCBA_ids@rules)
       df["rulelength","IDSQCBA"]<-df["rulelength","IDSQCBA"]+avgtemp
+      write.csv(rmQCBA_ids@rules, file = paste0(modelsFolder, "/",dataset,fold,".csv", sep = "") )
       message(paste("IDSQCBA acc:",acc_qcba_ids, " rules", rmQCBA_ids@ruleCount))
     }
     df<- df * 1/foldsToProcess
     print(df)
-    #write.csv(df, file=resultfile)  
-    
+    #write.csv(df, file=resultfile)
+
     write(c(dataset,df["accuracy","IDSQCBA"],df["rulecount","IDSQCBA"],df["rulelength","IDSQCBA"],df["buildtime","IDSQCBA"] ), file = mainresultfile,
           ncolumns = 5,
           append = TRUE, sep = ",")

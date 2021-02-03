@@ -1,17 +1,19 @@
 rules,suppport,confidence,lift
-"{compressionRatio=[-Inf; Inf],make=peugot} => {XClass=0}",0.05,1.00,0.00 
-"{wheelBase=(100.1; Inf],engineType=l} => {XClass=0}",0.05,1.00,0.00 
-"{driveWheels=rwd,engineType=l} => {XClass=0}",0.05,1.00,0.00 
-"{numOfDoors=four,engineType=l} => {XClass=0}",0.05,1.00,0.00 
-"{peakRpm=[-Inf; Inf],make=peugot} => {XClass=0}",0.05,1.00,0.00 
-"{price=(8497; Inf],engineType=l} => {XClass=0}",0.05,1.00,0.00 
-"{make=peugot,price=(8497; Inf]} => {XClass=0}",0.05,1.00,0.00 
-"{engineType=l,horsepower=(87; Inf]} => {XClass=0}",0.05,1.00,0.00 
-"{length=(186.65; Inf],engineType=l} => {XClass=0}",0.05,1.00,0.00 
-"{bore=(3.16; Inf],make=peugot} => {XClass=0}",0.05,1.00,0.00 
-"{height=[-Inf;50.35],numOfCylinders=four} => {XClass=3}",0.05,1.00,0.00 
-"{length=(168.75;169.05],bore=(3.16; Inf]} => {XClass=3}",0.04,1.00,0.00 
-"{length=(168.75;169.05]} => {XClass=3}",0.04,1.00,0.00 
-"{curbWeight=(2216.5; Inf],length=(168.75;169.05]} => {XClass=3}",0.04,1.00,0.00 
-"{length=(168.75;169.05],fuelType=gas} => {XClass=3}",0.04,1.00,0.00 
+"{engineLocation=front,wheelBase=(94.8;97.25],numOfDoors=four,normalizedLosses=(75.5;116.5]} => {XClass=0}",0.12,1.00,0.00 
+"{stroke=[-Inf; Inf],wheelBase=(94.8;97.25],numOfDoors=four,normalizedLosses=(75.5;116.5]} => {XClass=0}",0.12,1.00,0.00 
+"{peakRpm=[-Inf; Inf],wheelBase=(94.8;97.25],numOfDoors=four,normalizedLosses=(75.5;116.5]} => {XClass=0}",0.12,1.00,0.00 
+"{width=(64.3; Inf],numOfCylinders=four,height=(52.45;55.55],wheelBase=(94.8;97.25]} => {XClass=0}",0.10,1.00,0.00 
+"{width=(64.3; Inf],height=(52.45;55.55],wheelBase=(94.8;97.25],compressionRatio=[-Inf; Inf]} => {XClass=0}",0.10,1.00,0.00 
+"{engineType=ohc,fuelType=gas,width=[-Inf;64.3],wheelBase=(92.15;94]} => {XClass=1}",0.10,1.00,0.00 
+"{engineSize=(85;105.5],engineType=ohc,width=[-Inf;64.3],wheelBase=(92.15;94]} => {XClass=1}",0.10,1.00,0.00 
+"{bore=[-Inf;3.16],width=[-Inf;64.3],driveWheels=fwd,wheelBase=(92.15;94]} => {XClass=1}",0.10,1.00,0.00 
+"{width=(64.3; Inf],height=(52.45;55.55],wheelBase=(94.8;97.25],normalizedLosses=(75.5;116.5]} => {XClass=0}",0.10,1.00,0.00 
+"{engineType=ohc,peakRpm=[-Inf; Inf],width=[-Inf;64.3],wheelBase=(92.15;94]} => {XClass=1}",0.10,1.00,0.00 
+"{curbWeight=[-Inf;2216.5],width=[-Inf;64.3],engineType=ohc,wheelBase=(92.15;94]} => {XClass=1}",0.10,1.00,0.00 
+"{bore=[-Inf;3.16],stroke=[-Inf; Inf],width=[-Inf;64.3],wheelBase=(92.15;94]} => {XClass=1}",0.10,1.00,0.00 
+"{bore=[-Inf;3.16],width=[-Inf;64.3],wheelBase=(92.15;94],highwayMpg=(29.5; Inf]} => {XClass=1}",0.10,1.00,0.00 
+"{engineType=ohc,width=[-Inf;64.3],compressionRatio=[-Inf; Inf],wheelBase=(92.15;94]} => {XClass=1}",0.10,1.00,0.00 
+"{engineType=ohc,engineLocation=front,width=[-Inf;64.3],wheelBase=(92.15;94]} => {XClass=1}",0.10,1.00,0.00 
+"{bore=[-Inf;3.16],engineLocation=front,width=[-Inf;64.3],wheelBase=(92.15;94]} => {XClass=1}",0.10,1.00,0.00 
+"{engineType=ohc,width=[-Inf;64.3],wheelBase=(92.15;94],price=[-Inf;8497]} => {XClass=1}",0.09,1.00,0.00 
 "{ } => {XClass=0}", 0,0,0

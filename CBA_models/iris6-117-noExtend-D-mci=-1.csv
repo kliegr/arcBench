@@ -1,0 +1,4 @@
+"rules" "support" "confidence" "coverage" "lift" "count" "lhs_length" "orderedConf" "orderedSupp" "cumulativeConf"
+"8" "{petallength=[-Inf;2.6]} => {class=Iris-setosa}" 0.333333333333333 1 0.333333333333333 3 45 1 1 45 1
+"25" "{petallength=(2.6;4.75],petalwidth=(0.8;1.65]} => {class=Iris-versicolor}" 0.296296296296296 1 0.296296296296296 3 40 2 1 40 1
+"0" "{} => {class=Iris-virginica}" 0.333333333333333 0.333333333333333 1 1 45 0 0.9 45 0.962962962962963

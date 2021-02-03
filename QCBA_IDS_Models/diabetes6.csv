@@ -1,0 +1,9 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{plas=[-Inf;106],mass=[-Inf;32.8],age=[-Inf;28]} => {class=tested_negative}",0.153400868177414,1,1,106
+"2","{plas=[-Inf;105],mass=[-Inf;29.9],pedi=[-Inf;0.721]} => {class=tested_negative}",0.147612154483795,1,1,23
+"3","{plas=[-Inf;106],mass=[-Inf;32.8],insu=[14;155]} => {class=tested_negative}",0.0998552814126015,1,1,8
+"4","{plas=[-Inf;99],pedi=[-Inf;0.725],preg=[6;Inf]} => {class=tested_negative}",0.0419681631028652,1,1,17
+"5","{age=[-Inf;29],skin=[-Inf;38],insu=[122;Inf],plas=[94;127]} => {class=tested_negative}",0.0376266278326511,1,1,22
+"6","{plas=[-Inf;99],skin=[-Inf;31],insu=[-Inf;255],preg=[6;Inf]} => {class=tested_negative}",0.0361794494092464,1,1,1
+"7","{preg=[2;Inf],skin=[32;Inf],plas=[158;196]} => {class=tested_positive}",0.0318379178643227,1,1,22
+"8","{} => {class=tested_negative}",0.651230096817017,0.651230096817017,0.554878048780488,273

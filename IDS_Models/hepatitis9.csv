@@ -1,15 +1,20 @@
 rules,suppport,confidence,lift
-"{ALBUMIN=(3.85685483871; Inf],FATIGUE=no} => {Class=LIVE}",0.26,1.00,0.00 
-"{STEROID=yes,FATIGUE=no} => {Class=LIVE}",0.21,1.00,0.00 
-"{SEX=male,SGOT=[-Inf; Inf]} => {Class=LIVE}",0.10,1.00,0.00 
-"{SEX=male,AGE=[-Inf; Inf]} => {Class=LIVE}",0.10,1.00,0.00 
-"{SEX=female,ALBUMIN=[-Inf;2.85]} => {Class=DIE}",0.07,1.00,0.00 
-"{SEX=male,FATIGUE=yes} => {Class=LIVE}",0.07,1.00,0.00 
-"{SEX=male,LIVER_BIG=yes} => {Class=LIVE}",0.07,1.00,0.00 
-"{MALAISE=yes,ALBUMIN=[-Inf;2.85]} => {Class=DIE}",0.06,1.00,0.00 
-"{BILIRUBIN=(1.65; Inf],ASCITES=yes} => {Class=DIE}",0.06,1.00,0.00 
-"{SEX=male,LIVER_FIRM=yes} => {Class=LIVE}",0.06,1.00,0.00 
-"{VARICES=yes,ALBUMIN=[-Inf;2.85]} => {Class=DIE}",0.04,1.00,0.00 
-"{SPLEEN_PALPABLE=yes,FATIGUE=no} => {Class=LIVE}",0.04,1.00,0.00 
-"{FATIGUE=no,SPIDERS=yes} => {Class=LIVE}",0.03,1.00,0.00 
+"{ASCITES=no,SPIDERS=no,ALBUMIN=(3.85685483871; Inf],SGOT=[-Inf; Inf]} => {Class=LIVE}",0.39,1.00,0.00 
+"{VARICES=no,SPIDERS=no,ALBUMIN=(3.85685483871; Inf]} => {Class=LIVE}",0.39,1.00,0.00 
+"{ASCITES=no,SPIDERS=no,ALBUMIN=(3.85685483871; Inf]} => {Class=LIVE}",0.39,1.00,0.00 
+"{ASCITES=no,SPIDERS=no,ALBUMIN=(3.85685483871; Inf],VARICES=no} => {Class=LIVE}",0.39,1.00,0.00 
+"{VARICES=no,SPIDERS=no,ALBUMIN=(3.85685483871; Inf],SGOT=[-Inf; Inf]} => {Class=LIVE}",0.39,1.00,0.00 
+"{SPIDERS=no,ALBUMIN=(3.85685483871; Inf],ALK_PHOSPHATE=[-Inf; Inf],SGOT=[-Inf; Inf]} => {Class=LIVE}",0.39,1.00,0.00 
+"{ASCITES=no,SPIDERS=no,ALBUMIN=(3.85685483871; Inf],ALK_PHOSPHATE=[-Inf; Inf]} => {Class=LIVE}",0.39,1.00,0.00 
+"{VARICES=no,SPIDERS=no,ALBUMIN=(3.85685483871; Inf],BILIRUBIN=[-Inf;1.65]} => {Class=LIVE}",0.38,1.00,0.00 
+"{SPIDERS=no,ALBUMIN=(3.85685483871; Inf],BILIRUBIN=[-Inf;1.65]} => {Class=LIVE}",0.38,1.00,0.00 
+"{PROTIME=(44.5; Inf],SPIDERS=no,BILIRUBIN=[-Inf;1.65],LIVER_FIRM=no} => {Class=LIVE}",0.37,1.00,0.00 
+"{PROTIME=(44.5; Inf],SPIDERS=no,ALBUMIN=(3.85685483871; Inf],AGE=[-Inf; Inf]} => {Class=LIVE}",0.37,1.00,0.00 
+"{ASCITES=no,SEX=female,SPIDERS=no,ALBUMIN=(3.85685483871; Inf]} => {Class=LIVE}",0.36,1.00,0.00 
+"{PROTIME=(44.5; Inf],SPIDERS=no,ALBUMIN=(3.85685483871; Inf],BILIRUBIN=[-Inf;1.65]} => {Class=LIVE}",0.36,1.00,0.00 
+"{SPLEEN_PALPABLE=no,SPIDERS=no,ALBUMIN=(3.85685483871; Inf],ALK_PHOSPHATE=[-Inf; Inf]} => {Class=LIVE}",0.36,1.00,0.00 
+"{SEX=female,SPIDERS=no,ALBUMIN=(3.85685483871; Inf],ALK_PHOSPHATE=[-Inf; Inf]} => {Class=LIVE}",0.36,1.00,0.00 
+"{SEX=female,SPIDERS=no,ALBUMIN=(3.85685483871; Inf],AGE=[-Inf; Inf]} => {Class=LIVE}",0.36,1.00,0.00 
+"{VARICES=no,SEX=female,SPIDERS=no,ALBUMIN=(3.85685483871; Inf]} => {Class=LIVE}",0.36,1.00,0.00 
+"{SEX=female,SPIDERS=no,ALBUMIN=(3.85685483871; Inf],BILIRUBIN=[-Inf;1.65]} => {Class=LIVE}",0.36,1.00,0.00 
 "{ } => {Class=LIVE}", 0,0,0

@@ -1,15 +1,15 @@
 rules,suppport,confidence,lift
-"{sex=0,chest=[-Inf;3.5],number_of_major_vessels=[-Inf;0.5]} => {class=absent}",0.14,1.00,0.00 
-"{number_of_major_vessels=(0.5; Inf],exercise_induced_angina=1,oldpeak=(1.7; Inf]} => {class=present}",0.07,1.00,0.00 
-"{exercise_induced_angina=0,age=[-Inf;54.5],fasting_blood_sugar=1} => {class=absent}",0.05,1.00,0.00 
-"{sex=0,chest=(3.5; Inf],thal=(4.5; Inf]} => {class=present}",0.04,1.00,0.00 
-"{chest=(3.5; Inf],age=(54.5; Inf],fasting_blood_sugar=1} => {class=present}",0.03,1.00,0.00 
-"{exercise_induced_angina=1,fasting_blood_sugar=1,thal=(4.5; Inf]} => {class=present}",0.03,1.00,0.00 
-"{chest=[-Inf;3.5],thal=[-Inf;4.5],exercise_induced_angina=1} => {class=absent}",0.03,1.00,0.00 
-"{chest=(3.5; Inf],exercise_induced_angina=1,fasting_blood_sugar=1} => {class=present}",0.03,1.00,0.00 
-"{thal=(4.5; Inf],maximum_heart_rate_achieved=(147.5; Inf],oldpeak=(1.7; Inf]} => {class=present}",0.02,1.00,0.00 
-"{number_of_major_vessels=(0.5; Inf],age=[-Inf;54.5],fasting_blood_sugar=1} => {class=absent}",0.02,1.00,0.00 
-"{oldpeak=(1.7; Inf],maximum_heart_rate_achieved=[-Inf;147.5],fasting_blood_sugar=1} => {class=present}",0.02,1.00,0.00 
-"{number_of_major_vessels=[-Inf;0.5],exercise_induced_angina=1,fasting_blood_sugar=1} => {class=present}",0.02,1.00,0.00 
-"{sex=0,chest=(3.5; Inf],fasting_blood_sugar=1} => {class=present}",0.01,1.00,0.00 
+"{chest=[-Inf;3.5],number_of_major_vessels=[-Inf;0.5],resting_electrocardiographic_results=[-Inf; Inf],sex=0} => {class=absent}",0.14,1.00,0.00 
+"{age=[-Inf;54.5],exercise_induced_angina=0,sex=0,serum_cholestoral=[-Inf; Inf]} => {class=absent}",0.12,1.00,0.00 
+"{age=[-Inf;54.5],chest=[-Inf;3.5],oldpeak=[-Inf;1.7],sex=0} => {class=absent}",0.11,1.00,0.00 
+"{chest=[-Inf;3.5],number_of_major_vessels=[-Inf;0.5],sex=0,resting_blood_pressure=[-Inf; Inf]} => {class=absent}",0.14,1.00,0.00 
+"{age=[-Inf;54.5],chest=[-Inf;3.5],sex=0} => {class=absent}",0.11,1.00,0.00 
+"{age=[-Inf;54.5],chest=[-Inf;3.5],sex=0,fasting_blood_sugar=0} => {class=absent}",0.10,1.00,0.00 
+"{age=[-Inf;54.5],number_of_major_vessels=[-Inf;0.5],maximum_heart_rate_achieved=(147.5; Inf],sex=0} => {class=absent}",0.10,1.00,0.00 
+"{age=[-Inf;54.5],sex=0,thal=[-Inf;4.5]} => {class=absent}",0.14,1.00,0.00 
+"{age=[-Inf;54.5],exercise_induced_angina=0,sex=0} => {class=absent}",0.12,1.00,0.00 
+"{chest=[-Inf;3.5],number_of_major_vessels=[-Inf;0.5],sex=0} => {class=absent}",0.14,1.00,0.00 
+"{age=[-Inf;54.5],exercise_induced_angina=0,sex=0,resting_blood_pressure=[-Inf; Inf]} => {class=absent}",0.12,1.00,0.00 
+"{chest=[-Inf;3.5],number_of_major_vessels=[-Inf;0.5],maximum_heart_rate_achieved=(147.5; Inf],sex=0} => {class=absent}",0.12,1.00,0.00 
+"{fasting_blood_sugar=0,chest=[-Inf;3.5],maximum_heart_rate_achieved=(147.5; Inf],sex=0} => {class=absent}",0.14,1.00,0.00 
 "{ } => {class=absent}", 0,0,0

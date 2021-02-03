@@ -1,15 +1,19 @@
 rules,suppport,confidence,lift
-"{make=peugot,horsepower=(87; Inf]} => {XClass=0}",0.05,1.00,0.00 
-"{length=(169.35;186.65],normalizedLosses=(75.5;92]} => {XClass=0}",0.05,1.00,0.00 
-"{engineType=l,horsepower=(87; Inf]} => {XClass=0}",0.05,1.00,0.00 
-"{compressionRatio=[-Inf; Inf],length=(168.75;169.35]} => {XClass=3}",0.05,1.00,0.00 
-"{make=peugot,engineType=l} => {XClass=0}",0.05,1.00,0.00 
-"{wheelBase=(102.2; Inf],make=peugot} => {XClass=0}",0.05,1.00,0.00 
-"{bore=(3.255; Inf],engineType=l} => {XClass=0}",0.05,1.00,0.00 
-"{width=(63.95;64.3],engineSize=(85;105.5]} => {XClass=1}",0.05,1.00,0.00 
-"{peakRpm=[-Inf; Inf],length=(168.75;169.35]} => {XClass=3}",0.05,1.00,0.00 
-"{driveWheels=rwd,make=peugot} => {XClass=0}",0.05,1.00,0.00 
-"{length=(186.65; Inf],make=peugot} => {XClass=0}",0.05,1.00,0.00 
-"{make=peugot,numOfDoors=four} => {XClass=0}",0.05,1.00,0.00 
-"{numOfCylinders=four,engineType=l} => {XClass=0}",0.05,1.00,0.00 
+"{numOfCylinders=four,normalizedLosses=(75.5;92],numOfDoors=four} => {XClass=0}",0.10,1.00,0.00 
+"{wheelBase=(95.5;102.2],numOfDoors=four,normalizedLosses=(75.5;92],compressionRatio=[-Inf; Inf]} => {XClass=0}",0.09,1.00,0.00 
+"{numOfCylinders=four,numOfDoors=four,highwayMpg=(28.5; Inf],normalizedLosses=(75.5;92]} => {XClass=0}",0.09,1.00,0.00 
+"{numOfDoors=four,highwayMpg=(28.5; Inf],normalizedLosses=(75.5;92]} => {XClass=0}",0.09,1.00,0.00 
+"{aspiration=std,wheelBase=(95.5;102.2],normalizedLosses=(75.5;92],numOfDoors=four} => {XClass=0}",0.09,1.00,0.00 
+"{numOfCylinders=four,fuelType=gas,normalizedLosses=(75.5;92],numOfDoors=four} => {XClass=0}",0.09,1.00,0.00 
+"{stroke=[-Inf; Inf],numOfDoors=four,highwayMpg=(28.5; Inf],normalizedLosses=(75.5;92]} => {XClass=0}",0.09,1.00,0.00 
+"{numOfCylinders=four,horsepower=[-Inf;87],normalizedLosses=(75.5;92],numOfDoors=four} => {XClass=0}",0.08,1.00,0.00 
+"{engineSize=(85;105.5],normalizedLosses=(96.5; Inf],wheelBase=(92.15;95.2],bodyStyle=sedan} => {XClass=1}",0.08,1.00,0.00 
+"{wheelBase=(95.5;102.2],numOfDoors=four,highwayMpg=(28.5; Inf],normalizedLosses=(75.5;92]} => {XClass=0}",0.08,1.00,0.00 
+"{aspiration=std,numOfDoors=four,normalizedLosses=(75.5;92],driveWheels=fwd} => {XClass=0}",0.08,1.00,0.00 
+"{numOfDoors=four,engineLocation=front,normalizedLosses=(75.5;92],driveWheels=fwd} => {XClass=0}",0.08,1.00,0.00 
+"{engineType=ohc,engineLocation=front,normalizedLosses=(75.5;92],numOfDoors=four} => {XClass=0}",0.08,1.00,0.00 
+"{wheelBase=(95.5;102.2],horsepower=[-Inf;87],normalizedLosses=(75.5;92],numOfDoors=four} => {XClass=0}",0.08,1.00,0.00 
+"{stroke=[-Inf; Inf],numOfDoors=four,normalizedLosses=(75.5;92],driveWheels=fwd} => {XClass=0}",0.08,1.00,0.00 
+"{numOfDoors=four,peakRpm=[-Inf; Inf],normalizedLosses=(75.5;92],driveWheels=fwd} => {XClass=0}",0.08,1.00,0.00 
+"{engineType=ohc,peakRpm=[-Inf; Inf],normalizedLosses=(75.5;92],numOfDoors=four} => {XClass=0}",0.08,1.00,0.00 
 "{ } => {XClass=0}", 0,0,0

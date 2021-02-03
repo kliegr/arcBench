@@ -1,0 +1,13 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{wage-increase-second-year=[4;Inf],statutory-holidays=[11;Inf]} => {class=good}",0.423076927661896,1,1,22
+"2","{wage-increase-first-year=[3.5;Inf],education-allowance=,statutory-holidays=[11;Inf]} => {class=good}",0.423076927661896,1,1,4
+"3","{pension=,statutory-holidays=[11;Inf]} => {class=good}",0.403846144676208,1,1,3
+"4","{pension=,longterm-disability-assistance=} => {class=good}",0.365384608507156,1,1,2
+"5","{pension=,education-allowance=} => {class=good}",0.365384608507156,1,1,1
+"6","{wage-increase-first-year=[3.5;Inf],longterm-disability-assistance=yes} => {class=good}",0.230769231915474,1,1,1
+"7","{pension=none} => {class=bad}",0.192307695746422,1,1,10
+"8","{contribution-to-health-plan=none} => {class=bad}",0.15384615957737,1,1,4
+"9","{wage-increase-first-year=[-Inf;3],statutory-holidays=[-Inf;10]} => {class=bad}",0.15384615957737,1,1,1
+"10","{longterm-disability-assistance=no} => {class=bad}",0.134615391492844,1,1,1
+"11","{vacation=} => {class=good}",0.115384615957737,1,1,1
+"12","{} => {class=good}",0.653846144676208,0.653846144676208,0,0

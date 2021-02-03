@@ -1,0 +1,26 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{condition=S,surface-quality=E} => {class=3}",0.306071877479553,1,1,247
+"2","{family=,steel=A,condition=S} => {class=3}",0.296158611774445,1,1,149
+"3","{ferro=,thick=[0.601;0.799]} => {class=3}",0.235439896583557,1,1,33
+"4","{family=,bf=,thick=[0.451;0.799]} => {class=3}",0.230483278632164,1,1,21
+"5","{hardness=[0;70],strength=[-Inf;500],surface-quality=G} => {class=3}",0.210656747221947,1,1,89
+"6","{surface-quality=E,bt=,len=[1;Inf]} => {class=3}",0.18339529633522,1,1,6
+"7","{hardness=[45;70]} => {class=3}",0.153655514121056,1,1,9
+"8","{steel=A,hardness=[0;70],surface-quality=G} => {class=3}",0.111524164676666,1,NA,0
+"9","{carbon=[-Inf;8],hardness=[0;80],thick=[2.2;Inf]} => {class=3}",0.0879801735281944,1,1,2
+"10","{steel=R,condition=S,surface-quality=} => {class=2}",0.0780669152736664,1,1,63
+"11","{family=TN} => {class=5}",0.0743494406342506,1,1,60
+"12","{carbon=[4;Inf],surface-quality=} => {class=3}",0.0731102824211121,1,1,54
+"13","{surface-quality=G,width=[1250;Inf],oil=} => {class=3}",0.0619578696787357,1,NA,0
+"14","{hardness=[80;Inf],cbond=} => {class=U}",0.0359355621039867,1,1,29
+"15","{hardness=[80;Inf],thick=[0.501;Inf]} => {class=U}",0.0309789348393679,1,1,4
+"16","{condition=,surface-quality=,bt=Y} => {class=3}",0.0210656747221947,1,1,2
+"17","{hardness=[70;Inf],shape=SHEET} => {class=U}",0.0198265183717012,1,1,1
+"18","{family=,steel=R,condition=} => {class=3}",0.0161090455949306,1,1,2
+"19","{surface-quality=,width=[1320.1;Inf]} => {class=2}",0.0136307310312986,1,1,2
+"20","{steel=M,strength=[400;Inf]} => {class=2}",0.0123915737494826,1,1,10
+"21","{enamelability=2} => {class=2}",0.0111524164676666,1,1,7
+"22","{formability=2,enamelability=[-Inf;1.6],len=[0;611]} => {class=3}",0.148698881268501,0.952380955219269,1,1
+"23","{family=,surface-quality=,len=[1;Inf]} => {class=2}",0.0842626988887787,0.819277107715607,1,7
+"24","{condition=,surface-quality=E,bf=} => {class=U}",0.0161090455949306,0.61904764175415,1,2
+"25","{} => {class=3}",0.762081801891327,0.762081801891327,0,0

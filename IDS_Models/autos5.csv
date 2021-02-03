@@ -1,12 +1,19 @@
 rules,suppport,confidence,lift
-"{bore=(3.255; Inf],length=(168.75;171.45]} => {XClass=3}",0.06,1.00,0.00 
-"{make=peugot} => {XClass=0}",0.05,1.00,0.00 
-"{wheelBase=(102.2; Inf],engineType=l} => {XClass=0}",0.05,1.00,0.00 
-"{width=(64.3; Inf],engineType=l} => {XClass=0}",0.05,1.00,0.00 
-"{make=peugot,engineType=l} => {XClass=0}",0.05,1.00,0.00 
-"{peakRpm=[-Inf; Inf],make=peugot} => {XClass=0}",0.05,1.00,0.00 
-"{engineType=l} => {XClass=0}",0.05,1.00,0.00 
-"{compressionRatio=[-Inf; Inf],make=peugot} => {XClass=0}",0.05,1.00,0.00 
-"{make=peugot,numOfCylinders=four} => {XClass=0}",0.05,1.00,0.00 
-"{engineSize=(105.5; Inf],normalizedLosses=[-Inf;76]} => {XClass=-1}",0.04,1.00,0.00 
+"{wheelBase=(95.5;102.2],height=(52.45;55.55],numOfDoors=four,bore=(3.255; Inf]} => {XClass=0}",0.11,1.00,0.00 
+"{height=(52.45;55.55],horsepower=(69.5;87],numOfDoors=four} => {XClass=0}",0.09,1.00,0.00 
+"{numOfCylinders=four,height=(52.45;55.55],horsepower=(69.5;87],numOfDoors=four} => {XClass=0}",0.09,1.00,0.00 
+"{numOfDoors=four,height=(52.45;55.55],horsepower=(69.5;87],compressionRatio=[-Inf; Inf]} => {XClass=0}",0.09,1.00,0.00 
+"{length=(171.85;187.65],normalizedLosses=(76;111.5],height=(52.45;55.55]} => {XClass=0}",0.09,1.00,0.00 
+"{length=(171.85;187.65],normalizedLosses=(76;111.5],height=(52.45;55.55],engineLocation=front} => {XClass=0}",0.09,1.00,0.00 
+"{fuelSystem=2bbl,stroke=[-Inf; Inf],horsepower=(69.5;87],numOfDoors=four} => {XClass=0}",0.08,1.00,0.00 
+"{wheelBase=(95.5;102.2],normalizedLosses=(76;111.5],height=(52.45;55.55],horsepower=(69.5;87]} => {XClass=0}",0.08,1.00,0.00 
+"{aspiration=std,horsepower=(69.5;87],numOfDoors=four,fuelSystem=2bbl} => {XClass=0}",0.08,1.00,0.00 
+"{fuelSystem=2bbl,numOfDoors=four,horsepower=(69.5;87],compressionRatio=[-Inf; Inf]} => {XClass=0}",0.08,1.00,0.00 
+"{fuelSystem=2bbl,fuelType=gas,horsepower=(69.5;87],numOfDoors=four} => {XClass=0}",0.08,1.00,0.00 
+"{fuelSystem=2bbl,numOfCylinders=four,horsepower=(69.5;87],numOfDoors=four} => {XClass=0}",0.08,1.00,0.00 
+"{fuelSystem=2bbl,wheelBase=(95.5;102.2],horsepower=(69.5;87],numOfDoors=four} => {XClass=0}",0.07,1.00,0.00 
+"{fuelSystem=2bbl,height=(52.45;55.55],horsepower=(69.5;87],numOfDoors=four} => {XClass=0}",0.07,1.00,0.00 
+"{fuelSystem=2bbl,numOfDoors=four,horsepower=(69.5;87],driveWheels=fwd} => {XClass=0}",0.07,1.00,0.00 
+"{curbWeight=[-Inf;2216.5],numOfDoors=four,horsepower=[-Inf;69.5]} => {XClass=1}",0.07,1.00,0.00 
+"{fuelSystem=2bbl,horsepower=(69.5;87],numOfDoors=four,highwayMpg=(29.5; Inf]} => {XClass=0}",0.07,1.00,0.00 
 "{ } => {XClass=0}", 0,0,0

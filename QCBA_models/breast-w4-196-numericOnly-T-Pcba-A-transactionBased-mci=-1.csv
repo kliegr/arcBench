@@ -1,0 +1,19 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{Clump_Thickness=[7;Inf],Bare_Nuclei=[2;Inf]} => {Class=malignant}",0.19713830947876,1,1,124
+"2","{Clump_Thickness=[7;Inf],Cell_Size_Uniformity=[5;Inf]} => {Class=malignant}",0.154213041067123,1,1,6
+"3","{Bare_Nuclei=[6;Inf],Bland_Chromatin=[4;Inf],Normal_Nucleoli=[3;10]} => {Class=malignant}",0.152623206377029,1,1,46
+"4","{Cell_Shape_Uniformity=[4;Inf],Marginal_Adhesion=[2;Inf],Bare_Nuclei=[6;Inf],Normal_Nucleoli=[3;10]} => {Class=malignant}",0.149443566799164,1,1,3
+"5","{Cell_Size_Uniformity=[1;8],Bare_Nuclei=[6;Inf],Bland_Chromatin=[4;Inf]} => {Class=malignant}",0.146263912320137,1,1,9
+"6","{Clump_Thickness=[7;Inf],Single_Epi_Cell_Size=[4;Inf]} => {Class=malignant}",0.139904603362083,1,1,2
+"7","{Cell_Shape_Uniformity=[4;Inf],Mitoses=[2;Inf]} => {Class=malignant}",0.122416533529758,1,1,5
+"8","{Cell_Size_Uniformity=[5;Inf],Mitoses=[2;Inf]} => {Class=malignant}",0.117647059261799,1,1,2
+"9","{Marginal_Adhesion=[2;Inf],Bare_Nuclei=[6;Inf],Normal_Nucleoli=[3;10],Mitoses=[1;2]} => {Class=malignant}",0.101748809218407,1,1,1
+"10","{Cell_Shape_Uniformity=[5;Inf],Single_Epi_Cell_Size=[-Inf;4],Bare_Nuclei=[5;Inf]} => {Class=malignant}",0.0890302062034607,1,1,3
+"11","{Normal_Nucleoli=10} => {Class=malignant}",0.0826709046959877,1,1,3
+"12","{Cell_Size_Uniformity=[5;Inf],Marginal_Adhesion=[2;4]} => {Class=malignant}",0.0810810774564743,1,1,1
+"13","{Marginal_Adhesion=[2;4],Bare_Nuclei=[6;Inf]} => {Class=malignant}",0.0763116031885147,1,1,1
+"14","{Cell_Size_Uniformity=[5;Inf],Bare_Nuclei=[1;3]} => {Class=malignant}",0.0365659780800343,1,1,3
+"15","{Marginal_Adhesion=[4;Inf],Single_Epi_Cell_Size=[4;Inf],Bare_Nuclei=[1;3]} => {Class=malignant}",0.0254372023046017,1,1,1
+"16","{Marginal_Adhesion=1,Normal_Nucleoli=[2;10],Mitoses=[2;Inf]} => {Class=malignant}",0.0158982519060373,1,1,1
+"17","{Marginal_Adhesion=[4;Inf],Single_Epi_Cell_Size=[-Inf;2],Normal_Nucleoli=[2;10]} => {Class=malignant}",0.0111287757754326,1,1,1
+"18","{} => {Class=benign}",0.65500795841217,0.65500795841217,0.988009592326139,412

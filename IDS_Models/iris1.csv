@@ -1,20 +1,13 @@
 rules,suppport,confidence,lift
+"{petallength=[-Inf;2.45]} => {class=Iris-setosa}",0.33,1.00,0.00 
 "{petalwidth=[-Inf;0.8]} => {class=Iris-setosa}",0.33,1.00,0.00 
-"{petallength=[-Inf;2.45],petalwidth=[-Inf;0.8],sepallength=[-Inf;5.55]} => {class=Iris-setosa}",0.31,1.00,0.00 
 "{petallength=(4.85; Inf],petalwidth=(1.75; Inf]} => {class=Iris-virginica}",0.30,1.00,0.00 
-"{petalwidth=[-Inf;0.8],sepalwidth=(3.05; Inf]} => {class=Iris-setosa}",0.28,1.00,0.00 
-"{petallength=[-Inf;2.45],sepalwidth=(3.05; Inf]} => {class=Iris-setosa}",0.28,1.00,0.00 
-"{sepalwidth=(3.05; Inf],sepallength=[-Inf;5.55]} => {class=Iris-setosa}",0.26,1.00,0.00 
-"{petalwidth=(1.75; Inf],sepalwidth=[-Inf;3.05]} => {class=Iris-virginica}",0.19,1.00,0.00 
-"{petallength=(4.85; Inf],petalwidth=(1.75; Inf],sepalwidth=[-Inf;3.05]} => {class=Iris-virginica}",0.18,1.00,0.00 
-"{petallength=(4.85; Inf],sepalwidth=(3.05; Inf],petalwidth=(1.75; Inf],sepallength=(6.25; Inf]} => {class=Iris-virginica}",0.11,1.00,0.00 
-"{petalwidth=(0.8;1.75],petallength=(2.45;4.85],sepallength=(6.25; Inf]} => {class=Iris-versicolor}",0.07,1.00,0.00 
-"{petallength=(2.45;4.85],sepallength=(6.25; Inf]} => {class=Iris-versicolor}",0.07,1.00,0.00 
+"{sepalwidth=(3.05; Inf],petalwidth=[-Inf;0.8]} => {class=Iris-setosa}",0.28,1.00,0.00 
+"{sepallength=[-Inf;5.55],petallength=[-Inf;2.45],sepalwidth=(3.05; Inf],petalwidth=[-Inf;0.8]} => {class=Iris-setosa}",0.26,1.00,0.00 
+"{sepallength=(6.25; Inf],petallength=(2.45;4.85]} => {class=Iris-versicolor}",0.07,1.00,0.00 
+"{petallength=(4.85; Inf],sepallength=(5.55;6.25]} => {class=Iris-virginica}",0.07,1.00,0.00 
+"{sepalwidth=[-Inf;3.05],petallength=(4.85; Inf],sepallength=(5.55;6.25],petalwidth=(1.75; Inf]} => {class=Iris-virginica}",0.05,1.00,0.00 
 "{petalwidth=(0.8;1.75],sepalwidth=(3.05; Inf]} => {class=Iris-versicolor}",0.05,1.00,0.00 
-"{sepalwidth=(3.05; Inf],petallength=(2.45;4.85]} => {class=Iris-versicolor}",0.05,1.00,0.00 
-"{petalwidth=[-Inf;0.8],sepallength=[-Inf;5.55],sepalwidth=[-Inf;3.05]} => {class=Iris-setosa}",0.05,1.00,0.00 
-"{petallength=[-Inf;2.45],petalwidth=[-Inf;0.8],sepalwidth=[-Inf;3.05]} => {class=Iris-setosa}",0.05,1.00,0.00 
-"{petallength=(2.45;4.85],sepallength=(6.25; Inf],sepalwidth=[-Inf;3.05]} => {class=Iris-versicolor}",0.04,1.00,0.00 
-"{petalwidth=(0.8;1.75],sepalwidth=(3.05; Inf],petallength=(2.45;4.85],sepallength=(6.25; Inf]} => {class=Iris-versicolor}",0.04,1.00,0.00 
-"{petallength=[-Inf;2.45],sepalwidth=(3.05; Inf],sepallength=(5.55;6.25]} => {class=Iris-setosa}",0.02,1.00,0.00 
+"{sepallength=(6.25; Inf],sepalwidth=(3.05; Inf],petallength=(2.45;4.85]} => {class=Iris-versicolor}",0.04,1.00,0.00 
+"{petallength=[-Inf;2.45],sepallength=(5.55;6.25],sepalwidth=(3.05; Inf]} => {class=Iris-setosa}",0.02,1.00,0.00 
 "{ } => {class=Iris-setosa}", 0,0,0

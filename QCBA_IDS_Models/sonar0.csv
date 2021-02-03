@@ -1,0 +1,6 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{attribute_36=[-Inf;0.5757],attribute_11=[0.1791;Inf],attribute_47=[0.0546;Inf],attribute_51=[0.0121;Inf]} => {Class=Mine}",0.279569894075394,1,1,52
+"2","{attribute_36=[-Inf;0.5757],attribute_51=[0.0121;Inf],attribute_48=[0.0728;Inf],attribute_13=[0.0616;0.6343]} => {Class=Mine}",0.274193555116653,1,1,9
+"3","{attribute_21=[-Inf;0.8017],attribute_45=[-Inf;0.396],attribute_12=[-Inf;0.1935]} => {Class=Rock}",0.241935476660728,1,1,45
+"4","{attribute_10=[-Inf;0.1508],attribute_54=[-Inf;0.0224],attribute_21=[-Inf;0.6527],attribute_45=[-Inf;0.3955]} => {Class=Rock}",0.225806444883347,1,1,11
+"5","{} => {Class=Mine}",0.532258093357086,0.532258093357086,0.550724637681159,38

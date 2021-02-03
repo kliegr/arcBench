@@ -1,15 +1,15 @@
 rules,suppport,confidence,lift
-"{width=[-Inf;0.5],xy2br=(7.5;8.5]} => {class=I}",0.01,1.00,0.00 
-"{width=[-Inf;0.5],onpix=[-Inf;1.5]} => {class=I}",0.01,1.00,0.00 
-"{yegvx=(7.5;8.5],xybar=[-Inf;2.5]} => {class=L}",0.01,1.00,0.00 
-"{width=[-Inf;0.5],y.ege=[-Inf;0.5]} => {class=I}",0.01,1.00,0.00 
-"{xybar=[-Inf;2.5],width=(0.5;3.5]} => {class=L}",0.01,1.00,0.00 
-"{x2bar=(3.5;4.5],width=[-Inf;0.5]} => {class=I}",0.01,1.00,0.00 
-"{x.bar=[-Inf;0.5],xybar=[-Inf;2.5]} => {class=L}",0.01,1.00,0.00 
-"{x.ege=[-Inf;0.5],y2bar=(12.5; Inf]} => {class=Z}",0.01,1.00,0.00 
-"{y2bar=(12.5; Inf],xy2br=(7.5;8.5]} => {class=Z}",0.01,1.00,0.00 
-"{y2bar=(12.5; Inf],y.box=[-Inf; Inf]} => {class=Z}",0.01,1.00,0.00 
-"{y2bar=(12.5; Inf]} => {class=Z}",0.01,1.00,0.00 
-"{high=[-Inf;8.5],y2bar=(12.5; Inf]} => {class=Z}",0.01,1.00,0.00 
-"{y2bar=(12.5; Inf],y.bar=(6.5;7.5]} => {class=Z}",0.01,1.00,0.00 
+"{x2ybr=(5.5;6.5],x2bar=[-Inf;0.5],x.ege=[-Inf;0.5]} => {class=I}",0.01,1.00,0.00 
+"{x2ybr=(5.5;6.5],x2bar=[-Inf;0.5],x.ege=[-Inf;0.5],y.box=[-Inf; Inf]} => {class=I}",0.01,1.00,0.00 
+"{high=[-Inf;8.5],x2ybr=(5.5;6.5],x2bar=[-Inf;0.5],x.ege=[-Inf;0.5]} => {class=I}",0.01,1.00,0.00 
+"{x2ybr=(5.5;6.5],x2bar=[-Inf;0.5],x.ege=[-Inf;0.5],xegvy=(7.5;8.5]} => {class=I}",0.01,1.00,0.00 
+"{y.ege=[-Inf;0.5],x2ybr=(5.5;6.5],x.ege=[-Inf;0.5],xegvy=(7.5;8.5]} => {class=I}",0.01,1.00,0.00 
+"{width=[-Inf;0.5],xybar=(6.5;7.5],x.ege=[-Inf;0.5],xegvy=(7.5;8.5]} => {class=I}",0.01,1.00,0.00 
+"{high=[-Inf;8.5],width=[-Inf;0.5],xegvy=(7.5;8.5]} => {class=I}",0.01,1.00,0.00 
+"{width=[-Inf;0.5],x.ege=[-Inf;0.5],xegvy=(7.5;8.5]} => {class=I}",0.01,1.00,0.00 
+"{width=[-Inf;0.5],x.ege=[-Inf;0.5],y.box=[-Inf; Inf]} => {class=I}",0.01,1.00,0.00 
+"{width=[-Inf;0.5],xybar=(6.5;7.5],xegvy=(7.5;8.5]} => {class=I}",0.01,1.00,0.00 
+"{width=[-Inf;0.5],y.box=[-Inf; Inf]} => {class=I}",0.01,1.00,0.00 
+"{width=[-Inf;0.5],xybar=(6.5;7.5],x.ege=[-Inf;0.5],y.box=[-Inf; Inf]} => {class=I}",0.01,1.00,0.00 
+"{width=[-Inf;0.5],x2ybr=(5.5;6.5],y.bar=(6.5;7.5]} => {class=I}",0.01,1.00,0.00 
 "{ } => {class=U}", 0,0,0

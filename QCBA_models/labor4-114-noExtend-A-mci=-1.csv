@@ -1,0 +1,13 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{pension=,education-allowance=} => {class=good}",0.372549027204514,1,1,19
+"2","{pension=,longterm-disability-assistance=} => {class=good}",0.352941185235977,1,1,4
+"3","{wage-increase-second-year=[3.5;Inf],longterm-disability-assistance=} => {class=good}",0.352941185235977,1,1,1
+"4","{wage-increase-second-year=[3.5;Inf],bereavement-assistance=yes} => {class=good}",0.294117659330368,1,1,5
+"5","{wage-increase-first-year=[3;Inf],wage-increase-second-year=[3.5;Inf],longterm-disability-assistance=yes} => {class=good}",0.254901975393295,1,1,3
+"6","{pension=none} => {class=bad}",0.176470592617989,1,1,9
+"7","{longterm-disability-assistance=no} => {class=bad}",0.137254908680916,1,1,3
+"8","{contribution-to-health-plan=none} => {class=bad}",0.137254908680916,1,1,3
+"9","{vacation=} => {class=good}",0.117647059261799,1,1,1
+"10","{wage-increase-second-year=[-Inf;3],education-allowance=} => {class=bad}",0.117647059261799,1,1,2
+"11","{cost-of-living-adjustment=none,contribution-to-dental-plan=none} => {class=bad}",0.0980392172932625,1,1,1
+"12","{} => {class=good}",0.647058844566345,0.647058844566345,NA,0

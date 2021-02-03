@@ -1,15 +1,19 @@
 rules,suppport,confidence,lift
-"{wage.increase.first.year=(2.9; Inf],wage.increase.third.year=[-Inf; Inf],bereavement.assistance=yes} => {class=good}",0.33,1.00,0.00 
-"{shift.differential=[-Inf; Inf],wage.increase.first.year=(2.9; Inf],bereavement.assistance=yes} => {class=good}",0.33,1.00,0.00 
-"{wage.increase.first.year=(2.9; Inf],wage.increase.second.year=[-Inf; Inf],vacation=generous} => {class=good}",0.27,1.00,0.00 
-"{contribution.to.health.plan=full,wage.increase.first.year=(2.9; Inf],wage.increase.second.year=[-Inf; Inf]} => {class=good}",0.25,1.00,0.00 
-"{contribution.to.health.plan=full,wage.increase.first.year=(2.9; Inf],shift.differential=[-Inf; Inf]} => {class=good}",0.25,1.00,0.00 
-"{contribution.to.health.plan=full,wage.increase.first.year=(2.9; Inf],statutory.holidays=[-Inf; Inf]} => {class=good}",0.25,1.00,0.00 
-"{wage.increase.first.year=(2.9; Inf],wage.increase.third.year=[-Inf; Inf],longterm.disability.assistance=yes} => {class=good}",0.22,1.00,0.00 
-"{contribution.to.dental.plan=full} => {class=good}",0.22,1.00,0.00 
-"{contribution.to.dental.plan=full,wage.increase.second.year=[-Inf; Inf],duration=[-Inf; Inf]} => {class=good}",0.22,1.00,0.00 
-"{contribution.to.dental.plan=full,wage.increase.second.year=[-Inf; Inf],working.hours=[-Inf; Inf]} => {class=good}",0.22,1.00,0.00 
-"{contribution.to.dental.plan=full,wage.increase.third.year=[-Inf; Inf]} => {class=good}",0.22,1.00,0.00 
-"{standby.pay=[-Inf; Inf],wage.increase.first.year=(2.9; Inf],longterm.disability.assistance=yes} => {class=good}",0.22,1.00,0.00 
-"{wage.increase.first.year=(2.9; Inf],wage.increase.second.year=[-Inf; Inf],longterm.disability.assistance=yes} => {class=good}",0.22,1.00,0.00 
+"{shift.differential=[-Inf; Inf],bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf],wage.increase.second.year=[-Inf; Inf]} => {class=good}",0.33,1.00,0.00 
+"{bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf],statutory.holidays=[-Inf; Inf]} => {class=good}",0.33,1.00,0.00 
+"{wage.increase.third.year=[-Inf; Inf],bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf],statutory.holidays=[-Inf; Inf]} => {class=good}",0.33,1.00,0.00 
+"{bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf],wage.increase.second.year=[-Inf; Inf],statutory.holidays=[-Inf; Inf]} => {class=good}",0.33,1.00,0.00 
+"{working.hours=[-Inf; Inf],bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf],wage.increase.third.year=[-Inf; Inf]} => {class=good}",0.33,1.00,0.00 
+"{shift.differential=[-Inf; Inf],bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf],wage.increase.third.year=[-Inf; Inf]} => {class=good}",0.33,1.00,0.00 
+"{standby.pay=[-Inf; Inf],bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf]} => {class=good}",0.33,1.00,0.00 
+"{standby.pay=[-Inf; Inf],bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf],wage.increase.third.year=[-Inf; Inf]} => {class=good}",0.33,1.00,0.00 
+"{standby.pay=[-Inf; Inf],bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf],duration=[-Inf; Inf]} => {class=good}",0.33,1.00,0.00 
+"{working.hours=[-Inf; Inf],bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf],wage.increase.second.year=[-Inf; Inf]} => {class=good}",0.33,1.00,0.00 
+"{working.hours=[-Inf; Inf],bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf],duration=[-Inf; Inf]} => {class=good}",0.33,1.00,0.00 
+"{bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf],wage.increase.third.year=[-Inf; Inf]} => {class=good}",0.33,1.00,0.00 
+"{shift.differential=[-Inf; Inf],bereavement.assistance=yes,wage.increase.first.year=(2.9; Inf]} => {class=good}",0.33,1.00,0.00 
+"{vacation=generous,wage.increase.first.year=(2.9; Inf]} => {class=good}",0.27,1.00,0.00 
+"{vacation=generous,working.hours=[-Inf; Inf],wage.increase.first.year=(2.9; Inf],wage.increase.second.year=[-Inf; Inf]} => {class=good}",0.27,1.00,0.00 
+"{vacation=generous,shift.differential=[-Inf; Inf],wage.increase.first.year=(2.9; Inf],duration=[-Inf; Inf]} => {class=good}",0.27,1.00,0.00 
+"{vacation=generous,wage.increase.third.year=[-Inf; Inf],wage.increase.first.year=(2.9; Inf],wage.increase.second.year=[-Inf; Inf]} => {class=good}",0.27,1.00,0.00 
 "{ } => {class=good}", 0,0,0

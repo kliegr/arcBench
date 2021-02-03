@@ -1,17 +1,18 @@
 rules,suppport,confidence,lift
-"{AGE=[-Inf;30.5],ALK_PHOSPHATE=[-Inf; Inf]} => {Class=LIVE}",0.22,1.00,0.00 
-"{LIVER_BIG=yes,AGE=[-Inf;30.5]} => {Class=LIVE}",0.18,1.00,0.00 
-"{AGE=[-Inf;30.5],MALAISE=no} => {Class=LIVE}",0.15,1.00,0.00 
-"{AGE=[-Inf;30.5],HISTOLOGY=no} => {Class=LIVE}",0.15,1.00,0.00 
-"{STEROID=yes,AGE=[-Inf;30.5]} => {Class=LIVE}",0.14,1.00,0.00 
-"{SEX=male,ALK_PHOSPHATE=[-Inf; Inf]} => {Class=LIVE}",0.11,1.00,0.00 
-"{AGE=[-Inf;30.5],FATIGUE=no} => {Class=LIVE}",0.11,1.00,0.00 
-"{SEX=male,ANOREXIA=no} => {Class=LIVE}",0.09,1.00,0.00 
-"{SEX=male,FATIGUE=yes} => {Class=LIVE}",0.09,1.00,0.00 
-"{SPLEEN_PALPABLE=no,SEX=male} => {Class=LIVE}",0.08,1.00,0.00 
-"{SPLEEN_PALPABLE=yes,ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.07,1.00,0.00 
-"{LIVER_BIG=no,SPIDERS=no} => {Class=LIVE}",0.07,1.00,0.00 
-"{AGE=[-Inf;30.5],HISTOLOGY=yes} => {Class=LIVE}",0.07,1.00,0.00 
-"{SEX=male,SPIDERS=no} => {Class=LIVE}",0.06,1.00,0.00 
-"{LIVER_FIRM=no,ANTIVIRALS=yes} => {Class=LIVE}",0.06,1.00,0.00 
+"{ASCITES=no,SPIDERS=no,VARICES=no,ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.38,1.00,0.00 
+"{VARICES=no,SPIDERS=no,ALK_PHOSPHATE=[-Inf; Inf],ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.38,1.00,0.00 
+"{VARICES=no,SPIDERS=no,ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.38,1.00,0.00 
+"{SPIDERS=no,SGOT=[-Inf; Inf],ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.38,1.00,0.00 
+"{ASCITES=no,SPIDERS=no,ALK_PHOSPHATE=[-Inf; Inf],ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.38,1.00,0.00 
+"{SPIDERS=no,BILIRUBIN=[-Inf;1.35],SGOT=[-Inf; Inf],ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.36,1.00,0.00 
+"{PROTIME=(44.5; Inf],SPIDERS=no,ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.36,1.00,0.00 
+"{ASCITES=no,SPIDERS=no,SPLEEN_PALPABLE=no,LIVER_FIRM=no} => {Class=LIVE}",0.36,1.00,0.00 
+"{SPLEEN_PALPABLE=no,PROTIME=(44.5; Inf],SPIDERS=no,LIVER_FIRM=no} => {Class=LIVE}",0.36,1.00,0.00 
+"{SPLEEN_PALPABLE=no,SPIDERS=no,ALK_PHOSPHATE=[-Inf; Inf],ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.35,1.00,0.00 
+"{PROTIME=(44.5; Inf],SPIDERS=no,BILIRUBIN=[-Inf;1.35],ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.35,1.00,0.00 
+"{SPLEEN_PALPABLE=no,SPIDERS=no,ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.35,1.00,0.00 
+"{SEX=female,SPIDERS=no,ALK_PHOSPHATE=[-Inf; Inf],ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.34,1.00,0.00 
+"{PROTIME=(44.5; Inf],SPIDERS=no,ANOREXIA=no,LIVER_FIRM=no} => {Class=LIVE}",0.34,1.00,0.00 
+"{VARICES=no,SPIDERS=no,ANOREXIA=no,ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.34,1.00,0.00 
+"{SPIDERS=no,SGOT=[-Inf; Inf],LIVER_BIG=yes,ALBUMIN=(3.8528; Inf]} => {Class=LIVE}",0.34,1.00,0.00 
 "{ } => {Class=LIVE}", 0,0,0

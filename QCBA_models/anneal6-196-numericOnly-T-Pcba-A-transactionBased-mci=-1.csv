@@ -1,0 +1,27 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{carbon=[-Inf;8],surface-quality=E,bt=} => {class=3}",0.311881184577942,1,1,252
+"2","{condition=S,surface-quality=E} => {class=3}",0.303217828273773,1,1,11
+"3","{family=,steel=A,condition=S} => {class=3}",0.288366347551346,1,1,144
+"4","{ferro=,thick=[0.601;0.799]} => {class=3}",0.227722778916359,1,1,31
+"5","{family=,bf=,thick=[0.451;0.799]} => {class=3}",0.219059407711029,1,1,22
+"6","{hardness=[0;70],strength=[-Inf;500],surface-quality=G} => {class=3}",0.210396036505699,1,1,94
+"7","{hardness=[0;80],thick=[2.2;Inf]} => {class=3}",0.118811883032322,1,1,24
+"8","{carbon=[4;Inf],width=[-Inf;1310]} => {class=3}",0.0792079195380211,1,1,28
+"9","{steel=R,condition=S,surface-quality=} => {class=2}",0.0779702961444855,1,1,63
+"10","{carbon=[4;Inf],surface-quality=} => {class=3}",0.0754950493574142,1,1,4
+"11","{family=TN} => {class=5}",0.0742574259638786,1,1,60
+"12","{hardness=[80;Inf],cbond=} => {class=U}",0.0371287129819393,1,1,30
+"13","{surface-quality=,thick=[0.75;0.999],len=[1;Inf]} => {class=2}",0.0297029707580805,1,1,4
+"14","{surface-quality=,thick=1.599} => {class=2}",0.0235148519277573,1,1,3
+"15","{thick=[1.6;1.9],width=[1250;1320.1],oil=} => {class=3}",0.0235148519277573,1,1,1
+"16","{carbon=[-Inf;65],surface-quality=,thick=[1.601;2]} => {class=2}",0.0235148519277573,1,1,7
+"17","{hardness=[70;Inf],shape=SHEET} => {class=U}",0.0198019798845053,1,1,4
+"18","{condition=,surface-quality=,bt=Y} => {class=3}",0.0185643564909697,1,1,1
+"19","{family=,steel=R,condition=} => {class=3}",0.0185643564909697,1,1,3
+"20","{hardness=[70;Inf],thick=[0.9;1.9]} => {class=U}",0.017326733097434,1,1,1
+"21","{surface-finish=P} => {class=2}",0.0111386142671108,1,1,3
+"22","{enamelability=2} => {class=2}",0.0111386142671108,1,1,1
+"23","{steel=M,strength=[400;Inf]} => {class=2}",0.0111386142671108,1,1,8
+"24","{formability=2,enamelability=[-Inf;1.6],len=[0;611]} => {class=3}",0.1534653455019,0.953846156597137,1,1
+"25","{condition=,surface-quality=E,bf=} => {class=U}",0.0136138610541821,0.550000011920929,1,1
+"26","{} => {class=1}",0.00866336654871702,0.00866336654871702,1,7

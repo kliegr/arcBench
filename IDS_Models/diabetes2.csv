@@ -1,15 +1,14 @@
 rules,suppport,confidence,lift
-"{plas=[-Inf;101.5],insu=(14.5;87.5]} => {class=tested_negative}",0.11,0.97,0.00 
-"{plas=[-Inf;101.5],pres=[-Inf; Inf],insu=(14.5;87.5]} => {class=tested_negative}",0.11,0.97,0.00 
-"{mass=[-Inf;27.85],insu=(14.5;87.5],preg=[-Inf;6.5]} => {class=tested_negative}",0.06,0.97,0.00 
-"{plas=(101.5;123.5],age=[-Inf;28.5],insu=(143; Inf]} => {class=tested_negative}",0.03,1.00,0.00 
-"{plas=[-Inf;101.5],mass=[-Inf;27.85],insu=(87.5;143]} => {class=tested_negative}",0.01,1.00,0.00 
-"{pedi=[-Inf; Inf],insu=(14.5;87.5],plas=(154.5; Inf]} => {class=tested_negative}",0.00,1.00,0.00 
-"{insu=(14.5;87.5],plas=(154.5; Inf]} => {class=tested_negative}",0.00,1.00,0.00 
-"{mass=(27.85; Inf],insu=(14.5;87.5],plas=(154.5; Inf]} => {class=tested_negative}",0.00,1.00,0.00 
-"{pres=[-Inf; Inf],insu=(14.5;87.5],plas=(154.5; Inf]} => {class=tested_negative}",0.00,1.00,0.00 
-"{plas=[-Inf;101.5],preg=(6.5; Inf],insu=(87.5;143]} => {class=tested_positive}",0.00,1.00,0.00 
-"{plas=(101.5;123.5],insu=(14.5;87.5],preg=(6.5; Inf]} => {class=tested_negative}",0.00,1.00,0.00 
-"{mass=(27.85; Inf],age=[-Inf;28.5],preg=(6.5; Inf]} => {class=tested_positive}",0.00,1.00,0.00 
-"{mass=[-Inf;27.85],age=[-Inf;28.5],preg=(6.5; Inf]} => {class=tested_negative}",0.00,1.00,0.00 
+"{plas=[-Inf;101.5],mass=[-Inf;27.85],pres=[-Inf; Inf],preg=[-Inf;6.5]} => {class=tested_negative}",0.11,1.00,0.00 
+"{plas=[-Inf;101.5],mass=[-Inf;27.85],skin=[-Inf; Inf],preg=[-Inf;6.5]} => {class=tested_negative}",0.11,1.00,0.00 
+"{plas=[-Inf;101.5],mass=[-Inf;27.85],skin=[-Inf; Inf],age=[-Inf;28.5]} => {class=tested_negative}",0.10,1.00,0.00 
+"{plas=[-Inf;101.5],mass=[-Inf;27.85],insu=(14.5;87.5]} => {class=tested_negative}",0.05,1.00,0.00 
+"{skin=[-Inf; Inf],insu=(143; Inf],age=[-Inf;28.5],plas=(101.5;123.5]} => {class=tested_negative}",0.03,1.00,0.00 
+"{insu=(143; Inf],age=[-Inf;28.5],plas=(101.5;123.5],preg=[-Inf;6.5]} => {class=tested_negative}",0.03,1.00,0.00 
+"{insu=(143; Inf],age=[-Inf;28.5],pedi=[-Inf; Inf],plas=(101.5;123.5]} => {class=tested_negative}",0.03,1.00,0.00 
+"{plas=(154.5; Inf],insu=(143; Inf],pedi=[-Inf; Inf],preg=(6.5; Inf]} => {class=tested_positive}",0.02,1.00,0.00 
+"{mass=[-Inf;27.85],insu=(143; Inf],age=[-Inf;28.5],pedi=[-Inf; Inf]} => {class=tested_negative}",0.02,1.00,0.00 
+"{mass=[-Inf;27.85],insu=(143; Inf],age=[-Inf;28.5]} => {class=tested_negative}",0.02,1.00,0.00 
+"{insu=[-Inf;14.5],mass=[-Inf;27.85],age=(28.5; Inf],plas=[-Inf;101.5]} => {class=tested_negative}",0.02,1.00,0.00 
+"{plas=[-Inf;101.5],age=(28.5; Inf],insu=(14.5;87.5],preg=[-Inf;6.5]} => {class=tested_negative}",0.02,1.00,0.00 
 "{ } => {class=tested_negative}", 0,0,0

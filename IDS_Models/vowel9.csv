@@ -1,15 +1,15 @@
 rules,suppport,confidence,lift
-"{Feature.1=[-Inf;-0.1345],Sex=Male} => {Class=hid}",0.03,1.00,0.00 
-"{Feature.0=[-Inf;-4.672],Feature.2=[-Inf;0.4735]} => {Class=hud}",0.02,1.00,0.00 
-"{Feature.8=[-Inf;-0.4105],Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.02,1.00,0.00 
-"{Feature.6=(-0.6605;0.4795],Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.02,1.00,0.00 
-"{Feature.0=[-Inf;-4.672],Feature.1=(3.1765; Inf]} => {Class=hud}",0.02,1.00,0.00 
-"{Feature.1=[-Inf;-0.1345],Feature.4=(-0.7345;0.169]} => {Class=hid}",0.02,1.00,0.00 
-"{Feature.8=[-Inf;-0.4105],Feature.0=[-Inf;-4.672]} => {Class=hud}",0.01,1.00,0.00 
-"{Feature.6=(0.4795; Inf],Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.01,1.00,0.00 
-"{Sex=Female,Feature.2=(1.086; Inf]} => {Class=hid}",0.01,1.00,0.00 
-"{Feature.1=(2.1395;3.1765],Feature.0=(-2.3195;-1.557]} => {Class=hAd}",0.01,1.00,0.00 
-"{Feature.1=(-0.1345;0.4245],Feature.0=(-4.2625;-3.7685]} => {Class=hid}",0.01,1.00,0.00 
-"{Feature.1=(-0.1345;0.4245],Speaker.Number=Mike} => {Class=hId}",0.01,1.00,0.00 
-"{Speaker.Number=Jo,Feature.0=(-2.3195;-1.557]} => {Class=hAd}",0.01,1.00,0.00 
+"{Feature.4=(0.169; Inf],Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.03,1.00,0.00 
+"{Feature.5=(1.451; Inf],Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.03,1.00,0.00 
+"{Feature.1=(2.1395;3.1765],Feature.3=(-0.6535;0.149],Feature.7=(0.1185; Inf],Feature.0=(-3.321;-2.9435]} => {Class=hOd}",0.03,1.00,0.00 
+"{Feature.7=(0.1185; Inf],Feature.9=[-Inf; Inf],Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.03,1.00,0.00 
+"{Feature.7=(0.1185; Inf],Feature.9=[-Inf; Inf],Sex=Male,Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.03,1.00,0.00 
+"{Feature.7=(0.1185; Inf],Feature.2=[-Inf;0.4735],Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.03,1.00,0.00 
+"{Feature.7=(0.1185; Inf],Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.03,1.00,0.00 
+"{Feature.8=[-Inf;-0.4105],Feature.9=[-Inf; Inf],Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.02,1.00,0.00 
+"{Feature.0=[-Inf;-4.672],Feature.2=[-Inf;0.4735],Feature.5=[-Inf;1.451],Feature.9=[-Inf; Inf]} => {Class=hud}",0.02,1.00,0.00 
+"{Feature.4=(0.169; Inf],Feature.3=(0.829; Inf],Feature.2=[-Inf;0.4735],Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.02,1.00,0.00 
+"{Feature.8=[-Inf;-0.4105],Feature.3=(0.829; Inf],Feature.2=[-Inf;0.4735],Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.02,1.00,0.00 
+"{Feature.8=[-Inf;-0.4105],Feature.2=[-Inf;0.4735],Feature.1=[-Inf;-0.1345]} => {Class=hid}",0.02,1.00,0.00 
+"{Feature.7=(-0.597;0.1185],Feature.0=(-2.3195;-1.557],Feature.5=[-Inf;1.451],Feature.1=(1.387;2.1395]} => {Class=hAd}",0.02,1.00,0.00 
 "{ } => {Class=hAd}", 0,0,0

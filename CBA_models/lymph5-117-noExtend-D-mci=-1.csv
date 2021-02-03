@@ -1,0 +1,41 @@
+"rules" "support" "confidence" "coverage" "lift" "count" "lhs_length" "orderedConf" "orderedSupp" "cumulativeConf"
+"6756" "{block_of_affere=yes,special_forms=chalices,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}" 0.201492537313433 1 0.201492537313433 1.83561643835616 27 3 1 27 1
+"8622" "{block_of_affere=no,special_forms=vesicles,dislocation_of=yes} => {class=malign_lymph}" 0.194029850746269 1 0.194029850746269 2.43636363636364 26 3 1 26 1
+"7042" "{block_of_affere=yes,early_uptake_in=no,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}" 0.164179104477612 1 0.164179104477612 1.83561643835616 22 3 1 12 1
+"6757" "{block_of_affere=yes,by_pass=no,special_forms=chalices} => {class=metastases}" 0.156716417910448 1 0.156716417910448 1.83561643835616 21 3 1 1 1
+"7793" "{block_of_affere=yes,lym_nodes_enlar=[-Inf;2.5],defect_in_node=lac_margin} => {class=metastases}" 0.156716417910448 1 0.156716417910448 1.83561643835616 21 3 1 6 1
+"8610" "{block_of_affere=no,changes_in_lym=oval,special_forms=vesicles} => {class=malign_lymph}" 0.149253731343284 1 0.149253731343284 2.43636363636364 20 3 1 3 1
+"9131" "{block_of_affere=yes,extravasates=no,changes_in_node=lac_margin} => {class=metastases}" 0.141791044776119 1 0.141791044776119 1.83561643835616 19 3 1 1 1
+"7965" "{block_of_affere=yes,changes_in_node=lac_margin,dislocation_of=no} => {class=metastases}" 0.134328358208955 1 0.134328358208955 1.83561643835616 18 3 1 1 1
+"8979" "{block_of_affere=yes,lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round} => {class=metastases}" 0.134328358208955 1 0.134328358208955 1.83561643835616 18 3 1 1 1
+"9087" "{lymphatics=arched,block_of_affere=yes,lym_nodes_enlar=[-Inf;2.5]} => {class=metastases}" 0.134328358208955 1 0.134328358208955 1.83561643835616 18 3 1 1 1
+"376" "{bl_of_lymph_c=yes,changes_in_node=lac_margin} => {class=metastases}" 0.126865671641791 1 0.126865671641791 1.83561643835616 17 2 1 4 1
+"41545" "{early_uptake_in=yes,changes_in_node=lacunar,special_forms=vesicles,exclusion_of_no=yes} => {class=malign_lymph}" 0.126865671641791 1 0.126865671641791 2.43636363636364 17 4 1 4 1
+"274" "{lym_nodes_enlar=(2.5; Inf],changes_in_node=lac_central} => {class=malign_lymph}" 0.119402985074627 1 0.119402985074627 2.43636363636364 16 2 1 8 1
+"5169" "{block_of_affere=yes,regeneration_of=no,changes_in_stru=coarse} => {class=metastases}" 0.119402985074627 1 0.119402985074627 1.83561643835616 16 3 1 2 1
+"6116" "{by_pass=yes,changes_in_node=lac_margin,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}" 0.119402985074627 1 0.119402985074627 1.83561643835616 16 3 1 1 1
+"37221" "{bl_of_lymph_c=no,lym_nodes_enlar=(2.5; Inf],dislocation_of=yes,no_of_nodes_in=(3.5; Inf]} => {class=malign_lymph}" 0.119402985074627 1 0.119402985074627 2.43636363636364 16 4 1 1 1
+"45518" "{early_uptake_in=no,lym_nodes_enlar=[-Inf;2.5],changes_in_node=lac_margin,exclusion_of_no=yes} => {class=metastases}" 0.111940298507463 1 0.111940298507463 1.83561643835616 15 4 1 5 1
+"410" "{block_of_affere=yes,exclusion_of_no=no} => {class=metastases}" 0.104477611940299 1 0.104477611940299 1.83561643835616 14 2 1 1 1
+"6875" "{early_uptake_in=no,changes_in_node=lac_margin,dislocation_of=no} => {class=metastases}" 0.104477611940299 1 0.104477611940299 1.83561643835616 14 3 1 1 1
+"6678" "{early_uptake_in=yes,changes_in_lym=round,special_forms=chalices} => {class=metastases}" 0.0970149253731343 1 0.0970149253731343 1.83561643835616 13 3 1 1 1
+"5821" "{early_uptake_in=yes,changes_in_lym=oval,no_of_nodes_in=(3.5; Inf]} => {class=malign_lymph}" 0.0895522388059701 1 0.0895522388059701 2.43636363636364 12 3 1 1 1
+"7907" "{changes_in_lym=round,changes_in_node=lac_margin,dislocation_of=no} => {class=metastases}" 0.0895522388059701 1 0.0895522388059701 1.83561643835616 12 3 1 1 1
+"8591" "{block_of_affere=no,extravasates=yes,dislocation_of=yes} => {class=malign_lymph}" 0.0895522388059701 1 0.0895522388059701 2.43636363636364 12 3 1 2 1
+"8994" "{lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round,exclusion_of_no=yes} => {class=metastases}" 0.0895522388059701 1 0.0895522388059701 1.83561643835616 12 3 1 1 1
+"46969" "{block_of_affere=no,early_uptake_in=yes,changes_in_stru=faint,exclusion_of_no=yes} => {class=malign_lymph}" 0.0895522388059701 1 0.0895522388059701 2.43636363636364 12 4 1 2 1
+"6977" "{lymphatics=arched,early_uptake_in=no,exclusion_of_no=yes} => {class=metastases}" 0.082089552238806 1 0.082089552238806 1.83561643835616 11 3 1 2 1
+"278" "{extravasates=no,changes_in_node=lac_central} => {class=malign_lymph}" 0.0671641791044776 1 0.0671641791044776 2.43636363636364 9 2 1 1 1
+"345" "{changes_in_node=lac_margin,special_forms=no} => {class=metastases}" 0.0671641791044776 1 0.0671641791044776 1.83561643835616 9 2 1 1 1
+"40392" "{changes_in_lym=oval,defect_in_node=lacunar,changes_in_node=lacunar,exclusion_of_no=yes} => {class=malign_lymph}" 0.0671641791044776 1 0.0671641791044776 2.43636363636364 9 4 1 1 1
+"41176" "{block_of_affere=no,by_pass=no,extravasates=yes,changes_in_node=lacunar} => {class=malign_lymph}" 0.0597014925373134 1 0.0597014925373134 2.43636363636364 8 4 1 1 1
+"48319" "{lymphatics=arched,block_of_affere=no,early_uptake_in=yes,defect_in_node=lacunar} => {class=malign_lymph}" 0.0597014925373134 1 0.0597014925373134 2.43636363636364 8 4 1 1 1
+"6" "{changes_in_stru=stripped} => {class=malign_lymph}" 0.0522388059701493 1 0.0522388059701493 2.43636363636364 7 1 1 1 1
+"338" "{defect_in_node=lac_central,special_forms=no} => {class=metastases}" 0.0522388059701493 1 0.0522388059701493 1.83561643835616 7 2 1 1 1
+"6814" "{lymphatics=arched,early_uptake_in=no,changes_in_stru=faint} => {class=metastases}" 0.0447761194029851 1 0.0447761194029851 1.83561643835616 6 3 1 1 1
+"29805" "{lymphatics=deformed,dislocation_of=no,exclusion_of_no=no,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}" 0.0447761194029851 1 0.0447761194029851 1.83561643835616 6 4 1 1 1
+"40744" "{lymphatics=deformed,by_pass=no,changes_in_node=lacunar,exclusion_of_no=yes} => {class=malign_lymph}" 0.0447761194029851 1 0.0447761194029851 2.43636363636364 6 4 1 1 1
+"77" "{regeneration_of=yes,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}" 0.0298507462686567 1 0.0298507462686567 33.5 4 2 1 4 1
+"2583" "{block_of_affere=no,changes_in_stru=drop_like,exclusion_of_no=no} => {class=malign_lymph}" 0.0223880597014925 1 0.0223880597014925 2.43636363636364 3 3 1 1 1
+"2742" "{extravasates=yes,changes_in_lym=oval,changes_in_stru=drop_like} => {class=malign_lymph}" 0.0223880597014925 1 0.0223880597014925 2.43636363636364 3 3 1 1 1
+"0" "{} => {class=normal}" 0.0149253731343284 0.0149253731343284 1 1 2 0 1 2 1

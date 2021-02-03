@@ -1,15 +1,18 @@
 rules,suppport,confidence,lift
-"{height=[-Inf;50.35],length=(168.75;173.3]} => {XClass=3}",0.08,1.00,0.00 
-"{compressionRatio=[-Inf; Inf],make=peugot} => {XClass=0}",0.06,1.00,0.00 
-"{wheelBase=(100.1; Inf],engineType=l} => {XClass=0}",0.06,1.00,0.00 
-"{engineLocation=front,make=peugot} => {XClass=0}",0.06,1.00,0.00 
-"{bore=(3.255; Inf],make=peugot} => {XClass=0}",0.06,1.00,0.00 
-"{cityMpg=[-Inf;30.5],engineType=l} => {XClass=0}",0.06,1.00,0.00 
-"{peakRpm=[-Inf; Inf],make=peugot} => {XClass=0}",0.06,1.00,0.00 
-"{make=peugot,height=(56.25; Inf]} => {XClass=0}",0.05,1.00,0.00 
-"{curbWeight=(2321.5; Inf],normalizedLosses=[-Inf;75.5]} => {XClass=-1}",0.05,1.00,0.00 
-"{height=[-Inf;50.35],numOfCylinders=four} => {XClass=3}",0.05,1.00,0.00 
-"{length=(173.3;175.5],wheelBase=(94.8;97.25]} => {XClass=0}",0.04,1.00,0.00 
-"{make=subaru,numOfDoors=four} => {XClass=0}",0.04,1.00,0.00 
-"{width=(64.3;66.75],make=subaru} => {XClass=0}",0.04,1.00,0.00 
+"{width=(64.3;66.75],height=(51.8;56.15],wheelBase=(94.8;97.25],compressionRatio=[-Inf; Inf]} => {XClass=0}",0.11,1.00,0.00 
+"{width=(64.3;66.75],height=(51.8;56.15],peakRpm=[-Inf; Inf],wheelBase=(94.8;97.25]} => {XClass=0}",0.11,1.00,0.00 
+"{width=(64.3;66.75],height=(51.8;56.15],wheelBase=(94.8;97.25]} => {XClass=0}",0.11,1.00,0.00 
+"{cityMpg=[-Inf;30.5],height=(51.8;56.15],engineLocation=front,wheelBase=(94.8;97.25]} => {XClass=0}",0.10,1.00,0.00 
+"{cityMpg=[-Inf;30.5],height=(51.8;56.15],wheelBase=(94.8;97.25]} => {XClass=0}",0.10,1.00,0.00 
+"{normalizedLosses=(96.5; Inf],wheelBase=(92.15;94.8],height=(51.8;56.15],numOfDoors=two} => {XClass=1}",0.09,1.00,0.00 
+"{length=(168.75;173.3],stroke=[-Inf; Inf],highwayMpg=[-Inf;28.5],bore=(3.255; Inf]} => {XClass=3}",0.09,1.00,0.00 
+"{numOfCylinders=four,normalizedLosses=(75.5;92],numOfDoors=four} => {XClass=0}",0.09,1.00,0.00 
+"{cityMpg=[-Inf;30.5],wheelBase=(94.8;97.25],height=(51.8;56.15],highwayMpg=(28.5; Inf]} => {XClass=0}",0.09,1.00,0.00 
+"{length=(168.75;173.3],highwayMpg=[-Inf;28.5],curbWeight=(2321.5; Inf],bore=(3.255; Inf]} => {XClass=3}",0.09,1.00,0.00 
+"{numOfCylinders=four,peakRpm=[-Inf; Inf],normalizedLosses=(75.5;92],numOfDoors=four} => {XClass=0}",0.09,1.00,0.00 
+"{length=(168.75;173.3],normalizedLosses=(96.5; Inf],highwayMpg=[-Inf;28.5],bore=(3.255; Inf]} => {XClass=3}",0.09,1.00,0.00 
+"{cityMpg=[-Inf;30.5],height=(51.8;56.15],wheelBase=(94.8;97.25],numOfDoors=four} => {XClass=0}",0.09,1.00,0.00 
+"{length=(168.75;173.3],fuelType=gas,highwayMpg=[-Inf;28.5],bore=(3.255; Inf]} => {XClass=3}",0.09,1.00,0.00 
+"{length=(168.75;173.3],peakRpm=[-Inf; Inf],highwayMpg=[-Inf;28.5],bore=(3.255; Inf]} => {XClass=3}",0.09,1.00,0.00 
+"{height=[-Inf;50.35],numOfDoors=two,length=(168.75;173.3]} => {XClass=3}",0.08,1.00,0.00 
 "{ } => {XClass=0}", 0,0,0

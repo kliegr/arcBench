@@ -1,15 +1,17 @@
 rules,suppport,confidence,lift
-"{condition=S,thick=(0.6005;0.7995]} => {class=3}",0.22,1.00,0.00 
-"{thick=(0.6005;0.7995],shape=SHEET} => {class=3}",0.15,1.00,0.00 
-"{strength=[-Inf;375],hardness=(22.5;75]} => {class=3}",0.15,1.00,0.00 
-"{len=(0.5; Inf],thick=(0.6005;0.7995]} => {class=3}",0.15,1.00,0.00 
-"{temper_rolling=True,hardness=(22.5;75]} => {class=3}",0.09,1.00,0.00 
-"{bl=Y,steel=A} => {class=3}",0.09,1.00,0.00 
-"{thick=(0.6005;0.7995],width=(1235;1410.05]} => {class=3}",0.08,1.00,0.00 
-"{family=TN} => {class=5}",0.07,1.00,0.00 
-"{enamelability=[-Inf;1.82142857143],family=TN} => {class=5}",0.07,1.00,0.00 
-"{bw.me=B,surface.quality=E} => {class=3}",0.07,1.00,0.00 
-"{bl=Y,surface.quality=E} => {class=3}",0.07,1.00,0.00 
-"{surface.quality=F,carbon=[-Inf;3.5]} => {class=3}",0.07,1.00,0.00 
-"{surface.quality=F,product.type=C} => {class=3}",0.07,1.00,0.00 
+"{enamelability=[-Inf;1.82142857143],carbon=[-Inf;3.5],surface.quality=E,condition=S} => {class=3}",0.31,1.00,0.00 
+"{enamelability=[-Inf;1.82142857143],surface.quality=E,condition=S,bore=[-Inf; Inf]} => {class=3}",0.31,1.00,0.00 
+"{surface.quality=E,condition=S,strength=[-Inf;375]} => {class=3}",0.31,1.00,0.00 
+"{surface.quality=E,condition=S,strength=[-Inf;375],bore=[-Inf; Inf]} => {class=3}",0.31,1.00,0.00 
+"{enamelability=[-Inf;1.82142857143],surface.quality=E,condition=S} => {class=3}",0.31,1.00,0.00 
+"{carbon=[-Inf;3.5],surface.quality=E,condition=S} => {class=3}",0.31,1.00,0.00 
+"{product.type=C,surface.quality=E,condition=S,strength=[-Inf;375]} => {class=3}",0.31,1.00,0.00 
+"{carbon=[-Inf;3.5],surface.quality=E,hardness=[-Inf;22.5]} => {class=3}",0.30,1.00,0.00 
+"{formability=(1.5;2.10741444867],surface.quality=E,condition=S} => {class=3}",0.23,1.00,0.00 
+"{formability=(1.5;2.10741444867],surface.quality=E,bore=[-Inf; Inf]} => {class=3}",0.23,1.00,0.00 
+"{formability=(1.5;2.10741444867],surface.quality=E,condition=S,strength=[-Inf;375]} => {class=3}",0.23,1.00,0.00 
+"{formability=(1.5;2.10741444867],surface.quality=E,packing=3} => {class=3}",0.23,1.00,0.00 
+"{packing=3,surface.quality=E,condition=S,strength=[-Inf;375]} => {class=3}",0.31,1.00,0.00 
+"{enamelability=[-Inf;1.82142857143],surface.quality=E,condition=S,packing=3} => {class=3}",0.31,1.00,0.00 
+"{packing=3,carbon=[-Inf;3.5],surface.quality=E,condition=S} => {class=3}",0.31,1.00,0.00 
 "{ } => {class=3}", 0,0,0

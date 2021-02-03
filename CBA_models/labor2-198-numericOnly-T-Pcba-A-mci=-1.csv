@@ -1,0 +1,15 @@
+"rules" "support" "confidence" "coverage" "lift" "count" "lhs_length" "orderedConf" "orderedSupp" "cumulativeConf"
+"669" "{pension=,statutory-holidays=(10.5; Inf]} => {class=good}" 0.411764705882353 1 0.411764705882353 1.54545454545455 21 2 1 21 1
+"6443" "{wage-increase-first-year=(2.9; Inf],education-allowance=,statutory-holidays=(10.5; Inf]} => {class=good}" 0.372549019607843 1 0.372549019607843 1.54545454545455 19 3 1 6 1
+"656" "{pension=,longterm-disability-assistance=} => {class=good}" 0.333333333333333 1 0.333333333333333 1.54545454545455 17 2 1 2 1
+"660" "{wage-increase-first-year=(2.9; Inf],longterm-disability-assistance=} => {class=good}" 0.333333333333333 1 0.333333333333333 1.54545454545455 17 2 1 1 1
+"668" "{pension=,education-allowance=} => {class=good}" 0.333333333333333 1 0.333333333333333 1.54545454545455 17 2 1 1 1
+"11" "{pension=none} => {class=bad}" 0.176470588235294 1 0.176470588235294 2.83333333333333 9 1 1 9 1
+"7" "{longterm-disability-assistance=no} => {class=bad}" 0.156862745098039 1 0.156862745098039 2.83333333333333 8 1 1 3 1
+"10" "{contribution-to-health-plan=none} => {class=bad}" 0.156862745098039 1 0.156862745098039 2.83333333333333 8 1 1 3 1
+"593" "{pension=,longterm-disability-assistance=yes} => {class=good}" 0.156862745098039 1 0.156862745098039 1.54545454545455 8 2 1 1 1
+"6" "{cost-of-living-adjustment=tcf} => {class=good}" 0.137254901960784 1 0.137254901960784 1.54545454545455 7 1 1 1 1
+"473" "{wage-increase-first-year=[-Inf;2.9],statutory-holidays=[-Inf;10.5]} => {class=bad}" 0.137254901960784 1 0.137254901960784 2.83333333333333 7 2 1 1 1
+"248" "{cost-of-living-adjustment=none,contribution-to-dental-plan=none} => {class=bad}" 0.0980392156862745 1 0.0980392156862745 2.83333333333333 5 2 1 1 1
+"127" "{wage-increase-first-year=[-Inf;2.9],cost-of-living-adjustment=tc} => {class=bad}" 0.0784313725490196 1 0.0784313725490196 2.83333333333333 4 2 1 1 NA
+"0" "{} => {class=bad}" 0.352941176470588 0.352941176470588 1 1 18 0 NA NA 1

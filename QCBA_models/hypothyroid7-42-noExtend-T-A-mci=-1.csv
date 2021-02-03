@@ -1,0 +1,35 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{query hypothyroid=f,TSH=[0.005;6]} => {Class=negative}",0.856259226799011,1,1,2907
+"2","{TSH=[0.005;6],FTI measured=t} => {Class=negative}",0.8067746758461,1,1,146
+"3","{TSH=[0.005;6],TT4=[90;148]} => {Class=negative}",0.606185555458069,1,1,13
+"4","{TT4=[149;430]} => {Class=negative}",0.0983799695968628,1,1,11
+"5","{on thyroxine=t,TT4=[90;148]} => {Class=negative}",0.0742268040776253,1,1,30
+"6","{on thyroxine=t,FTI=[115;291]} => {Class=negative}",0.0715758502483368,1,1,1
+"7","{on thyroxine=t,FTI=[86;114]} => {Class=negative}",0.040353462100029,1,1,5
+"8","{sex=M,on thyroxine=t,T3=[1.1;3]} => {Class=negative}",0.0206185560673475,1,1,2
+"9","{on thyroxine=f,thyroid surgery=f,TSH=[6.2;19],FTI=[65;85]} => {Class=compensated_hypothyroid}",0.0132547868415713,1,1,45
+"10","{thyroid surgery=f,TSH=[20;478],FTI=[17;64]} => {Class=primary_hypothyroid}",0.0123711340129375,1,1,42
+"11","{on thyroxine=t,query hypothyroid=t,T3=[1.1;6.7]} => {Class=negative}",0.0123711340129375,1,1,1
+"12","{on thyroxine=t,TT4=[72;89]} => {Class=negative}",0.0103092780336738,1,1,3
+"13","{on thyroxine=t,TSH=[6.3;19],T3=[1.2;3.1]} => {Class=negative}",0.0103092780336738,1,1,1
+"14","{query hyperthyroid=t,T3 measured=f} => {Class=negative}",0.0100147277116776,1,1,1
+"15","{thyroid surgery=f,TSH=[20;478],TT4=[21;53]} => {Class=primary_hypothyroid}",0.0100147277116776,1,1,1
+"16","{sex=,tumor=f,T4U measured=t,FTI=[87;114]} => {Class=negative}",0.0159057434648275,0.981818199157715,0.5,1
+"17","{sex=F,T4U measured=f,referral source=other} => {Class=negative}",0.066568486392498,0.97835499048233,0.166666666666667,1
+"18","{sex=F,T4U measured=t,referral source=STMW} => {Class=negative}",0.0241531655192375,0.976190447807312,1,1
+"19","{T3=[1.1;7.6],TT4=[90;147],referral source=SVI} => {Class=negative}",0.153166428208351,0.97560977935791,0.0909090909090909,1
+"20","{thyroid surgery=t,referral source=other} => {Class=negative}",0.0111929308623075,0.974358975887299,0.833333333333333,5
+"21","{on thyroxine=f,thyroid surgery=f,TSH=[6.1;19],TT4=[90;148]} => {Class=compensated_hypothyroid}",0.0220913104712963,0.974025964736938,0.983050847457627,58
+"22","{thyroid surgery=t,T3 measured=t} => {Class=negative}",0.0106038292869925,0.972972989082336,0.5,1
+"23","{sex=M,T3=[1.1;10.6],FTI measured=t} => {Class=negative}",0.246833577752113,0.966551303863525,0.0833333333333333,1
+"24","{on thyroxine=f,thyroid surgery=f,TSH=[6.1;19],TT4=[72;89]} => {Class=compensated_hypothyroid}",0.0150220915675163,0.962264180183411,0.909090909090909,20
+"25","{on thyroxine=f,query hypothyroid=f,TSH=[20;468],T3=[0.2;1]} => {Class=primary_hypothyroid}",0.0117820324376225,0.952380955219269,0.96,24
+"26","{on thyroxine=f,thyroid surgery=f,TSH=[6.1;18.4],FTI=[87;114]} => {Class=compensated_hypothyroid}",0.0253313705325127,0.945054948329926,1,5
+"27","{T3 measured=t,T3=[1.1;10.6],FTI measured=t} => {Class=negative}",0.639469802379608,0.941457092761993,0.05,1
+"28","{thyroid surgery=f,query hypothyroid=f,TSH=[20;468],T3=[0.2;1]} => {Class=primary_hypothyroid}",0.0120765827596188,0.931818187236786,1,1
+"29","{thyroid surgery=f,T3 measured=t,TT4=[21;53],FTI=[18;64]} => {Class=primary_hypothyroid}",0.0103092780336738,0.853658556938171,1,2
+"30","{thyroid surgery=f,TSH measured=t,TT4=[21;53],FTI=[18;64]} => {Class=primary_hypothyroid}",0.0108983796089888,0.822222232818604,1,1
+"31","{sex=F,thyroid surgery=f,query hyperthyroid=f,FTI=[18;64]} => {Class=primary_hypothyroid}",0.0114874811843038,0.779999971389771,1,1
+"32","{on thyroxine=f,thyroid surgery=f,query hypothyroid=f,TSH=[20;472]} => {Class=primary_hypothyroid}",0.0173784978687763,0.719512224197388,0.2,1
+"33","{thyroid surgery=f,query hypothyroid=f,TSH=[20;478],T4U measured=t} => {Class=primary_hypothyroid}",0.0170839466154575,0.707317054271698,1,1
+"34","{} => {Class=negative}",0.922827661037445,0.922827661037445,0,0

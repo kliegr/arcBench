@@ -1,22 +1,24 @@
 rules,suppport,confidence,lift
+"{rawgreen.mean=(71.27775; Inf],rawblue.mean=(101.11105; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{value.mean=(101.11105; Inf],rawgreen.mean=(71.27775; Inf],rawblue.mean=(101.11105; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{value.mean=(101.11105; Inf],intensity.mean=(79.5926; Inf],rawred.mean=(67.83335; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{rawgreen.mean=(71.27775; Inf],intensity.mean=(79.5926; Inf],rawred.mean=(67.83335; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{value.mean=(101.11105; Inf],intensity.mean=(79.5926; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{rawgreen.mean=(71.27775; Inf],intensity.mean=(79.5926; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{value.mean=(101.11105; Inf],intensity.mean=(79.5926; Inf],rawblue.mean=(101.11105; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{value.mean=(101.11105; Inf],rawblue.mean=(101.11105; Inf]} => {class=sky}",0.14,1.00,0.00 
 "{intensity.mean=(79.5926; Inf],rawred.mean=(67.83335; Inf]} => {class=sky}",0.14,1.00,0.00 
-"{rawgreen.mean=(71.27775; Inf],value.mean=(101.11105; Inf]} => {class=sky}",0.14,1.00,0.00 
-"{region.pixel.count=9,value.mean=(101.11105; Inf]} => {class=sky}",0.14,1.00,0.00 
-"{rawred.mean=(67.83335; Inf],rawblue.mean=(101.11105; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{rawgreen.mean=(71.27775; Inf],intensity.mean=(79.5926; Inf],rawblue.mean=(101.11105; Inf]} => {class=sky}",0.14,1.00,0.00 
 "{intensity.mean=(79.5926; Inf]} => {class=sky}",0.14,1.00,0.00 
-"{rawgreen.mean=(71.27775; Inf]} => {class=sky}",0.14,1.00,0.00 
-"{rawblue.mean=(101.11105; Inf],value.mean=(101.11105; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{intensity.mean=(79.5926; Inf],rawblue.mean=(101.11105; Inf],rawred.mean=(67.83335; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{value.mean=(101.11105; Inf],rawred.mean=(67.83335; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{value.mean=(101.11105; Inf],rawgreen.mean=(71.27775; Inf],rawred.mean=(67.83335; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{value.mean=(101.11105; Inf],rawgreen.mean=(71.27775; Inf],intensity.mean=(79.5926; Inf],rawred.mean=(67.83335; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{rawgreen.mean=(71.27775; Inf],intensity.mean=(79.5926; Inf],region.pixel.count=9} => {class=sky}",0.14,1.00,0.00 
+"{region.pixel.count=9,intensity.mean=(79.5926; Inf],rawred.mean=(67.83335; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{value.mean=(101.11105; Inf],rawgreen.mean=(71.27775; Inf],intensity.mean=(79.5926; Inf],region.pixel.count=9} => {class=sky}",0.14,1.00,0.00 
+"{region.pixel.count=9,rawblue.mean=(101.11105; Inf],rawred.mean=(67.83335; Inf]} => {class=sky}",0.14,1.00,0.00 
+"{region.pixel.count=9,intensity.mean=(79.5926; Inf],rawblue.mean=(101.11105; Inf]} => {class=sky}",0.14,1.00,0.00 
 "{region.pixel.count=9,rawred.mean=(67.83335; Inf]} => {class=sky}",0.14,1.00,0.00 
-"{rawgreen.mean=(71.27775; Inf],rawred.mean=(67.83335; Inf]} => {class=sky}",0.14,1.00,0.00 
-"{short.line.density.2=[-Inf;0.0555555],value.mean=(101.11105; Inf]} => {class=sky}",0.14,1.00,0.00 
-"{short.line.density.2=[-Inf;0.0555555],rawgreen.mean=(71.27775; Inf]} => {class=sky}",0.14,1.00,0.00 
-"{hue.mean=(0.64353; Inf],short.line.density.2=[-Inf;0.0555555]} => {class=grass}",0.14,1.00,0.00 
-"{exgreen.mean=(1.0555565; Inf],exblue.mean=[-Inf;-0.111111]} => {class=grass}",0.13,1.00,0.00 
-"{short.line.density.5=[-Inf;0.0555555],rawblue.mean=(101.11105; Inf]} => {class=sky}",0.13,1.00,0.00 
-"{region.centroid.row=(160.5;210.5],rawgreen.mean=(35.72225;55.83335]} => {class=path}",0.12,1.00,0.00 
-"{region.centroid.row=(160.5;210.5],value.mean=(48.83335;79.61115]} => {class=path}",0.12,1.00,0.00 
-"{exred.mean=[-Inf;-29.5],rawred.mean=(67.83335; Inf]} => {class=sky}",0.10,1.00,0.00 
-"{exred.mean=[-Inf;-29.5],rawgreen.mean=(71.27775; Inf]} => {class=sky}",0.10,1.00,0.00 
-"{exred.mean=[-Inf;-29.5],rawblue.mean=(101.11105; Inf]} => {class=sky}",0.10,1.00,0.00 
-"{hue.mean=(-2.41348;-2.245545],rawblue.mean=(101.11105; Inf]} => {class=sky}",0.10,1.00,0.00 
+"{rawgreen.mean=(71.27775; Inf],region.pixel.count=9} => {class=sky}",0.14,1.00,0.00 
 "{ } => {class=brickface}", 0,0,0

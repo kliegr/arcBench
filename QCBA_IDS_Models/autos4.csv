@@ -1,0 +1,4 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{width=[63.8;Inf],height=[52;59.8],wheelBase=[95.3;97.2]} => {XClass=0}",0.119565218687057,1,1,22
+"2","{engineType=ohc,width=[-Inf;64.2],wheelBase=[88.4;93.7]} => {XClass=1}",0.114130437374115,1,1,21
+"3","{} => {XClass=0}",0.326086968183517,0.326086968183517,0.269503546099291,38

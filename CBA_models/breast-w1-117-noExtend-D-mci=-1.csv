@@ -1,0 +1,56 @@
+"rules" "support" "confidence" "coverage" "lift" "count" "lhs_length" "orderedConf" "orderedSupp" "cumulativeConf"
+"343" "{Single_Epi_Cell_Size=[-Inf;2.5],Bare_Nuclei=[-Inf;1.5]} => {Class=benign}" 0.511923688394277 1 0.511923688394277 1.52669902912621 322 2 1 322 1
+"337" "{Cell_Size_Uniformity=[-Inf;1.5],Bare_Nuclei=[-Inf;1.5]} => {Class=benign}" 0.475357710651828 1 0.475357710651828 1.52669902912621 299 2 1 14 1
+"3294" "{Marginal_Adhesion=[-Inf;1.5],Single_Epi_Cell_Size=[-Inf;2.5],Normal_Nucleoli=[-Inf;2.5],Mitoses=[-Inf;1.5]} => {Class=benign}" 0.468998410174881 1 0.468998410174881 1.52669902912621 295 4 1 29 1
+"1440" "{Cell_Size_Uniformity=[-Inf;1.5],Marginal_Adhesion=[-Inf;1.5],Normal_Nucleoli=[-Inf;2.5]} => {Class=benign}" 0.459459459459459 1 0.459459459459459 1.52669902912621 289 3 1 6 1
+"1446" "{Marginal_Adhesion=[-Inf;1.5],Bare_Nuclei=[-Inf;1.5],Normal_Nucleoli=[-Inf;2.5]} => {Class=benign}" 0.454689984101749 1 0.454689984101749 1.52669902912621 286 3 1 6 1
+"333" "{Clump_Thickness=[-Inf;4.5],Marginal_Adhesion=[-Inf;1.5]} => {Class=benign}" 0.426073131955485 1 0.426073131955485 1.52669902912621 268 2 1 3 1
+"1391" "{Bare_Nuclei=[-Inf;1.5],Bland_Chromatin=[-Inf;2.5],Normal_Nucleoli=[-Inf;2.5]} => {Class=benign}" 0.384737678855326 1 0.384737678855326 1.52669902912621 242 3 1 1 1
+"3222" "{Marginal_Adhesion=[-Inf;1.5],Single_Epi_Cell_Size=[-Inf;2.5],Bland_Chromatin=[-Inf;2.5],Mitoses=[-Inf;1.5]} => {Class=benign}" 0.332273449920509 1 0.332273449920509 1.52669902912621 209 4 1 1 1
+"1204" "{Single_Epi_Cell_Size=[-Inf;2.5],Bland_Chromatin=(2.5;3.5],Normal_Nucleoli=[-Inf;2.5]} => {Class=benign}" 0.160572337042925 1 0.160572337042925 1.52669902912621 101 3 1 4 1
+"247" "{Cell_Size_Uniformity=[-Inf;1.5],Bland_Chromatin=(2.5;3.5]} => {Class=benign}" 0.152623211446741 1 0.152623211446741 1.52669902912621 96 2 1 1 1
+"215" "{Clump_Thickness=(6.5; Inf],Cell_Size_Uniformity=(4.5; Inf]} => {Class=malignant}" 0.151033386327504 1 0.151033386327504 2.89861751152074 95 2 1 95 1
+"1197" "{Marginal_Adhesion=[-Inf;1.5],Bare_Nuclei=[-Inf;1.5],Bland_Chromatin=(2.5;3.5]} => {Class=benign}" 0.130365659777424 1 0.130365659777424 1.52669902912621 82 3 1 1 1
+"200" "{Cell_Size_Uniformity=(4.5; Inf],Mitoses=(1.5; Inf]} => {Class=malignant}" 0.12241653418124 1 0.12241653418124 2.89861751152074 77 2 1 30 1
+"201" "{Cell_Shape_Uniformity=(4.5; Inf],Mitoses=(1.5; Inf]} => {Class=malignant}" 0.116057233704293 1 0.116057233704293 2.89861751152074 73 2 1 7 1
+"1072" "{Clump_Thickness=(6.5; Inf],Cell_Shape_Uniformity=(4.5; Inf],Single_Epi_Cell_Size=(3.5; Inf]} => {Class=malignant}" 0.112877583465819 1 0.112877583465819 2.89861751152074 71 3 1 5 1
+"1051" "{Clump_Thickness=(6.5; Inf],Cell_Shape_Uniformity=(4.5; Inf],Bare_Nuclei=(5.5; Inf]} => {Class=malignant}" 0.104928457869634 1 0.104928457869634 2.89861751152074 66 3 1 2 1
+"1247" "{Clump_Thickness=(4.5;6.5],Cell_Size_Uniformity=[-Inf;1.5],Normal_Nucleoli=[-Inf;2.5]} => {Class=benign}" 0.103338632750397 1 0.103338632750397 1.52669902912621 65 3 1 1 1
+"1059" "{Clump_Thickness=(6.5; Inf],Cell_Shape_Uniformity=(4.5; Inf],Marginal_Adhesion=(3.5; Inf]} => {Class=malignant}" 0.101748807631161 1 0.101748807631161 2.89861751152074 64 3 1 1 1
+"259" "{Clump_Thickness=(4.5;6.5],Bland_Chromatin=[-Inf;2.5]} => {Class=benign}" 0.0937996820349762 1 0.0937996820349762 1.52669902912621 59 2 1 2 1
+"5" "{Normal_Nucleoli=(9.5; Inf]} => {Class=malignant}" 0.0890302066772655 1 0.0890302066772655 2.89861751152074 56 1 1 11 1
+"2806" "{Cell_Size_Uniformity=(4.5; Inf],Bare_Nuclei=(5.5; Inf],Bland_Chromatin=(3.5; Inf],Normal_Nucleoli=(2.5;9.5]} => {Class=malignant}" 0.0810810810810811 1 0.0810810810810811 2.89861751152074 51 4 1 11 1
+"2810" "{Cell_Shape_Uniformity=(4.5; Inf],Bare_Nuclei=(5.5; Inf],Bland_Chromatin=(3.5; Inf],Normal_Nucleoli=(2.5;9.5]} => {Class=malignant}" 0.0810810810810811 1 0.0810810810810811 2.89861751152074 51 4 1 2 1
+"973" "{Marginal_Adhesion=(1.5;3.5],Bare_Nuclei=[-Inf;1.5],Mitoses=[-Inf;1.5]} => {Class=benign}" 0.0747217806041336 1 0.0747217806041336 1.52669902912621 47 3 1 2 1
+"1057" "{Clump_Thickness=(6.5; Inf],Bare_Nuclei=(5.5; Inf],Mitoses=[-Inf;1.5]} => {Class=malignant}" 0.0731319554848967 1 0.0731319554848967 2.89861751152074 46 3 1 9 1
+"2799" "{Cell_Shape_Uniformity=(4.5; Inf],Marginal_Adhesion=(3.5; Inf],Bare_Nuclei=(5.5; Inf],Normal_Nucleoli=(2.5;9.5]} => {Class=malignant}" 0.0699523052464229 1 0.0699523052464229 2.89861751152074 44 4 1 1 1
+"2762" "{Clump_Thickness=(6.5; Inf],Single_Epi_Cell_Size=(3.5; Inf],Bland_Chromatin=(3.5; Inf],Mitoses=[-Inf;1.5]} => {Class=malignant}" 0.0588235294117647 1 0.0588235294117647 2.89861751152074 37 4 1 1 1
+"2817" "{Bare_Nuclei=(5.5; Inf],Bland_Chromatin=(3.5; Inf],Normal_Nucleoli=(2.5;9.5],Mitoses=[-Inf;1.5]} => {Class=malignant}" 0.0556438791732909 1 0.0556438791732909 2.89861751152074 35 4 1 4 1
+"108" "{Clump_Thickness=[-Inf;4.5],Bare_Nuclei=(1.5;3.78130081301]} => {Class=benign}" 0.0524642289348172 1 0.0524642289348172 1.52669902912621 33 2 1 9 1
+"182" "{Cell_Size_Uniformity=(4.5; Inf],Marginal_Adhesion=(1.5;3.5]} => {Class=malignant}" 0.0524642289348172 1 0.0524642289348172 2.89861751152074 33 2 1 3 1
+"181" "{Marginal_Adhesion=(1.5;3.5],Bare_Nuclei=(5.5; Inf]} => {Class=malignant}" 0.0476947535771065 1 0.0476947535771065 2.89861751152074 30 2 1 3 1
+"2803" "{Marginal_Adhesion=(3.5; Inf],Bare_Nuclei=(5.5; Inf],Normal_Nucleoli=(2.5;9.5],Mitoses=[-Inf;1.5]} => {Class=malignant}" 0.0445151033386327 1 0.0445151033386327 2.89861751152074 28 4 1 1 1
+"1003" "{Clump_Thickness=(4.5;6.5],Single_Epi_Cell_Size=(3.5; Inf],Mitoses=(1.5; Inf]} => {Class=malignant}" 0.0365659777424483 1 0.0365659777424483 2.89861751152074 23 3 1 1 1
+"50" "{Clump_Thickness=(6.5; Inf],Bare_Nuclei=(3.78130081301;5.5]} => {Class=malignant}" 0.0333863275039746 1 0.0333863275039746 2.89861751152074 21 2 1 1 1
+"127" "{Single_Epi_Cell_Size=(2.5;3.5],Bland_Chromatin=[-Inf;2.5]} => {Class=benign}" 0.0333863275039746 1 0.0333863275039746 1.52669902912621 21 2 1 1 1
+"1056" "{Clump_Thickness=(6.5; Inf],Bare_Nuclei=(5.5; Inf],Normal_Nucleoli=[-Inf;2.5]} => {Class=malignant}" 0.0333863275039746 1 0.0333863275039746 2.89861751152074 21 3 1 2 1
+"437" "{Cell_Shape_Uniformity=(4.5; Inf],Bare_Nuclei=(3.78130081301;5.5],Bland_Chromatin=(3.5; Inf]} => {Class=malignant}" 0.0317965023847377 1 0.0317965023847377 2.89861751152074 20 3 1 3 1
+"663" "{Single_Epi_Cell_Size=(2.5;3.5],Bare_Nuclei=(5.5; Inf],Bland_Chromatin=(3.5; Inf]} => {Class=malignant}" 0.0317965023847377 1 0.0317965023847377 2.89861751152074 20 3 1 1 1
+"662" "{Cell_Shape_Uniformity=(4.5; Inf],Single_Epi_Cell_Size=(2.5;3.5],Bare_Nuclei=(5.5; Inf]} => {Class=malignant}" 0.0302066772655008 1 0.0302066772655008 2.89861751152074 19 3 1 1 1
+"2184" "{Cell_Size_Uniformity=(2.5;4.5],Bare_Nuclei=(5.5; Inf],Bland_Chromatin=(3.5; Inf],Mitoses=[-Inf;1.5]} => {Class=malignant}" 0.0302066772655008 1 0.0302066772655008 2.89861751152074 19 4 1 1 1
+"929" "{Clump_Thickness=(4.5;6.5],Marginal_Adhesion=(1.5;3.5],Normal_Nucleoli=[-Inf;2.5]} => {Class=benign}" 0.0254372019077901 1 0.0254372019077901 1.52669902912621 16 3 1 1 1
+"1039" "{Clump_Thickness=(6.5; Inf],Marginal_Adhesion=[-Inf;1.5],Normal_Nucleoli=(2.5;9.5]} => {Class=malignant}" 0.0238473767885533 1 0.0238473767885533 2.89861751152074 15 3 1 5 1
+"2329" "{Cell_Shape_Uniformity=(2.5;4.5],Bare_Nuclei=(5.5; Inf],Bland_Chromatin=(3.5; Inf],Mitoses=[-Inf;1.5]} => {Class=malignant}" 0.0238473767885533 1 0.0238473767885533 2.89861751152074 15 4 1 1 1
+"1055" "{Clump_Thickness=(6.5; Inf],Single_Epi_Cell_Size=[-Inf;2.5],Bare_Nuclei=(5.5; Inf]} => {Class=malignant}" 0.0190779014308426 1 0.0190779014308426 2.89861751152074 12 3 1 2 1
+"290" "{Cell_Size_Uniformity=(4.5; Inf],Bare_Nuclei=[-Inf;1.5]} => {Class=malignant}" 0.0174880763116057 1 0.0174880763116057 2.89861751152074 11 2 1 2 1
+"1308" "{Marginal_Adhesion=(3.5; Inf],Single_Epi_Cell_Size=(3.5; Inf],Bare_Nuclei=[-Inf;1.5]} => {Class=malignant}" 0.0174880763116057 1 0.0174880763116057 2.89861751152074 11 3 1 1 1
+"1121" "{Marginal_Adhesion=(3.5; Inf],Single_Epi_Cell_Size=[-Inf;2.5],Normal_Nucleoli=(2.5;9.5]} => {Class=malignant}" 0.0127186009538951 1 0.0127186009538951 2.89861751152074 8 3 1 2 1
+"1274" "{Cell_Shape_Uniformity=(4.5; Inf],Bare_Nuclei=(5.5; Inf],Bland_Chromatin=(3.5; Inf]} => {Class=malignant}" 0.157392686804452 0.99 0.158982511923688 2.86963133640553 99 3 0.5 1 0.998373983739837
+"213" "{Clump_Thickness=(6.5; Inf],Bare_Nuclei=(5.5; Inf]} => {Class=malignant}" 0.144674085850556 0.989130434782609 0.146263910969793 2.86711079943899 91 2 0.666666666666667 2 0.996763754045307
+"288" "{Cell_Size_Uniformity=(4.5; Inf],Bland_Chromatin=(3.5; Inf]} => {Class=malignant}" 0.213036565977742 0.978102189781022 0.217806041335453 2.83514413535605 134 2 0.5 1 0.995161290322581
+"1206" "{Bland_Chromatin=(2.5;3.5],Normal_Nucleoli=[-Inf;2.5],Mitoses=[-Inf;1.5]} => {Class=benign}" 0.165341812400636 0.97196261682243 0.170111287758347 1.48389438344978 104 3 1 1 0.995169082125604
+"1160" "{Clump_Thickness=(4.5;6.5],Marginal_Adhesion=[-Inf;1.5],Bland_Chromatin=(2.5;3.5]} => {Class=benign}" 0.0365659777424483 0.958333333333333 0.0381558028616852 1.46308656957929 23 3 0.666666666666667 2 0.993589743589744
+"1105" "{Clump_Thickness=(4.5;6.5],Bland_Chromatin=(3.5; Inf],Normal_Nucleoli=(2.5;9.5]} => {Class=malignant}" 0.0349761526232114 0.956521739130435 0.0365659777424483 2.77259066319375 22 3 1 1 0.9936
+"336" "{Clump_Thickness=[-Inf;4.5],Mitoses=[-Inf;1.5]} => {Class=benign}" 0.486486486486487 0.938650306748466 0.518282988871224 1.43303651200191 306 2 0.5 1 0.992025518341308
+"126" "{Single_Epi_Cell_Size=(2.5;3.5],Bland_Chromatin=(3.5; Inf]} => {Class=malignant}" 0.0429252782193959 0.931034482758621 0.0461049284578696 2.69871285555379 27 2 1 1 0.99203821656051
+"0" "{} => {Class=benign}" 0.655007949125596 0.655007949125596 1 1 412 0 1 1 0.992050874403816

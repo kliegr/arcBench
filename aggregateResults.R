@@ -5,7 +5,7 @@ wontieloss <- function(baseforWontieloss,basefolder,filenames,col_names,extrasta
   if (extrastats)
   {
     
-    statistics <-  c(statistics, "avg number of rules","avg conditions / rule","avg conditions / model","median build time [s]", "avg build time norm")  
+    statistics <-  c(statistics, "avg number of rules","avg conditions / rule","avg conditions / model","median build time [s]", "median build time norm")  
   }
   if (decreaseInModelSize)
   {
@@ -37,43 +37,63 @@ wontieloss <- function(baseforWontieloss,basefolder,filenames,col_names,extrasta
       merged$accuracy_current<-round(merged$accuracy_current,2)
       merged$accuracy_base<-round(merged$accuracy_base,2)
       pValue <- wilcox.test(merged$accuracy_current, merged$accuracy_base, paired=TRUE)$p.value
-      qcbawon <-sum(merged$accuracy_current>merged$accuracy_base)
-      qcbatie <-sum(merged$accuracy_current==merged$accuracy_base)
-      qcbaloss <-sum(merged$accuracy_current<merged$accuracy_base)
-      result["won/tie/loss",col] <- c(paste0(qcbawon,"/",qcbatie,"/",qcbaloss))  
+      won <-sum(merged$accuracy_current>merged$accuracy_base)
+      tie <-sum(merged$accuracy_current==merged$accuracy_base)
+      loss <-sum(merged$accuracy_current<merged$accuracy_base)
+      result["won/tie/loss",col] <- c(paste0(won,"/",tie,"/",loss))  
       result["p-value (accuracy difference)",col] <- round(pValue,5)
       if(decreaseInModelSize)
       {
-        result["decrease in model size (avg)",col]<-paste(round(1-mean((merged$rules_currrent * merged$rules_currrent)/(merged$rules_base  * merged$antlength_base)),4)*100, "%")
-        result["decrease in model size (max)",col]<-paste(round(1-min((merged$rules_currrent * merged$rules_currrent)/(merged$rules_base  * merged$antlength_base)),4)*100, "%")
-        result["decrease in model size (min)",col]<-paste(round(1-max((merged$rules_currrent * merged$rules_currrent)/(merged$rules_base  * merged$antlength_base)),4)*100, "%")
+        # micro average
+        merged$size_ratio <- (merged$rules_current * merged$antlength_current)/(merged$rules_base  * merged$antlength_base)
+        # macro average
+        # merged$size_ratio <- (mean(merged$rules_current) * mean(merged$antlength_current))/(mean(merged$rules_base)  * mean(merged$antlength_base))
+        result["decrease in model size (avg)",col]<-paste(round(1-mean(merged$size_ratio),4)*100, "%")
+        result["decrease in model size (max)",col]<-paste(round(1-min(merged$size_ratio),4)*100, "%")
+        result["decrease in model size (min)",col]<-paste(round(1-max(merged$size_ratio),4)*100, "%")
+        #stop()
         }
     }
     if (extrastats)
     {
       result["avg number of rules"  ,col]<-round(mean(df$rules),1)
       result["avg conditions / rule"  ,col]<-round(mean(df$antlength),1)
-      result["avg conditions / model",col]<-round(mean(df$rules)*mean(df$antlength),1)
+      #macro
+      #result["avg conditions / model",col]<-round(mean(df$rules)*mean(df$antlength),1)
+      #micro
+      result["avg conditions / model",col]<-round(mean(df$rules*df$antlength),1)
       buildtime<-round(median(df$buildtime),1)
       result["median build time [s]",col]<-buildtime
       if (baseforWontieloss[col])
       {
-        result["avg build time norm",col]<-1.0
-        buildtimeRef <-mean(df$buildtime)
+        result["median build time norm",col]<-1.0
+        buildtimeRef <-median(df$buildtime)
       }
       else 
       {
-        result["avg build time norm",col]<-round(mean(df$buildtime)/buildtimeRef,2)
+        result["median build time norm",col]<-round(median(df$buildtime)/buildtimeRef,2)
+
       }
     }
   if (AUC)
-  {
+  { 
+  if (length(df$auc[df$auc==0])>0){ 
+    message("replacing values in the AUC column with NA")
+    df$auc[df$auc==0] <- NA
+    }
     result["AUC (macro average)",col]<-round(mean(df$auc,na.rm=TRUE),2)
   }
   }  
   write.csv(result,paste(basefolder,"/stats.csv",sep=""))
   return(result)
 }
+# IDS
+baseforWontieloss<-c(TRUE,FALSE,FALSE)
+basefolder<-"IDS_results"
+filenames<-c("IDS.csv","IDSQCBA_R_noPruning.csv", "IDSQCBA_R_transactionBased.csv")
+col_names<-c("only IDS","IDS+QCBA #5","IDS+QCBA #6")
+result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names)
+result
 
 # CBA # auc datasets
 baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE)
@@ -94,28 +114,22 @@ filenames<-c("SBRL-1.csv","SBRLQCBA-noPruning-1.csv", "SBRLQCBA-transactionBased
 col_names<-c("only SBRL (Short)","SBRL+QCBA (Short) #5","SBRL+QCBA (Short) #6","only SBRL (long)","SBRL+QCBA (long) #5","SBRL+QCBA (long) #6")
 result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names)
 result
-# IDS
-baseforWontieloss<-c(TRUE,FALSE,FALSE)
-basefolder<-"IDS_results"
-filenames<-c("IDS.csv","IDSQCBA_R_noPruning.csv", "IDSQCBA_R_transactionBased.csv")
-col_names<-c("only IDS","IDS+QCBA #5","IDS+QCBA #6")
-result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names)
-result
+
 
 
 
 # summary of effects of postprocessing by QCBA#5 
-baseforWontieloss<-c(TRUE,FALSE,TRUE,FALSE,TRUE,FALSE)
-basefolder<-"."
-filenames<-c( "CBA_results/117-noExtend-D-mci=0-cba.csv","CBA_results/198-numericOnly-T-Pcba-A-mci=0-qcba.csv", "SBRL_results/SBRL-Long.csv", "SBRL_results/SBRLQCBA-noPruning-Long.csv", "IDS_results/IDS.csv", "IDS_results/IDSQCBA_R_noPruning.csv"  )
-col_names<-c("CBA","CBA+QCBA#5","SBRL","SBRL+QCBA#5" ,"IDS","IDS+QCBA#5")
+baseforWontieloss<-c(TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE)
+basefolder<-"QCBA_Postprocessing_results"
+filenames<-c("../CBA_results/120-noExtend-mci=-1-cba.csv","../CBA_results/117-noExtend-D-mci=-1-cba.csv","../CBA_results/198-numericOnly-T-Pcba-A-mci=-1-qcba.csv", "../SBRL_results/SBRL-Long.csv", "../SBRL_results/SBRLQCBA-noPruning-Long.csv", "../IDS_results/IDS.csv", "../IDS_results/IDSQCBA_R_noPruning.csv"  )
+col_names<-c("CBA(dc)","CBA(dc+dr)","CBA(dc)+QCBA#5","SBRL","SBRL+QCBA#5" ,"IDS","IDS+QCBA#5")
 result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names,extrastats=FALSE,decreaseInModelSize=TRUE)
 result
 
 # QCBA#5 against other symbolic learners
 baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE,FALSE)
 basefolder<-"WEKA_results"
-filenames<-c("../CBA_results/198-numericOnly-T-Pcba-A-mci=0-qcba.csv", "../CORELS_results/CORELS.csv",  "J48-accuracy.csv","PART-accuracy.csv", "RIPPER-accuracy.csv", "FURIA-accuracy_missing_omitted.csv")
+filenames<-c("../CBA_results/198-numericOnly-T-Pcba-A-mci=-1-qcba.csv", "../CORELS_results/CORELS.csv",  "J48-accuracy.csv","PART-accuracy.csv", "RIPPER-accuracy.csv", "FURIA-accuracy_missing_omitted.csv")
 col_names<-c("CBA+QCBA #5","CORELS", "J48","PART","RIPPER", "FURIA")
 result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names,extrastats=FALSE)
 result

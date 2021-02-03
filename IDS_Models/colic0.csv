@@ -1,15 +1,18 @@
 rules,suppport,confidence,lift
-"{mucous_membranes=pale pink,peristalsis=absent} => {surgical_lesion=yes}",0.07,1.00,0.00 
-"{abdominal_distension=moderate,abdomen=distended small intestine} => {surgical_lesion=yes}",0.05,1.00,0.00 
-"{respiratory_rate=(59; Inf],outcome=lived} => {surgical_lesion=yes}",0.05,1.00,0.00 
-"{abdomen=distended small intestine,mucous_membranes=pale cyanotic} => {surgical_lesion=yes}",0.04,1.00,0.00 
-"{abdominal_distension=slight,rectal_examination=normal} => {surgical_lesion=no}",0.03,1.00,0.00 
-"{pain=intermittent mild pain,outcome=died} => {surgical_lesion=yes}",0.03,1.00,0.00 
-"{mucous_membranes=dark cyanotic,abdominocentesis_appearance=serosanguinous} => {surgical_lesion=yes}",0.03,1.00,0.00 
-"{pulse=[-Inf;58],outcome=died} => {surgical_lesion=yes}",0.03,1.00,0.00 
-"{abdominal_distension=severe,abdominocentesis_appearance=serosanguinous} => {surgical_lesion=yes}",0.03,1.00,0.00 
-"{pain=alert no pain,mucous_membranes=pale pink} => {surgical_lesion=no}",0.02,1.00,0.00 
-"{abdominocentesis_appearance=clear,pain=alert no pain} => {surgical_lesion=no}",0.02,1.00,0.00 
-"{rectal_examination=decreased,mucous_membranes=pale cyanotic} => {surgical_lesion=yes}",0.02,1.00,0.00 
-"{mucous_membranes=bright red,abdomen=distended small intestine} => {surgical_lesion=yes}",0.02,1.00,0.00 
+"{pulse=(58; Inf],capillary_refill_time=<3,surgery=yes,outcome=lived} => {surgical_lesion=yes}",0.11,1.00,0.00 
+"{surgery=no,packed_cell_volume=[-Inf;49.5],total_protein=[-Inf; Inf],pain=alert no pain} => {surgical_lesion=no}",0.09,1.00,0.00 
+"{surgery=no,rectal_temperature=[-Inf; Inf],pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.09,1.00,0.00 
+"{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.09,1.00,0.00 
+"{surgery=no,Age=adult,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.09,1.00,0.00 
+"{pain=alert no pain,capillary_refill_time=<3,surgery=no,outcome=lived} => {surgical_lesion=no}",0.09,1.00,0.00 
+"{abdominal_distension=slight,packed_cell_volume=[-Inf;49.5],surgery=no,outcome=lived} => {surgical_lesion=no}",0.08,1.00,0.00 
+"{surgery=no,pulse=[-Inf;58],pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.08,1.00,0.00 
+"{surgery=yes,abdomcentesis_total_protein=[-Inf; Inf],packed_cell_volume=(49.5; Inf],outcome=died} => {surgical_lesion=yes}",0.08,1.00,0.00 
+"{surgery=yes,capillary_refill_time=<3,outcome=died,rectal_temperature=[-Inf; Inf]} => {surgical_lesion=yes}",0.08,1.00,0.00 
+"{surgery=no,packed_cell_volume=[-Inf;49.5],peristalsis=hypermotile,total_protein=[-Inf; Inf]} => {surgical_lesion=no}",0.08,1.00,0.00 
+"{surgery=no,packed_cell_volume=[-Inf;49.5],abdomcentesis_total_protein=[-Inf; Inf],peristalsis=hypermotile} => {surgical_lesion=no}",0.08,1.00,0.00 
+"{surgery=no,packed_cell_volume=[-Inf;49.5],peristalsis=hypermotile,rectal_temperature=[-Inf; Inf]} => {surgical_lesion=no}",0.08,1.00,0.00 
+"{surgery=no,packed_cell_volume=[-Inf;49.5],peristalsis=hypermotile,outcome=lived} => {surgical_lesion=no}",0.08,1.00,0.00 
+"{surgery=no,packed_cell_volume=[-Inf;49.5],peristalsis=hypermotile,respiratory_rate=[-Inf;59]} => {surgical_lesion=no}",0.08,1.00,0.00 
+"{abdominal_distension=moderate,total_protein=[-Inf; Inf],outcome=died} => {surgical_lesion=yes}",0.08,1.00,0.00 
 "{ } => {surgical_lesion=yes}", 0,0,0
