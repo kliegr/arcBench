@@ -1,0 +1,21 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{service=b'ecr_i',dst_host_srv_count=[152;255]} => {labels=smurf.}",0.573333323001862,1,1,5160
+"2","{srv_count=[418;Inf]} => {labels=smurf.}",0.572666645050049,1,1,1
+"3","{src_bytes=1032} => {labels=smurf.}",0.464777767658234,1,1,1
+"4","{protocol_type=b'tcp',diff_srv_rate=[0.01;0.23]} => {labels=neptune.}",0.214666664600372,1,1,1932
+"5","{same_srv_rate=[0;0.49],dst_host_diff_srv_rate=[0.04;0.1]} => {labels=neptune.}",0.214444443583488,1,1,7
+"6","{flag=b'S0',serror_rate=[0.17;Inf],dst_host_srv_serror_rate=[0.03;Inf]} => {labels=neptune.}",0.173888891935349,1,1,1
+"7","{src_bytes=[29;333]} => {labels=normal.}",0.146555557847023,1,1,1319
+"8","{dst_bytes=[4;2446],dst_host_serror_rate=[0;0.14]} => {labels=normal.}",0.120222225785255,1,1,235
+"9","{service=b'http',hot=0,dst_host_serror_rate=0} => {labels=normal.}",0.116888888180256,1,1,122
+"10","{service=b'http',hot=0,dst_host_srv_serror_rate=0} => {labels=normal.}",0.115333333611488,1,1,1
+"11","{service=b'http',same_srv_rate=[0.38;1],dst_host_rerror_rate=0} => {labels=normal.}",0.105444446206093,1,1,1
+"12","{num_compromised=0,dst_host_same_srv_rate=[0.47;1],dst_host_same_src_port_rate=[0.01;0.58]} => {labels=normal.}",0.0943333357572556,1,1,10
+"13","{same_srv_rate=[0.5;1],dst_host_same_src_port_rate=[0;0.35],dst_host_srv_diff_host_rate=[0.01;0.67]} => {labels=normal.}",0.0874444469809532,1,1,16
+"14","{hot=[0;1],logged_in=1,dst_host_same_src_port_rate=[0.01;0.34]} => {labels=normal.}",0.0802222192287445,1,1,12
+"15","{count=[2;38],dst_host_srv_diff_host_rate=[0.01;0.09]} => {labels=normal.}",0.0595555566251278,1,1,14
+"16","{logged_in=1,count=[7;511]} => {labels=normal.}",0.0590000003576279,1,1,4
+"17","{=[74187;140325],protocol_type=b'tcp',flag=b'SF'} => {labels=normal.}",0.0427777767181396,1,1,1
+"18","{count=[2;7],dst_host_diff_srv_rate=[0.01;0.06]} => {labels=normal.}",0.0134444441646338,1,1,1
+"19","{same_srv_rate=[0.5;1],dst_host_srv_diff_host_rate=[0.01;0.08]} => {labels=normal.}",0.0881111100316048,0.998740553855896,0.5,1
+"20","{} => {labels=ipsweep.}",0.00377777777612209,0.00377777777612209,0.2125,34

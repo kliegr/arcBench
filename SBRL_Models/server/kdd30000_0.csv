@@ -1,0 +1,11 @@
+"","rules","support","confidence","lift"
+"1","{wrong_fragment=[-Inf;0.5],serror_rate=[-Inf;0.51],dst_host_srv_diff_host_rate=(0.005;0.085]} => {label=1}",1,1,1
+"2","{dst_host_diff_srv_rate=[-Inf;0.005],dst_host_same_src_port_rate=[-Inf;0.005],dst_host_srv_rerror_rate=[-Inf;0.005]} => {label=1}",1,1,1
+"3","{wrong_fragment=[-Inf;0.5],src_bytes=(28.5;333.5],count=[-Inf;38.5]} => {label=1}",1,1,1
+"4","{duration=[-Inf;0.5],service=b'private'} => {label=0}",1,1,1
+"5","{serror_rate=[-Inf;0.51],dst_bytes=(2;1197.5],is_guest_login=0} => {label=1}",1,1,1
+"6","{is_guest_login=0,protocol_type=b'icmp'} => {label=0}",1,1,1
+"7","{dst_host_diff_srv_rate=[-Inf;0.005],logged_in=1,root_shell=0} => {label=0}",1,1,1
+"8","{service=b'http',is_host_login=0,diff_srv_rate=[-Inf;0.035]} => {label=1}",1,1,1
+"9","{src_bytes=[-Inf;2.5],logged_in=0,num_root=[-Inf;0.5]} => {label=0}",1,1,1
+"10","{} => {label=1}",1,1,1

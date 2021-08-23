@@ -1,0 +1,21 @@
+rules,suppport,confidence,lift
+"{dst_host_srv_rerror_rate=[-Inf;0.005],protocol_type=b'icmp',dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{protocol_type=b'icmp',srv_serror_rate=[-Inf;0.005],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_bytes=[-Inf;2],dst_host_count=(254.5; Inf],service=b'ecr_i',protocol_type=b'icmp'} => {labels=smurf.}",0.57,1.00,0.00 
+"{flag=b'SF',protocol_type=b'icmp',dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{serror_rate=[-Inf;0.005],protocol_type=b'icmp',dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{protocol_type=b'icmp',dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{serror_rate=[-Inf;0.005],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{protocol_type=b'icmp',dst_host_count=(254.5; Inf],service=b'ecr_i',dst_host_srv_serror_rate=[-Inf;0.005]} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_rerror_rate=[-Inf;0.005],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{rerror_rate=[-Inf;0.045],protocol_type=b'icmp',dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{rerror_rate=[-Inf;0.045],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{protocol_type=b'icmp',srv_rerror_rate=[-Inf;0.005],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{hot=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{same_srv_rate=(0.995; Inf],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{urgent=0,dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{su_attempted=0,dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_count=(254.5; Inf],service=b'ecr_i',land=0} => {labels=smurf.}",0.57,1.00,0.00 
+"{is_host_login=0,dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{ } => {labels=smurf.}", 0,0,0

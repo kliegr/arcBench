@@ -1,0 +1,3 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{special_forms=vesicles,bl_of_lymph_s=no,dislocation_of=yes,block_of_affere=no} => {class=malign_lymph}",0.17910447716713,1,1,24
+"2","{} => {class=metastases}",0.544776141643524,0.544776141643524,0.663636363636364,73

@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{surgery=no,packed_cell_volume=[-Inf;51],total_protein=[-Inf;Inf],pain=alert no pain} => {surgical_lesion=no}",0.0969696938991547,1,1,32
+"2","{outcome=lived,surgery=no,packed_cell_volume=[-Inf;49],abdominal_distension=slight} => {surgical_lesion=no}",0.0848484858870506,1,1,18
+"3","{surgery=no,packed_cell_volume=[-Inf;Inf],rectal_temperature=[-Inf;39],peristalsis=hypermotile} => {surgical_lesion=no}",0.0848484858870506,1,1,10
+"4","{} => {surgical_lesion=yes}",0.630303025245667,0.630303025245667,0.77037037037037,208

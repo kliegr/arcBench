@@ -1,0 +1,9 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{Feature.1=[-Inf;0.084],Feature.2=[-Inf;0.971],Feature.8=[-Inf;1.309],Feature.3=[0.737;Inf]} => {Class=hid}",0.0493827164173126,1,1,44
+"2","{Feature.4=[-2.127;Inf],Feature.1=[-Inf;0.146],Feature.2=[-Inf;0.971],Feature.3=[0.887;Inf]} => {Class=hid}",0.0482603833079338,1,1,4
+"3","{Feature.4=[-2.127;Inf],Feature.1=[-Inf;-0.159]} => {Class=hid}",0.0460157133638859,1,1,5
+"4","{Feature.5=[-Inf;Inf],Feature.7=[-1.293;1.117],Feature.0=[-2.312;-1.814],Feature.1=[1.147;3.342]} => {Class=hAd}",0.0426487103104591,1,1,38
+"5","{Feature.1=[1.682;5.074],Feature.3=[-1.409;0.349],Feature.7=[0.116;Inf],Feature.0=[-3.354;-2.945]} => {Class=hOd}",0.0336700342595577,1,1,30
+"6","{Feature.9=[-Inf;Inf],Feature.2=[-Inf;1.089],Feature.0=[-Inf;-4.689],Feature.5=[-Inf;Inf]} => {Class=hud}",0.0336700342595577,1,1,30
+"7","{Feature.1=[-Inf;-0.101],Feature.7=[-1.293;Inf],Feature.9=[-Inf;0.31]} => {Class=hid}",0.0325476974248886,1,1,1
+"8","{} => {Class=hEd}",0.0909090936183929,0.0909090936183929,0.109607577807848,81

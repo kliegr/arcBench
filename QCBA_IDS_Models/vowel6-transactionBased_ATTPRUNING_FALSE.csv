@@ -1,0 +1,7 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{Feature.1=[-Inf;0.077],Feature.3=[0.733;Inf],Feature.2=[-Inf;1.431]} => {Class=hid}",0.0516273863613605,1,1,46
+"2","{Feature.1=[-Inf;-0.137],Feature.9=[-1.68;Inf]} => {Class=hid}",0.0460157133638859,1,1,5
+"3","{Feature.1=[-Inf;0.117],Feature.9=[-1.68;-0.396],Feature.7=[0.261;Inf]} => {Class=hid}",0.0314253643155098,1,1,1
+"4","{Feature.9=[-1.68;Inf],Feature.4=[-Inf;-0.79],Feature.0=[-4.264;-3.684],Feature.3=[-Inf;0.332]} => {Class=hod}",0.0314253643155098,1,1,28
+"5","{Feature.2=[-Inf;1.431],Feature.7=[-0.133;Inf],Feature.0=[-3.689;-2.776],Feature.1=[2.811;3.192]} => {Class=hOd}",0.0258136931806803,1,1,23
+"6","{} => {Class=hAd}",0.0909090936183929,0.0909090936183929,0.102791878172589,81

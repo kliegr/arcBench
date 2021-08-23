@@ -88,10 +88,10 @@ wontieloss <- function(baseforWontieloss,basefolder,filenames,col_names,extrasta
   return(result)
 }
 # IDS
-baseforWontieloss<-c(TRUE,FALSE,FALSE)
+baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE)
 basefolder<-"IDS_results"
-filenames<-c("IDS.csv","IDSQCBA_R_noPruning.csv", "IDSQCBA_R_transactionBased.csv")
-col_names<-c("only IDS","IDS+QCBA #5","IDS+QCBA #6")
+filenames<-c("IDS.csv","IDSQCBA_R_noPruning_ATTPRUNING_TRUE.csv", "IDSQCBA_R_transactionBased_ATTPRUNING_TRUE.csv", "IDSQCBA_R_noPruning_ATTPRUNING_FALSE.csv","IDSQCBA_R_transactionBased_ATTPRUNING_FALSE.csv")
+col_names<-c("only IDS","IDS+QCBA #5","IDS+QCBA #6","IDS+QCBA #5 No AttPruning","IDS+QCBA #6 No AttPruning")
 result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names)
 result
 
@@ -121,9 +121,11 @@ result
 # summary of effects of postprocessing by QCBA#5 
 baseforWontieloss<-c(TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE)
 basefolder<-"QCBA_Postprocessing_results"
-filenames<-c("../CBA_results/120-noExtend-mci=-1-cba.csv","../CBA_results/117-noExtend-D-mci=-1-cba.csv","../CBA_results/198-numericOnly-T-Pcba-A-mci=-1-qcba.csv", "../SBRL_results/SBRL-Long.csv", "../SBRL_results/SBRLQCBA-noPruning-Long.csv", "../IDS_results/IDS.csv", "../IDS_results/IDSQCBA_R_noPruning.csv"  )
+filenames<-c("../CBA_results/120-noExtend-mci=-1-cba.csv","../CBA_results/117-noExtend-D-mci=-1-cba.csv","../CBA_results/198-numericOnly-T-Pcba-A-mci=-1-qcba.csv", "../SBRL_results/SBRL-Long.csv", "../SBRL_results/SBRLQCBA-noPruning-Long.csv", "../IDS_results/IDS.csv", "../IDS_results/IDSQCBA_R_noPruning_ATTPRUNING_TRUE.csv"  )
 col_names<-c("CBA(dc)","CBA(dc+dr)","CBA(dc)+QCBA#5","SBRL","SBRL+QCBA#5" ,"IDS","IDS+QCBA#5")
 result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names,extrastats=FALSE,decreaseInModelSize=TRUE)
+
+
 result
 
 # QCBA#5 against other symbolic learners

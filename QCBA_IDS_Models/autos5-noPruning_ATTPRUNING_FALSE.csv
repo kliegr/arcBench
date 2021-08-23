@@ -1,0 +1,6 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{wheelBase=[94.5;120.9],height=[52.4;55.6],horsepower=[70;103.863387978],normalizedLosses=[74;122]} => {XClass=0}",0.124324321746826,1,1,23
+"2","{height=[52;55.6],numOfDoors=four,horsepower=[70;90]} => {XClass=0}",0.10810811072588,1,1,4
+"3","{height=[47.8;56],length=[172;187.5],normalizedLosses=[74;122]} => {XClass=0}",0.10810811072588,1,1,5
+"4","{wheelBase=[86.6;102],height=[52;56],numOfDoors=four,bore=[3.24;Inf]} => {XClass=0}",0.10810811072588,1,1,5
+"5","{} => {XClass=1}",0.264864861965179,0.264864861965179,0.331081081081081,49

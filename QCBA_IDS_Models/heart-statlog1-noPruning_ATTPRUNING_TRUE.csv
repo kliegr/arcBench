@@ -1,0 +1,7 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{sex=0,fasting_blood_sugar=0,chest=[-Inf;3],thal=[3;6]} => {class=absent}",0.160493820905685,1,1,39
+"2","{age=[-Inf;57],sex=0,thal=[3;6]} => {class=absent}",0.148148149251938,1,1,10
+"3","{sex=0,chest=[-Inf;3],number_of_major_vessels=0} => {class=absent}",0.139917701482773,1,1,4
+"4","{oldpeak=[1.6;Inf],thal=[6;Inf],slope=[2;Inf],chest=4} => {class=present}",0.131687238812447,1,1,32
+"5","{oldpeak=[1.6;Inf],thal=[6;Inf],exercise_induced_angina=1} => {class=present}",0.123456791043282,1,1,5
+"6","{} => {class=absent}",0.555555582046509,0.555555582046509,0.535947712418301,82

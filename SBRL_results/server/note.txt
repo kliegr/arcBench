@@ -1,0 +1,1 @@
+data in SBRL-noPruning-Long_mci0.csv and SBRLQCBA-noPruning-Long_mci0.csv 40.000 rows were set based on a single fold stored in temp_kdd40000_noPruning-Long_0.csv

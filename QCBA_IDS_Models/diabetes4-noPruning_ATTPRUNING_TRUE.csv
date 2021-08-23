@@ -1,0 +1,9 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{mass=[-Inf;29.6],plas=[-Inf;105],pedi=[-Inf;0.738]} => {class=tested_negative}",0.141823440790176,1,1,98
+"2","{mass=[-Inf;28.3],pedi=[-Inf;0.677],age=[-Inf;28],plas=[-Inf;128]} => {class=tested_negative}",0.140376269817352,1,1,25
+"3","{mass=[-Inf;30.9],plas=[-Inf;106],age=[-Inf;28]} => {class=tested_negative}",0.138929083943367,1,1,17
+"4","{mass=[-Inf;27.8],plas=[-Inf;106],preg=[-Inf;6]} => {class=tested_negative}",0.123010128736496,1,1,2
+"5","{pedi=[0.203;Inf],plas=[160;Inf],preg=[7;Inf]} => {class=tested_positive}",0.0361794494092464,1,1,25
+"6","{mass=[-Inf;34.1],plas=[160;Inf],preg=[7;Inf]} => {class=tested_positive}",0.0202604923397303,1,1,2
+"7","{plas=[95;132],pedi=[0.491;Inf],preg=[7;Inf],mass=[27.7;Inf]} => {class=tested_positive}",0.0202604923397303,1,1,14
+"8","{} => {class=tested_negative}",0.651230096817017,0.651230096817017,0.606299212598425,308

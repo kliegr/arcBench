@@ -1,0 +1,4 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{lithium=f,hypopituitary=f,TSH=[-Inf;6],TT4=[49;430]} => {Class=negative}",0.89242559671402,1,1,3028
+"2","{TSH=[-Inf;6],TT4=[49;430],goitre=f,age=[-Inf;Inf]} => {Class=negative}",0.887120544910431,1,1,15
+"3","{} => {Class=compensated_hypothyroid}",0.0512820519506931,0.0512820519506931,0.497142857142857,174

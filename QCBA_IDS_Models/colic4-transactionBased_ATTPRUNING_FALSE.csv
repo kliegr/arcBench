@@ -1,0 +1,3 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{outcome=lived,surgery=no,pain=alert no pain,packed_cell_volume=[-Inf;Inf]} => {surgical_lesion=no}",0.0876132920384407,1,1,29
+"2","{} => {surgical_lesion=yes}",0.631419956684113,0.631419956684113,0.69205298013245,209

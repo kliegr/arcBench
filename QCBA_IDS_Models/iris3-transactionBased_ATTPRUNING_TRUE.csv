@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{petalwidth=[-Inf;0.6]} => {class=Iris-setosa}",0.333333343267441,1,1,45
+"2","{petalwidth=[-Inf;1.6],petallength=[3;4.9]} => {class=Iris-versicolor}",0.311111122369766,1,1,42
+"3","{petallength=[3;4.8],sepalwidth=[2.9;Inf]} => {class=Iris-versicolor}",0.148148149251938,1,1,1
+"4","{} => {class=Iris-virginica}",0.333333343267441,0.333333343267441,0.957446808510638,45

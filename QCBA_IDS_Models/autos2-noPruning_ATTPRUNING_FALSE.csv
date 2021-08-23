@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{normalizedLosses=[77;122],numOfDoors=four,wheelBase=[95.1;97.2],compressionRatio=[-Inf;Inf]} => {XClass=0}",0.135869562625885,1,1,25
+"2","{numOfCylinders=four,normalizedLosses=[77;93],numOfDoors=four} => {XClass=0}",0.0978260859847069,1,1,1
+"3","{engineSize=[61;110],normalizedLosses=[83;Inf],wheelBase=[86.6;95.3],bodyStyle=sedan} => {XClass=1}",0.0815217420458794,1,1,15
+"4","{} => {XClass=0}",0.326086968183517,0.326086968183517,0.237762237762238,34

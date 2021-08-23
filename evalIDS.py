@@ -1,4 +1,6 @@
 from pyids.algorithms.ids_classifier import mine_CARs
+#pip3 install git+https://github.com/KIZI/pyIDS.git@76ad9d9b2bc12630ae1a36cb8f96103a5e5bbfce
+
 from pyids.algorithms.ids import IDS
 from pyids.model_selection import mode
 import time
@@ -172,7 +174,7 @@ def mean_allfolds(dataset_name, start=0, end=10, unique_transactions=True,runQCB
     print(df_agg)
     return df_agg
 
-datasets = ["iris","australian","anneal","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","ionosphere","labor","letter","lymph","segment","sonar","vehicle","vowel","hepatitis","spambase","hypothyroid"]    
+datasets = ["iris","australian","anneal","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","ionosphere","labor","letter","lymph","segment","sonar","vehicle","vowel","hepatitis","spambase","hypothyroid","kdd1000_","kdd10000_","kdd20000_","kdd30000_","kdd40000_"]   
 
 runQCBA = False
 saveIDSRules=True

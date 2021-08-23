@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{Ca=[5.43;10.79],Fe=[-Inf;Inf],Na=[13.73;Inf],Al=[1.76;3.04]} => {Type=headlamps}",0.11458333581686,1,1,22
+"2","{Ca=[5.43;16.19],Al=[0.29;Inf],Ba=[0.24;Inf],Si=[72.19;Inf]} => {Type=headlamps}",0.109375,1,1,1
+"3","{Al=[0.29;Inf],Ba=[0.06;Inf],K=[-Inf;0.57],Mg=[-Inf;1.88]} => {Type=headlamps}",0.109375,1,1,1
+"4","{} => {Type=build wind non-float}",0.354166656732559,0.354166656732559,0.404761904761905,68

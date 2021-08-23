@@ -1,0 +1,7 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{pulse=[54;Inf],capillary_refill_time=<3,surgery=yes,outcome=lived} => {surgical_lesion=yes}",0.118181817233562,1,1,39
+"2","{surgery=yes,abdomcentesis_total_protein=[-Inf;Inf],packed_cell_volume=[46;Inf],outcome=died} => {surgical_lesion=yes}",0.103030301630497,1,1,34
+"3","{surgery=no,packed_cell_volume=[-Inf;51],total_protein=[-Inf;Inf],pain=alert no pain} => {surgical_lesion=no}",0.0969696938991547,1,1,32
+"4","{outcome=lived,surgery=no,packed_cell_volume=[-Inf;49],abdominal_distension=slight} => {surgical_lesion=no}",0.0848484858870506,1,1,18
+"5","{surgery=no,packed_cell_volume=[-Inf;Inf],rectal_temperature=[-Inf;39],peristalsis=hypermotile} => {surgical_lesion=no}",0.0848484858870506,1,1,10
+"6","{} => {surgical_lesion=yes}",0.630303025245667,0.630303025245667,0.685279187817259,135

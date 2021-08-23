@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{width=[63.8;Inf],wheelBase=[95.3;98.4],height=[52.4;55.6]} => {XClass=0}",0.116022102534771,1,1,21
+"2","{numOfCylinders=four,normalizedLosses=[77;93],numOfDoors=four} => {XClass=0}",0.0939226523041725,1,1,5
+"3","{height=[-Inf;50.8],length=[167.5;175.6]} => {XClass=3}",0.0828729271888733,1,1,15
+"4","{} => {XClass=1}",0.265193372964859,0.265193372964859,0.342857142857143,48

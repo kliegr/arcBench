@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{height=[51;59.8],normalizedLosses=[85;231],wheelBase=[91.3;94.5],numOfDoors=two} => {XClass=1}",0.0923913046717644,1,1,17
+"2","{length=[141.1;173.5],highwayMpg=[-Inf;28],bore=[2.91;Inf]} => {XClass=3}",0.0869565233588219,1,1,16
+"3","{length=[141.1;178.4],height=[-Inf;50.2]} => {XClass=3}",0.0815217420458794,1,1,2
+"4","{} => {XClass=0}",0.326086968183517,0.326086968183517,0.402684563758389,60

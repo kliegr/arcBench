@@ -1,0 +1,3 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{value.mean=[112.111;Inf]} => {class=sky}",0.142857149243355,1,1,297
+"2","{} => {class=brickface}",0.142857149243355,0.142857149243355,0.166666666666667,297

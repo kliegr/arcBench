@@ -1,0 +1,6 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{mass=[-Inf;27.5],plas=[-Inf;106]} => {class=tested_negative}",0.121387280523777,1,1,84
+"2","{mass=[-Inf;28.3],insu=[-Inf;45],age=[-Inf;29],plas=[-Inf;123]} => {class=tested_negative}",0.0867052003741264,1,1,19
+"3","{age=[-Inf;28],plas=[94;124],insu=[130;Inf]} => {class=tested_negative}",0.040462426841259,1,1,26
+"4","{insu=[14;Inf],plas=[155;Inf],preg=[7;Inf]} => {class=tested_positive}",0.0187861267477274,1,1,13
+"5","{} => {class=tested_negative}",0.650288999080658,0.650288999080658,0.583636363636364,321

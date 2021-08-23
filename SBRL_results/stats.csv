@@ -4,6 +4,6 @@
 "p-value (accuracy difference)","0","0.03054","0.24756","0","0.75082","0.715"
 "avg number of rules","4.8","3.7","3.4","3.3","3","2.7"
 "avg conditions / rule","0.8","0.7","0.6","1.5","1.2","1.2"
-"avg conditions / model","3.7","2.5","2.2","4.8","3.6","3.2"
+"avg conditions / model","3.8","2.6","2.4","5","3.8","3.4"
 "median build time [s]","0.6","0.1","0.1","24.9","0.1","0.1"
-"avg build time norm","1","1.9","1.97","1","0.04","0.04"
+"median build time norm","1","0.17","0.17","1","0","0"

@@ -1,0 +1,6 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{peripheral_pulse=normal,pulse=[60;Inf],surgery=yes} => {surgical_lesion=yes}",0.0906344428658485,1,1,30
+"2","{surgery=yes,outcome=died,peristalsis=hypomotile} => {surgical_lesion=yes}",0.0815709978342056,1,1,23
+"3","{Age=adult,outcome=died,peristalsis=hypomotile} => {surgical_lesion=yes}",0.0815709978342056,1,1,6
+"4","{surgery=no,peristalsis=hypermotile,outcome=lived} => {surgical_lesion=no}",0.0785498470067978,1,1,26
+"5","{} => {surgical_lesion=yes}",0.631419956684113,0.631419956684113,0.609756097560976,150

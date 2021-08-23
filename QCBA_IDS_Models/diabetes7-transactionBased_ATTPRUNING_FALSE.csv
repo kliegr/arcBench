@@ -1,0 +1,3 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{plas=[151;Inf],insu=[105;Inf],preg=[7;Inf]} => {class=tested_positive}",0.0274963825941086,1,1,19
+"2","{} => {class=tested_negative}",0.651230096817017,0.651230096817017,0.669642857142857,450

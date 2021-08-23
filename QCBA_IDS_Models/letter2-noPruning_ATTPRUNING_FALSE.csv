@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{x.ege=[0;1],y.ege=[0;2],x2ybr=[6;7],xegvy=8} => {class=I}",0.0225680936127901,1,1,406
+"2","{xybar=[-Inf;2],high=[-Inf;15],y.box=[-Inf;Inf],width=[0;5]} => {class=L}",0.0142857143655419,1,1,257
+"3","{xybar=[-Inf;2],x.ege=0} => {class=L}",0.0124513618648052,1,1,9
+"4","{} => {class=U}",0.0406336858868599,0.0406336858868599,0.0422104169072641,731

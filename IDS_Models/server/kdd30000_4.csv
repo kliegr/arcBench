@@ -1,0 +1,18 @@
+rules,suppport,confidence,lift
+"{srv_diff_host_rate=[-Inf;0.005],wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],dst_host_srv_diff_host_rate=[-Inf;0.005]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],rerror_rate=[-Inf;0.04]} => {labels=smurf.}",0.57,1.00,0.00 
+"{num_shells=[-Inf; Inf],wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],num_access_files=[-Inf;0.5]} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_count=(323; Inf],count=(323.5; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{same_srv_rate=(0.995; Inf],srv_count=(323; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{protocol_type=b'icmp',srv_count=(323; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_count=(323; Inf],dst_host_srv_serror_rate=[-Inf;0.005]} => {labels=smurf.}",0.57,1.00,0.00 
+"{flag=b'SF',srv_count=(323; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_rerror_rate=[-Inf;0.005],srv_count=(323; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_count=(323; Inf],dst_host_srv_diff_host_rate=[-Inf;0.005]} => {labels=smurf.}",0.57,1.00,0.00 
+"{num_outbound_cmds=0,wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{is_guest_login=0,wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{logged_in=0,wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{ } => {labels=smurf.}", 0,0,0

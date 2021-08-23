@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{engineLocation=front,wheelBase=[95.1;97.2],numOfDoors=four,normalizedLosses=[77;123.060402685]} => {XClass=0}",0.128342241048813,1,1,24
+"2","{wheelBase=[86.6;120.9],normalizedLosses=[65;188],width=[64.4;65.5],height=[52.5;55.6]} => {XClass=0}",0.106951870024204,1,1,3
+"3","{engineType=ohc,fuelType=gas,width=[-Inf;64.2],wheelBase=[88.4;93.7]} => {XClass=1}",0.0962566807866096,1,1,18
+"4","{} => {XClass=0}",0.326203197240829,0.326203197240829,0.23943661971831,34

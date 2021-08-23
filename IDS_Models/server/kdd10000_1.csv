@@ -1,0 +1,22 @@
+rules,suppport,confidence,lift
+"{srv_rerror_rate=[-Inf;0.01],wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{num_shells=[-Inf; Inf],wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{protocol_type=b'icmp',wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_srv_rerror_rate=[-Inf;0.005],wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{serror_rate=[-Inf;0.01],wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{same_srv_rate=(0.995; Inf],wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_serror_rate=[-Inf;0.015],wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_count=(364; Inf],serror_rate=[-Inf;0.01]} => {labels=smurf.}",0.57,1.00,0.00 
+"{flag=b'SF',srv_count=(364; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_count=(364; Inf],srv_rerror_rate=[-Inf;0.01]} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_count=(364; Inf],srv_diff_host_rate=[-Inf;0.005]} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_count=(364; Inf],rerror_rate=[-Inf;0.005]} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_count=(364; Inf],diff_srv_rate=[-Inf;0.035]} => {labels=smurf.}",0.57,1.00,0.00 
+"{wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i',land=0} => {labels=smurf.}",0.57,1.00,0.00 
+"{wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i',root_shell=0} => {labels=smurf.}",0.57,1.00,0.00 
+"{wrong_fragment=[-Inf;0.5],urgent=0,dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{num_access_files=0,wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{is_host_login=0,wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{su_attempted=0,wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{num_outbound_cmds=0,wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{ } => {labels=smurf.}", 0,0,0

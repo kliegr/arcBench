@@ -1,0 +1,3 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{attribute_51=[0.0124;Inf],attribute_48=[0.072;Inf],attribute_36=[-Inf;0.5757],attribute_13=[0.0618;0.6343]} => {Class=Mine}",0.278074860572815,1,1,52
+"2","{} => {Class=Rock}",0.465240627527237,0.465240627527237,0.644444444444444,87

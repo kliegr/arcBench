@@ -1,0 +1,4 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{oldpeak=[1.6;Inf],thal=[6;Inf],resting_electrocardiographic_results=[-Inf;Inf],exercise_induced_angina=1} => {class=present}",0.123456791043282,1,1,30
+"2","{oldpeak=[1.6;Inf],thal=[6;Inf],slope=[2;Inf],chest=4} => {class=present}",0.115226335823536,1,1,5
+"3","{} => {class=absent}",0.555555582046509,0.555555582046509,0.649038461538462,135

@@ -132,6 +132,21 @@ Evaluation results and rules are saved to
 CORELS_results
 CORELS_models
 ```
+## Scalability benchmarks
+
+These are executed on subsets of the KDD'99 dataset, which are generated using:
+
+* lib/materialize_folds_KDD.py
+
+for two different thresholds of the minCI extension step:
+
+* evalCBA_QCBA_KDDminc-1.sh
+* evalCBA_QCBA_KDDminc0.sh
+
+
+The results are processed into graphs using
+
+* kddplot.ipynb
 
 ## Analysis of results
 

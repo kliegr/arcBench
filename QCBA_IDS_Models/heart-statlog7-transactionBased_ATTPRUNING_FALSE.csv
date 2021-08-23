@@ -1,0 +1,4 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{oldpeak=[1.6;Inf],exercise_induced_angina=1,thal=[6;Inf],sex=[0;1]} => {class=present}",0.123456791043282,1,1,30
+"2","{oldpeak=[1.6;Inf],maximum_heart_rate_achieved=[-Inf;147],exercise_induced_angina=1,chest=[2;4]} => {class=present}",0.119341567158699,1,1,4
+"3","{} => {class=absent}",0.555555582046509,0.555555582046509,0.645933014354067,135

@@ -1,0 +1,7 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{width=[63.8;Inf],wheelBase=[95.1;99.5],height=[52;55.6],numOfDoors=four} => {XClass=0}",0.126373633742332,1,1,23
+"2","{width=[63.8;Inf],wheelBase=[95.3;97.3],peakRpm=[-Inf;Inf],height=[52;55.6]} => {XClass=0}",0.120879121124744,1,1,2
+"3","{wheelBase=[95.1;97.3],height=[52;55.6],cityMpg=[-Inf;30]} => {XClass=0}",0.10989011079073,1,1,1
+"4","{wheelBase=[94.3;99.5],height=[52;55.5],engineSize=[108;121]} => {XClass=0}",0.0989011004567146,1,1,1
+"5","{wheelBase=[86.6;104.3],numOfDoors=four,normalizedLosses=[77;93],compressionRatio=[-Inf;Inf]} => {XClass=0}",0.0934065952897072,1,1,4
+"6","{} => {XClass=1}",0.26373627781868,0.26373627781868,0.317880794701987,48

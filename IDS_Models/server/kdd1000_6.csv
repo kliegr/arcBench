@@ -1,0 +1,14 @@
+rules,suppport,confidence,lift
+"{src_bytes=(513.5;1045.5],dst_host_diff_srv_rate=[-Inf;0.005]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',same_srv_rate=(0.32; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',diff_srv_rate=[-Inf;0.02]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',dst_host_srv_rerror_rate=[-Inf;0.005]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',dst_bytes=[-Inf;17.5]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',dst_host_srv_count=(254.5; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_same_src_port_rate=(0.995; Inf],src_bytes=(513.5;1045.5]} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_count=(134; Inf],dst_host_same_src_port_rate=(0.995; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',dst_host_same_src_port_rate=(0.995; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',is_host_login=0} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',num_file_creations=0} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',land=0} => {labels=smurf.}",0.57,1.00,0.00 
+"{ } => {labels=smurf.}", 0,0,0

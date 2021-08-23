@@ -1,0 +1,2 @@
+dataset,accuracy,rules,antlength,buildtime
+kdd1000_,0.766,2,0.85,1.246

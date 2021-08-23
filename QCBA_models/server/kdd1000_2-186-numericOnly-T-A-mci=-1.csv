@@ -1,0 +1,9 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{srv_count=[436;Inf]} => {labels=smurf.}",0.572222232818604,1,1,515
+"2","{src_bytes=[0;91],dst_host_diff_srv_rate=[0.05;0.27]} => {labels=neptune.}",0.196666672825813,1,1,177
+"3","{src_bytes=[7;507],wrong_fragment=0,dst_host_srv_diff_host_rate=[0;0.24]} => {labels=normal.}",0.172222226858139,1,1,155
+"4","{dst_bytes=[35;8226]} => {labels=normal.}",0.162222221493721,1,1,18
+"5","{hot=0,logged_in=1} => {labels=normal.}",0.153333336114883,1,1,2
+"6","{service=b'http',hot=0} => {labels=normal.}",0.144444450736046,1,1,16
+"7","{hot=0,count=[-Inf;45],dst_host_same_src_port_rate=[0.01;0.98]} => {labels=normal.}",0.129999995231628,1,NA,0
+"8","{} => {labels=smurf.}",0.572222232818604,0.572222232818604,0,0

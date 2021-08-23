@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{bereavement.assistance=yes,wage.increase.second.year=[3.93170731707;Inf]} => {class=good}",0.254901975393295,1,1,13
+"2","{wage.increase.second.year=[2.5;Inf],wage.increase.first.year=[3;Inf],longterm.disability.assistance=yes} => {class=good}",0.235294118523598,1,1,6
+"3","{wage.increase.first.year=[2.5;Inf],vacation=generous} => {class=good}",0.215686276555061,1,1,6
+"4","{} => {class=bad}",0.352941185235977,0.352941185235977,0.692307692307692,18

@@ -1,0 +1,12 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{plas=[-Inf;102],age=[-Inf;31],insu=[0;87],pres=[-Inf;80]} => {class=tested_negative}",0.163531109690666,1,1,113
+"2","{plas=[-Inf;105],mass=[-Inf;28.9],insu=[0;255]} => {class=tested_negative}",0.144717797636986,1,1,33
+"3","{plas=[-Inf;105],age=[-Inf;43],mass=[-Inf;28.9],skin=[-Inf;Inf]} => {class=tested_negative}",0.138929083943367,1,1,1
+"4","{plas=[-Inf;99],age=[-Inf;36],insu=[0;32],pedi=[-Inf;1.213]} => {class=tested_negative}",0.0868306830525398,1,1,2
+"5","{mass=[-Inf;28.8],preg=[-Inf;7],plas=[-Inf;128],insu=[49;175]} => {class=tested_negative}",0.0738060772418976,1,1,18
+"6","{skin=[-Inf;Inf],insu=[15;89],plas=[81;127],age=[26;Inf]} => {class=tested_negative}",0.0492040514945984,1,1,16
+"7","{age=[-Inf;27],preg=[-Inf;Inf],plas=[-Inf;127],insu=[130;Inf]} => {class=tested_negative}",0.0448625199496746,1,1,26
+"8","{plas=[-Inf;127],insu=[15;89],age=[28;Inf]} => {class=tested_negative}",0.0434153415262699,1,1,4
+"9","{age=[-Inf;28],mass=[-Inf;30.4],insu=[116;Inf]} => {class=tested_negative}",0.0332850925624371,1,1,9
+"10","{insu=[15;Inf],plas=[155;Inf],preg=[6;Inf]} => {class=tested_positive}",0.0260492041707039,1,1,18
+"11","{} => {class=tested_negative}",0.651230096817017,0.651230096817017,0.505543237250554,228

@@ -1,0 +1,10 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{block_of_affere=yes,special_forms=chalices,no_of_nodes_in=[-Inf;3]} => {class=metastases}",0.208955228328705,1,1,28
+"2","{special_forms=vesicles,block_of_affere=no,early_uptake_in=yes,by_pass=no} => {class=malign_lymph}",0.186567157506943,1,1,25
+"3","{special_forms=vesicles,block_of_affere=no,early_uptake_in=yes,exclusion_of_no=yes} => {class=malign_lymph}",0.17910447716713,1,1,2
+"4","{special_forms=vesicles,block_of_affere=no,bl_of_lymph_s=no,dislocation_of=yes} => {class=malign_lymph}",0.171641796827316,1,1,1
+"5","{block_of_affere=yes,no_of_nodes_in=[-Inf;6],early_uptake_in=no} => {class=metastases}",0.164179101586342,1,1,11
+"6","{block_of_affere=yes,special_forms=chalices,by_pass=no} => {class=metastases}",0.156716421246529,1,1,1
+"7","{block_of_affere=yes,no_of_nodes_in=[-Inf;3],changes_in_node=lac_margin,changes_in_lym=oval} => {class=metastases}",0.156716421246529,1,1,5
+"8","{block_of_affere=yes,changes_in_node=lac_margin,dislocation_of=no} => {class=metastases}",0.141791045665741,1,1,2
+"9","{} => {class=malign_lymph}",0.410447746515274,0.410447746515274,0.457627118644068,27

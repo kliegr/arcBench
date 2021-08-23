@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{vacation=generous,wage.increase.first.year=[2.1;Inf]} => {class=good}",0.254901975393295,1,1,13
+"2","{wage.increase.first.year=[2.8;Inf],bereavement.assistance=yes,statutory.holidays=[11;Inf]} => {class=good}",0.235294118523598,1,1,7
+"3","{contribution.to.dental.plan=full} => {class=good}",0.215686276555061,1,1,4
+"4","{} => {class=bad}",0.352941185235977,0.352941185235977,0.666666666666667,18

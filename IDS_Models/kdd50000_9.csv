@@ -1,0 +1,20 @@
+rules,suppport,confidence,lift
+"{wrong_fragment=[-Inf;0.5],dst_host_count=(254.5; Inf],dst_host_serror_rate=[-Inf;0.005],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_srv_count=(254.5; Inf],dst_host_diff_srv_rate=[-Inf;0.005],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_same_srv_rate=(0.995; Inf],dst_host_srv_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_srv_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_srv_count=(254.5; Inf],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_diff_host_rate=[-Inf;0.005],dst_host_srv_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_srv_count=(254.5; Inf],diff_srv_rate=[-Inf;0.005],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_same_src_port_rate=(0.995; Inf],dst_host_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_srv_count=(254.5; Inf],diff_srv_rate=[-Inf;0.005],protocol_type=b'icmp',service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_srv_count=(254.5; Inf],dst_host_diff_srv_rate=[-Inf;0.005],protocol_type=b'icmp',service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_srv_count=(254.5; Inf],service=b'ecr_i',dst_bytes=[-Inf;2]} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_srv_count=(254.5; Inf],dst_host_same_src_port_rate=(0.995; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{hot=[-Inf;0.5],dst_host_srv_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_serror_rate=[-Inf;0.005],dst_host_srv_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_srv_count=(254.5; Inf],num_file_creations=[-Inf;0.5],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{duration=[-Inf;0.5],dst_host_srv_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_srv_count=(254.5; Inf],num_access_files=0,service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{num_outbound_cmds=0,dst_host_srv_count=(254.5; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{ } => {labels=smurf.}", 0,0,0

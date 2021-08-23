@@ -1,0 +1,3 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{total_protein=[-Inf;Inf],surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0969696938991547,1,1,32
+"2","{} => {surgical_lesion=yes}",0.630303025245667,0.630303025245667,0.697986577181208,208

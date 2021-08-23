@@ -1,0 +1,3 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{srv_count=[178;Inf]} => {labels=smurf.}",0.569999992847443,1,1,513
+"2","{} => {labels=normal.}",0.203333333134651,0.203333333134651,0.472868217054264,183

@@ -1,0 +1,12 @@
+"","rules","support","confidence","lift"
+"1","{src_bytes=(29;333.5]} => {label=1}",1,1,1
+"2","{protocol_type=b'icmp'} => {label=0}",1,1,1
+"3","{dst_host_srv_diff_host_rate=(0.005;0.065]} => {label=1}",1,1,1
+"4","{dst_bytes=(14.5;8308]} => {label=1}",1,1,1
+"5","{service=b'private'} => {label=0}",1,1,1
+"6","{X=(11523;39739.5]} => {label=1}",1,1,1
+"7","{dst_host_diff_srv_rate=(0.005;0.045]} => {label=1}",1,1,1
+"8","{dst_host_same_src_port_rate=[-Inf;0.005]} => {label=0}",1,1,1
+"9","{flag=b'SF'} => {label=0}",1,1,1
+"10","{service=b'http'} => {label=1}",1,1,1
+"11","{} => {label=0}",1,1,1

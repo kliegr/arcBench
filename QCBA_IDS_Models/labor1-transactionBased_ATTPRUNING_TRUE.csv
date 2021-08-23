@@ -1,0 +1,4 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{wage.increase.second.year=[3.5;Inf],bereavement.assistance=yes} => {class=good}",0.274509817361832,1,1,14
+"2","{contribution.to.dental.plan=full} => {class=good}",0.235294118523598,1,1,5
+"3","{} => {class=bad}",0.352941185235977,0.352941185235977,0.5625,18

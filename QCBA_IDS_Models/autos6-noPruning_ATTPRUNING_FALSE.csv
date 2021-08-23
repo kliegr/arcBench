@@ -1,0 +1,6 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{height=[52;59.8],wheelBase=[95.1;97.2],engineLocation=front,curbWeight=[2050;Inf]} => {XClass=0}",0.140540540218353,1,1,26
+"2","{width=[63.8;Inf],height=[52;59.8],wheelBase=[95.3;97.2]} => {XClass=0}",0.129729732871056,1,1,2
+"3","{height=[52;59.8],wheelBase=[86.6;97.2],cityMpg=[-Inf;30],numOfDoors=four} => {XClass=0}",0.118918918073177,1,1,1
+"4","{numOfDoors=four,normalizedLosses=[-Inf;102],wheelBase=[98.4;Inf]} => {XClass=-1}",0.0864864885807037,1,1,16
+"5","{} => {XClass=1}",0.264864861965179,0.264864861965179,0.35,49

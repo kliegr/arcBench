@@ -1,0 +1,29 @@
+"rules" "support" "confidence" "coverage" "lift" "count" "lhs_length" "orderedConf" "orderedSupp" "cumulativeConf"
+"3176" "{service=b'ecr_i',dst_host_srv_count=(254.5; Inf]} => {labels=smurf.}" 0.573 1 0.573 1.74384809145514 5157 2 1 5157 1
+"82" "{srv_count=(364; Inf]} => {labels=smurf.}" 0.572555555555556 1 0.572555555555556 1.74384809145514 5153 1 1 3 1
+"81" "{src_bytes=(1031;1035]} => {labels=smurf.}" 0.467222222222222 1 0.467222222222222 1.74384809145514 4205 1 1 1 1
+"2840" "{src_bytes=[-Inf;3.5],diff_srv_rate=(0.035;0.085]} => {labels=neptune.}" 0.211444444444444 1 0.211444444444444 4.63678516228748 1903 2 1 1903 1
+"2873" "{count=(83.5;340],dst_host_diff_srv_rate=(0.045;0.095]} => {labels=neptune.}" 0.209 1 0.209 4.63678516228748 1881 2 1 3 1
+"2804" "{same_srv_rate=(0.005;0.195],dst_host_diff_srv_rate=(0.045;0.095]} => {labels=neptune.}" 0.206222222222222 1 0.206222222222222 4.63678516228748 1856 2 1 10 1
+"48672" "{flag=b'S0',serror_rate=(0.815; Inf],dst_host_srv_serror_rate=(0.17; Inf]} => {labels=neptune.}" 0.174333333333333 1 0.174333333333333 4.63678516228748 1569 3 1 25 1
+"62" "{src_bytes=(28.5;333.5]} => {labels=normal.}" 0.145 1 0.145 5.18134715025907 1305 1 1 1305 1
+"45055" "{service=b'http',hot=[-Inf;0.5],dst_host_serror_rate=[-Inf;0.005]} => {labels=normal.}" 0.118444444444444 1 0.118444444444444 5.18134715025907 1066 3 1 183 1
+"2318" "{dst_bytes=(2;2447.5],diff_srv_rate=[-Inf;0.035]} => {labels=normal.}" 0.117333333333333 1 0.117333333333333 5.18134715025907 1056 2 1 181 1
+"45082" "{service=b'http',hot=[-Inf;0.5],dst_host_srv_serror_rate=[-Inf;0.005]} => {labels=normal.}" 0.117222222222222 1 0.117222222222222 5.18134715025907 1055 3 1 1 1
+"2319" "{dst_bytes=(2;2447.5],dst_host_serror_rate=[-Inf;0.005]} => {labels=normal.}" 0.115222222222222 1 0.115222222222222 5.18134715025907 1037 2 1 9 1
+"44993" "{service=b'http',same_srv_rate=(0.995; Inf],dst_host_rerror_rate=[-Inf;0.005]} => {labels=normal.}" 0.106666666666667 1 0.106666666666667 5.18134715025907 960 3 1 1 1
+"2312" "{protocol_type=b'tcp',dst_bytes=(2;2447.5]} => {labels=normal.}" 0.0901111111111111 1 0.0901111111111111 5.18134715025907 811 2 1 1 1
+"2162" "{serror_rate=[-Inf;0.01],dst_host_srv_diff_host_rate=(0.005;0.085]} => {labels=normal.}" 0.086 1 0.086 5.18134715025907 774 2 1 35 1
+"2158" "{same_srv_rate=(0.995; Inf],dst_host_srv_diff_host_rate=(0.005;0.085]} => {labels=normal.}" 0.0858888888888889 1 0.0858888888888889 5.18134715025907 773 2 1 1 1
+"40217" "{hot=[-Inf;0.5],logged_in=1,dst_host_same_src_port_rate=(0.005;0.065]} => {labels=normal.}" 0.0635555555555556 1 0.0635555555555556 5.18134715025907 572 3 1 1 1
+"40212" "{logged_in=1,dst_host_same_src_port_rate=(0.005;0.065],dst_host_rerror_rate=[-Inf;0.005]} => {labels=normal.}" 0.0585555555555556 1 0.0585555555555556 5.18134715025907 527 3 1 1 1
+"40368" "{num_compromised=[-Inf;0.5],dst_host_same_srv_rate=(0.995; Inf],dst_host_same_src_port_rate=(0.005;0.065]} => {labels=normal.}" 0.0528888888888889 1 0.0528888888888889 5.18134715025907 476 3 1 1 1
+"30695" "{=(11469.5;39706.5],wrong_fragment=[-Inf;0.5],dst_host_rerror_rate=[-Inf;0.005]} => {labels=normal.}" 0.0523333333333333 1 0.0523333333333333 5.18134715025907 471 3 1 2 1
+"47048" "{protocol_type=b'tcp',flag=b'SF',srv_count=(6.5;16.5]} => {labels=normal.}" 0.0434444444444444 1 0.0434444444444444 5.18134715025907 391 3 1 4 1
+"23056" "{hot=[-Inf;0.5],count=(2.5;6.5],dst_host_srv_serror_rate=[-Inf;0.005]} => {labels=normal.}" 0.0334444444444444 1 0.0334444444444444 5.18134715025907 301 3 1 4 1
+"1201" "{logged_in=1,count=(12.5;49.5]} => {labels=normal.}" 0.0322222222222222 1 0.0322222222222222 5.18134715025907 290 2 1 2 1
+"19367" "{flag=b'SF',wrong_fragment=[-Inf;0.5],count=(6.5;12.5]} => {labels=normal.}" 0.0312222222222222 1 0.0312222222222222 5.18134715025907 281 3 1 1 1
+"20133" "{=(74157;91620.5],protocol_type=b'tcp',flag=b'SF'} => {labels=normal.}" 0.029 1 0.029 5.18134715025907 261 3 1 1 1
+"18478" "{wrong_fragment=[-Inf;0.5],same_srv_rate=(0.995; Inf],dst_host_same_src_port_rate=(0.065;0.345]} => {labels=normal.}" 0.0234444444444444 1 0.0234444444444444 5.18134715025907 211 3 1 2 1
+"46591" "{hot=[-Inf;0.5],logged_in=1,dst_host_srv_diff_host_rate=[-Inf;0.005]} => {labels=normal.}" 0.0537777777777778 0.993839835728953 0.0541111111111111 5.14942920066815 484 3 0.25 1 0.999660710246551
+"0" "{} => {labels=ipsweep.}" 0.00377777777777778 0.00377777777777778 1 1 34 0 0.215189873417722 34 0.985888888888889

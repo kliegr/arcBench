@@ -1,0 +1,21 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{service=b'ecr_i',dst_host_srv_count=[152;255]} => {labels=smurf.}",0.573111116886139,1,1,5158
+"2","{srv_count=[418;Inf]} => {labels=smurf.}",0.57277774810791,1,1,2
+"3","{src_bytes=1032} => {labels=smurf.}",0.468444436788559,1,1,1
+"4","{src_bytes=[-Inf;0],diff_srv_rate=[0.01;0.43]} => {labels=neptune.}",0.21511110663414,1,1,1936
+"5","{same_srv_rate=[0;0.49],dst_host_diff_srv_rate=[0.04;0.1]} => {labels=neptune.}",0.214666664600372,1,1,4
+"6","{src_bytes=[-Inf;1],dst_host_same_srv_rate=[0.01;0.82],dst_host_same_src_port_rate=[0;0.01]} => {labels=neptune.}",0.204666659235954,1,1,1
+"7","{src_bytes=[29;333]} => {labels=normal.}",0.145666673779488,1,1,1311
+"8","{dst_bytes=[4;2446],dst_host_serror_rate=[0;0.14]} => {labels=normal.}",0.119999997317791,1,1,233
+"9","{service=b'http',hot=0,dst_host_serror_rate=0} => {labels=normal.}",0.119222223758698,1,1,133
+"10","{service=b'http',hot=0,dst_host_srv_serror_rate=0} => {labels=normal.}",0.117888890206814,1,1,1
+"11","{service=b'http',same_srv_rate=[0.38;1],dst_host_rerror_rate=0} => {labels=normal.}",0.10755555331707,1,1,1
+"12","{same_srv_rate=[0.5;1],dst_host_same_src_port_rate=[0;0.35],dst_host_srv_diff_host_rate=[0.01;0.67]} => {labels=normal.}",0.0881111100316048,1,1,16
+"13","{logged_in=1,dst_host_same_src_port_rate=[0.01;0.34],dst_host_rerror_rate=0} => {labels=normal.}",0.0747777745127678,1,1,12
+"14","{protocol_type=b'tcp',flag=b'SF',count=[6;511]} => {labels=normal.}",0.0677777752280235,1,1,19
+"15","{count=[2;38],dst_host_srv_diff_host_rate=[0.01;0.09]} => {labels=normal.}",0.0588888898491859,1,1,5
+"16","{=[11555;39610],duration=[0;6],wrong_fragment=0} => {labels=normal.}",0.0518888905644417,1,1,1
+"17","{protocol_type=b'tcp',hot=[0;1],dst_host_srv_count=[87;254]} => {labels=normal.}",0.0307777784764767,1,1,3
+"18","{=[-Inf;7662]} => {labels=normal.}",0.016777778044343,1,1,1
+"19","{hot=0,logged_in=1,dst_host_srv_diff_host_rate=[0;0.1]} => {labels=normal.}",0.137222215533257,0.996771574020386,0.2,1
+"20","{} => {labels=ipsweep.}",0.00377777777612209,0.00377777777612209,0.21656050955414,34

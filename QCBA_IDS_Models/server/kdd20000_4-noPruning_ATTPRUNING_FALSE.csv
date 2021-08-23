@@ -1,0 +1,3 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{dst_host_srv_count=[152;255],service=b'ecr_i',dst_host_rerror_rate=[0;1]} => {labels=smurf.}",0.561444461345673,1,1,10106
+"2","{} => {labels=neptune.}",0.218555554747581,0.218555554747581,0.498353179630099,3934

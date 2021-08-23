@@ -1,0 +1,6 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{peripheral_pulse=normal,pulse=[54;Inf],total_protein=[-Inf;Inf],surgery=yes} => {surgical_lesion=yes}",0.105421684682369,1,1,35
+"2","{surgery=yes,outcome=died,capillary_refill_time=<3} => {surgical_lesion=yes}",0.0873493999242783,1,1,22
+"3","{outcome=died,peristalsis=hypomotile,Age=adult,abdomcentesis_total_protein=[-Inf;Inf]} => {surgical_lesion=yes}",0.0873493999242783,1,1,14
+"4","{respiratory_rate=[-Inf;Inf],pain=alert no pain,surgery=no,outcome=lived} => {surgical_lesion=no}",0.0873493999242783,1,1,29
+"5","{} => {surgical_lesion=yes}",0.629518091678619,0.629518091678619,0.594827586206897,138

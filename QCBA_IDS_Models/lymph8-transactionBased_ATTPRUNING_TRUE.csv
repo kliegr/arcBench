@@ -1,0 +1,6 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{block_of_affere=yes,changes_in_node=lac_margin,lym_nodes_enlar=[-Inf;2]} => {class=metastases}",0.227272734045982,1,1,30
+"2","{block_of_affere=yes,special_forms=chalices} => {class=metastases}",0.212121218442917,1,1,12
+"3","{block_of_affere=yes,changes_in_node=lac_margin,changes_in_lym=oval} => {class=metastases}",0.159090906381607,1,1,3
+"4","{block_of_affere=yes,regeneration_of=no,by_pass=yes} => {class=metastases}",0.143939390778542,1,1,5
+"5","{} => {class=malign_lymph}",0.416666656732559,0.416666656732559,0.670731707317073,55

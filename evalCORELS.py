@@ -5,7 +5,7 @@ from corels import *
 import pandas as pd
 import math as math
 basepath = "./"
-datasets = ["hepatitis","ionosphere","sonar","spambase","australian", "breast-w", "colic", "credit-a",  "diabetes", "heart-statlog","credit-g"]
+datasets = ["hepatitis","ionosphere","sonar","spambase","australian", "breast-w", "colic", "credit-a",  "diabetes", "heart-statlog","credit-g","kdd1000_","kdd10000_","kdd20000_","kdd30000_","kdd40000_","kdd50000_"]
 modelFolder = "CORELS_models"
 resultFolder = "CORELS_results"
 saveRules = True

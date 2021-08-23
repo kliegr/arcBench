@@ -1,0 +1,4 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{working.hours=[-Inf;Inf],wage.increase.second.year=[2.5;Inf],bereavement.assistance=yes,wage.increase.first.year=[2.8;Inf]} => {class=good}",0.294117659330368,1,1,15
+"2","{shift.differential=[-Inf;Inf],contribution.to.dental.plan=full} => {class=good}",0.235294118523598,1,1,5
+"3","{} => {class=bad}",0.352941185235977,0.352941185235977,0.580645161290323,18

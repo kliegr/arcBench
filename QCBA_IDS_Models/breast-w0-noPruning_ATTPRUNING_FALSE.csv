@@ -1,0 +1,8 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{Bare_Nuclei=[1;2],Normal_Nucleoli=[-Inf;3],Cell_Size_Uniformity=[1;3]} => {Class=benign}",0.576433122158051,1,1,362
+"2","{Single_Epi_Cell_Size=[-Inf;5],Mitoses=1,Normal_Nucleoli=[-Inf;2],Cell_Size_Uniformity=[1;2]} => {Class=benign}",0.571656048297882,1,1,29
+"3","{Bare_Nuclei=[1;2],Mitoses=[1;3],Cell_Size_Uniformity=[1;2]} => {Class=benign}",0.549363076686859,1,1,2
+"4","{Normal_Nucleoli=[-Inf;9],Cell_Size_Uniformity=1,Clump_Thickness=[-Inf;8]} => {Class=benign}",0.546178340911865,1,1,1
+"5","{Bare_Nuclei=1,Single_Epi_Cell_Size=[-Inf;3]} => {Class=benign}",0.544586002826691,1,1,2
+"6","{Single_Epi_Cell_Size=[-Inf;2],Normal_Nucleoli=[-Inf;4],Clump_Thickness=[-Inf;4]} => {Class=benign}",0.458598732948303,1,1,3
+"7","{} => {Class=malignant}",0.343949049711227,0.343949049711227,0.943231441048035,216

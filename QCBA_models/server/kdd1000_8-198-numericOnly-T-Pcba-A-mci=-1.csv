@@ -1,0 +1,8 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{service=b'ecr_i'} => {labels=smurf.}",0.573333323001862,1,1,516
+"2","{src_bytes=[0;91],dst_host_diff_srv_rate=[0.05;0.27]} => {labels=neptune.}",0.195555552840233,1,1,176
+"3","{src_bytes=[30;507]} => {labels=normal.}",0.175555557012558,1,1,158
+"4","{dst_bytes=[35;8226]} => {labels=normal.}",0.16555555164814,1,1,17
+"5","{hot=0,logged_in=1} => {labels=normal.}",0.157777771353722,1,1,2
+"6","{service=b'http',hot=0} => {labels=normal.}",0.150000005960464,1,1,14
+"7","{} => {labels=back.}",0.00888888910412788,0.00888888910412788,0.470588235294118,8

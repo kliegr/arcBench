@@ -1,0 +1,4 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{src_bytes=[30;507]} => {label=1}",0.170000001788139,1,1,153
+"2","{num_compromised=0,count=[-Inf;45],dst_host_srv_serror_rate=[-Inf;0.04]} => {label=1}",0.20888888835907,0.97409325838089,0.880952380952381,37
+"3","{} => {label=0}",0.788888871669769,0.788888871669769,1,705

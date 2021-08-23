@@ -1,0 +1,4 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{preg=[2;Inf],skin=[32;Inf],plas=[158;196]} => {class=tested_positive}",0.0318379178643227,1,1,22
+"2","{preg=[2;Inf],skin=[32;Inf],plas=[154;Inf],age=[35;Inf]} => {class=tested_positive}",0.0188133139163256,1,1,2
+"3","{} => {class=tested_negative}",0.651230096817017,0.651230096817017,0.674662668665667,450

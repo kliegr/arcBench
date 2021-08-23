@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{Feature.1=[-Inf;0.077],Feature.8=[-Inf;1.206],Feature.3=[0.733;2.377]} => {Class=hid}",0.0505050495266914,1,1,45
+"2","{Feature.1=[-Inf;-0.137]} => {Class=hid}",0.0471380464732647,1,1,6
+"3","{Feature.2=[-Inf;1.089],Feature.5=[-Inf;Inf],Feature.0=[-Inf;-4.689]} => {Class=hud}",0.0347923673689365,1,1,31
+"4","{} => {Class=hAd}",0.0909090936183929,0.0909090936183929,0.100123609394314,81

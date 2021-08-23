@@ -1,0 +1,39 @@
+"rules" "support" "confidence" "coverage" "lift" "count" "lhs_length" "orderedConf" "orderedSupp" "cumulativeConf"
+"3211" "{service=b'ecr_i',dst_host_srv_count=(254.5; Inf]} => {labels=smurf.}" 0.574 1 0.574 1.74047573003288 10332 2 1 10332 1
+"81" "{srv_count=(330.5; Inf]} => {labels=smurf.}" 0.573944444444444 1 0.573944444444444 1.74047573003288 10331 1 1 9 1
+"3130" "{service=b'ecr_i',src_bytes=(1030;1035]} => {labels=smurf.}" 0.4655 1 0.4655 1.74047573003288 8379 2 1 1 1
+"2942" "{src_bytes=[-Inf;0.5],diff_srv_rate=(0.035;0.185]} => {labels=neptune.}" 0.214111111111111 1 0.214111111111111 4.63320463320463 3854 2 1 3854 1
+"2550" "{flag=b'S0',dst_host_serror_rate=(0.97; Inf]} => {labels=neptune.}" 0.175277777777778 1 0.175277777777778 4.63320463320463 3155 2 1 31 1
+"47420" "{service=b'http',hot=[-Inf;0.5],diff_srv_rate=[-Inf;0.005]} => {labels=normal.}" 0.119833333333333 1 0.119833333333333 5.19780537106555 2157 3 1 2157 1
+"47391" "{service=b'http',flag=b'SF',num_compromised=[-Inf;0.5]} => {labels=normal.}" 0.109722222222222 1 0.109722222222222 5.19780537106555 1975 3 1 6 1
+"2514" "{src_bytes=(28.5;333.5],dst_host_srv_count=(254.5; Inf]} => {labels=normal.}" 0.0926666666666667 1 0.0926666666666667 5.19780537106555 1668 2 1 38 1
+"46450" "{src_bytes=(28.5;333.5],dst_bytes=(2;2190],num_failed_logins=0} => {labels=normal.}" 0.0889444444444445 1 0.0889444444444445 5.19780537106555 1601 3 1 525 1
+"40385" "{wrong_fragment=[-Inf;0.5],diff_srv_rate=[-Inf;0.005],dst_host_srv_diff_host_rate=(0.005;0.075]} => {labels=normal.}" 0.0853888888888889 1 0.0853888888888889 5.19780537106555 1537 3 1 328 1
+"40479" "{wrong_fragment=[-Inf;0.5],serror_rate=[-Inf;0.005],dst_host_srv_diff_host_rate=(0.005;0.075]} => {labels=normal.}" 0.0853888888888889 1 0.0853888888888889 5.19780537106555 1537 3 1 15 1
+"46548" "{protocol_type=b'tcp',dst_bytes=(2;2190],num_failed_logins=0} => {labels=normal.}" 0.0853333333333333 1 0.0853333333333333 5.19780537106555 1536 3 1 123 1
+"48954" "{src_bytes=(28.5;333.5],num_failed_logins=0,dst_host_srv_diff_host_rate=[-Inf;0.005]} => {labels=normal.}" 0.0792777777777778 1 0.0792777777777778 5.19780537106555 1427 3 1 193 1
+"42899" "{hot=[-Inf;0.5],logged_in=1,dst_host_count=(13.5;254.5]} => {labels=normal.}" 0.0757222222222222 1 0.0757222222222222 5.19780537106555 1363 3 1 34 1
+"40919" "{hot=[-Inf;0.5],logged_in=1,dst_host_same_src_port_rate=(0.005;0.135]} => {labels=normal.}" 0.0717777777777778 1 0.0717777777777778 5.19780537106555 1292 3 1 4 1
+"42894" "{logged_in=1,dst_host_count=(13.5;254.5],dst_host_rerror_rate=[-Inf;0.005]} => {labels=normal.}" 0.0713333333333333 1 0.0713333333333333 5.19780537106555 1284 3 1 2 1
+"40960" "{src_bytes=(28.5;333.5],num_failed_logins=0,dst_host_same_src_port_rate=(0.005;0.135]} => {labels=normal.}" 0.0622222222222222 1 0.0622222222222222 5.19780537106555 1120 3 1 3 1
+"41071" "{hot=[-Inf;0.5],dst_host_same_srv_rate=(0.995; Inf],dst_host_same_src_port_rate=(0.005;0.135]} => {labels=normal.}" 0.0610555555555556 1 0.0610555555555556 5.19780537106555 1099 3 1 1 1
+"42938" "{src_bytes=(28.5;333.5],num_failed_logins=0,dst_host_count=(13.5;254.5]} => {labels=normal.}" 0.0578333333333333 1 0.0578333333333333 5.19780537106555 1041 3 1 3 1
+"36400" "{=(11455;39723.5],flag=b'SF',wrong_fragment=[-Inf;0.5]} => {labels=normal.}" 0.0553888888888889 1 0.0553888888888889 5.19780537106555 997 3 1 2 1
+"46863" "{dst_bytes=(2;2190],dst_host_count=(254.5; Inf],dst_host_rerror_rate=[-Inf;0.005]} => {labels=normal.}" 0.0550555555555556 1 0.0550555555555556 5.19780537106555 991 3 1 1 1
+"42839" "{dst_bytes=(2;2190],num_failed_logins=0,dst_host_count=(13.5;254.5]} => {labels=normal.}" 0.0513888888888889 1 0.0513888888888889 5.19780537106555 925 3 1 4 1
+"35260" "{logged_in=1,num_compromised=[-Inf;0.5],count=(6.5;23.5]} => {labels=normal.}" 0.0506666666666667 1 0.0506666666666667 5.19780537106555 912 3 1 3 1
+"48904" "{src_bytes=(28.5;333.5],hot=[-Inf;0.5],logged_in=0} => {labels=normal.}" 0.0425 1 0.0425 5.19780537106555 765 3 1 1 1
+"32" "{srv_diff_host_rate=(0.005;0.285]} => {labels=normal.}" 0.0375 1 0.0375 5.19780537106555 675 1 1 2 1
+"30415" "{protocol_type=b'tcp',hot=[-Inf;0.5],dst_host_srv_count=(102.5;254.5]} => {labels=normal.}" 0.026 1 0.026 5.19780537106555 468 3 1 1 1
+"35102" "{count=(6.5;23.5],dst_host_count=(13.5;254.5],dst_host_serror_rate=[-Inf;0.005]} => {labels=normal.}" 0.0258888888888889 1 0.0258888888888889 5.19780537106555 466 3 1 2 1
+"39050" "{count=[-Inf;1.5],dst_host_same_src_port_rate=(0.005;0.135],dst_host_srv_rerror_rate=[-Inf;0.005]} => {labels=normal.}" 0.0245555555555556 1 0.0245555555555556 5.19780537106555 442 3 1 3 1
+"14962" "{=(74065;86235.5],protocol_type=b'tcp',flag=b'SF'} => {labels=normal.}" 0.0184444444444444 1 0.0184444444444444 5.19780537106555 332 3 1 1 1
+"579" "{dst_bytes=(8317.5; Inf],num_compromised=[-Inf;0.5]} => {labels=normal.}" 0.0157777777777778 1 0.0157777777777778 5.19780537106555 284 2 1 2 1
+"24302" "{dst_bytes=(2;2190],hot=[-Inf;0.5],srv_count=(1.5;2.5]} => {labels=normal.}" 0.0141666666666667 1 0.0141666666666667 5.19780537106555 255 3 1 1 1
+"4882" "{flag=b'SF',wrong_fragment=[-Inf;0.5],dst_host_diff_srv_rate=(0.025;0.045]} => {labels=normal.}" 0.0117777777777778 1 0.0117777777777778 5.19780537106555 212 3 1 1 1
+"812" "{=(74065;86235.5],dst_host_count=(13.5;254.5]} => {labels=normal.}" 0.0116111111111111 1 0.0116111111111111 5.19780537106555 209 2 1 1 1
+"3" "{src_bytes=(334.5;518]} => {labels=normal.}" 0.0106111111111111 1 0.0106111111111111 5.19780537106555 191 1 1 2 1
+"41095" "{flag=b'SF',dst_host_same_src_port_rate=(0.005;0.135],dst_host_rerror_rate=[-Inf;0.005]} => {labels=normal.}" 0.0792222222222222 0.997202797202797 0.0794444444444444 5.18326605534229 1426 3 0.333333333333333 2 0.999773909111463
+"43157" "{dst_host_count=(13.5;254.5],dst_host_serror_rate=[-Inf;0.005],dst_host_rerror_rate=[-Inf;0.005]} => {labels=normal.}" 0.0746666666666667 0.997032640949555 0.0748888888888889 5.18238161625527 1344 3 0.333333333333333 1 0.999660921164171
+"39716" "{count=[-Inf;1.5],dst_host_srv_diff_host_rate=[-Inf;0.005],dst_host_rerror_rate=[-Inf;0.005]} => {labels=normal.}" 0.0343333333333333 0.968652037617555 0.0354444444444444 5.03486476382212 618 3 0.05 1 0.998588766581993
+"0" "{} => {labels=back.}" 0.00438888888888889 0.00438888888888889 1 1 79 0 0.27719298245614 79 0.987166666666667

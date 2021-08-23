@@ -1,0 +1,4 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{srv_count=[51;Inf],protocol_type=b'icmp'} => {labels=smurf.}",0.569259285926819,1,1,15370
+"2","{num_failed_logins=[-Inf;Inf],wrong_fragment=0,dst_host_count=[140;255],service=b'ecr_i'} => {labels=smurf.}",0.569259285926819,1,1,1
+"3","{} => {labels=neptune.}",0.21662962436676,0.21662962436676,0.502966721128214,5849

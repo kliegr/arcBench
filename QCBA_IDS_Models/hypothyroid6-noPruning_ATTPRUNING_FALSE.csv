@@ -1,0 +1,3 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{hypopituitary=f,TSH=[-Inf;6],TT4=[49;430]} => {Class=negative}",0.896937549114227,1,1,3046
+"2","{} => {Class=compensated_hypothyroid}",0.0515312142670155,0.0515312142670155,0.5,175

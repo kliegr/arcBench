@@ -1,0 +1,4 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{attribute_21=[-Inf;0.8017],attribute_45=[-Inf;0.396],attribute_12=[-Inf;0.1935]} => {Class=Rock}",0.241935476660728,1,1,45
+"2","{attribute_10=[-Inf;0.1508],attribute_54=[-Inf;0.0224],attribute_21=[-Inf;0.6527],attribute_45=[-Inf;0.3955]} => {Class=Rock}",0.225806444883347,1,1,11
+"3","{} => {Class=Mine}",0.532258093357086,0.532258093357086,0.761538461538461,99

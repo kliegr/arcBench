@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{peristalsis=hypomotile,outcome=died,packed_cell_volume=[-Inf;Inf]} => {surgical_lesion=yes}",0.109090909361839,1,1,36
+"2","{outcome=died,pulse=[44;Inf],capillary_refill_time=<3} => {surgical_lesion=yes}",0.103030301630497,1,1,16
+"3","{total_protein=[-Inf;Inf],surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0969696938991547,1,1,32
+"4","{} => {surgical_lesion=yes}",0.630303025245667,0.630303025245667,0.634146341463415,156

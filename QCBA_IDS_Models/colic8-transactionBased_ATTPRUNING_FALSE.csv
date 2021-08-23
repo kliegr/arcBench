@@ -1,0 +1,10 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{pulse=[54;Inf],Age=adult,surgery=yes,outcome=lived} => {surgical_lesion=yes}",0.174698799848557,1,1,58
+"2","{pulse=[60;Inf],Age=adult,surgery=yes,abdominocentesis_appearance=serosanguinous} => {surgical_lesion=yes}",0.105421684682369,1,1,23
+"3","{pulse=[60;Inf],surgery=yes,peripheral_pulse=normal,total_protein=[-Inf;Inf]} => {surgical_lesion=yes}",0.0903614461421967,1,1,8
+"4","{surgery=yes,outcome=lived,abdomcentesis_total_protein=[-Inf;Inf],peristalsis=absent} => {surgical_lesion=yes}",0.0873493999242783,1,1,7
+"5","{surgery=yes,capillary_refill_time=<3,nasogastric_reflux_PH=[-Inf;Inf],outcome=died} => {surgical_lesion=yes}",0.0873493999242783,1,1,18
+"6","{Age=adult,surgery=yes,abdominal_distension=moderate,peripheral_pulse=reduced} => {surgical_lesion=yes}",0.0843373462557793,1,1,4
+"7","{pulse=[-Inf;Inf],Age=adult,abdominocentesis_appearance=serosanguinous,packed_cell_volume=[48;Inf]} => {surgical_lesion=yes}",0.0843373462557793,1,1,5
+"8","{surgery=yes,outcome=died,respiratory_rate=[-Inf;Inf],peristalsis=hypomotile} => {surgical_lesion=yes}",0.0813253000378609,1,1,5
+"9","{} => {surgical_lesion=no}",0.370481938123703,0.370481938123703,0.602941176470588,123

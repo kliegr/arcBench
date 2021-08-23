@@ -1,0 +1,8 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{oldpeak=[0.7;Inf],thal=[6;Inf],exercise_induced_angina=1,chest=[2;4]} => {class=present}",0.156378597021103,1,1,38
+"2","{oldpeak=[0.3;Inf],thal=[6;Inf],exercise_induced_angina=1,maximum_heart_rate_achieved=[-Inf;153]} => {class=present}",0.144032925367355,1,1,1
+"3","{sex=0,age=[-Inf;58],oldpeak=[-Inf;3.8],serum_cholestoral=[-Inf;318]} => {class=absent}",0.135802462697029,1,1,33
+"4","{sex=0,age=[-Inf;57],oldpeak=[-Inf;2.9],resting_electrocardiographic_results=[-Inf;Inf]} => {class=absent}",0.131687238812447,1,1,1
+"5","{fasting_blood_sugar=[0;1],chest=[-Inf;3],number_of_major_vessels=0,sex=0} => {class=absent}",0.123456791043282,1,1,10
+"6","{oldpeak=[0.3;Inf],exercise_induced_angina=1,slope=[2;Inf],number_of_major_vessels=[1;Inf]} => {class=present}",0.119341567158699,1,1,8
+"7","{} => {class=absent}",0.555555582046509,0.555555582046509,0.598684210526316,91

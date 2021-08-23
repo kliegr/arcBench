@@ -1,0 +1,3 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{respiratory_rate=[-Inf;Inf],pain=alert no pain,surgery=no,outcome=lived} => {surgical_lesion=no}",0.0873493999242783,1,1,29
+"2","{} => {surgical_lesion=yes}",0.629518091678619,0.629518091678619,0.68976897689769,209

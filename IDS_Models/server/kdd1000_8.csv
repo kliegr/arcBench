@@ -1,0 +1,19 @@
+rules,suppport,confidence,lift
+"{service=b'ecr_i',duration=[-Inf;0.5]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',dst_host_srv_serror_rate=[-Inf;0.52]} => {labels=smurf.}",0.57,1.00,0.00 
+"{srv_count=(134; Inf],dst_host_same_src_port_rate=(0.995; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_same_srv_rate=(0.995; Inf],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',serror_rate=[-Inf;0.045]} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_same_src_port_rate=(0.995; Inf],src_bytes=(513.5;1069]} => {labels=smurf.}",0.57,1.00,0.00 
+"{src_bytes=(513.5;1069],dst_host_srv_count=(254.5; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',rerror_rate=[-Inf;0.07]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',src_bytes=(513.5;1069]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',dst_host_serror_rate=[-Inf;0.005]} => {labels=smurf.}",0.57,1.00,0.00 
+"{dst_host_rerror_rate=[-Inf;0.005],service=b'ecr_i'} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',dst_host_count=(246; Inf]} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',num_access_files=0} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',wrong_fragment=0} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',urgent=0} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',logged_in=0} => {labels=smurf.}",0.57,1.00,0.00 
+"{service=b'ecr_i',num_shells=0} => {labels=smurf.}",0.57,1.00,0.00 
+"{ } => {labels=smurf.}", 0,0,0

@@ -1,0 +1,22 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{service=b'ecr_i',dst_host_srv_count=[152;255]} => {labels=smurf.}",0.573222219944,1,1,5159
+"2","{srv_count=[418;Inf]} => {labels=smurf.}",0.572666645050049,1,1,2
+"3","{src_bytes=1032} => {labels=smurf.}",0.46511110663414,1,1,1
+"4","{src_bytes=[-Inf;0],diff_srv_rate=[0.01;0.43]} => {labels=neptune.}",0.21511110663414,1,1,1936
+"5","{same_srv_rate=[0;0.49],dst_host_diff_srv_rate=[0.04;0.1]} => {labels=neptune.}",0.214333340525627,1,1,3
+"6","{src_bytes=[-Inf;1],dst_host_srv_count=[2;75],dst_host_same_src_port_rate=[0;0.01]} => {labels=neptune.}",0.204333335161209,1,1,1
+"7","{src_bytes=[29;333]} => {labels=normal.}",0.147222220897675,1,1,1325
+"8","{dst_bytes=[4;2446],dst_host_serror_rate=[0;0.14]} => {labels=normal.}",0.120444446802139,1,1,236
+"9","{service=b'http',hot=0,dst_host_serror_rate=0} => {labels=normal.}",0.118777774274349,1,1,124
+"10","{service=b'http',hot=0,dst_host_srv_serror_rate=0} => {labels=normal.}",0.117888890206814,1,1,1
+"11","{service=b'http',same_srv_rate=[0.38;1],dst_host_rerror_rate=0} => {labels=normal.}",0.107888892292976,1,1,1
+"12","{same_srv_rate=[0.5;1],dst_host_same_src_port_rate=[0;0.35],dst_host_srv_diff_host_rate=[0.01;0.67]} => {labels=normal.}",0.0881111100316048,1,1,18
+"13","{hot=[0;1],logged_in=1,dst_host_same_src_port_rate=[0.01;0.35]} => {labels=normal.}",0.0811111107468605,1,1,9
+"14","{logged_in=1,dst_host_same_src_port_rate=[0.01;0.35],dst_host_rerror_rate=0} => {labels=normal.}",0.0756666660308838,1,1,1
+"15","{protocol_type=b'tcp',flag=b'SF',srv_count=[7;Inf]} => {labels=normal.}",0.0747777745127678,1,1,15
+"16","{logged_in=1,count=[7;511]} => {labels=normal.}",0.0606666654348373,1,1,1
+"17","{count=[2;36],dst_host_srv_diff_host_rate=[0.01;0.09]} => {labels=normal.}",0.0592222213745117,1,1,3
+"18","{duration=[1;Inf],hot=[0;2],dst_host_rerror_rate=[0;0.9]} => {labels=normal.}",0.0205555558204651,1,1,1
+"19","{=[-Inf;7662]} => {labels=normal.}",0.0163333341479301,1,1,1
+"20","{same_srv_rate=[0.5;1],dst_host_srv_diff_host_rate=[0.01;0.08]} => {labels=normal.}",0.0878888890147209,0.998737394809723,0.5,1
+"21","{} => {labels=back.}",0.00377777777612209,0.00377777777612209,0.2125,34
