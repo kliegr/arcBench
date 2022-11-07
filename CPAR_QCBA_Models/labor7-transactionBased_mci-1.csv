@@ -1,0 +1,5 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{pension=none} => {class=bad}",0.211538463830948,1,1,11
+"2","{wage.increase.first.year=[-Inf;2.8],statutory.holidays=[-Inf;11]} => {class=bad}",0.211538463830948,1,1,4
+"3","{education.allowance=no,statutory.holidays=[-Inf;10]} => {class=bad}",0.134615391492844,1,1,2
+"4","{} => {class=good}",0.653846144676208,0.653846144676208,0.971428571428571,34

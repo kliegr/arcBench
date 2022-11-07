@@ -1,0 +1,13 @@
+"","rules","support","confidence","lift","laplace"
+"1","{pension=,education.allowance=} => {class=good}",0.333333333333333,1,1.54545454545455,0.947368421052632
+"2","{contribution.to.dental.plan=full} => {class=good}",0.254901960784314,1,1.54545454545455,0.933333333333333
+"3","{wage.increase.first.year=(2.9; Inf],contribution.to.health.plan=} => {class=good}",0.196078431372549,1,1.54545454545455,0.916666666666667
+"4","{pension=none} => {class=bad}",0.176470588235294,1,2.83333333333333,0.909090909090909
+"5","{contribution.to.health.plan=none} => {class=bad}",0.137254901960784,1,2.83333333333333,0.888888888888889
+"6","{longterm.disability.assistance=no} => {class=bad}",0.137254901960784,1,2.83333333333333,0.888888888888889
+"7","{wage.increase.first.year=[-Inf;2.9],pension=none} => {class=bad}",0.117647058823529,1,2.83333333333333,0.875
+"8","{wage.increase.first.year=(2.9; Inf],pension=empl_contr} => {class=good}",0.117647058823529,1,1.54545454545455,0.875
+"9","{pension=,education.allowance=yes} => {class=good}",0.0784313725490196,1,1.54545454545455,0.833333333333333
+"10","{vacation=} => {class=good}",0.0784313725490196,1,1.54545454545455,0.833333333333333
+"11","{wage.increase.first.year=[-Inf;2.9],pension=empl_contr} => {class=bad}",0.0980392156862745,0.833333333333333,2.36111111111111,0.75
+"12","{} => {class=good}",0,0,0,0

@@ -1,0 +1,6 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0963855385780334,1,1,32
+"2","{surgery=no,mucous_membranes=normal pink,outcome=lived} => {surgical_lesion=no}",0.123493976891041,0.976190447807312,0.96,24
+"3","{nasogastric_reflux=,abdomen=normal} => {surgical_lesion=no}",0.0331325307488441,0.916666686534882,0.888888888888889,8
+"4","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.27409639954567,0.900990128517151,0.785714285714286,33
+"5","{} => {surgical_lesion=yes}",0.629518091678619,0.629518091678619,0.883928571428571,198

@@ -2,8 +2,7 @@ server <- FALSE
 if (server)
 {
     options(java.parameters = c("-XX:+UseConcMarkSweepGC", "-Xmx16192m"))
-}
-else
+} else
 {
     message("set server<-TRUE to increase available memory")
 }
@@ -29,7 +28,7 @@ if (is.null(args))
   # default  configuration  if no arguments are passed
   #kdd1000_;kdd10000_;kdd20000_;kdd30000_;kdd40000_;
   args = c(117,-1,0,"kdd20000_","")
-  
+
 } else if (length(args)==3|length(args)==5) {
   minCondImprovement = as.double(args[2])
   minImprovement = as.double(args[3])
@@ -211,7 +210,7 @@ evalQCBA <- function(datasets,experiment_name="testExp",rulelearning_options=lis
       {
         message("Not supported in the current version")
         stop()
-        rmQCBA <-  evalAutoFitQCBA(rmCBA=rmCBA,trainFold=trainFold, classAtt=classAtt)        
+        rmQCBA <-  evalAutoFitQCBA(rmCBA=rmCBA,trainFold=trainFold, classAtt=classAtt)
       }
 
       buildTimeQCBA <- buildTimeQCBA + (Sys.time() - start.time)

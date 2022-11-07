@@ -1,0 +1,11 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{chest=4,oldpeak=[0.3;Inf],number_of_major_vessels=[1;Inf],thal=[6;Inf]} => {class=present}",0.148148149251938,1,1,36
+"2","{age=[-Inf;54],sex=0,thal=[3;6]} => {class=absent}",0.131687238812447,1,1,32
+"3","{sex=0,thal=[6;Inf]} => {class=present}",0.0370370373129845,1,1,3
+"4","{age=[-Inf;54],number_of_major_vessels=0,thal=3} => {class=absent}",0.242798358201981,0.983333349227905,0.96875,31
+"5","{sex=0,chest=[-Inf;3],thal=[3;6]} => {class=absent}",0.164609059691429,0.97560977935791,0.9375,15
+"6","{slope=[2;Inf],number_of_major_vessels=[1;Inf],thal=[6;Inf]} => {class=present}",0.168724283576012,0.953488349914551,0.833333333333333,10
+"7","{chest=4,number_of_major_vessels=[1;Inf]} => {class=present}",0.238683134317398,0.920634925365448,0.84,21
+"8","{chest=[-Inf;3]} => {class=absent}",0.407407402992249,0.791999995708466,0.72,36
+"9","{thal=[6;Inf]} => {class=present}",0.320987641811371,0.7289719581604,0.666666666666667,16
+"10","{} => {class=absent}",0.555555582046509,0.555555582046509,0.538461538461538,7

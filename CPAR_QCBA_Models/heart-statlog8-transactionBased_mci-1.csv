@@ -1,0 +1,7 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{oldpeak=[1.1;Inf],number_of_major_vessels=[1;Inf],thal=[6;Inf]} => {class=present}",0.15226337313652,1,1,37
+"2","{slope=[2;Inf],number_of_major_vessels=[1;Inf],thal=[6;Inf]} => {class=present}",0.168724283576012,0.976190447807312,0.9,9
+"3","{chest=4,number_of_major_vessels=[1;Inf]} => {class=present}",0.238683134317398,0.920634925365448,0.846153846153846,22
+"4","{oldpeak=[1.8;Inf]} => {class=present}",0.209876537322998,0.822580635547638,0.6,15
+"5","{thal=[6;Inf]} => {class=present}",0.333333343267441,0.757009327411652,0.461538461538462,18
+"6","{} => {class=absent}",0.555555582046509,0.555555582046509,0.933962264150943,99

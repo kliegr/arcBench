@@ -1,0 +1,17 @@
+"","rules","support","confidence","lift","laplace"
+"1","{Cell_Size_Uniformity=[-Inf;1.5],Bare_Nuclei=[-Inf;1.5]} => {Class=benign}",0.475357710651828,1,1.52669902912621,0.996677740863787
+"2","{Bare_Nuclei=[-Inf;1.5],Bland_Chromatin=[-Inf;2.5]} => {Class=benign}",0.39268680445151,0.995967741935484,1.52054298465393,0.992
+"3","{Cell_Shape_Uniformity=[-Inf;1.5]} => {Class=benign}",0.503974562798092,0.993730407523511,1.51712724837934,0.990654205607477
+"4","{Clump_Thickness=(6.5; Inf],Cell_Size_Uniformity=(4.5; Inf]} => {Class=malignant}",0.151033386327504,1,2.89861751152074,0.989690721649485
+"5","{Cell_Shape_Uniformity=(4.5; Inf],Mitoses=(1.5; Inf]} => {Class=malignant}",0.116057233704293,1,2.89861751152074,0.986666666666667
+"6","{Cell_Size_Uniformity=[-Inf;1.5]} => {Class=benign}",0.538950715421304,0.988338192419825,1.5088949588157,0.985507246376812
+"7","{Normal_Nucleoli=(9.5; Inf]} => {Class=malignant}",0.0890302066772655,1,2.89861751152074,0.982758620689655
+"8","{Bland_Chromatin=(3.5; Inf],Normal_Nucleoli=(9.5; Inf]} => {Class=malignant}",0.0810810810810811,1,2.89861751152074,0.981132075471698
+"9","{Bare_Nuclei=(5.5; Inf],Bland_Chromatin=(3.5; Inf]} => {Class=malignant}",0.203497615262321,0.984615384615385,2.85402339595888,0.977272727272727
+"10","{Clump_Thickness=[-Inf;4.5],Cell_Shape_Uniformity=(1.5;2.5]} => {Class=benign}",0.0476947535771065,1,1.52669902912621,0.96875
+"11","{Cell_Size_Uniformity=(4.5; Inf]} => {Class=malignant}",0.249602543720191,0.969135802469136,2.80915400807874,0.963414634146341
+"12","{Clump_Thickness=(6.5; Inf]} => {Class=malignant}",0.211446740858506,0.963768115942029,2.79359513791491,0.957142857142857
+"13","{Bare_Nuclei=(5.5; Inf]} => {Class=malignant}",0.241653418124006,0.962025316455696,2.78854342880476,0.95625
+"14","{Bare_Nuclei=[-Inf;1.5]} => {Class=benign}",0.553259141494436,0.958677685950413,1.46361229238546,0.956164383561644
+"15","{Marginal_Adhesion=(3.5; Inf]} => {Class=malignant}",0.230524642289348,0.911949685534591,2.6433933281164,0.906832298136646
+"16","{} => {Class=benign}",0,0,0,0

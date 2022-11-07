@@ -1,0 +1,19 @@
+"","rules","support","confidence","lift","laplace"
+"1","{surgery=yes,pulse=(58; Inf],capillary_refill_time=<3,outcome=lived} => {surgical_lesion=yes}",0.117469879518072,1,1.58851674641148,0.975609756097561
+"2","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0873493975903614,1,2.69918699186992,0.967741935483871
+"3","{surgery=yes,capillary_refill_time=<3,outcome=died} => {surgical_lesion=yes}",0.0873493975903614,1,1.58851674641148,0.967741935483871
+"4","{surgery=yes,peristalsis=hypomotile,outcome=died} => {surgical_lesion=yes}",0.0873493975903614,1,1.58851674641148,0.967741935483871
+"5","{surgery=no,peripheral_pulse=normal,peristalsis=hypermotile,outcome=lived} => {surgical_lesion=no}",0.0632530120481928,1,2.69918699186992,0.956521739130435
+"6","{surgery=yes,abdomen=distended small intestine} => {surgical_lesion=yes}",0.123493975903614,0.976190476190476,1.55069491911597,0.954545454545455
+"7","{abdomen=distended small intestine} => {surgical_lesion=yes}",0.141566265060241,0.959183673469388,1.52367932819061,0.941176470588235
+"8","{surgery=no,peripheral_pulse=normal,outcome=lived} => {surgical_lesion=no}",0.171686746987952,0.95,2.56422764227642,0.935483870967742
+"9","{surgery=yes,abdominocentesis_appearance=serosanguinous} => {surgical_lesion=yes}",0.117469879518072,0.951219512195122,1.51102812463531,0.930232558139535
+"10","{peristalsis=normal,abdomen=normal} => {surgical_lesion=no}",0.0210843373493976,1,2.69918699186992,0.888888888888889
+"11","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.256024096385542,0.885416666666667,2.38990514905149,0.877551020408163
+"12","{surgery=yes} => {surgical_lesion=yes}",0.512048192771084,0.871794871794872,1.38486075328181,0.868020304568528
+"13","{peripheral_pulse=absent} => {surgical_lesion=yes}",0.0331325301204819,0.916666666666667,1.45614035087719,0.857142857142857
+"14","{pain=depressed,peristalsis=normal} => {surgical_lesion=no}",0.0120481927710843,1,2.69918699186992,0.833333333333333
+"15","{surgery=} => {surgical_lesion=yes}",0.00602409638554217,1,1.58851674641148,0.75
+"16","{outcome=} => {surgical_lesion=yes}",0.00602409638554217,1,1.58851674641148,0.75
+"17","{abdomen=normal} => {surgical_lesion=no}",0.0572289156626506,0.703703703703704,1.89942788316772,0.689655172413793
+"18","{} => {surgical_lesion=yes}",0,0,0,0

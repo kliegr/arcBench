@@ -1,0 +1,158 @@
+"","rules","support","confidence","lift","laplace","chiSquared","weightedChiSquared"
+"1","{block_of_affere=yes,lym_nodes_enlar=[-Inf;2.5],changes_in_node=lac_margin,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.223880597014925,1,1.83561643835616,0.911764705882353,32.299789251844,32.299789251844
+"2","{block_of_affere=yes,special_forms=chalices,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.201492537313433,1,1.83561643835616,0.903225806451613,28.2547689156318,28.2547689156318
+"3","{block_of_affere=yes,lym_nodes_dimin=[-Inf;1.5],special_forms=chalices,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.201492537313433,1,1.83561643835616,0.903225806451613,28.2547689156318,28.2547689156318
+"4","{block_of_affere=yes,regeneration_of=no,special_forms=chalices,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.201492537313433,1,1.83561643835616,0.903225806451613,28.2547689156318,28.2547689156318
+"5","{block_of_affere=no,special_forms=vesicles,dislocation_of=yes} => {class=malign_lymph}",0.194029850746269,1,2.43636363636364,0.9,46.3360269360269,46.3360269360269
+"6","{block_of_affere=no,lym_nodes_dimin=[-Inf;1.5],special_forms=vesicles,dislocation_of=yes} => {class=malign_lymph}",0.194029850746269,1,2.43636363636364,0.9,46.3360269360269,46.3360269360269
+"7","{block_of_affere=no,bl_of_lymph_s=no,special_forms=vesicles,dislocation_of=yes} => {class=malign_lymph}",0.194029850746269,1,2.43636363636364,0.9,46.3360269360269,46.3360269360269
+"8","{block_of_affere=no,bl_of_lymph_c=no,special_forms=vesicles,dislocation_of=yes} => {class=malign_lymph}",0.194029850746269,1,2.43636363636364,0.9,46.3360269360269,46.3360269360269
+"9","{block_of_affere=yes,bl_of_lymph_s=no,special_forms=chalices,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.194029850746269,1,1.83561643835616,0.9,26.9563673262303,26.9563673262303
+"10","{block_of_affere=yes,by_pass=no,lym_nodes_enlar=[-Inf;2.5],changes_in_node=lac_margin} => {class=metastases}",0.186567164179104,1,1.83561643835616,0.896551724137931,25.6817896192032,25.6817896192032
+"11","{block_of_affere=yes,early_uptake_in=no,lym_nodes_dimin=[-Inf;1.5]} => {class=metastases}",0.164179104477612,1,1.83561643835616,0.884615384615385,21.9946183953033,21.9946183953033
+"12","{block_of_affere=yes,regeneration_of=no,early_uptake_in=no} => {class=metastases}",0.164179104477612,1,1.83561643835616,0.884615384615385,21.9946183953033,21.9946183953033
+"13","{block_of_affere=yes,early_uptake_in=no,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.164179104477612,1,1.83561643835616,0.884615384615385,21.9946183953033,21.9946183953033
+"14","{block_of_affere=yes,regeneration_of=no,early_uptake_in=no,lym_nodes_dimin=[-Inf;1.5]} => {class=metastases}",0.164179104477612,1,1.83561643835616,0.884615384615385,21.9946183953033,21.9946183953033
+"15","{block_of_affere=yes,lym_nodes_enlar=[-Inf;2.5],defect_in_node=lac_margin} => {class=metastases}",0.156716417910448,1,1.83561643835616,0.88,20.8090677657898,20.8090677657898
+"16","{block_of_affere=yes,by_pass=no,special_forms=chalices} => {class=metastases}",0.156716417910448,1,1.83561643835616,0.88,20.8090677657898,20.8090677657898
+"17","{block_of_affere=yes,changes_in_lym=oval,changes_in_node=lac_margin,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.156716417910448,1,1.83561643835616,0.88,20.8090677657898,20.8090677657898
+"18","{block_of_affere=yes,lym_nodes_dimin=[-Inf;1.5],lym_nodes_enlar=[-Inf;2.5],defect_in_node=lac_margin} => {class=metastases}",0.156716417910448,1,1.83561643835616,0.88,20.8090677657898,20.8090677657898
+"19","{block_of_affere=yes,regeneration_of=no,lym_nodes_enlar=[-Inf;2.5],defect_in_node=lac_margin} => {class=metastases}",0.156716417910448,1,1.83561643835616,0.88,20.8090677657898,20.8090677657898
+"20","{block_of_affere=yes,by_pass=no,lym_nodes_dimin=[-Inf;1.5],special_forms=chalices} => {class=metastases}",0.156716417910448,1,1.83561643835616,0.88,20.8090677657898,20.8090677657898
+"21","{block_of_affere=yes,bl_of_lymph_s=no,by_pass=no,special_forms=chalices} => {class=metastases}",0.156716417910448,1,1.83561643835616,0.88,20.8090677657898,20.8090677657898
+"22","{block_of_affere=yes,by_pass=no,regeneration_of=no,special_forms=chalices} => {class=metastases}",0.156716417910448,1,1.83561643835616,0.88,20.8090677657898,20.8090677657898
+"23","{block_of_affere=no,changes_in_lym=oval,special_forms=vesicles} => {class=malign_lymph}",0.149253731343284,1,2.43636363636364,0.875,33.7671451355662,33.7671451355662
+"24","{block_of_affere=no,bl_of_lymph_s=no,changes_in_lym=oval,special_forms=vesicles} => {class=malign_lymph}",0.149253731343284,1,2.43636363636364,0.875,33.7671451355662,33.7671451355662
+"25","{block_of_affere=no,bl_of_lymph_c=no,changes_in_lym=oval,special_forms=vesicles} => {class=malign_lymph}",0.149253731343284,1,2.43636363636364,0.875,33.7671451355662,33.7671451355662
+"26","{lymphatics=arched,block_of_affere=yes,changes_in_node=lac_margin,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.149253731343284,1,1.83561643835616,0.875,19.6443162701274,19.6443162701274
+"27","{block_of_affere=yes,lym_nodes_enlar=[-Inf;2.5],defect_in_node=lac_margin,changes_in_node=lac_margin} => {class=metastases}",0.149253731343284,1,1.83561643835616,0.875,19.6443162701274,19.6443162701274
+"28","{block_of_affere=no,lym_nodes_dimin=[-Inf;1.5],changes_in_lym=oval,special_forms=vesicles} => {class=malign_lymph}",0.141791044776119,1,2.43636363636364,0.869565217391304,31.7998418972332,31.7998418972332
+"29","{block_of_affere=no,regeneration_of=no,changes_in_lym=oval,special_forms=vesicles} => {class=malign_lymph}",0.141791044776119,1,2.43636363636364,0.869565217391304,31.7998418972332,31.7998418972332
+"30","{lymphatics=arched,block_of_affere=yes,lym_nodes_enlar=[-Inf;2.5]} => {class=metastases}",0.134328358208955,1,1.83561643835616,0.863636363636364,17.3750590458196,17.3750590458196
+"31","{block_of_affere=yes,lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round} => {class=metastases}",0.134328358208955,1,1.83561643835616,0.863636363636364,17.3750590458196,17.3750590458196
+"32","{block_of_affere=yes,changes_in_node=lac_margin,dislocation_of=no} => {class=metastases}",0.134328358208955,1,1.83561643835616,0.863636363636364,17.3750590458196,17.3750590458196
+"33","{lymphatics=arched,block_of_affere=yes,lym_nodes_dimin=[-Inf;1.5],lym_nodes_enlar=[-Inf;2.5]} => {class=metastases}",0.134328358208955,1,1.83561643835616,0.863636363636364,17.3750590458196,17.3750590458196
+"34","{lymphatics=arched,block_of_affere=yes,regeneration_of=no,lym_nodes_enlar=[-Inf;2.5]} => {class=metastases}",0.134328358208955,1,1.83561643835616,0.863636363636364,17.3750590458196,17.3750590458196
+"35","{lymphatics=arched,block_of_affere=yes,lym_nodes_enlar=[-Inf;2.5],no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.134328358208955,1,1.83561643835616,0.863636363636364,17.3750590458196,17.3750590458196
+"36","{block_of_affere=yes,lym_nodes_dimin=[-Inf;1.5],lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round} => {class=metastases}",0.134328358208955,1,1.83561643835616,0.863636363636364,17.3750590458196,17.3750590458196
+"37","{block_of_affere=yes,regeneration_of=no,lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round} => {class=metastases}",0.134328358208955,1,1.83561643835616,0.863636363636364,17.3750590458196,17.3750590458196
+"38","{block_of_affere=yes,lym_nodes_dimin=[-Inf;1.5],changes_in_node=lac_margin,dislocation_of=no} => {class=metastases}",0.134328358208955,1,1.83561643835616,0.863636363636364,17.3750590458196,17.3750590458196
+"39","{block_of_affere=yes,bl_of_lymph_s=no,changes_in_node=lac_margin,dislocation_of=no} => {class=metastases}",0.134328358208955,1,1.83561643835616,0.863636363636364,17.3750590458196,17.3750590458196
+"40","{bl_of_lymph_c=yes,changes_in_node=lac_margin} => {class=metastases}",0.126865671641791,1,1.83561643835616,0.857142857142857,16.2695234750029,16.2695234750029
+"41","{bl_of_lymph_c=yes,lym_nodes_dimin=[-Inf;1.5],changes_in_node=lac_margin} => {class=metastases}",0.126865671641791,1,1.83561643835616,0.857142857142857,16.2695234750029,16.2695234750029
+"42","{bl_of_lymph_c=yes,regeneration_of=no,changes_in_node=lac_margin} => {class=metastases}",0.126865671641791,1,1.83561643835616,0.857142857142857,16.2695234750029,16.2695234750029
+"43","{block_of_affere=yes,bl_of_lymph_c=yes,changes_in_node=lac_margin} => {class=metastases}",0.126865671641791,1,1.83561643835616,0.857142857142857,16.2695234750029,16.2695234750029
+"44","{early_uptake_in=yes,changes_in_node=lacunar,special_forms=vesicles,exclusion_of_no=yes} => {class=malign_lymph}",0.126865671641791,1,2.43636363636364,0.857142857142857,27.9661227661228,27.9661227661228
+"45","{extravasates=no,lym_nodes_enlar=[-Inf;2.5],changes_in_node=lac_margin,exclusion_of_no=yes} => {class=metastases}",0.126865671641791,1,1.83561643835616,0.857142857142857,16.2695234750029,16.2695234750029
+"46","{block_of_affere=yes,bl_of_lymph_s=no,lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round} => {class=metastases}",0.126865671641791,1,1.83561643835616,0.857142857142857,16.2695234750029,16.2695234750029
+"47","{lym_nodes_enlar=(2.5; Inf],changes_in_node=lac_central} => {class=malign_lymph}",0.119402985074627,1,2.43636363636364,0.85,26.0979969183359,26.0979969183359
+"48","{lym_nodes_dimin=[-Inf;1.5],lym_nodes_enlar=(2.5; Inf],changes_in_node=lac_central} => {class=malign_lymph}",0.119402985074627,1,2.43636363636364,0.85,26.0979969183359,26.0979969183359
+"49","{lym_nodes_enlar=(2.5; Inf],changes_in_node=lac_central,exclusion_of_no=yes} => {class=malign_lymph}",0.119402985074627,1,2.43636363636364,0.85,26.0979969183359,26.0979969183359
+"50","{early_uptake_in=yes,lym_nodes_enlar=(2.5; Inf],changes_in_node=lac_central} => {class=malign_lymph}",0.119402985074627,1,2.43636363636364,0.85,26.0979969183359,26.0979969183359
+"51","{by_pass=yes,changes_in_node=lac_margin,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.119402985074627,1,1.83561643835616,0.85,15.1827257952171,15.1827257952171
+"52","{block_of_affere=yes,regeneration_of=no,changes_in_stru=coarse} => {class=metastases}",0.119402985074627,1,1.83561643835616,0.85,15.1827257952171,15.1827257952171
+"53","{bl_of_lymph_c=no,lym_nodes_enlar=(2.5; Inf],dislocation_of=yes,no_of_nodes_in=(3.5; Inf]} => {class=malign_lymph}",0.119402985074627,1,2.43636363636364,0.85,26.0979969183359,26.0979969183359
+"54","{by_pass=yes,lym_nodes_dimin=[-Inf;1.5],changes_in_node=lac_margin,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.119402985074627,1,1.83561643835616,0.85,15.1827257952171,15.1827257952171
+"55","{by_pass=yes,regeneration_of=no,changes_in_node=lac_margin,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.119402985074627,1,1.83561643835616,0.85,15.1827257952171,15.1827257952171
+"56","{block_of_affere=yes,regeneration_of=no,lym_nodes_dimin=[-Inf;1.5],changes_in_stru=coarse} => {class=metastases}",0.119402985074627,1,1.83561643835616,0.85,15.1827257952171,15.1827257952171
+"57","{by_pass=no,dislocation_of=yes,no_of_nodes_in=(3.5; Inf]} => {class=malign_lymph}",0.111940298507463,1,2.43636363636364,0.842105263157895,24.2612681436211,24.2612681436211
+"58","{block_of_affere=no,extravasates=yes,lym_nodes_dimin=[-Inf;1.5],exclusion_of_no=yes} => {class=malign_lymph}",0.111940298507463,1,2.43636363636364,0.842105263157895,24.2612681436211,24.2612681436211
+"59","{block_of_affere=no,extravasates=yes,regeneration_of=no,exclusion_of_no=yes} => {class=malign_lymph}",0.111940298507463,1,2.43636363636364,0.842105263157895,24.2612681436211,24.2612681436211
+"60","{block_of_affere=no,by_pass=no,extravasates=yes,exclusion_of_no=yes} => {class=malign_lymph}",0.111940298507463,1,2.43636363636364,0.842105263157895,24.2612681436211,24.2612681436211
+"61","{bl_of_lymph_c=no,lym_nodes_enlar=(2.5; Inf],changes_in_lym=oval,special_forms=vesicles} => {class=malign_lymph}",0.111940298507463,1,2.43636363636364,0.842105263157895,24.2612681436211,24.2612681436211
+"62","{early_uptake_in=yes,lym_nodes_enlar=(2.5; Inf],changes_in_lym=oval,special_forms=vesicles} => {class=malign_lymph}",0.111940298507463,1,2.43636363636364,0.842105263157895,24.2612681436211,24.2612681436211
+"63","{lym_nodes_enlar=(2.5; Inf],changes_in_lym=oval,special_forms=vesicles,dislocation_of=yes} => {class=malign_lymph}",0.111940298507463,1,2.43636363636364,0.842105263157895,24.2612681436211,24.2612681436211
+"64","{by_pass=no,changes_in_node=lacunar,special_forms=vesicles,exclusion_of_no=yes} => {class=malign_lymph}",0.111940298507463,1,2.43636363636364,0.842105263157895,24.2612681436211,24.2612681436211
+"65","{early_uptake_in=yes,changes_in_node=lacunar,special_forms=vesicles,dislocation_of=yes} => {class=malign_lymph}",0.111940298507463,1,2.43636363636364,0.842105263157895,24.2612681436211,24.2612681436211
+"66","{by_pass=no,lym_nodes_dimin=[-Inf;1.5],dislocation_of=yes,no_of_nodes_in=(3.5; Inf]} => {class=malign_lymph}",0.111940298507463,1,2.43636363636364,0.842105263157895,24.2612681436211,24.2612681436211
+"67","{bl_of_lymph_s=no,by_pass=no,dislocation_of=yes,no_of_nodes_in=(3.5; Inf]} => {class=malign_lymph}",0.111940298507463,1,2.43636363636364,0.842105263157895,24.2612681436211,24.2612681436211
+"68","{lymphatics=deformed,block_of_affere=yes,changes_in_node=lac_margin,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.111940298507463,1,1.83561643835616,0.842105263157895,14.1141936226545,14.1141936226545
+"69","{early_uptake_in=no,lym_nodes_enlar=[-Inf;2.5],changes_in_node=lac_margin,exclusion_of_no=yes} => {class=metastases}",0.111940298507463,1,1.83561643835616,0.842105263157895,14.1141936226545,14.1141936226545
+"70","{bl_of_lymph_s=no,by_pass=yes,changes_in_node=lac_margin,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.111940298507463,1,1.83561643835616,0.842105263157895,14.1141936226545,14.1141936226545
+"71","{block_of_affere=yes,bl_of_lymph_s=no,regeneration_of=no,changes_in_stru=coarse} => {class=metastases}",0.111940298507463,1,1.83561643835616,0.842105263157895,14.1141936226545,14.1141936226545
+"72","{block_of_affere=yes,exclusion_of_no=no} => {class=metastases}",0.104477611940299,1,1.83561643835616,0.833333333333333,13.0634703196347,13.0634703196347
+"73","{lym_nodes_enlar=(2.5; Inf],changes_in_node=lacunar,special_forms=vesicles} => {class=malign_lymph}",0.104477611940299,1,2.43636363636364,0.833333333333333,22.4551515151515,22.4551515151515
+"74","{lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round,defect_in_node=lac_margin} => {class=metastases}",0.104477611940299,1,1.83561643835616,0.833333333333333,13.0634703196347,13.0634703196347
+"75","{early_uptake_in=no,changes_in_node=lac_margin,dislocation_of=no} => {class=metastases}",0.104477611940299,1,1.83561643835616,0.833333333333333,13.0634703196347,13.0634703196347
+"76","{block_of_affere=yes,lym_nodes_dimin=[-Inf;1.5],exclusion_of_no=no} => {class=metastases}",0.104477611940299,1,1.83561643835616,0.833333333333333,13.0634703196347,13.0634703196347
+"77","{block_of_affere=yes,bl_of_lymph_s=no,exclusion_of_no=no} => {class=metastases}",0.104477611940299,1,1.83561643835616,0.833333333333333,13.0634703196347,13.0634703196347
+"78","{block_of_affere=yes,regeneration_of=no,exclusion_of_no=no} => {class=metastases}",0.104477611940299,1,1.83561643835616,0.833333333333333,13.0634703196347,13.0634703196347
+"79","{block_of_affere=no,extravasates=yes,early_uptake_in=yes,exclusion_of_no=yes} => {class=malign_lymph}",0.104477611940299,1,2.43636363636364,0.833333333333333,22.4551515151515,22.4551515151515
+"80","{lym_nodes_dimin=[-Inf;1.5],lym_nodes_enlar=(2.5; Inf],changes_in_node=lacunar,special_forms=vesicles} => {class=malign_lymph}",0.104477611940299,1,2.43636363636364,0.833333333333333,22.4551515151515,22.4551515151515
+"81","{lym_nodes_dimin=[-Inf;1.5],lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round,defect_in_node=lac_margin} => {class=metastases}",0.104477611940299,1,1.83561643835616,0.833333333333333,13.0634703196347,13.0634703196347
+"82","{regeneration_of=no,lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round,defect_in_node=lac_margin} => {class=metastases}",0.104477611940299,1,1.83561643835616,0.833333333333333,13.0634703196347,13.0634703196347
+"83","{early_uptake_in=no,lym_nodes_enlar=[-Inf;2.5],changes_in_lym=oval,changes_in_node=lac_margin} => {class=metastases}",0.104477611940299,1,1.83561643835616,0.833333333333333,13.0634703196347,13.0634703196347
+"84","{early_uptake_in=yes,changes_in_lym=round,special_forms=chalices} => {class=metastases}",0.0970149253731343,1,1.83561643835616,0.823529411764706,12.0301143439375,12.0301143439375
+"85","{early_uptake_in=yes,lym_nodes_dimin=[-Inf;1.5],changes_in_lym=round,special_forms=chalices} => {class=metastases}",0.0970149253731343,1,1.83561643835616,0.823529411764706,12.0301143439375,12.0301143439375
+"86","{bl_of_lymph_s=no,early_uptake_in=yes,changes_in_lym=round,special_forms=chalices} => {class=metastases}",0.0970149253731343,1,1.83561643835616,0.823529411764706,12.0301143439375,12.0301143439375
+"87","{regeneration_of=no,early_uptake_in=yes,changes_in_lym=round,special_forms=chalices} => {class=metastases}",0.0970149253731343,1,1.83561643835616,0.823529411764706,12.0301143439375,12.0301143439375
+"88","{bl_of_lymph_s=no,changes_in_lym=oval,no_of_nodes_in=(3.5; Inf]} => {class=malign_lymph}",0.0895522388059701,1,2.43636363636364,0.8125,18.9317436661699,18.9317436661699
+"89","{early_uptake_in=yes,changes_in_lym=oval,no_of_nodes_in=(3.5; Inf]} => {class=malign_lymph}",0.0895522388059701,1,2.43636363636364,0.8125,18.9317436661699,18.9317436661699
+"90","{lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round,exclusion_of_no=yes} => {class=metastases}",0.0895522388059701,1,1.83561643835616,0.8125,11.013698630137,11.013698630137
+"91","{changes_in_lym=round,changes_in_node=lac_margin,dislocation_of=no} => {class=metastases}",0.0895522388059701,1,1.83561643835616,0.8125,11.013698630137,11.013698630137
+"92","{block_of_affere=no,early_uptake_in=yes,changes_in_stru=faint,exclusion_of_no=yes} => {class=malign_lymph}",0.0895522388059701,1,2.43636363636364,0.8125,18.9317436661699,18.9317436661699
+"93","{bl_of_lymph_s=no,changes_in_lym=oval,exclusion_of_no=yes,no_of_nodes_in=(3.5; Inf]} => {class=malign_lymph}",0.0895522388059701,1,2.43636363636364,0.8125,18.9317436661699,18.9317436661699
+"94","{bl_of_lymph_s=no,early_uptake_in=yes,changes_in_lym=oval,no_of_nodes_in=(3.5; Inf]} => {class=malign_lymph}",0.0895522388059701,1,2.43636363636364,0.8125,18.9317436661699,18.9317436661699
+"95","{regeneration_of=no,lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round,exclusion_of_no=yes} => {class=metastases}",0.0895522388059701,1,1.83561643835616,0.8125,11.013698630137,11.013698630137
+"96","{lym_nodes_dimin=[-Inf;1.5],changes_in_lym=round,changes_in_node=lac_margin,dislocation_of=no} => {class=metastases}",0.0895522388059701,1,1.83561643835616,0.8125,11.013698630137,11.013698630137
+"97","{bl_of_lymph_s=no,changes_in_lym=round,changes_in_node=lac_margin,dislocation_of=no} => {class=metastases}",0.0895522388059701,1,1.83561643835616,0.8125,11.013698630137,11.013698630137
+"98","{regeneration_of=no,changes_in_lym=round,changes_in_node=lac_margin,dislocation_of=no} => {class=metastases}",0.0895522388059701,1,1.83561643835616,0.8125,11.013698630137,11.013698630137
+"99","{extravasates=no,changes_in_node=lac_margin,special_forms=chalices,exclusion_of_no=yes} => {class=metastases}",0.0895522388059701,1,1.83561643835616,0.8125,11.013698630137,11.013698630137
+"100","{lymphatics=arched,early_uptake_in=no,exclusion_of_no=yes} => {class=metastases}",0.082089552238806,1,1.83561643835616,0.8,10.0138100011137,10.0138100011137
+"101","{bl_of_lymph_s=no,lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round,exclusion_of_no=yes} => {class=metastases}",0.082089552238806,1,1.83561643835616,0.8,10.0138100011137,10.0138100011137
+"102","{lymphatics=arched,early_uptake_in=no,lym_nodes_dimin=[-Inf;1.5],exclusion_of_no=yes} => {class=metastases}",0.082089552238806,1,1.83561643835616,0.8,10.0138100011137,10.0138100011137
+"103","{lymphatics=arched,regeneration_of=no,early_uptake_in=no,exclusion_of_no=yes} => {class=metastases}",0.082089552238806,1,1.83561643835616,0.8,10.0138100011137,10.0138100011137
+"104","{lymphatics=arched,early_uptake_in=no,exclusion_of_no=yes,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.082089552238806,1,1.83561643835616,0.8,10.0138100011137,10.0138100011137
+"105","{block_of_affere=no,early_uptake_in=yes,changes_in_stru=faint,dislocation_of=yes} => {class=malign_lymph}",0.0746268656716418,1,2.43636363636364,0.785714285714286,15.5219941348974,15.5219941348974
+"106","{bl_of_lymph_c=no,lym_nodes_enlar=[-Inf;2.5],changes_in_lym=round,exclusion_of_no=yes} => {class=metastases}",0.0746268656716418,1,1.83561643835616,0.785714285714286,9.03004860804242,9.03004860804242
+"107","{extravasates=no,changes_in_node=lac_central} => {class=malign_lymph}",0.0671641791044776,1,2.43636363636364,0.769230769230769,13.8580363636364,13.8580363636364
+"108","{changes_in_node=lac_margin,special_forms=no} => {class=metastases}",0.0671641791044776,1,1.83561643835616,0.769230769230769,8.06202739726027,8.06202739726028
+"109","{extravasates=no,lym_nodes_dimin=[-Inf;1.5],changes_in_node=lac_central} => {class=malign_lymph}",0.0671641791044776,1,2.43636363636364,0.769230769230769,13.8580363636364,13.8580363636364
+"110","{bl_of_lymph_s=no,extravasates=no,changes_in_node=lac_central} => {class=malign_lymph}",0.0671641791044776,1,2.43636363636364,0.769230769230769,13.8580363636364,13.8580363636364
+"111","{bl_of_lymph_c=no,extravasates=no,changes_in_node=lac_central} => {class=malign_lymph}",0.0671641791044776,1,2.43636363636364,0.769230769230769,13.8580363636364,13.8580363636364
+"112","{lymphatics=deformed,extravasates=no,changes_in_node=lac_margin} => {class=metastases}",0.0671641791044776,1,1.83561643835616,0.769230769230769,8.06202739726027,8.06202739726028
+"113","{lym_nodes_dimin=[-Inf;1.5],changes_in_node=lac_margin,special_forms=no} => {class=metastases}",0.0671641791044776,1,1.83561643835616,0.769230769230769,8.06202739726027,8.06202739726028
+"114","{changes_in_lym=oval,defect_in_node=lacunar,changes_in_node=lacunar,exclusion_of_no=yes} => {class=malign_lymph}",0.0671641791044776,1,2.43636363636364,0.769230769230769,13.8580363636364,13.8580363636364
+"115","{lymphatics=arched,early_uptake_in=yes,defect_in_node=lacunar,dislocation_of=yes} => {class=malign_lymph}",0.0597014925373134,1,2.43636363636364,0.75,12.2204906204906,12.2204906204906
+"116","{lymphatics=arched,block_of_affere=no,early_uptake_in=yes,defect_in_node=lacunar} => {class=malign_lymph}",0.0597014925373134,1,2.43636363636364,0.75,12.2204906204906,12.2204906204906
+"117","{block_of_affere=no,extravasates=yes,lym_nodes_dimin=[-Inf;1.5],changes_in_node=lacunar} => {class=malign_lymph}",0.0597014925373134,1,2.43636363636364,0.75,12.2204906204906,12.2204906204906
+"118","{block_of_affere=no,extravasates=yes,regeneration_of=no,changes_in_node=lacunar} => {class=malign_lymph}",0.0597014925373134,1,2.43636363636364,0.75,12.2204906204906,12.2204906204906
+"119","{block_of_affere=no,by_pass=no,extravasates=yes,changes_in_node=lacunar} => {class=malign_lymph}",0.0597014925373134,1,2.43636363636364,0.75,12.2204906204906,12.2204906204906
+"120","{changes_in_stru=stripped} => {class=malign_lymph}",0.0522388059701493,1,2.43636363636364,0.727272727272727,10.6087329992842,10.6087329992842
+"121","{lym_nodes_dimin=[-Inf;1.5],changes_in_stru=stripped} => {class=malign_lymph}",0.0522388059701493,1,2.43636363636364,0.727272727272727,10.6087329992842,10.6087329992842
+"122","{changes_in_stru=stripped,exclusion_of_no=yes} => {class=malign_lymph}",0.0522388059701493,1,2.43636363636364,0.727272727272727,10.6087329992842,10.6087329992842
+"123","{early_uptake_in=yes,changes_in_stru=stripped} => {class=malign_lymph}",0.0522388059701493,1,2.43636363636364,0.727272727272727,10.6087329992842,10.6087329992842
+"124","{defect_in_node=lac_central,special_forms=no} => {class=metastases}",0.0522388059701493,1,1.83561643835616,0.727272727272727,6.17171826124474,6.17171826124474
+"125","{bl_of_lymph_s=no,defect_in_node=lac_central,special_forms=no} => {class=metastases}",0.0522388059701493,1,1.83561643835616,0.727272727272727,6.17171826124474,6.17171826124474
+"126","{regeneration_of=no,defect_in_node=lac_central,special_forms=no} => {class=metastases}",0.0522388059701493,1,1.83561643835616,0.727272727272727,6.17171826124474,6.17171826124474
+"127","{defect_in_node=lac_central,special_forms=no,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.0522388059701493,1,1.83561643835616,0.727272727272727,6.17171826124474,6.17171826124474
+"128","{lymphatics=arched,block_of_affere=no,extravasates=yes} => {class=malign_lymph}",0.0447761194029851,1,2.43636363636364,0.7,9.02215909090909,9.02215909090909
+"129","{lymphatics=arched,early_uptake_in=no,changes_in_stru=faint} => {class=metastases}",0.0447761194029851,1,1.83561643835616,0.7,5.24871575342466,5.24871575342466
+"130","{lymphatics=deformed,regeneration_of=no,changes_in_node=lacunar,exclusion_of_no=yes} => {class=malign_lymph}",0.0447761194029851,1,2.43636363636364,0.7,9.02215909090909,9.02215909090909
+"131","{lymphatics=deformed,by_pass=no,changes_in_node=lacunar,exclusion_of_no=yes} => {class=malign_lymph}",0.0447761194029851,1,2.43636363636364,0.7,9.02215909090909,9.02215909090909
+"132","{lymphatics=arched,extravasates=no,early_uptake_in=no,changes_in_lym=oval} => {class=metastases}",0.0447761194029851,1,1.83561643835616,0.7,5.24871575342466,5.24871575342466
+"133","{lymphatics=arched,early_uptake_in=no,lym_nodes_dimin=[-Inf;1.5],changes_in_stru=faint} => {class=metastases}",0.0447761194029851,1,1.83561643835616,0.7,5.24871575342466,5.24871575342466
+"134","{lymphatics=arched,regeneration_of=no,early_uptake_in=no,changes_in_stru=faint} => {class=metastases}",0.0447761194029851,1,1.83561643835616,0.7,5.24871575342466,5.24871575342466
+"135","{lymphatics=deformed,lym_nodes_dimin=[-Inf;1.5],dislocation_of=no,exclusion_of_no=no} => {class=metastases}",0.0447761194029851,1,1.83561643835616,0.7,5.24871575342466,5.24871575342466
+"136","{lymphatics=deformed,regeneration_of=no,dislocation_of=no,exclusion_of_no=no} => {class=metastases}",0.0447761194029851,1,1.83561643835616,0.7,5.24871575342466,5.24871575342466
+"137","{lymphatics=deformed,dislocation_of=no,exclusion_of_no=no,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.0447761194029851,1,1.83561643835616,0.7,5.24871575342466,5.24871575342466
+"138","{lym_nodes_enlar=(2.5; Inf],dislocation_of=no,no_of_nodes_in=[-Inf;3.5]} => {class=metastases}",0.0373134328358209,1,1.83561643835616,0.666666666666667,4.34002336200489,4.34002336200489
+"139","{lymphatics=arched,block_of_affere=no,changes_in_lym=round,dislocation_of=yes} => {class=malign_lymph}",0.0373134328358209,1,2.43636363636364,0.666666666666667,7.46018322762509,7.46018322762509
+"140","{lymphatics=deformed,lym_nodes_dimin=[-Inf;1.5],changes_in_node=lacunar,exclusion_of_no=yes} => {class=malign_lymph}",0.0373134328358209,1,2.43636363636364,0.666666666666667,7.46018322762509,7.46018322762509
+"141","{extravasates=yes,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}",0.0298507462686567,1,33.5,0.625,134,134
+"142","{by_pass=yes,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}",0.0298507462686567,1,33.5,0.625,134,134
+"143","{regeneration_of=yes,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}",0.0298507462686567,1,33.5,0.625,134,134
+"144","{extravasates=yes,regeneration_of=yes,lym_nodes_enlar=[-Inf;2.5]} => {class=fibrosis}",0.0298507462686567,1,33.5,0.625,134,134
+"145","{lymphatics=deformed,changes_in_lym=oval,changes_in_stru=faint,dislocation_of=yes} => {class=malign_lymph}",0.0298507462686567,1,2.43636363636364,0.625,5.92223776223776,5.92223776223777
+"146","{block_of_affere=no,dislocation_of=yes,exclusion_of_no=no} => {class=malign_lymph}",0.0223880597014925,1,2.43636363636364,0.571428571428571,4.40777238029146,4.40777238029146
+"147","{extravasates=yes,early_uptake_in=yes,changes_in_stru=drop_like} => {class=malign_lymph}",0.0223880597014925,1,2.43636363636364,0.571428571428571,4.40777238029146,4.40777238029146
+"148","{extravasates=yes,changes_in_lym=oval,changes_in_stru=drop_like} => {class=malign_lymph}",0.0223880597014925,1,2.43636363636364,0.571428571428571,4.40777238029146,4.40777238029146
+"149","{block_of_affere=no,changes_in_stru=drop_like,exclusion_of_no=no} => {class=malign_lymph}",0.0223880597014925,1,2.43636363636364,0.571428571428571,4.40777238029146,4.40777238029146
+"150","{block_of_affere=no,changes_in_lym=round,changes_in_node=lac_margin,dislocation_of=yes} => {class=malign_lymph}",0.0223880597014925,1,2.43636363636364,0.571428571428571,4.40777238029146,4.40777238029146
+"151","{extravasates=yes,early_uptake_in=yes,lym_nodes_dimin=[-Inf;1.5],changes_in_stru=drop_like} => {class=malign_lymph}",0.0223880597014925,1,2.43636363636364,0.571428571428571,4.40777238029146,4.40777238029146
+"152","{bl_of_lymph_s=no,extravasates=yes,early_uptake_in=yes,changes_in_stru=drop_like} => {class=malign_lymph}",0.0223880597014925,1,2.43636363636364,0.571428571428571,4.40777238029146,4.40777238029146
+"153","{lymphatics=normal} => {class=normal}",0.0149253731343284,1,67,0.5,134,134
+"154","{defect_in_node=no,dislocation_of=no} => {class=normal}",0.0149253731343284,1,67,0.5,134,134
+"155","{defect_in_node=no,exclusion_of_no=no} => {class=normal}",0.0149253731343284,1,67,0.5,134,134
+"156","{lymphatics=normal,lym_nodes_dimin=[-Inf;1.5]} => {class=normal}",0.0149253731343284,1,67,0.5,134,134
+"157","{} => {class=metastases}",0,0,0,0,0,0

@@ -1,0 +1,19 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{Cell_Size_Uniformity=[-Inf;3],Bare_Nuclei=[1;2],Normal_Nucleoli=[-Inf;3]} => {Class=benign}",0.572337031364441,1,1,360
+"2","{Cell_Shape_Uniformity=1,Bare_Nuclei=[1;4]} => {Class=benign}",0.499205082654953,1,1,19
+"3","{Clump_Thickness=[-Inf;4],Marginal_Adhesion=1} => {Class=benign}",0.435612082481384,1,1,16
+"4","{Clump_Thickness=[7;Inf],Cell_Size_Uniformity=[5;Inf]} => {Class=malignant}",0.144674092531204,1,1,91
+"5","{Marginal_Adhesion=[7;Inf],Bland_Chromatin=[3;Inf]} => {Class=malignant}",0.135135129094124,1,1,50
+"6","{Clump_Thickness=[7;Inf],Bare_Nuclei=[3;Inf],Normal_Nucleoli=[-Inf;7]} => {Class=malignant}",0.116057232022285,1,1,22
+"7","{Marginal_Adhesion=[2;4],Bare_Nuclei=[6;Inf]} => {Class=malignant}",0.0731319561600685,1,1,16
+"8","{Cell_Shape_Uniformity=[5;Inf],Bare_Nuclei=[4;7],Bland_Chromatin=[4;Inf]} => {Class=malignant}",0.0333863273262978,1,1,7
+"9","{Marginal_Adhesion=[2;Inf],Single_Epi_Cell_Size=[-Inf;3],Bare_Nuclei=[5;9]} => {Class=malignant}",0.0206677261739969,1,1,3
+"10","{Cell_Shape_Uniformity=[3;Inf],Marginal_Adhesion=[4;Inf],Single_Epi_Cell_Size=[-Inf;2]} => {Class=malignant}",0.0143084265291691,1,1,1
+"11","{Cell_Shape_Uniformity=[1;5],Marginal_Adhesion=5,Mitoses=[2;Inf]} => {Class=benign}",0.00317965028807521,1,1,2
+"12","{Bland_Chromatin=[-Inf;2],Normal_Nucleoli=[-Inf;2],Mitoses=1} => {Class=benign}",0.416534185409546,0.996197700500488,1,3
+"13","{Clump_Thickness=[-Inf;6],Marginal_Adhesion=1,Bland_Chromatin=[-Inf;3]} => {Class=benign}",0.526232123374939,0.993993997573853,0.666666666666667,4
+"14","{Clump_Thickness=[7;Inf],Normal_Nucleoli=[3;Inf]} => {Class=malignant}",0.163751989603043,0.990384638309479,1,5
+"15","{Clump_Thickness=[-Inf;4],Bare_Nuclei=[1;3.54234527687]} => {Class=benign}",0.484896659851074,0.990259766578674,0.8,4
+"16","{Bare_Nuclei=[6;Inf],Bland_Chromatin=[4;Inf],Normal_Nucleoli=[3;Inf]} => {Class=malignant}",0.157392680644989,0.990000009536743,1,11
+"17","{Clump_Thickness=[5;Inf],Bland_Chromatin=[4;Inf],Normal_Nucleoli=[3;Inf]} => {Class=malignant}",0.198728144168854,0.984251976013184,0.857142857142857,6
+"18","{} => {Class=benign}",0.65500795841217,0.65500795841217,0.6,3

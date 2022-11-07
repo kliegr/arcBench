@@ -1,0 +1,22 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{normalizedLosses=[83;Inf],wheelBase=[88.4;96.3],width=[-Inf;64.2],engineSize=[61;103],price=[5195;8238]} => {XClass=1}",0.157608702778816,1,1,29
+"2","{length=[141.1;178.4],height=[-Inf;50.2]} => {XClass=3}",0.0815217420458794,1,1,15
+"3","{normalizedLosses=[-Inf;102],numOfDoors=four,driveWheels=rwd} => {XClass=-1}",0.0597826093435287,1,1,11
+"4","{normalizedLosses=[-Inf;102],wheelBase=[98.4;105.8]} => {XClass=-1}",0.0543478243052959,1,1,6
+"5","{bodyStyle=sedan,wheelBase=[96.6;99.8],bore=[-Inf;3.31]} => {XClass=2}",0.0543478243052959,1,1,10
+"6","{wheelBase=[88.6;91.3]} => {XClass=3}",0.0380434766411781,1,1,3
+"7","{make=toyota,length=[175.7;183.1]} => {XClass=2}",0.0326086953282356,1,1,6
+"8","{numOfDoors=two,length=[177.3;180.2],bore=[3.24;Inf]} => {XClass=1}",0.0217391308397055,1,1,4
+"9","{height=56.2} => {XClass=-2}",0.0163043476641178,1,1,3
+"10","{make=audi,length=[178.4;Inf]} => {XClass=1}",0.0163043476641178,1,1,3
+"11","{make=subaru,numOfDoors=two} => {XClass=2}",0.0163043476641178,1,1,3
+"12","{make=saab,bodyStyle=hatchback} => {XClass=3}",0.0163043476641178,1,1,3
+"13","{wheelBase=[86.6;88.4]} => {XClass=2}",0.0108695654198527,1,1,2
+"14","{make=saab,bodyStyle=sedan} => {XClass=2}",0.0108695654198527,1,1,2
+"15","{engineType=dohcv} => {XClass=1}",0.00543478270992637,1,1,1
+"16","{fuelSystem=spfi} => {XClass=2}",0.00543478270992637,1,1,1
+"17","{bodyStyle=sedan,height=[48.8;51.6]} => {XClass=1}",0.0434782616794109,0.888888895511627,0.833333333333333,5
+"18","{bodyStyle=convertible} => {XClass=3}",0.0217391308397055,0.800000011920929,1,1
+"19","{length=[176.2;177.3]} => {XClass=2}",0.0597826093435287,0.785714268684387,0.4,2
+"20","{wheelBase=[93;94.5]} => {XClass=1}",0.173913046717644,0.780487775802612,0.4,4
+"21","{} => {XClass=0}",0.326086968183517,0.326086968183517,0.9,54

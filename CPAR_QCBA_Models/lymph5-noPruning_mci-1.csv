@@ -1,0 +1,13 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{block_of_affere=no,special_forms=vesicles,dislocation_of=yes} => {class=malign_lymph}",0.194029852747917,1,1,26
+"2","{bl_of_lymph_c=yes,changes_in_node=lac_margin} => {class=metastases}",0.126865670084953,1,1,17
+"3","{lym_nodes_enlar=[3;Inf],changes_in_node=lac_central} => {class=malign_lymph}",0.119402982294559,1,1,8
+"4","{defect_in_node=lac_margin,special_forms=chalices} => {class=metastases}",0.104477614164352,1,1,12
+"5","{lym_nodes_enlar=[3;Inf],changes_in_node=lacunar,special_forms=vesicles} => {class=malign_lymph}",0.104477614164352,1,1,4
+"6","{changes_in_node=lac_margin,special_forms=no} => {class=metastases}",0.0671641826629639,1,1,7
+"7","{changes_in_stru=stripped} => {class=malign_lymph}",0.0522388070821762,1,1,2
+"8","{by_pass=yes,lym_nodes_dimin=[2;Inf]} => {class=fibrosis}",0.0298507455736399,1,1,4
+"9","{lymphatics=normal} => {class=normal}",0.0149253727868199,1,1,2
+"10","{block_of_affere=yes,changes_in_node=lac_margin,no_of_nodes_in=[-Inf;3]} => {class=metastases}",0.343283593654633,0.978723406791687,1,16
+"11","{changes_in_node=lac_central} => {class=malign_lymph}",0.141791045665741,0.904761910438538,0.666666666666667,2
+"12","{} => {class=metastases}",0.544776141643524,0.544776141643524,0.606060606060606,20

@@ -1,0 +1,7 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{wage.increase.first.year=[2.8;Inf],education.allowance=} => {class=good}",0.450980395078659,1,1,23
+"2","{pension=,longterm.disability.assistance=} => {class=good}",0.352941185235977,1,1,5
+"3","{contribution.to.dental.plan=full} => {class=good}",0.196078434586525,1,1,2
+"4","{education.allowance=yes,vacation=below_average} => {class=good}",0.0588235296308994,1,1,2
+"5","{cost.of.living.adjustment=tcf,longterm.disability.assistance=yes} => {class=good}",0.0588235296308994,1,1,1
+"6","{} => {class=bad}",0.352941185235977,0.352941185235977,1,18

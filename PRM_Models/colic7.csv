@@ -1,0 +1,16 @@
+"","rules","support","confidence","lift","laplace"
+"1","{surgery=yes,pulse=(58; Inf],capillary_refill_time=<3,outcome=lived} => {surgical_lesion=yes}",0.108433734939759,1,1.58851674641148,0.973684210526316
+"2","{surgery=yes,peristalsis=hypomotile,outcome=died} => {surgical_lesion=yes}",0.0873493975903614,1,1.58851674641148,0.967741935483871
+"3","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0813253012048193,1,2.69918699186992,0.96551724137931
+"4","{surgery=no,peristalsis=hypomotile,abdominal_distension=slight,outcome=lived} => {surgical_lesion=no}",0.0602409638554217,1,2.69918699186992,0.954545454545455
+"5","{surgery=yes,abdomen=distended small intestine} => {surgical_lesion=yes}",0.114457831325301,0.974358974358974,1.54778554778555,0.951219512195122
+"6","{surgery=yes,outcome=died} => {surgical_lesion=yes}",0.171686746987952,0.966101694915254,1.5346687211094,0.950819672131147
+"7","{surgery=no,peristalsis=hypermotile,outcome=lived} => {surgical_lesion=no}",0.072289156626506,0.96,2.59121951219512,0.925925925925926
+"8","{surgery=yes,peristalsis=} => {surgical_lesion=yes}",0.0662650602409639,0.956521739130435,1.51945080091533,0.92
+"9","{outcome=died} => {surgical_lesion=yes}",0.219879518072289,0.890243902439024,1.4141673474151,0.880952380952381
+"10","{surgery=yes} => {surgical_lesion=yes}",0.496987951807229,0.873015873015873,1.38680033416876,0.869109947643979
+"11","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.262048192771084,0.87,2.34829268292683,0.862745098039216
+"12","{nasogastric_reflux=,abdomen=normal} => {surgical_lesion=no}",0.0271084337349398,0.9,2.42926829268293,0.833333333333333
+"13","{abdomen=firm feces in large intestine} => {surgical_lesion=no}",0.0421686746987952,0.777777777777778,2.09936766034327,0.75
+"14","{surgery=} => {surgical_lesion=yes}",0.00602409638554217,1,1.58851674641148,0.75
+"15","{} => {surgical_lesion=yes}",0,0,0,0

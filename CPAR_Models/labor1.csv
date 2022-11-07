@@ -1,0 +1,8 @@
+"","rules","support","confidence","lift","laplace"
+"1","{pension=} => {class=good}",0.529411764705882,0.964285714285714,1.49025974025974,0.933333333333333
+"2","{contribution.to.dental.plan=full} => {class=good}",0.235294117647059,1,1.54545454545455,0.928571428571429
+"3","{pension=none} => {class=bad}",0.196078431372549,1,2.83333333333333,0.916666666666667
+"4","{contribution.to.health.plan=none} => {class=bad}",0.137254901960784,1,2.83333333333333,0.888888888888889
+"5","{wage.increase.first.year=[-Inf;2.65]} => {class=bad}",0.254901960784314,0.928571428571428,2.63095238095238,0.875
+"6","{longterm.disability.assistance=no} => {class=bad}",0.117647058823529,1,2.83333333333333,0.875
+"7","{} => {class=good}",0,0,0,0

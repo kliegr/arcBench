@@ -1,0 +1,16 @@
+"","rules","support","confidence","lift","laplace"
+"1","{surgery=yes,Age=adult,pulse=(58; Inf],outcome=lived} => {surgical_lesion=yes}",0.171686746987952,1,1.58851674641148,0.983050847457627
+"2","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0963855421686747,1,2.69918699186992,0.970588235294118
+"3","{surgery=yes,capillary_refill_time=<3,outcome=died} => {surgical_lesion=yes}",0.0873493975903614,1,1.58851674641148,0.967741935483871
+"4","{surgery=no,mucous_membranes=normal pink,outcome=lived} => {surgical_lesion=no}",0.123493975903614,0.976190476190476,2.63492063492064,0.954545454545455
+"5","{surgery=yes,mucous_membranes=pale pink} => {surgical_lesion=yes}",0.120481927710843,0.975609756097561,1.5497724355234,0.953488372093023
+"6","{surgery=yes,abdomen=distended small intestine} => {surgical_lesion=yes}",0.117469879518072,0.975,1.5488038277512,0.952380952380952
+"7","{surgery=yes,pain=continuous severe pain} => {surgical_lesion=yes}",0.108433734939759,0.972972972972973,1.54558386137334,0.948717948717949
+"8","{peripheral_pulse=absent} => {surgical_lesion=yes}",0.0240963855421687,1,1.58851674641148,0.9
+"9","{abdominal_distension=moderate} => {surgical_lesion=yes}",0.204819277108434,0.906666666666667,1.44025518341308,0.896103896103896
+"10","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.274096385542169,0.900990099009901,2.43194075505111,0.893203883495146
+"11","{surgery=yes} => {surgical_lesion=yes}",0.518072289156627,0.88659793814433,1.40837567207616,0.88265306122449
+"12","{nasogastric_reflux=,abdomen=normal} => {surgical_lesion=no}",0.0331325301204819,0.916666666666667,2.47425474254743,0.857142857142857
+"13","{surgery=} => {surgical_lesion=yes}",0.00602409638554217,1,1.58851674641148,0.75
+"14","{surgery=no} => {surgical_lesion=no}",0.30421686746988,0.742647058823529,2.00454328072692,0.739130434782609
+"15","{} => {surgical_lesion=yes}",0,0,0,0

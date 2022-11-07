@@ -1,0 +1,9 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{pension=,longterm.disability.assistance=} => {class=good}",0.39215686917305,1,1,20
+"2","{contribution.to.dental.plan=full} => {class=good}",0.215686276555061,1,1,7
+"3","{pension=none} => {class=bad}",0.196078434586525,1,1,10
+"4","{longterm.disability.assistance=no} => {class=bad}",0.156862750649452,1,1,3
+"5","{contribution.to.health.plan=none} => {class=bad}",0.137254908680916,1,1,2
+"6","{pension=} => {class=good}",0.490196079015732,0.92592591047287,1,2
+"7","{wage.increase.first.year=[-Inf;2.8]} => {class=bad}",0.254901975393295,0.8125,0.75,3
+"8","{} => {class=good}",0.647058844566345,0.647058844566345,1,3

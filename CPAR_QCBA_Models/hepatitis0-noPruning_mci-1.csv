@@ -1,0 +1,7 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{SPIDERS=no,ALBUMIN=[3.9;Inf]} => {Class=LIVE}",0.434782594442368,1,1,60
+"2","{SEX=male} => {Class=LIVE}",0.0942028984427452,1,1,8
+"3","{PROTIME=[29;47],HISTOLOGY=yes} => {Class=DIE}",0.0869565233588219,1,1,12
+"4","{ASCITES=yes,BILIRUBIN=[1.37142857143;Inf],HISTOLOGY=yes} => {Class=DIE}",0.0652173906564713,1,1,4
+"5","{ANOREXIA=no,SPIDERS=yes,BILIRUBIN=[1.7;Inf]} => {Class=DIE}",0.0434782616794109,1,1,4
+"6","{} => {Class=LIVE}",0.797101438045502,0.797101438045502,0.84,42

@@ -1,0 +1,26 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{plas=[-Inf;106],mass=[-Inf;27.5]} => {class=tested_negative}",0.121387280523777,1,1,84
+"2","{insu=[49;Inf],mass=[-Inf;30.9],age=[-Inf;26]} => {class=tested_negative}",0.101156070828438,1,1,47
+"3","{plas=[-Inf;138],insu=[-Inf;45],mass=[-Inf;28.3],age=[-Inf;28]} => {class=tested_negative}",0.0924855470657349,1,1,23
+"4","{plas=[-Inf;127],insu=[14;89],age=[28;Inf]} => {class=tested_negative}",0.0433526001870632,1,1,25
+"5","{plas=[94;124],insu=[130;Inf],age=[-Inf;28]} => {class=tested_negative}",0.040462426841259,1,1,19
+"6","{plas=[-Inf;111],insu=[-Inf;32],age=[-Inf;30]} => {class=tested_negative}",0.122832372784615,0.988372087478638,0.972972972972973,36
+"7","{preg=[-Inf;9],plas=[-Inf;124],insu=[-Inf;45],mass=[-Inf;27.3]} => {class=tested_negative}",0.10982658714056,0.987012982368469,0.909090909090909,10
+"8","{insu=[-Inf;45],mass=[-Inf;27.4],age=[-Inf;29]} => {class=tested_negative}",0.0867052003741264,0.983606576919556,0.666666666666667,2
+"9","{plas=[-Inf;124],insu=[-Inf;45],mass=[-Inf;27.3]} => {class=tested_negative}",0.115606933832169,0.97560977935791,0.666666666666667,2
+"10","{preg=[-Inf;9],plas=[-Inf;124],mass=[-Inf;27.3]} => {class=tested_negative}",0.170520231127739,0.975206613540649,0.6,3
+"11","{plas=[81;162],insu=[37;128],mass=[26.7;45.3],age=[-Inf;30]} => {class=tested_negative}",0.088150292634964,0.968253970146179,0.945945945945946,35
+"12","{plas=[-Inf;99],insu=[14;159]} => {class=tested_negative}",0.114161849021912,0.96341460943222,0.625,5
+"13","{plas=[-Inf;99],age=[-Inf;30]} => {class=tested_negative}",0.163294792175293,0.95762711763382,0.5,1
+"14","{plas=[81;127],insu=[14;110]} => {class=tested_negative}",0.153179183602333,0.954954981803894,0.857142857142857,6
+"15","{preg=[-Inf;7],insu=[-Inf;95],mass=[-Inf;27.3]} => {class=tested_negative}",0.16473987698555,0.949999988079071,0.75,9
+"16","{insu=[14;114],mass=[-Inf;27.8]} => {class=tested_negative}",0.0708092451095581,0.942307710647583,0.5,2
+"17","{preg=[-Inf;9],plas=[-Inf;99]} => {class=tested_negative}",0.21965317428112,0.938271582126617,0.782608695652174,18
+"18","{preg=[-Inf;7],plas=[81;124],age=[-Inf;28]} => {class=tested_negative}",0.273121386766434,0.926470577716827,0.5,9
+"19","{plas=[-Inf;99]} => {class=tested_negative}",0.22976878285408,0.92441862821579,0.5,3
+"20","{preg=[-Inf;6],mass=[-Inf;27.3]} => {class=tested_negative}",0.193641617894173,0.924137949943542,0.25,1
+"21","{insu=[-Inf;95],mass=[-Inf;27.3]} => {class=tested_negative}",0.187861278653145,0.915492951869965,0.428571428571429,3
+"22","{preg=[-Inf;12],insu=[15;110]} => {class=tested_negative}",0.187861278653145,0.909090936183929,0.375,3
+"23","{mass=[-Inf;27.3]} => {class=tested_negative}",0.226878613233566,0.892045438289642,0.333333333333333,1
+"24","{preg=[-Inf;6],plas=[44;123]} => {class=tested_negative}",0.406069368124008,0.867283940315247,0.534883720930233,23
+"25","{} => {class=tested_positive}",0.34971097111702,0.34971097111702,0.683794466403162,173

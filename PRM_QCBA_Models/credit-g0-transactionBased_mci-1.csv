@@ -1,0 +1,20 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{checking_status=<0,credit_amount=[3105;Inf],savings_status=<100,job=skilled,own_telephone=yes} => {class=bad}",0.0166666675359011,1,1,15
+"2","{checking_status=0<=X<200,employment=<1,housing=rent,job=skilled} => {class=bad}",0.00999999977648258,1,1,9
+"3","{checking_status=<0,duration=[16;Inf],purpose=new car,housing=rent} => {class=bad}",0.00999999977648258,1,1,8
+"4","{checking_status=<0,purpose=education,housing=own} => {class=bad}",0.00888888910412788,1,1,6
+"5","{checking_status=<0,duration=[16;Inf],purpose=new car,personal_status=female div/dep/mar,own_telephone=none} => {class=bad}",0.00888888910412788,1,1,3
+"6","{checking_status=<0,credit_history=all paid,other_payment_plans=none} => {class=bad}",0.0077777779661119,1,1,6
+"7","{checking_status=<0,credit_history=delayed previously,savings_status=<100,job=skilled} => {class=bad}",0.0077777779661119,1,1,3
+"8","{checking_status=<0,credit_history=no credits/all paid,other_payment_plans=none} => {class=bad}",0.00666666682809591,1,1,5
+"9","{checking_status=0<=X<200,savings_status=<100,property_magnitude=no known property,own_telephone=none} => {class=bad}",0.00666666682809591,1,1,6
+"10","{checking_status=0<=X<200,purpose=new car,savings_status=<100,employment=>=7} => {class=bad}",0.00555555569007993,1,1,5
+"11","{checking_status=0<=X<200,credit_amount=[2359;Inf],savings_status=<100,personal_status=male div/sep} => {class=bad}",0.00444444455206394,1,1,4
+"12","{checking_status=0<=X<200,credit_history=no credits/all paid,property_magnitude=no known property} => {class=bad}",0.00333333341404796,1,1,2
+"13","{checking_status=0<=X<200,purpose=other,credit_amount=[2631;Inf],savings_status=<100} => {class=bad}",0.00333333341404796,1,1,3
+"14","{checking_status=0<=X<200,credit_amount=[3835;Inf],savings_status=<100,personal_status=male mar/wid} => {class=bad}",0.00333333341404796,1,1,3
+"15","{checking_status=<0,personal_status=male div/sep,job=skilled} => {class=bad}",0.00666666682809591,0.857142865657806,0.8,4
+"16","{checking_status=<0,credit_history=no credits/all paid} => {class=bad}",0.00999999977648258,0.818181812763214,0.5,2
+"17","{checking_status=<0,purpose=domestic appliance} => {class=bad}",0.00444444455206394,0.800000011920929,0.8,4
+"18","{checking_status=<0,credit_history=all paid} => {class=bad}",0.0166666675359011,0.714285731315613,0.538461538461538,7
+"19","{} => {class=good}",0.699999988079071,0.699999988079071,0.779874213836478,620

@@ -1,0 +1,17 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{attribute_21=[-Inf;0.6484],attribute_37=[0.2692;Inf],attribute_49=[-Inf;0.0658]} => {Class=Rock}",0.213903740048409,1,1,40
+"2","{attribute_9=[0.0899;Inf],attribute_45=[0.3263;Inf]} => {Class=Mine}",0.160427808761597,1,1,30
+"3","{attribute_12=[-Inf;0.2375],attribute_36=[0.5071;Inf],attribute_45=[-Inf;0.3955]} => {Class=Rock}",0.160427808761597,1,1,9
+"4","{attribute_11=[-Inf;Inf],attribute_12=[-Inf;0.1475],attribute_46=[-Inf;0.0757]} => {Class=Rock}",0.139037430286407,1,1,9
+"5","{attribute_8=[0.0494;0.4262],attribute_36=[0.4546;Inf],attribute_48=[-Inf;0.0785]} => {Class=Rock}",0.139037430286407,1,1,4
+"6","{attribute_10=[0.0113;Inf],attribute_44=[0.4286;0.5772]} => {Class=Mine}",0.117647059261799,1,1,1
+"7","{attribute_20=[0.5006;Inf],attribute_28=[0.9166;Inf]} => {Class=Mine}",0.0962566807866096,1,1,12
+"8","{attribute_10=[0.0113;Inf],attribute_11=[-Inf;Inf],attribute_28=[0.9582;0.982]} => {Class=Mine}",0.0481283403933048,1,1,3
+"9","{attribute_4=[-Inf;0.0608],attribute_9=[-Inf;0.1063],attribute_11=[-Inf;0.2373]} => {Class=Rock}",0.2299465239048,0.977272748947144,1,9
+"10","{attribute_11=[0.1734;Inf],attribute_37=[-Inf;0.3835],attribute_51=[0.0128;Inf]} => {Class=Mine}",0.272727280855179,0.962264180183411,0.939393939393939,31
+"11","{attribute_8=[-Inf;0.0802],attribute_12=[-Inf;0.1935]} => {Class=Rock}",0.13368983566761,0.961538434028625,1,1
+"12","{attribute_11=[0.0888;Inf],attribute_36=[-Inf;0.5071],attribute_49=[0.0452;Inf]} => {Class=Mine}",0.28877004981041,0.947368443012238,0.785714285714286,11
+"13","{attribute_9=[0.0836;Inf],attribute_46=[-Inf;0.0729],attribute_48=[-Inf;0.0755]} => {Class=Rock}",0.128342241048813,0.923076927661896,0.8,4
+"14","{attribute_11=[0.1989;Inf],attribute_20=[0.491;Inf],attribute_52=[0.0093;Inf]} => {Class=Mine}",0.224598929286003,0.893617033958435,1,4
+"15","{attribute_4=[-Inf;0.0519],attribute_45=[-Inf;0.3955],attribute_51=[-Inf;0.0136]} => {Class=Rock}",0.245989307761192,0.836363613605499,0.75,6
+"16","{} => {Class=Mine}",0.534759342670441,0.534759342670441,1,5

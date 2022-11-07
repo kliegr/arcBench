@@ -1,0 +1,6 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0996978878974915,1,1,33
+"2","{surgery=no,rectal_examination=increased} => {surgical_lesion=no}",0.0181268882006407,1,1,4
+"3","{surgery=no,rectal_examination=normal,outcome=lived} => {surgical_lesion=no}",0.0785498470067978,0.962962985038757,0.933333333333333,14
+"4","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.262839883565903,0.870000004768372,0.76,38
+"5","{} => {surgical_lesion=yes}",0.631419956684113,0.631419956684113,0.85589519650655,196

@@ -1,0 +1,17 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{surgery=yes,pulse=[54;Inf],capillary_refill_time=<3,outcome=lived} => {surgical_lesion=yes}",0.120845921337605,1,1,40
+"2","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0876132920384407,1,1,29
+"3","{surgery=yes,capillary_refill_time=<3,outcome=died} => {surgical_lesion=yes}",0.0845921486616135,1,1,28
+"4","{surgery=yes,respiratory_rate=[60;Inf]} => {surgical_lesion=yes}",0.0634441077709198,1,1,11
+"5","{nasogastric_reflux=none,outcome=died} => {surgical_lesion=yes}",0.0634441077709198,1,1,11
+"6","{surgery=no,rectal_examination=increased} => {surgical_lesion=no}",0.0181268882006407,1,1,4
+"7","{surgery=} => {surgical_lesion=yes}",0.00604229606688023,1,1,2
+"8","{surgery=yes,abdomen=distended small intestine} => {surgical_lesion=yes}",0.117824770510197,0.975000023841858,0.947368421052632,18
+"9","{surgery=yes,pain=continuous severe pain} => {surgical_lesion=yes}",0.111782476305962,0.973684191703796,0.9375,15
+"10","{surgery=no,rectal_examination=normal,outcome=lived} => {surgical_lesion=no}",0.0815709978342056,0.964285731315613,0.941176470588235,16
+"11","{surgery=yes,rectal_examination=decreased} => {surgical_lesion=yes}",0.0785498470067978,0.962962985038757,0.909090909090909,10
+"12","{respiratory_rate=[60;Inf]} => {surgical_lesion=yes}",0.0755287036299706,0.961538434028625,1,4
+"13","{abdomen=distended small intestine} => {surgical_lesion=yes}",0.13897280395031,0.920000016689301,0.7,7
+"14","{surgery=yes} => {surgical_lesion=yes}",0.504531741142273,0.878947377204895,0.666666666666667,40
+"15","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.259818732738495,0.868686854839325,0.818181818181818,36
+"16","{} => {surgical_lesion=yes}",0.631419956684113,0.631419956684113,0.56,14

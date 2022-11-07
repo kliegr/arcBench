@@ -1,0 +1,58 @@
+"","rules","support","confidence","lift","laplace","chiSquared","weightedChiSquared"
+"1","{pension=,education.allowance=} => {class=good}",0.333333333333333,1,1.54545454545455,0.947368421052632,13.9090909090909,13.9090909090909
+"2","{duration=[-Inf; Inf],pension=,education.allowance=} => {class=good}",0.333333333333333,1,1.54545454545455,0.947368421052632,13.9090909090909,13.9090909090909
+"3","{wage.increase.second.year=[-Inf; Inf],pension=,education.allowance=} => {class=good}",0.333333333333333,1,1.54545454545455,0.947368421052632,13.9090909090909,13.9090909090909
+"4","{wage.increase.third.year=[-Inf; Inf],pension=,education.allowance=} => {class=good}",0.333333333333333,1,1.54545454545455,0.947368421052632,13.9090909090909,13.9090909090909
+"5","{wage.increase.first.year=(2.9; Inf],longterm.disability.assistance=} => {class=good}",0.313725490196078,1,1.54545454545455,0.944444444444444,12.7168831168831,12.7168831168831
+"6","{pension=,longterm.disability.assistance=} => {class=good}",0.313725490196078,1,1.54545454545455,0.944444444444444,12.7168831168831,12.7168831168831
+"7","{duration=[-Inf; Inf],wage.increase.first.year=(2.9; Inf],longterm.disability.assistance=} => {class=good}",0.313725490196078,1,1.54545454545455,0.944444444444444,12.7168831168831,12.7168831168831
+"8","{wage.increase.first.year=(2.9; Inf],wage.increase.second.year=[-Inf; Inf],longterm.disability.assistance=} => {class=good}",0.313725490196078,1,1.54545454545455,0.944444444444444,12.7168831168831,12.7168831168831
+"9","{wage.increase.first.year=(2.9; Inf],wage.increase.third.year=[-Inf; Inf],longterm.disability.assistance=} => {class=good}",0.313725490196078,1,1.54545454545455,0.944444444444444,12.7168831168831,12.7168831168831
+"10","{duration=[-Inf; Inf],pension=,longterm.disability.assistance=} => {class=good}",0.313725490196078,1,1.54545454545455,0.944444444444444,12.7168831168831,12.7168831168831
+"11","{wage.increase.second.year=[-Inf; Inf],pension=,longterm.disability.assistance=} => {class=good}",0.313725490196078,1,1.54545454545455,0.944444444444444,12.7168831168831,12.7168831168831
+"12","{wage.increase.third.year=[-Inf; Inf],pension=,longterm.disability.assistance=} => {class=good}",0.313725490196078,1,1.54545454545455,0.944444444444444,12.7168831168831,12.7168831168831
+"13","{wage.increase.first.year=(2.9; Inf],vacation=generous} => {class=good}",0.274509803921569,1,1.54545454545455,0.9375,10.5257985257985,10.5257985257985
+"14","{duration=[-Inf; Inf],wage.increase.first.year=(2.9; Inf],vacation=generous} => {class=good}",0.274509803921569,1,1.54545454545455,0.9375,10.5257985257985,10.5257985257985
+"15","{wage.increase.first.year=(2.9; Inf],wage.increase.second.year=[-Inf; Inf],vacation=generous} => {class=good}",0.274509803921569,1,1.54545454545455,0.9375,10.5257985257985,10.5257985257985
+"16","{wage.increase.first.year=(2.9; Inf],wage.increase.third.year=[-Inf; Inf],vacation=generous} => {class=good}",0.274509803921569,1,1.54545454545455,0.9375,10.5257985257985,10.5257985257985
+"17","{contribution.to.dental.plan=full} => {class=good}",0.254901960784314,1,1.54545454545455,0.933333333333333,9.51674641148325,9.51674641148325
+"18","{duration=[-Inf; Inf],contribution.to.dental.plan=full} => {class=good}",0.254901960784314,1,1.54545454545455,0.933333333333333,9.51674641148325,9.51674641148325
+"19","{wage.increase.second.year=[-Inf; Inf],contribution.to.dental.plan=full} => {class=good}",0.254901960784314,1,1.54545454545455,0.933333333333333,9.51674641148325,9.51674641148325
+"20","{wage.increase.third.year=[-Inf; Inf],contribution.to.dental.plan=full} => {class=good}",0.254901960784314,1,1.54545454545455,0.933333333333333,9.51674641148325,9.51674641148325
+"21","{pension=,bereavement.assistance=yes} => {class=good}",0.196078431372549,1,1.54545454545455,0.916666666666667,6.78492239467849,6.78492239467849
+"22","{wage.increase.first.year=(2.9; Inf],contribution.to.health.plan=} => {class=good}",0.196078431372549,1,1.54545454545455,0.916666666666667,6.78492239467849,6.78492239467849
+"23","{pension=,contribution.to.health.plan=} => {class=good}",0.196078431372549,1,1.54545454545455,0.916666666666667,6.78492239467849,6.78492239467849
+"24","{duration=[-Inf; Inf],pension=,bereavement.assistance=yes} => {class=good}",0.196078431372549,1,1.54545454545455,0.916666666666667,6.78492239467849,6.78492239467849
+"25","{pension=none} => {class=bad}",0.176470588235294,1,2.83333333333333,0.909090909090909,20.0357142857143,20.0357142857143
+"26","{duration=[-Inf; Inf],pension=none} => {class=bad}",0.176470588235294,1,2.83333333333333,0.909090909090909,20.0357142857143,20.0357142857143
+"27","{wage.increase.second.year=[-Inf; Inf],pension=none} => {class=bad}",0.176470588235294,1,2.83333333333333,0.909090909090909,20.0357142857143,20.0357142857143
+"28","{wage.increase.third.year=[-Inf; Inf],pension=none} => {class=bad}",0.176470588235294,1,2.83333333333333,0.909090909090909,20.0357142857143,20.0357142857143
+"29","{pension=,longterm.disability.assistance=yes} => {class=good}",0.156862745098039,1,1.54545454545455,0.9,5.17547568710359,5.17547568710359
+"30","{duration=[-Inf; Inf],pension=,longterm.disability.assistance=yes} => {class=good}",0.156862745098039,1,1.54545454545455,0.9,5.17547568710359,5.17547568710359
+"31","{wage.increase.second.year=[-Inf; Inf],pension=,longterm.disability.assistance=yes} => {class=good}",0.156862745098039,1,1.54545454545455,0.9,5.17547568710359,5.17547568710359
+"32","{wage.increase.third.year=[-Inf; Inf],pension=,longterm.disability.assistance=yes} => {class=good}",0.156862745098039,1,1.54545454545455,0.9,5.17547568710359,5.17547568710359
+"33","{longterm.disability.assistance=no} => {class=bad}",0.137254901960784,1,2.83333333333333,0.888888888888889,14.875,14.875
+"34","{contribution.to.health.plan=none} => {class=bad}",0.137254901960784,1,2.83333333333333,0.888888888888889,14.875,14.875
+"35","{duration=[-Inf; Inf],longterm.disability.assistance=no} => {class=bad}",0.137254901960784,1,2.83333333333333,0.888888888888889,14.875,14.875
+"36","{wage.increase.second.year=[-Inf; Inf],longterm.disability.assistance=no} => {class=bad}",0.137254901960784,1,2.83333333333333,0.888888888888889,14.875,14.875
+"37","{wage.increase.third.year=[-Inf; Inf],longterm.disability.assistance=no} => {class=bad}",0.137254901960784,1,2.83333333333333,0.888888888888889,14.875,14.875
+"38","{duration=[-Inf; Inf],contribution.to.health.plan=none} => {class=bad}",0.137254901960784,1,2.83333333333333,0.888888888888889,14.875,14.875
+"39","{wage.increase.second.year=[-Inf; Inf],contribution.to.health.plan=none} => {class=bad}",0.137254901960784,1,2.83333333333333,0.888888888888889,14.875,14.875
+"40","{wage.increase.third.year=[-Inf; Inf],contribution.to.health.plan=none} => {class=bad}",0.137254901960784,1,2.83333333333333,0.888888888888889,14.875,14.875
+"41","{wage.increase.first.year=[-Inf;2.9],cost.of.living.adjustment=none} => {class=bad}",0.0980392156862745,1,2.83333333333333,0.857142857142857,10.1630434782609,10.1630434782609
+"42","{cost.of.living.adjustment=none,contribution.to.dental.plan=none} => {class=bad}",0.0980392156862745,1,2.83333333333333,0.857142857142857,10.1630434782609,10.1630434782609
+"43","{duration=[-Inf; Inf],wage.increase.first.year=[-Inf;2.9],cost.of.living.adjustment=none} => {class=bad}",0.0980392156862745,1,2.83333333333333,0.857142857142857,10.1630434782609,10.1630434782609
+"44","{wage.increase.first.year=[-Inf;2.9],wage.increase.second.year=[-Inf; Inf],cost.of.living.adjustment=none} => {class=bad}",0.0980392156862745,1,2.83333333333333,0.857142857142857,10.1630434782609,10.1630434782609
+"45","{wage.increase.first.year=[-Inf;2.9],cost.of.living.adjustment=tc} => {class=bad}",0.0784313725490196,1,2.83333333333333,0.833333333333333,7.95744680851064,7.95744680851064
+"46","{wage.increase.first.year=[-Inf;2.9],education.allowance=,bereavement.assistance=yes} => {class=bad}",0.0784313725490196,1,2.83333333333333,0.833333333333333,7.95744680851064,7.95744680851064
+"47","{wage.increase.first.year=[-Inf;2.9],longterm.disability.assistance=,bereavement.assistance=yes} => {class=bad}",0.0784313725490196,1,2.83333333333333,0.833333333333333,7.95744680851064,7.95744680851064
+"48","{duration=[-Inf; Inf],wage.increase.first.year=[-Inf;2.9],cost.of.living.adjustment=tc} => {class=bad}",0.0784313725490196,1,2.83333333333333,0.833333333333333,7.95744680851064,7.95744680851064
+"49","{wage.increase.first.year=[-Inf;2.9],education.allowance=,vacation=average} => {class=bad}",0.0588235294117647,1,2.83333333333333,0.8,5.84375,5.84375
+"50","{education.allowance=,vacation=average,contribution.to.dental.plan=} => {class=bad}",0.0588235294117647,1,2.83333333333333,0.8,5.84375,5.84375
+"51","{wage.increase.first.year=[-Inf;2.9],pension=empl_contr,education.allowance=} => {class=bad}",0.0588235294117647,1,2.83333333333333,0.8,5.84375,5.84375
+"52","{wage.increase.first.year=[-Inf;2.9],pension=empl_contr,longterm.disability.assistance=} => {class=bad}",0.0588235294117647,1,2.83333333333333,0.8,5.84375,5.84375
+"53","{wage.increase.first.year=[-Inf;2.9],bereavement.assistance=yes} => {class=bad}",0.137254901960784,0.875,2.47916666666667,0.8,11.3235993657505,7.37116017597474
+"54","{duration=[-Inf; Inf],wage.increase.first.year=[-Inf;2.9],bereavement.assistance=yes} => {class=bad}",0.137254901960784,0.875,2.47916666666667,0.8,11.3235993657505,7.37116017597474
+"55","{wage.increase.first.year=[-Inf;2.9],wage.increase.second.year=[-Inf; Inf],bereavement.assistance=yes} => {class=bad}",0.137254901960784,0.875,2.47916666666667,0.8,11.3235993657505,7.37116017597474
+"56","{wage.increase.first.year=[-Inf;2.9],wage.increase.third.year=[-Inf; Inf],bereavement.assistance=yes} => {class=bad}",0.137254901960784,0.875,2.47916666666667,0.8,11.3235993657505,7.37116017597474
+"57","{} => {class=good}",0,0,0,0,0,0

@@ -1,0 +1,16 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{preg=[7;Inf],plas=[151;Inf],mass=[26.2;Inf],pedi=[0.295;Inf]} => {class=tested_positive}",0.0376266278326511,1,1,26
+"2","{preg=[7;Inf],plas=[151;Inf],insu=[105;Inf]} => {class=tested_positive}",0.0274963825941086,1,1,4
+"3","{preg=[7;Inf],plas=[95;132],mass=[24.7;Inf],pedi=[0.514;Inf]} => {class=tested_positive}",0.0231548473238945,1,1,16
+"4","{preg=[-Inf;6],plas=[152;Inf],insu=[-Inf;66],mass=[26.7;Inf],pedi=[-Inf;0.678]} => {class=tested_positive}",0.0231548473238945,1,1,16
+"5","{plas=[149;Inf],insu=[-Inf;68],mass=[26.2;Inf],age=[-Inf;35]} => {class=tested_positive}",0.021707670763135,1,1,7
+"6","{plas=[154;Inf],mass=[26;Inf],pedi=[0.572;Inf],age=[-Inf;30]} => {class=tested_positive}",0.0202604923397303,1,1,9
+"7","{preg=[-Inf;6],plas=[121;188],insu=[-Inf;167],mass=[-Inf;Inf],pedi=[0.465;1.441],age=[30;61]} => {class=tested_positive}",0.0202604923397303,1,1,12
+"8","{plas=[-Inf;Inf],insu=[132;191],mass=[-Inf;25.9],age=[25;Inf]} => {class=tested_positive}",0.00578871183097363,1,1,2
+"9","{preg=[-Inf;Inf],plas=[120;Inf],mass=[24.4;25.5],pedi=[0.162;0.408]} => {class=tested_positive}",0.00434153387323022,1,1,1
+"10","{preg=[7;Inf],plas=[151;Inf],pedi=[0.295;Inf]} => {class=tested_positive}",0.0419681631028652,0.966666638851166,0.666666666666667,2
+"11","{plas=[121;188],insu=[-Inf;167],mass=[26.1;Inf],pedi=[0.514;1.394],age=[30;61]} => {class=tested_positive}",0.0419681631028652,0.966666638851166,0.857142857142857,6
+"12","{plas=[148;Inf],insu=[105;Inf],pedi=[0.135;0.63],age=[28;Inf]} => {class=tested_positive}",0.0390738062560558,0.964285731315613,0.933333333333333,14
+"13","{preg=[7;Inf],plas=[155;Inf],mass=[27.8;Inf]} => {class=tested_positive}",0.0376266278326511,0.928571403026581,0.666666666666667,4
+"14","{preg=[-Inf;6],plas=[124;153],mass=[19.9;Inf],pedi=[0.528;Inf],age=[30;61]} => {class=tested_positive}",0.0188133139163256,0.928571403026581,0.75,3
+"15","{} => {class=tested_negative}",0.651230096817017,0.651230096817017,0.788632326820604,444

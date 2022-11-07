@@ -1,0 +1,7 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{pension=,statutory.holidays=[11;Inf]} => {class=good}",0.461538463830948,1,1,24
+"2","{contribution.to.dental.plan=full} => {class=good}",0.230769231915474,1,1,5
+"3","{pension=none} => {class=bad}",0.211538463830948,1,1,11
+"4","{wage.increase.first.year=[-Inf;2.8],statutory.holidays=[-Inf;11]} => {class=bad}",0.211538463830948,1,1,4
+"5","{education.allowance=no,statutory.holidays=[-Inf;10]} => {class=bad}",0.134615391492844,1,1,2
+"6","{} => {class=good}",0.653846144676208,0.653846144676208,0.833333333333333,5

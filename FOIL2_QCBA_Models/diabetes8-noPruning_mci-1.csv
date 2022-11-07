@@ -1,0 +1,21 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{plas=[-Inf;106],mass=[-Inf;27.5]} => {class=tested_negative}",0.121387280523777,1,1,84
+"2","{plas=[-Inf;127],insu=[14;89],age=[28;Inf]} => {class=tested_negative}",0.0433526001870632,1,1,25
+"3","{plas=[105;154],insu=[49;114],age=[-Inf;30]} => {class=tested_negative}",0.0419075153768063,1,1,26
+"4","{plas=[94;124],insu=[130;Inf],age=[-Inf;28]} => {class=tested_negative}",0.040462426841259,1,1,26
+"5","{plas=[-Inf;165],insu=[135;Inf],mass=[-Inf;27]} => {class=tested_negative}",0.0231213867664337,1,1,9
+"6","{plas=[155;190],insu=[71;167]} => {class=tested_positive}",0.0173410400748253,1,1,12
+"7","{plas=[92;98],insu=[144;Inf]} => {class=tested_positive}",0.00433526001870632,1,1,3
+"8","{plas=[-Inf;128],mass=[-Inf;28.3],age=[-Inf;28]} => {class=tested_negative}",0.147398844361305,0.990291237831116,0.961538461538462,25
+"9","{plas=[-Inf;124],mass=[-Inf;27.3]} => {class=tested_negative}",0.176300585269928,0.968253970146179,0.833333333333333,15
+"10","{plas=[-Inf;99],age=[-Inf;30]} => {class=tested_negative}",0.163294792175293,0.95762711763382,0.925925925925926,50
+"11","{plas=[81;127],insu=[14;110]} => {class=tested_negative}",0.153179183602333,0.954954981803894,0.8125,13
+"12","{preg=[-Inf;Inf],plas=[103;124],insu=[115;148]} => {class=tested_negative}",0.0216763000935316,0.9375,0.833333333333333,5
+"13","{plas=[155;Inf],mass=[31.3;Inf],age=[-Inf;29]} => {class=tested_positive}",0.0375722534954548,0.928571403026581,0.91304347826087,21
+"14","{plas=[-Inf;99]} => {class=tested_negative}",0.22976878285408,0.92441862821579,0.777777777777778,21
+"15","{plas=[94;157],insu=[140;510],age=[-Inf;28]} => {class=tested_negative}",0.0722543373703957,0.909090936183929,0.782608695652174,18
+"16","{insu=[15;110]} => {class=tested_negative}",0.189306363463402,0.897260248661041,0.444444444444444,4
+"17","{mass=[-Inf;27.3]} => {class=tested_negative}",0.226878613233566,0.892045438289642,0.620689655172414,18
+"18","{preg=[7;Inf],insu=[114;132]} => {class=tested_positive}",0.0101156067103148,0.875,0.833333333333333,5
+"19","{preg=[-Inf;6],plas=[44;123]} => {class=tested_negative}",0.406069368124008,0.867283940315247,0.6,42
+"20","{} => {class=tested_positive}",0.34971097111702,0.34971097111702,0.67,134

@@ -1,0 +1,19 @@
+"","rules","support","confidence","lift","laplace"
+"1","{surgery=yes,pulse=(58; Inf],capillary_refill_time=<3,outcome=lived} => {surgical_lesion=yes}",0.114803625377644,1,1.58373205741627,0.975
+"2","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0876132930513595,1,2.71311475409836,0.967741935483871
+"3","{surgery=yes,capillary_refill_time=<3,outcome=died} => {surgical_lesion=yes}",0.0845921450151057,1,1.58373205741627,0.966666666666667
+"4","{surgery=yes,respiratory_rate=(59; Inf]} => {surgical_lesion=yes}",0.0634441087613293,1,1.58373205741627,0.956521739130435
+"5","{nasogastric_reflux=none,outcome=died} => {surgical_lesion=yes}",0.0634441087613293,1,1.58373205741627,0.956521739130435
+"6","{surgery=yes,abdomen=distended small intestine} => {surgical_lesion=yes}",0.117824773413897,0.975,1.54413875598086,0.952380952380952
+"7","{surgery=yes,pain=continuous severe pain} => {surgical_lesion=yes}",0.11178247734139,0.973684210526316,1.54205489801058,0.95
+"8","{surgery=no,rectal_examination=normal,outcome=lived} => {surgical_lesion=no}",0.081570996978852,0.964285714285714,2.61621779859485,0.933333333333333
+"9","{surgery=yes,rectal_examination=decreased} => {surgical_lesion=yes}",0.0785498489425982,0.962962962962963,1.525075314549,0.931034482758621
+"10","{respiratory_rate=(59; Inf]} => {surgical_lesion=yes}",0.0755287009063444,0.961538461538461,1.52281928597718,0.928571428571429
+"11","{abdomen=distended small intestine} => {surgical_lesion=yes}",0.138972809667674,0.92,1.45703349282297,0.903846153846154
+"12","{surgery=no,rectal_examination=increased} => {surgical_lesion=no}",0.0181268882175227,1,2.71311475409836,0.875
+"13","{surgery=yes} => {surgical_lesion=yes}",0.504531722054381,0.878947368421053,1.39201712415009,0.875
+"14","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.259818731117825,0.868686868686869,2.35684716012585,0.861386138613861
+"15","{pain=alert no pain} => {surgical_lesion=no}",0.105740181268882,0.833333333333333,2.26092896174863,0.818181818181818
+"16","{surgery=} => {surgical_lesion=yes}",0.00604229607250755,1,1.58373205741627,0.75
+"17","{surgery=no} => {surgical_lesion=no}",0.299093655589124,0.712230215827338,1.93236230687581,0.709219858156028
+"18","{} => {surgical_lesion=yes}",0,0,0,0

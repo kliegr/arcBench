@@ -1,0 +1,8 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{pension=,statutory.holidays=[11;Inf]} => {class=good}",0.403846144676208,1,1,21
+"2","{pension=none} => {class=bad}",0.211538463830948,1,1,11
+"3","{contribution.to.dental.plan=full} => {class=good}",0.211538463830948,1,1,6
+"4","{longterm.disability.assistance=no} => {class=bad}",0.15384615957737,1,1,3
+"5","{vacation=generous} => {class=good}",0.25,0.928571403026581,1,5
+"6","{pension=} => {class=good}",0.480769217014313,0.92592591047287,1,1
+"7","{} => {class=bad}",0.346153855323792,0.346153855323792,0.8,4

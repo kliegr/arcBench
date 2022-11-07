@@ -1,0 +1,7 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{petallength=[-Inf;1.9]} => {class=Iris-setosa}",0.333333343267441,1,1,45
+"2","{sepallength=[5;Inf],petallength=[3;4.7]} => {class=Iris-versicolor}",0.281481474637985,1,1,38
+"3","{sepallength=[6;Inf],petalwidth=[1.8;Inf]} => {class=Iris-virginica}",0.259259253740311,1,1,35
+"4","{petallength=[5.2;Inf]} => {class=Iris-virginica}",0.237037032842636,1,1,2
+"5","{petalwidth=[1.8;Inf]} => {class=Iris-virginica}",0.296296298503876,0.97560977935791,0.833333333333333,5
+"6","{} => {class=Iris-versicolor}",0.333333343267441,0.333333343267441,0.666666666666667,6

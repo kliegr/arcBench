@@ -1,0 +1,49 @@
+"","rules","support","confidence","lift","laplace"
+"1","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.096969696969697,1,2.70491803278689,0.970588235294118
+"2","{surgery=yes,peristalsis=hypomotile,outcome=died} => {surgical_lesion=yes}",0.0909090909090909,1,1.58653846153846,0.96875
+"3","{surgery=no,rectal_examination=normal,outcome=lived} => {surgical_lesion=no}",0.0878787878787879,1,2.70491803278689,0.967741935483871
+"4","{surgery=yes,capillary_refill_time=<3,outcome=died} => {surgical_lesion=yes}",0.0878787878787879,1,1.58653846153846,0.967741935483871
+"5","{surgery=yes,pulse=(58; Inf],outcome=lived} => {surgical_lesion=yes}",0.187878787878788,0.96875,1.53695913461538,0.954545454545455
+"6","{surgery=yes,abdomen=distended small intestine} => {surgical_lesion=yes}",0.118181818181818,0.975,1.546875,0.952380952380952
+"7","{abdominal_distension=moderate,nasogastric_tube=slight,abdomen=distended large intestine} => {surgical_lesion=yes}",0.0515151515151515,1,1.58653846153846,0.947368421052632
+"8","{surgery=no,mucous_membranes=normal pink,outcome=lived} => {surgical_lesion=no}",0.13030303030303,0.955555555555556,2.58469945355191,0.936170212765957
+"9","{mucous_membranes=pale pink,pain=intermittent severe pain} => {surgical_lesion=yes}",0.0393939393939394,1,1.58653846153846,0.933333333333333
+"10","{surgery=yes,abdominal_distension=severe} => {surgical_lesion=yes}",0.0787878787878788,0.962962962962963,1.52777777777778,0.931034482758621
+"11","{surgery=yes,pain=intermittent mild pain,rectal_examination=decreased} => {surgical_lesion=yes}",0.0363636363636364,1,1.58653846153846,0.928571428571429
+"12","{pulse=(58; Inf],nasogastric_tube=none,abdomen=distended small intestine} => {surgical_lesion=yes}",0.0363636363636364,1,1.58653846153846,0.928571428571429
+"13","{temp_extremities=cool,abdominocentesis_appearance=,outcome=died} => {surgical_lesion=yes}",0.0696969696969697,0.958333333333333,1.52043269230769,0.923076923076923
+"14","{surgery=no,abdominocentesis_appearance=cloudy,outcome=lived} => {surgical_lesion=no}",0.0303030303030303,1,2.70491803278689,0.916666666666667
+"15","{mucous_membranes=bright pink,abdomen=distended large intestine} => {surgical_lesion=yes}",0.0272727272727273,1,1.58653846153846,0.909090909090909
+"16","{surgery=no,nasogastric_tube=,outcome=lived} => {surgical_lesion=no}",0.112121212121212,0.925,2.50204918032787,0.904761904761905
+"17","{surgery=no,abdominal_distension=moderate,nasogastric_reflux=none} => {surgical_lesion=yes}",0.0242424242424242,1,1.58653846153846,0.9
+"18","{abdominal_distension=slight,abdomen=firm feces in large intestine} => {surgical_lesion=no}",0.0181818181818182,1,2.70491803278689,0.875
+"19","{peristalsis=absent,outcome=died} => {surgical_lesion=yes}",0.0818181818181818,0.9,1.42788461538462,0.875
+"20","{surgery=yes,abdominal_distension=none,nasogastric_reflux=none} => {surgical_lesion=yes}",0.0545454545454545,0.9,1.42788461538462,0.863636363636364
+"21","{surgery=yes,pulse=[-Inf;58],rectal_examination=} => {surgical_lesion=yes}",0.0303030303030303,0.909090909090909,1.44230769230769,0.846153846153846
+"22","{temp_extremities=,abdomen=distended large intestine} => {surgical_lesion=yes}",0.0303030303030303,0.909090909090909,1.44230769230769,0.846153846153846
+"23","{peristalsis=absent,abdomen=,outcome=euthanized} => {surgical_lesion=no}",0.00909090909090909,1,2.70491803278689,0.8
+"24","{surgery=no,abdominal_distension=,outcome=died} => {surgical_lesion=no}",0.00909090909090909,1,2.70491803278689,0.8
+"25","{capillary_refill_time=,outcome=died} => {surgical_lesion=yes}",0.0333333333333333,0.846153846153846,1.34245562130178,0.8
+"26","{pain=depressed,peristalsis=hypomotile,abdominal_distension=none} => {surgical_lesion=yes}",0.0212121212121212,0.875,1.38822115384615,0.8
+"27","{surgery=yes,abdominal_distension=none,nasogastric_tube=} => {surgical_lesion=yes}",0.0181818181818182,0.857142857142857,1.35989010989011,0.777777777777778
+"28","{pulse=(58; Inf],temp_extremities=cool,outcome=euthanized} => {surgical_lesion=yes}",0.0393939393939394,0.8125,1.2890625,0.777777777777778
+"29","{surgery=yes,pulse=[-Inf;58],abdomen=normal} => {surgical_lesion=no}",0.0151515151515152,0.833333333333333,2.25409836065574,0.75
+"30","{pulse=[-Inf;58],mucous_membranes=pale pink,abdominal_distension=} => {surgical_lesion=no}",0.00606060606060606,1,2.70491803278689,0.75
+"31","{Age=young,peripheral_pulse=reduced,nasogastric_tube=significant} => {surgical_lesion=no}",0.00606060606060606,1,2.70491803278689,0.75
+"32","{peristalsis=normal,nasogastric_tube=none,abdominocentesis_appearance=} => {surgical_lesion=no}",0.0151515151515152,0.833333333333333,2.25409836065574,0.75
+"33","{temp_extremities=,mucous_membranes=bright red} => {surgical_lesion=no}",0.00606060606060606,1,2.70491803278689,0.75
+"34","{capillary_refill_time=<3,peristalsis=hypomotile,abdominal_distension=} => {surgical_lesion=no}",0.0151515151515152,0.833333333333333,2.25409836065574,0.75
+"35","{temp_extremities=,mucous_membranes=pale pink,outcome=lived} => {surgical_lesion=yes}",0.00606060606060606,1,1.58653846153846,0.75
+"36","{mucous_membranes=normal pink,pain=,peristalsis=} => {surgical_lesion=yes}",0.00606060606060606,1,1.58653846153846,0.75
+"37","{pain=depressed,abdominocentesis_appearance=,outcome=euthanized} => {surgical_lesion=no}",0.0121212121212121,0.8,2.16393442622951,0.714285714285714
+"38","{Age=young,peristalsis=} => {surgical_lesion=yes}",0.0121212121212121,0.8,1.26923076923077,0.714285714285714
+"39","{abdominal_distension=slight,outcome=euthanized} => {surgical_lesion=no}",0.00909090909090909,0.75,2.02868852459016,0.666666666666667
+"40","{mucous_membranes=,pain=continuous severe pain,outcome=died} => {surgical_lesion=no}",0.00303030303030303,1,2.70491803278689,0.666666666666667
+"41","{pulse=[-Inf;58],abdominal_distension=severe,rectal_examination=} => {surgical_lesion=yes}",0.00303030303030303,1,1.58653846153846,0.666666666666667
+"42","{surgery=no,capillary_refill_time=>=3,nasogastric_tube=slight} => {surgical_lesion=no}",0.0181818181818182,0.666666666666667,1.80327868852459,0.636363636363636
+"43","{temp_extremities=warm,nasogastric_tube=significant} => {surgical_lesion=no}",0.00606060606060606,0.666666666666667,1.80327868852459,0.6
+"44","{capillary_refill_time=>=3,peristalsis=absent,rectal_examination=} => {surgical_lesion=no}",0.0212121212121212,0.583333333333333,1.57786885245902,0.571428571428571
+"45","{capillary_refill_time=meaning unknown,abdominocentesis_appearance=} => {surgical_lesion=no}",0.00303030303030303,0.5,1.35245901639344,0.5
+"46","{capillary_refill_time=>=3,peristalsis=hypermotile} => {surgical_lesion=no}",0.00303030303030303,0.5,1.35245901639344,0.5
+"47","{capillary_refill_time=,outcome=died} => {surgical_lesion=no}",0.00606060606060606,0.153846153846154,0.416141235813367,0.2
+"48","{} => {surgical_lesion=yes}",0,0,0,0

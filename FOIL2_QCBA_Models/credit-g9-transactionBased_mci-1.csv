@@ -1,0 +1,34 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{purpose=furniture/equipment,other_payment_plans=stores} => {class=good}",0.0122222220525146,1,1,11
+"2","{purpose=furniture/equipment,other_parties=guarantor} => {class=good}",0.0077777779661119,1,1,7
+"3","{checking_status=<0,purpose=education,housing=own} => {class=bad}",0.00666666682809591,1,1,6
+"4","{credit_history=existing paid,other_parties=co applicant,housing=rent} => {class=bad}",0.00555555569007993,1,1,5
+"5","{property_magnitude=no known property,other_payment_plans=stores} => {class=bad}",0.00444444455206394,1,1,4
+"6","{purpose=repairs,employment=<1} => {class=bad}",0.00333333341404796,1,1,3
+"7","{credit_history=all paid,personal_status=female div/dep/mar,job=high qualif/self emp/mgmt} => {class=bad}",0.00333333341404796,1,1,3
+"8","{purpose=repairs,savings_status=>=1000} => {class=bad}",0.00222222227603197,1,1,2
+"9","{checking_status=0<=X<200,duration=[20;Inf],other_parties=guarantor} => {class=bad}",0.00222222227603197,1,1,2
+"10","{checking_status=>=200,purpose=new car,employment=4<=X<7} => {class=bad}",0.00222222227603197,1,1,2
+"11","{personal_status=male mar/wid,other_parties=co applicant,housing=own} => {class=bad}",0.00111111113801599,1,1,1
+"12","{savings_status=no known savings,other_parties=guarantor,property_magnitude=life insurance} => {class=bad}",0.00111111113801599,1,1,1
+"13","{checking_status=<0,duration=[33;Inf],job=skilled} => {class=bad}",0.0299999993294477,0.870967745780945,0.958333333333333,23
+"14","{checking_status=0<=X<200,purpose=new car,savings_status=100<=X<500} => {class=bad}",0.0111111113801599,0.833333313465118,0.833333333333333,10
+"15","{checking_status=0<=X<200,employment=<1,housing=rent} => {class=bad}",0.0133333336561918,0.800000011920929,0.769230769230769,10
+"16","{purpose=business,credit_amount=[3868;Inf],savings_status=<100} => {class=bad}",0.0199999995529652,0.782608687877655,0.705882352941177,12
+"17","{checking_status=0<=X<200,savings_status=<100,property_magnitude=no known property} => {class=bad}",0.0166666675359011,0.75,0.666666666666667,10
+"18","{checking_status=>=200,property_magnitude=real estate,job=unskilled resident} => {class=bad}",0.00333333341404796,0.75,0.666666666666667,2
+"19","{checking_status=<0,housing=for free,job=skilled} => {class=bad}",0.0144444443285465,0.722222208976746,0.7,7
+"20","{housing=for free,num_dependents=2,own_telephone=none} => {class=bad}",0.0111111113801599,0.714285731315613,0.714285714285714,5
+"21","{checking_status=0<=X<200,credit_history=all paid,personal_status=male single} => {class=good}",0.00555555569007993,0.714285731315613,1,3
+"22","{credit_amount=[3711;Inf],employment=1<=X<4,personal_status=female div/dep/mar} => {class=bad}",0.0133333336561918,0.705882370471954,0.642857142857143,9
+"23","{checking_status=<0,credit_history=all paid,other_parties=none} => {class=bad}",0.00999999977648258,0.692307710647583,0.714285714285714,5
+"24","{employment=>=7,property_magnitude=no known property,job=high qualif/self emp/mgmt} => {class=bad}",0.0144444443285465,0.684210538864136,0.454545454545455,5
+"25","{checking_status=>=200,purpose=business,property_magnitude=real estate} => {class=bad}",0.00222222227603197,0.666666686534882,0.666666666666667,2
+"26","{checking_status=<0,savings_status=<100,housing=rent} => {class=bad}",0.0355555564165115,0.653061211109161,0.619047619047619,26
+"27","{credit_history=no credits/all paid} => {class=bad}",0.0266666673123837,0.648648619651794,0.214285714285714,3
+"28","{purpose=new car,other_payment_plans=bank} => {class=bad}",0.0199999995529652,0.642857134342194,0.538461538461538,7
+"29","{checking_status=<0,purpose=new car,num_dependents=1} => {class=bad}",0.0355555564165115,0.615384638309479,0.5625,18
+"30","{checking_status=0<=X<200,duration=[26;Inf],employment=1<=X<4} => {class=bad}",0.0177777782082558,0.615384638309479,0.416666666666667,5
+"31","{checking_status=0<=X<200,purpose=new car,savings_status=<100} => {class=bad}",0.0155555559322238,0.60869562625885,0.5,6
+"32","{checking_status=0<=X<200,purpose=furniture/equipment,savings_status=<100} => {class=bad}",0.0133333336561918,0.52173912525177,0.5625,9
+"33","{} => {class=good}",0.699999988079071,0.699999988079071,0.883071553228621,506

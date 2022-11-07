@@ -1,0 +1,15 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{steel=R,condition=S,surface.quality=} => {class=2}",0.0792079195380211,1,1,64
+"2","{family=TN} => {class=5}",0.0742574259638786,1,1,60
+"3","{condition=S,surface.quality=,thick=[1.201;3]} => {class=2}",0.0495049506425858,1,1,5
+"4","{hardness=[80;Inf],cbond=} => {class=U}",0.0358910895884037,1,1,29
+"5","{condition=S,shape=SHEET,thick=[0.799;0.901]} => {class=2}",0.0321782194077969,1,1,3
+"6","{hardness=[70;Inf],shape=SHEET} => {class=U}",0.0185643564909697,1,1,4
+"7","{hardness=[70;Inf],thick=[0.9;1.9]} => {class=U}",0.0160891097038984,1,1,1
+"8","{steel=M,strength=[400;Inf]} => {class=2}",0.0136138610541821,1,1,11
+"9","{surface.finish=P} => {class=2}",0.00866336654871702,1,1,6
+"10","{condition=,surface.quality=E,thick=[0.75;1.599]} => {class=U}",0.00742574268952012,1,1,1
+"11","{steel=S,carbon=[0;65]} => {class=1}",0.00618811883032322,1,1,5
+"12","{strength=300} => {class=1}",0.00247524748556316,1,1,2
+"13","{carbon=[4;Inf],surface.quality=E} => {class=U}",0.00247524748556316,1,1,1
+"14","{} => {class=3}",0.762376248836517,0.762376248836517,1,616

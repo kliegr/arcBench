@@ -1,0 +1,22 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{TSH=[-Inf;6],TT4=[49;Inf]} => {Class=negative}",0.896287560462952,1,1,3042
+"2","{TSH=[-Inf;6],referral.source=SVI} => {Class=negative}",0.244254574179649,1,1,13
+"3","{on.thyroxine=t,FTI=[60;395]} => {Class=negative}",0.12139069288969,1,1,52
+"4","{TT4=[149;Inf]} => {Class=negative}",0.0984089598059654,1,1,9
+"5","{thyroid.surgery=f,TSH=[14.4;Inf],FTI=[-Inf;64]} => {Class=primary_hypothyroid}",0.0200353562831879,1,1,68
+"6","{on.thyroxine=f,TSH=[6.6;Inf],FTI=[69;89]} => {Class=compensated_hypothyroid}",0.0162050686776638,1,1,55
+"7","{TSH=[5.6;Inf],T4U=[-Inf;1.08],FTI=[-Inf;64]} => {Class=primary_hypothyroid}",0.0120801413431764,1,1,5
+"8","{TSH=[14.4;Inf],FTI=[26;64]} => {Class=primary_hypothyroid}",0.0111962286755443,1,1,1
+"9","{TT4=[-Inf;21]} => {Class=primary_hypothyroid}",0.00942840334028006,1,1,3
+"10","{thyroid.surgery=t,T3.measured=t} => {Class=negative}",0.00942840334028006,1,1,7
+"11","{TSH=[5.6;Inf],FTI=[-Inf;64],referral.source=SVI} => {Class=primary_hypothyroid}",0.00913376547396183,1,1,3
+"12","{on.thyroxine=f,TSH=[17;Inf],FTI=[65;110]} => {Class=compensated_hypothyroid}",0.00766057753935456,1,1,10
+"13","{on.thyroxine=f,TSH=[34;Inf],T4U.measured=f} => {Class=primary_hypothyroid}",0.00147318793460727,1,1,2
+"14","{TT4.measured=f,referral.source=STMW} => {Class=primary_hypothyroid}",0.000589275208767503,1,1,1
+"15","{TSH=[8.3;Inf],T3.measured=f,TT4.measured=f} => {Class=primary_hypothyroid}",0.000589275208767503,1,1,1
+"16","{query.hypothyroid=f,TSH=[-Inf;6]} => {Class=negative}",0.852091908454895,0.999654352664948,0.8,4
+"17","{thyroid.surgery=t} => {Class=negative}",0.0132586918771267,0.97826087474823,1,1
+"18","{on.thyroxine=f,TSH=[7.9;42],FTI=[69;112]} => {Class=compensated_hypothyroid}",0.0297583974897861,0.961904764175415,0.981132075471698,52
+"19","{on.thyroxine=f,TSH=[6.1;23],TT4=[85;152]} => {Class=compensated_hypothyroid}",0.028874484822154,0.960784316062927,1,42
+"20","{on.thyroxine=f,TSH=[5.9;21],TT4=[54;117]} => {Class=compensated_hypothyroid}",0.0374189764261246,0.888111889362335,0.833333333333333,15
+"21","{} => {Class=negative}",0.92309957742691,0.92309957742691,0.666666666666667,2

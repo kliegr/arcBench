@@ -1,0 +1,17 @@
+"","rules","support","confidence","lift","laplace"
+"1","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0996978851963746,1,2.71311475409836,0.971428571428571
+"2","{surgery=yes,capillary_refill_time=<3,outcome=died} => {surgical_lesion=yes}",0.0785498489425982,1,1.58373205741627,0.964285714285714
+"3","{surgery=yes,mucous_membranes=pale pink,outcome=lived} => {surgical_lesion=yes}",0.0664652567975831,1,1.58373205741627,0.958333333333333
+"4","{surgery=yes,abdomen=distended small intestine} => {surgical_lesion=yes}",0.123867069486405,0.976190476190476,1.54602415128731,0.954545454545455
+"5","{surgery=yes,peripheral_pulse=reduced,pain=continuous severe pain} => {surgical_lesion=yes}",0.0604229607250755,1,1.58373205741627,0.954545454545455
+"6","{surgery=yes,peripheral_pulse=normal,pain=intermittent mild pain} => {surgical_lesion=yes}",0.0604229607250755,1,1.58373205741627,0.954545454545455
+"7","{surgery=yes,temp_extremities=warm} => {surgical_lesion=yes}",0.0483383685800604,1,1.58373205741627,0.944444444444444
+"8","{pain=depressed,outcome=died} => {surgical_lesion=yes}",0.0422960725075529,1,1.58373205741627,0.9375
+"9","{surgery=no,rectal_examination=normal,outcome=lived} => {surgical_lesion=no}",0.0785498489425982,0.962962962962963,2.61262902246509,0.931034482758621
+"10","{surgery=yes} => {surgical_lesion=yes}",0.507552870090634,0.879581151832461,1.39302086725619,0.875647668393782
+"11","{surgery=no,rectal_examination=increased} => {surgical_lesion=no}",0.0181268882175227,1,2.71311475409836,0.875
+"12","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.262839879154079,0.87,2.36040983606557,0.862745098039216
+"13","{abdominal_distension=moderate} => {surgical_lesion=yes}",0.199395770392749,0.868421052631579,1.37534626038781,0.858974358974359
+"14","{surgery=} => {surgical_lesion=yes}",0.00604229607250755,1,1.58373205741627,0.75
+"15","{surgery=no} => {surgical_lesion=no}",0.299093655589124,0.717391304347826,1.94636493228795,0.714285714285714
+"16","{} => {surgical_lesion=yes}",0,0,0,0

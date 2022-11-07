@@ -1,0 +1,14 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{surgery=yes,pulse=[54;Inf],capillary_refill_time=<3,outcome=lived} => {surgical_lesion=yes}",0.123867072165012,1,1,41
+"2","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0876132920384407,1,1,29
+"3","{surgery=yes,peristalsis=hypomotile,outcome=died} => {surgical_lesion=yes}",0.0815709978342056,1,1,27
+"4","{surgery=no,peristalsis=hypermotile,outcome=lived} => {surgical_lesion=no}",0.0785498470067978,1,1,16
+"5","{surgery=yes,capillary_refill_time=<3,outcome=died} => {surgical_lesion=yes}",0.0785498470067978,1,1,12
+"6","{surgery=yes,peristalsis=,outcome=lived} => {surgical_lesion=yes}",0.0362537764012814,1,1,10
+"7","{peristalsis=normal,abdomen=normal} => {surgical_lesion=no}",0.0211480371654034,1,1,6
+"8","{surgery=yes,abdomen=distended small intestine} => {surgical_lesion=yes}",0.114803627133369,0.974358975887299,0.9375,15
+"9","{surgery=no,abdominal_distension=slight,outcome=lived} => {surgical_lesion=no}",0.0815709978342056,0.964285731315613,0.923076923076923,12
+"10","{surgery=yes,pain=continuous severe pain} => {surgical_lesion=yes}",0.0936555862426758,0.939393937587738,0.882352941176471,15
+"11","{outcome=died} => {surgical_lesion=yes}",0.208459213376045,0.884615361690521,0.733333333333333,22
+"12","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.256797581911087,0.876288652420044,0.685714285714286,24
+"13","{} => {surgical_lesion=yes}",0.631419956684113,0.631419956684113,0.69620253164557,55

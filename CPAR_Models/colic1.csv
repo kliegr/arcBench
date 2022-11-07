@@ -1,0 +1,20 @@
+"","rules","support","confidence","lift","laplace"
+"1","{surgery=yes,pulse=(58; Inf],capillary_refill_time=<3,outcome=lived} => {surgical_lesion=yes}",0.118181818181818,1,1.58653846153846,0.975609756097561
+"2","{peristalsis=hypomotile,outcome=died} => {surgical_lesion=yes}",0.109090909090909,1,1.58653846153846,0.973684210526316
+"3","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.096969696969697,1,2.70491803278689,0.970588235294118
+"4","{surgery=yes,peristalsis=hypomotile,outcome=died} => {surgical_lesion=yes}",0.0909090909090909,1,1.58653846153846,0.96875
+"5","{surgery=no,rectal_examination=normal,outcome=lived} => {surgical_lesion=no}",0.0878787878787879,1,2.70491803278689,0.967741935483871
+"6","{surgery=yes,capillary_refill_time=<3,outcome=died} => {surgical_lesion=yes}",0.0878787878787879,1,1.58653846153846,0.967741935483871
+"7","{surgery=yes,nasogastric_reflux=>1l} => {surgical_lesion=yes}",0.0696969696969697,1,1.58653846153846,0.96
+"8","{surgery=yes,abdomen=distended small intestine} => {surgical_lesion=yes}",0.118181818181818,0.975,1.546875,0.952380952380952
+"9","{surgery=no,mucous_membranes=normal pink,outcome=lived} => {surgical_lesion=no}",0.13030303030303,0.955555555555556,2.58469945355191,0.936170212765957
+"10","{surgery=yes,abdominal_distension=severe} => {surgical_lesion=yes}",0.0787878787878788,0.962962962962963,1.52777777777778,0.931034482758621
+"11","{outcome=died} => {surgical_lesion=yes}",0.23030303030303,0.904761904761905,1.43543956043956,0.895348837209302
+"12","{peristalsis=normal,abdomen=normal} => {surgical_lesion=no}",0.0212121212121212,1,2.70491803278689,0.888888888888889
+"13","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.26969696969697,0.89,2.40737704918033,0.882352941176471
+"14","{surgery=yes} => {surgical_lesion=yes}",0.515151515151515,0.876288659793814,1.39026566217288,0.872448979591837
+"15","{abdomen=firm feces in large intestine} => {surgical_lesion=no}",0.0424242424242424,0.823529411764706,2.22757955641273,0.789473684210526
+"16","{surgery=} => {surgical_lesion=yes}",0.00606060606060606,1,1.58653846153846,0.75
+"17","{outcome=} => {surgical_lesion=yes}",0.00606060606060606,1,1.58653846153846,0.75
+"18","{abdomen=normal} => {surgical_lesion=no}",0.0636363636363636,0.75,2.02868852459016,0.733333333333333
+"19","{} => {surgical_lesion=yes}",0,0,0,0

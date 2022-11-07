@@ -1,0 +1,19 @@
+"","rules","support","confidence","lift","laplace"
+"1","{block_of_affere=yes,changes_in_node=lac_margin,no_of_nodes_in=[-Inf;2.5]} => {class=metastases}",0.293233082706767,1,1.82191780821918,0.930232558139535
+"2","{lym_nodes_enlar=(2.5; Inf],special_forms=vesicles,dislocation_of=yes,no_of_nodes_in=(2.5; Inf]} => {class=malign_lymph}",0.203007518796992,1,2.41818181818182,0.903225806451613
+"3","{lym_nodes_enlar=(2.5; Inf],changes_in_node=lac_central} => {class=malign_lymph}",0.112781954887218,1,2.41818181818182,0.842105263157895
+"4","{bl_of_lymph_c=yes,changes_in_node=lac_margin} => {class=metastases}",0.112781954887218,1,1.82191780821918,0.842105263157895
+"5","{block_of_affere=no,lym_nodes_enlar=(2.5; Inf]} => {class=malign_lymph}",0.172932330827068,0.92,2.22472727272727,0.827586206896552
+"6","{changes_in_node=lac_central} => {class=malign_lymph}",0.150375939849624,0.909090909090909,2.19834710743802,0.807692307692308
+"7","{changes_in_node=lac_margin} => {class=metastases}",0.428571428571429,0.838235294117647,1.52719580983078,0.805555555555556
+"8","{block_of_affere=no,changes_in_node=lac_central} => {class=malign_lymph}",0.0827067669172932,1,2.41818181818182,0.8
+"9","{changes_in_node=lac_margin,special_forms=no} => {class=metastases}",0.0601503759398496,1,1.82191780821918,0.75
+"10","{changes_in_stru=stripped} => {class=malign_lymph}",0.0451127819548872,1,2.41818181818182,0.7
+"11","{lymphatics=deformed,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}",0.0225563909774436,1,44.3333333333333,0.571428571428571
+"12","{by_pass=yes,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}",0.0225563909774436,1,44.3333333333333,0.571428571428571
+"13","{extravasates=yes,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}",0.0225563909774436,1,44.3333333333333,0.571428571428571
+"14","{regeneration_of=yes,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}",0.0225563909774436,1,44.3333333333333,0.571428571428571
+"15","{lym_nodes_dimin=(1.5; Inf],special_forms=vesicles} => {class=fibrosis}",0.0225563909774436,1,44.3333333333333,0.571428571428571
+"16","{lym_nodes_dimin=(1.5; Inf],no_of_nodes_in=(2.5; Inf]} => {class=fibrosis}",0.0225563909774436,1,44.3333333333333,0.571428571428571
+"17","{lymphatics=normal} => {class=normal}",0.0150375939849624,1,66.5,0.5
+"18","{} => {class=metastases}",0,0,0,0

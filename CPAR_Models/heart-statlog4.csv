@@ -1,0 +1,9 @@
+"","rules","support","confidence","lift","laplace"
+"1","{sex=0,chest=[-Inf;3.5],fasting_blood_sugar=0,thal=[-Inf;4.5]} => {class=absent}",0.1440329218107,1,1.8,0.972972972972973
+"2","{chest=(3.5; Inf],oldpeak=(0.85; Inf],number_of_major_vessels=(0.5; Inf],thal=(4.5; Inf]} => {class=present}",0.131687242798354,1,2.25,0.970588235294118
+"3","{age=[-Inf;54.5],number_of_major_vessels=[-Inf;0.5],thal=[-Inf;4.5]} => {class=absent}",0.230452674897119,0.96551724137931,1.73793103448276,0.95
+"4","{exercise_induced_angina=1,oldpeak=(0.85; Inf],thal=(4.5; Inf]} => {class=present}",0.152263374485597,0.973684210526316,2.19078947368421,0.95
+"5","{chest=(3.5; Inf],number_of_major_vessels=(0.5; Inf]} => {class=present}",0.234567901234568,0.919354838709677,2.06854838709677,0.90625
+"6","{number_of_major_vessels=(0.5; Inf],thal=(4.5; Inf]} => {class=present}",0.222222222222222,0.915254237288135,2.0593220338983,0.901639344262295
+"7","{chest=[-Inf;3.5],slope=[-Inf;1.5]} => {class=absent}",0.283950617283951,0.896103896103896,1.61298701298701,0.886075949367089
+"8","{} => {class=absent}",0,0,0,0

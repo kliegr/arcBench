@@ -1,0 +1,18 @@
+"","rules","support","confidence","lift","laplace"
+"1","{block_of_affere=yes,changes_in_node=lac_margin,no_of_nodes_in=[-Inf;2.5]} => {class=metastases}",0.276119402985075,1,1.83561643835616,0.926829268292683
+"2","{block_of_affere=no,early_uptake_in=yes,special_forms=vesicles,dislocation_of=yes} => {class=malign_lymph}",0.164179104477612,1,2.43636363636364,0.884615384615385
+"3","{block_of_affere=yes,special_forms=chalices} => {class=metastases}",0.208955223880597,0.96551724137931,1.77231931979216,0.878787878787879
+"4","{lym_nodes_enlar=(2.5; Inf],changes_in_node=lac_central} => {class=malign_lymph}",0.126865671641791,1,2.43636363636364,0.857142857142857
+"5","{block_of_affere=yes,early_uptake_in=no} => {class=metastases}",0.156716417910448,0.954545454545455,1.75217932752179,0.846153846153846
+"6","{changes_in_node=lac_margin,changes_in_stru=coarse} => {class=metastases}",0.111940298507463,1,1.83561643835616,0.842105263157895
+"7","{by_pass=yes,changes_in_node=lac_margin} => {class=metastases}",0.141791044776119,0.95,1.74383561643836,0.833333333333333
+"8","{bl_of_lymph_c=yes,changes_in_node=lac_margin} => {class=metastases}",0.0970149253731343,1,1.83561643835616,0.823529411764706
+"9","{changes_in_node=lac_central} => {class=malign_lymph}",0.156716417910448,0.91304347826087,2.22450592885375,0.814814814814815
+"10","{changes_in_stru=stripped} => {class=malign_lymph}",0.0522388059701493,1,2.43636363636364,0.727272727272727
+"11","{lymphatics=arched,block_of_affere=no,extravasates=yes} => {class=malign_lymph}",0.0522388059701493,1,2.43636363636364,0.727272727272727
+"12","{extravasates=no,special_forms=no,dislocation_of=yes} => {class=metastases}",0.0671641791044776,0.9,1.65205479452055,0.714285714285714
+"13","{by_pass=yes,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}",0.0298507462686567,1,33.5,0.625
+"14","{extravasates=yes,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}",0.0298507462686567,1,33.5,0.625
+"15","{regeneration_of=yes,lym_nodes_dimin=(1.5; Inf]} => {class=fibrosis}",0.0298507462686567,1,33.5,0.625
+"16","{lymphatics=normal} => {class=normal}",0.0149253731343284,1,67,0.5
+"17","{} => {class=metastases}",0,0,0,0

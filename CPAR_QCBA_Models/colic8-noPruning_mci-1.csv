@@ -1,0 +1,14 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{surgery=yes,Age=adult,pulse=[54;Inf],outcome=lived} => {surgical_lesion=yes}",0.174698799848557,1,1,58
+"2","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0963855385780334,1,1,32
+"3","{surgery=yes,capillary_refill_time=<3,outcome=died} => {surgical_lesion=yes}",0.0873493999242783,1,1,29
+"4","{peripheral_pulse=absent} => {surgical_lesion=yes}",0.0240963846445084,1,1,7
+"5","{surgery=} => {surgical_lesion=yes}",0.00602409616112709,1,1,2
+"6","{surgery=no,mucous_membranes=normal pink,outcome=lived} => {surgical_lesion=no}",0.123493976891041,0.976190447807312,0.96,24
+"7","{surgery=yes,mucous_membranes=pale pink} => {surgical_lesion=yes}",0.120481930673122,0.97560977935791,0.9375,15
+"8","{surgery=yes,abdomen=distended small intestine} => {surgical_lesion=yes}",0.117469877004623,0.975000023841858,1,10
+"9","{surgery=yes,pain=continuous severe pain} => {surgical_lesion=yes}",0.108433738350868,0.972972989082336,0.923076923076923,12
+"10","{nasogastric_reflux=,abdomen=normal} => {surgical_lesion=no}",0.0331325307488441,0.916666686534882,0.888888888888889,8
+"11","{abdominal_distension=moderate} => {surgical_lesion=yes}",0.204819276928902,0.906666696071625,0.777777777777778,21
+"12","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.27409639954567,0.900990128517151,0.82051282051282,32
+"13","{} => {surgical_lesion=yes}",0.629518091678619,0.629518091678619,0.707692307692308,46

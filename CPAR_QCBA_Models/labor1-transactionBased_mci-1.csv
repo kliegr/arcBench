@@ -1,0 +1,6 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{pension=none} => {class=bad}",0.196078434586525,1,1,10
+"2","{contribution.to.health.plan=none} => {class=bad}",0.137254908680916,1,1,4
+"3","{longterm.disability.assistance=no} => {class=bad}",0.117647059261799,1,1,1
+"4","{wage.increase.first.year=[-Inf;2.5]} => {class=bad}",0.254901975393295,0.928571403026581,0.75,3
+"5","{} => {class=good}",0.647058844566345,0.647058844566345,1,32

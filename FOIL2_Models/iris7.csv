@@ -1,0 +1,11 @@
+"","rules","support","confidence","lift","laplace"
+"1","{petallength=[-Inf;2.45]} => {class=Iris-setosa}",0.333333333333333,1,3,0.958333333333333
+"2","{sepallength=(6.15; Inf],petalwidth=(1.75; Inf]} => {class=Iris-virginica}",0.244444444444444,1,3,0.944444444444444
+"3","{petallength=(5.15; Inf]} => {class=Iris-virginica}",0.237037037037037,1,3,0.942857142857143
+"4","{petallength=(2.45;4.75],petalwidth=(0.8;1.75]} => {class=Iris-versicolor}",0.288888888888889,0.975,2.925,0.930232558139535
+"5","{petallength=(4.75;5.15],petalwidth=(1.75; Inf]} => {class=Iris-virginica}",0.0740740740740741,0.909090909090909,2.72727272727273,0.785714285714286
+"6","{petallength=(4.75;5.15]} => {class=Iris-virginica}",0.0888888888888889,0.666666666666667,2,0.619047619047619
+"7","{sepallength=(5.55;6.15]} => {class=Iris-versicolor}",0.155555555555556,0.636363636363636,1.90909090909091,0.611111111111111
+"8","{petallength=(4.75;5.15],petalwidth=(0.8;1.75]} => {class=Iris-versicolor}",0.037037037037037,0.714285714285714,2.14285714285714,0.6
+"9","{sepallength=[-Inf;5.55],petallength=(2.45;4.75]} => {class=Iris-virginica}",0.00740740740740741,0.0909090909090909,0.272727272727273,0.142857142857143
+"10","{} => {class=Iris-setosa}",0,0,0,0

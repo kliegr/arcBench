@@ -1,0 +1,18 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{checking_status=<0,duration=[33;Inf],other_parties=none,job=skilled,num_dependents=1} => {class=bad}",0.0199999995529652,1,1,18
+"2","{checking_status=0<=X<200,duration=[26;Inf],credit_history=existing paid,savings_status=100<=X<500} => {class=bad}",0.00888888910412788,1,1,8
+"3","{checking_status=<0,credit_history=all paid,other_payment_plans=none} => {class=bad}",0.0077777779661119,1,1,7
+"4","{checking_status=0<=X<200,savings_status=<100,employment=>=7,housing=for free} => {class=bad}",0.0077777779661119,1,1,7
+"5","{checking_status=<0,duration=[33;Inf],purpose=radio/tv} => {class=bad}",0.00666666682809591,1,1,2
+"6","{checking_status=<0,purpose=education,housing=own} => {class=bad}",0.00666666682809591,1,1,4
+"7","{checking_status=0<=X<200,purpose=new car,savings_status=100<=X<500,property_magnitude=life insurance} => {class=bad}",0.00666666682809591,1,1,4
+"8","{checking_status=<0,credit_history=no credits/all paid,housing=rent} => {class=bad}",0.00555555569007993,1,1,4
+"9","{checking_status=0<=X<200,credit_history=no credits/all paid,housing=rent} => {class=bad}",0.00444444455206394,1,1,4
+"10","{checking_status=<0,credit_history=delayed previously,employment=<1} => {class=bad}",0.00333333341404796,1,1,2
+"11","{checking_status=0<=X<200,property_magnitude=no known property,job=unskilled resident} => {class=bad}",0.00333333341404796,1,1,3
+"12","{checking_status=<0,duration=[33;Inf],employment=>=7} => {class=bad}",0.0133333336561918,0.923076927661896,0.857142857142857,6
+"13","{credit_history=no credits/all paid,personal_status=female div/dep/mar} => {class=bad}",0.00888888910412788,0.888888895511627,0.75,3
+"14","{duration=[33;Inf],other_payment_plans=stores} => {class=bad}",0.00666666682809591,0.857142865657806,0.8,4
+"15","{checking_status=<0,credit_history=no credits/all paid} => {class=bad}",0.0111111113801599,0.769230782985687,0.571428571428571,4
+"16","{checking_status=<0,purpose=domestic appliance} => {class=bad}",0.00333333341404796,0.75,0.75,3
+"17","{} => {class=good}",0.699999988079071,0.699999988079071,0.769135802469136,623

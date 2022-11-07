@@ -1,0 +1,16 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{plas=[-Inf;105],mass=[-Inf;28.9],age=[-Inf;43]} => {class=tested_negative}",0.138929083943367,1,1,96
+"2","{plas=[-Inf;127],insu=[130;Inf],age=[-Inf;27]} => {class=tested_negative}",0.0448625199496746,1,1,28
+"3","{plas=[155;190],insu=[68;250]} => {class=tested_positive}",0.0434153415262699,1,1,30
+"4","{preg=[4;Inf],plas=[155;Inf],insu=[15;543]} => {class=tested_positive}",0.0347322709858418,1,1,10
+"5","{plas=[-Inf;103],insu=[15;87]} => {class=tested_negative}",0.115774236619473,0.97560977935791,0.954545454545455,42
+"6","{mass=[-Inf;28.8],age=[-Inf;27]} => {class=tested_negative}",0.175108537077904,0.967999994754791,0.933333333333333,42
+"7","{preg=[7;Inf],plas=[155;Inf],mass=[27.8;Inf]} => {class=tested_positive}",0.0434153415262699,0.9375,0.875,14
+"8","{plas=[-Inf;99]} => {class=tested_negative}",0.234442830085754,0.931034505367279,0.824561403508772,47
+"9","{insu=[15;87]} => {class=tested_negative}",0.150506511330605,0.928571403026581,0.782608695652174,18
+"10","{mass=[-Inf;28.8]} => {class=tested_negative}",0.287988424301147,0.857758641242981,0.685714285714286,48
+"11","{preg=[7;Inf],insu=[142;Inf]} => {class=tested_positive}",0.0390738062560558,0.84375,0.769230769230769,10
+"12","{plas=[155;Inf]} => {class=tested_positive}",0.127351671457291,0.822429895401001,0.763157894736842,29
+"13","{preg=[7;Inf],plas=[128;Inf],mass=[30;Inf]} => {class=tested_positive}",0.0723588988184929,0.819672107696533,0.65,13
+"14","{plas=[128;Inf],mass=[28.9;Inf]} => {class=tested_positive}",0.202604919672012,0.699999988079071,0.5125,41
+"15","{} => {class=tested_negative}",0.651230096817017,0.651230096817017,0.570247933884298,69

@@ -1,0 +1,20 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{checking_status=<0,duration=[33;Inf],property_magnitude=car,job=skilled} => {class=bad}",0.0133333336561918,1,1,12
+"2","{checking_status=<0,credit_history=no credits/all paid,other_parties=none} => {class=bad}",0.00999999977648258,1,1,8
+"3","{checking_status=<0,credit_history=all paid,other_payment_plans=none} => {class=bad}",0.00888888910412788,1,1,7
+"4","{checking_status=<0,purpose=education,housing=own} => {class=bad}",0.00888888910412788,1,1,8
+"5","{checking_status=0<=X<200,savings_status=<100,employment=>=7,property_magnitude=no known property} => {class=bad}",0.00888888910412788,1,1,8
+"6","{checking_status=0<=X<200,credit_amount=[3021;Inf],personal_status=female div/dep/mar,job=high qualif/self emp/mgmt} => {class=bad}",0.00888888910412788,1,1,5
+"7","{checking_status=0<=X<200,duration=[26;Inf],savings_status=<100,property_magnitude=no known property,other_payment_plans=none} => {class=bad}",0.00888888910412788,1,1,3
+"8","{checking_status=<0,credit_history=delayed previously,savings_status=<100,job=skilled} => {class=bad}",0.0077777779661119,1,1,4
+"9","{checking_status=0<=X<200,purpose=new car,savings_status=100<=X<500,property_magnitude=life insurance} => {class=bad}",0.00666666682809591,1,1,5
+"10","{checking_status=0<=X<200,duration=[33;Inf],savings_status=<100,employment=<1} => {class=bad}",0.00555555569007993,1,1,4
+"11","{checking_status=0<=X<200,savings_status=100<=X<500,employment=<1,personal_status=female div/dep/mar} => {class=bad}",0.00555555569007993,1,1,2
+"12","{checking_status=<0,purpose=domestic appliance} => {class=bad}",0.00444444455206394,1,1,3
+"13","{duration=[26;Inf],purpose=radio/tv,savings_status=100<=X<500} => {class=bad}",0.00444444455206394,1,1,4
+"14","{checking_status=0<=X<200,property_magnitude=no known property,job=unskilled resident} => {class=bad}",0.00333333341404796,1,1,2
+"15","{checking_status=0<=X<200,purpose=other,credit_amount=[2631;Inf],savings_status=<100} => {class=bad}",0.00333333341404796,1,1,2
+"16","{checking_status=<0,duration=[33;Inf],property_magnitude=no known property} => {class=bad}",0.0166666675359011,0.882352948188782,0.818181818181818,9
+"17","{credit_history=no credits/all paid,employment=<1} => {class=bad}",0.00555555569007993,0.833333313465118,0.75,3
+"18","{checking_status=<0,credit_history=all paid} => {class=bad}",0.0177777782082558,0.761904776096344,0.583333333333333,7
+"19","{} => {class=good}",0.699999988079071,0.699999988079071,0.781407035175879,622

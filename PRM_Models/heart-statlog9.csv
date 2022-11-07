@@ -1,0 +1,10 @@
+"","rules","support","confidence","lift","laplace"
+"1","{sex=0,chest=[-Inf;3.5],fasting_blood_sugar=0,thal=[-Inf;4.5]} => {class=absent}",0.164609053497942,1,1.8,0.976190476190476
+"2","{exercise_induced_angina=1,oldpeak=(1.7; Inf],thal=(4.5; Inf]} => {class=present}",0.0987654320987654,1,2.25,0.961538461538462
+"3","{age=[-Inf;54.5],number_of_major_vessels=[-Inf;0.5],thal=[-Inf;4.5]} => {class=absent}",0.246913580246914,0.967741935483871,1.74193548387097,0.953125
+"4","{chest=(3.5; Inf],exercise_induced_angina=1,number_of_major_vessels=(0.5; Inf]} => {class=present}",0.135802469135802,0.970588235294118,2.18382352941176,0.944444444444444
+"5","{slope=(1.5; Inf],number_of_major_vessels=(0.5; Inf],thal=(4.5; Inf]} => {class=present}",0.168724279835391,0.953488372093023,2.1453488372093,0.933333333333333
+"6","{chest=[-Inf;3.5],slope=[-Inf;1.5]} => {class=absent}",0.292181069958848,0.91025641025641,1.63846153846154,0.9
+"7","{oldpeak=(1.7; Inf]} => {class=present}",0.193415637860082,0.824561403508772,1.85526315789474,0.813559322033898
+"8","{thal=(4.5; Inf]} => {class=present}",0.325102880658436,0.731481481481482,1.64583333333333,0.727272727272727
+"9","{} => {class=absent}",0,0,0,0

@@ -1,0 +1,13 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{attribute_12=[0.1901;Inf],attribute_48=[0.0749;Inf],attribute_51=[0.0124;Inf]} => {Class=Mine}",0.244680851697922,1,1,46
+"2","{attribute_1=[-Inf;0.0587],attribute_4=[-Inf;0.0608],attribute_9=[-Inf;0.1229],attribute_11=[-Inf;0.2373],attribute_28=[-Inf;0.9595]} => {Class=Rock}",0.234042555093765,1,1,44
+"3","{attribute_12=[-Inf;0.2434],attribute_21=[-Inf;0.6474],attribute_49=[-Inf;0.0531]} => {Class=Rock}",0.202127665281296,1,1,14
+"4","{attribute_13=[-Inf;0.2202],attribute_36=[0.3929;Inf],attribute_45=[-Inf;0.2811]} => {Class=Rock}",0.15425531566143,1,1,8
+"5","{attribute_11=[0.1475;Inf],attribute_45=[0.3955;Inf]} => {Class=Mine}",0.122340425848961,1,1,9
+"6","{attribute_11=[0.074;Inf],attribute_54=[0.021;Inf]} => {Class=Mine}",0.106382980942726,1,1,8
+"7","{attribute_4=[0.0494;Inf],attribute_35=[-Inf;0.2459],attribute_52=[0.0093;Inf]} => {Class=Mine}",0.0851063802838326,1,1,7
+"8","{attribute_36=[0.5071;Inf],attribute_47=[-Inf;0.0692]} => {Class=Rock}",0.0797872319817543,1,1,2
+"9","{attribute_12=[0.1412;Inf],attribute_28=[0.9582;Inf]} => {Class=Mine}",0.117021277546883,0.95652174949646,0.857142857142857,6
+"10","{attribute_45=[0.3955;Inf]} => {Class=Mine}",0.132978722453117,0.92592591047287,1,2
+"11","{attribute_47=[-Inf;0.0623]} => {Class=Rock}",0.196808516979218,0.770833313465118,0.727272727272727,8
+"12","{} => {Class=Mine}",0.531914889812469,0.531914889812469,0.633333333333333,19

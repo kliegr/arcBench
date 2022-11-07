@@ -1,0 +1,22 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{wheelBase=[88.4;94.5],width=[63.8;64.2],engineSize=[61;103]} => {XClass=1}",0.172043010592461,1,1,32
+"2","{wheelBase=[-Inf;99.1],height=[-Inf;50.2]} => {XClass=3}",0.0752688199281693,1,1,14
+"3","{normalizedLosses=[-Inf;102],numOfDoors=four,driveWheels=rwd} => {XClass=-1}",0.0537634417414665,1,1,10
+"4","{normalizedLosses=[-Inf;102],wheelBase=[98.4;105.8]} => {XClass=-1}",0.0483870953321457,1,1,6
+"5","{bodyStyle=sedan,fuelSystem=mpfi,wheelBase=[97.3;99.8]} => {XClass=2}",0.0483870953321457,1,1,9
+"6","{bodyStyle=sedan,wheelBase=[96.6;99.8],bore=[-Inf;3.31]} => {XClass=2}",0.0483870953321457,1,1,3
+"7","{wheelBase=[88.6;91.3]} => {XClass=3}",0.0322580635547638,1,1,3
+"8","{make=toyota,wheelBase=[95.9;102]} => {XClass=2}",0.0268817208707333,1,1,5
+"9","{wheelBase=[-Inf;88.4]} => {XClass=2}",0.0161290317773819,1,1,3
+"10","{make=subaru,numOfDoors=two} => {XClass=2}",0.0161290317773819,1,1,3
+"11","{make=saab,numOfDoors=two} => {XClass=3}",0.0161290317773819,1,1,3
+"12","{height=56.2} => {XClass=-2}",0.0107526881620288,1,1,2
+"13","{make=mercury} => {XClass=1}",0.00537634408101439,1,1,1
+"14","{engineType=dohcv} => {XClass=1}",0.00537634408101439,1,1,1
+"15","{fuelSystem=spfi} => {XClass=2}",0.00537634408101439,1,1,1
+"16","{numOfDoors=four,wheelBase=[95.1;99.2],height=[52;55.6]} => {XClass=0}",0.129032254219055,0.959999978542328,0.96,24
+"17","{bodyStyle=convertible} => {XClass=3}",0.0215053763240576,0.800000011920929,1,2
+"18","{wheelBase=[93;94.5]} => {XClass=1}",0.188172042369843,0.760869562625885,0.333333333333333,3
+"19","{bodyStyle=hatchback,engineType=dohc} => {XClass=3}",0.0161290317773819,0.75,1,2
+"20","{make=renault} => {XClass=2}",0.00537634408101439,0.5,1,1
+"21","{} => {XClass=0}",0.327956974506378,0.327956974506378,0.666666666666667,34

@@ -1,0 +1,9 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{attribute_11=[0.1097;Inf],attribute_45=[0.2662;Inf]} => {Class=Mine}",0.171122997999191,1,1,32
+"2","{attribute_10=[-Inf;0.7106],attribute_11=[-Inf;0.1742],attribute_46=[-Inf;0.069]} => {Class=Rock}",0.144385024905205,1,1,27
+"3","{attribute_13=[0.2076;Inf],attribute_28=[0.9582;Inf]} => {Class=Mine}",0.122994653880596,1,1,17
+"4","{attribute_12=[0.2023;Inf],attribute_48=[0.0749;Inf],attribute_51=[0.0124;Inf]} => {Class=Mine}",0.262032091617584,0.980000019073486,0.952380952380952,20
+"5","{attribute_5=[-Inf;0.0458],attribute_9=[-Inf;0.1206]} => {Class=Rock}",0.155080214142799,0.966666638851166,1,18
+"6","{attribute_11=[-Inf;0.2486],attribute_49=[-Inf;0.0242]} => {Class=Rock}",0.144385024905205,0.964285731315613,0.857142857142857,6
+"7","{attribute_54=[0.0226;Inf]} => {Class=Mine}",0.101604275405407,0.949999988079071,1,6
+"8","{} => {Class=Rock}",0.465240627527237,0.465240627527237,0.593220338983051,35

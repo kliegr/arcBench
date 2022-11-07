@@ -1,0 +1,9 @@
+"","rules","support","confidence","lift","laplace"
+"1","{petallength=[-Inf;2.45]} => {class=Iris-setosa}",0.333333333333333,1,3,0.958333333333333
+"2","{petalwidth=(1.75; Inf]} => {class=Iris-virginica}",0.303703703703704,1,3,0.954545454545455
+"3","{sepallength=(5.55; Inf],petallength=(2.45;4.75],petalwidth=(0.75;1.75]} => {class=Iris-versicolor}",0.222222222222222,1,3,0.939393939393939
+"4","{petallength=(2.45;4.75],petalwidth=(0.75;1.75]} => {class=Iris-versicolor}",0.296296296296296,0.975609756097561,2.92682926829268,0.931818181818182
+"5","{petallength=(2.45;4.75]} => {class=Iris-versicolor}",0.296296296296296,0.975609756097561,2.92682926829268,0.931818181818182
+"6","{petalwidth=(0.75;1.75]} => {class=Iris-versicolor}",0.333333333333333,0.918367346938775,2.75510204081633,0.884615384615385
+"7","{petallength=(4.75; Inf]} => {class=Iris-virginica}",0.325925925925926,0.897959183673469,2.69387755102041,0.865384615384615
+"8","{} => {class=Iris-setosa}",0,0,0,0

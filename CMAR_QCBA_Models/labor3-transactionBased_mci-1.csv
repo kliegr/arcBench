@@ -1,0 +1,8 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{pension=none} => {class=bad}",0.196078434586525,1,1,10
+"2","{longterm.disability.assistance=no} => {class=bad}",0.156862750649452,1,1,3
+"3","{contribution.to.health.plan=none} => {class=bad}",0.137254908680916,1,1,2
+"4","{cost.of.living.adjustment=none,contribution.to.dental.plan=none} => {class=bad}",0.117647059261799,1,1,1
+"5","{wage.increase.first.year=[-Inf;3.5],cost.of.living.adjustment=tc} => {class=bad}",0.0784313753247261,1,1,1
+"6","{wage.increase.first.year=[-Inf;3.748],education.allowance=,vacation=average} => {class=bad}",0.0588235296308994,1,1,1
+"7","{} => {class=good}",0.647058844566345,0.647058844566345,1,33

@@ -5,7 +5,7 @@
 #this may not run on new versions of R (i.e. R 4 is not supported)
 rm(list = ls())
 #options(java.parameters = "-Xmx16000m")
-options(java.parameters = c("-XX:+UseConcMarkSweepGC", "-Xmx16192m"))
+options(java.parameters = c("-Xmx16192m"))
 gc()
 library(qCBA)
 library(rCBA)
@@ -15,6 +15,7 @@ library(stringr)
 
 
 ###############################################################################
+#This function is present in latest QCBA release and may be removed
 arulesCBA2arcCBAModel <- function(arulesCBAModel, cutPoints, rawDataset, classAtt, attTypes )
 {
   # note that the example for this function generates a notice
@@ -65,10 +66,11 @@ arulesCBA2arcCBAModel <- function(arulesCBAModel, cutPoints, rawDataset, classAt
 ###############################################################################
 runSeparateCBAQCBA <-FALSE
 basePath="./"
+datasets <- c("anneal","australian","autos","breast-w","colic","credit-a","credit-g","diabetes","glass","heart-statlog","hepatitis","hypothyroid","ionosphere","iris","labor","letter","lymph","segment","sonar","spambase","vehicle","vowel")
 
-datasets <- c("hepatitis","ionosphere","sonar","spambase","australian", "breast-w", "colic", "credit-a",  "diabetes", "heart-statlog","credit-g"
+#datasets <- c("hepatitis","ionosphere","sonar","spambase","australian", "breast-w", "colic", "credit-a",  "diabetes", "heart-statlog","credit-g"
               #,"kdd1000_","kdd10000_","kdd20000_","kdd30000_","kdd40000_"
-              )
+#              )
 algs <- c("CMAR","CPAR","PRM","FOIL2")  
 foldsToProcess <- 10
 maxFoldIndex  <-foldsToProcess -1
@@ -110,8 +112,8 @@ for (defaultRuleOverlapPruning in defaultRuleOverlapPruningRange){
       resultfolder = paste0("./",alg,"_results") 
       dir.create(file.path(basePath, resultfolder),showWarnings = FALSE)
       
-      resultfile_alg = paste(resultfolder,"/",alg,"-", config, mciFilenameTAG,".csv",sep="")
-      resultfile_qcba = paste(resultfolder,"/",algQCBA,"-", config, mciFilenameTAG,".csv",sep="")
+      resultfile_alg = paste(resultfolder,"/",alg,"-", config, mciFilenameTAG,"-",defaultRuleOverlapPruning,".csv",sep="")
+      resultfile_qcba = paste(resultfolder,"/",algQCBA,"-", config, mciFilenameTAG,"-",defaultRuleOverlapPruning,".csv",sep="")
       
       message(paste0("reading from ",resultfile_qcba))
       if (!file.exists(resultfile_qcba) | !file.exists(resultfile_alg) )
@@ -144,7 +146,7 @@ for (defaultRuleOverlapPruning in defaultRuleOverlapPruningRange){
       colnames(df)<-c(alg,algQCBA)
       for (fold in 0:maxFoldIndex)
       {
-        foldTempResultsFile <- paste0("temp_",dataset,"_",config,"_",alg,"_",fold,".csv")
+        foldTempResultsFile <- paste0("temp_",dataset,"_",config,"_",alg,"_",fold,"_",defaultRuleOverlapPruning,".csv")
         message(paste("processing:", dataset, "FOLD", fold, "by",alg))
         if (file.exists(foldTempResultsFile))
         {
@@ -178,7 +180,7 @@ for (defaultRuleOverlapPruning in defaultRuleOverlapPruningRange){
         message(paste(alg,"took:",averageExecTime, "seconds per iteration"))
         df["buildtime",alg] <-df["buildtime",alg]  + averageExecTime
         yhat <- predict(model, testFoldDisc)
-        acc<-mean(as.integer(yhat == testFoldDisc[, ncol(testFoldDisc)]))
+        acc<-mean(as.integer(as.character(yhat) == as.character(testFoldDisc[, ncol(testFoldDisc)])))
         message(paste("acc",alg, acc,"in fold", fold, "rules:",length(model$rules)))
         df["accuracy",alg]<-df["accuracy",alg]+acc
         df["rulecount",alg]<-df["rulecount",alg]+length(model$rules)

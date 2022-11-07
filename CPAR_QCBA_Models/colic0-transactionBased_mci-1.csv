@@ -1,0 +1,7 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0939393937587738,1,1,31
+"2","{surgery=no,peripheral_pulse=normal,abdominal_distension=slight,outcome=lived} => {surgical_lesion=no}",0.0696969702839851,1,1,15
+"3","{peristalsis=normal,abdomen=normal} => {surgical_lesion=no}",0.0151515156030655,1,1,4
+"4","{surgery=no,temp_extremities=normal} => {surgical_lesion=no}",0.11212120950222,0.948717951774597,0.882352941176471,15
+"5","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.263636350631714,0.88775509595871,0.75,27
+"6","{} => {surgical_lesion=yes}",0.630303025245667,0.630303025245667,0.86784140969163,197

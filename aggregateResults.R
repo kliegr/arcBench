@@ -1,11 +1,11 @@
 library(tidyverse)
-wontieloss <- function(baseforWontieloss,basefolder,filenames,col_names,extrastats=TRUE, decreaseInModelSize=FALSE, AUC=FALSE)
+wontieloss <- function(baseforWontieloss,includeToACCdifference,basefolder,filenames,col_names,extrastats=TRUE, decreaseInModelSize=FALSE, AUC=FALSE,reverseDifference=FALSE)
 {
   statistics<-c("accuracy (macro average)","won/tie/loss", "p-value (accuracy difference)")
   if (extrastats)
   {
     
-    statistics <-  c(statistics, "avg number of rules","avg conditions / rule","avg conditions / model","median build time [s]", "median build time norm")  
+    statistics <-  c(statistics, "avg number of rules","avg conditions / rule","avg conditions / model","median build time [s]", "median build time norm","mean build time [s]", "mean build time norm")  
   }
   if (decreaseInModelSize)
   {
@@ -24,6 +24,8 @@ wontieloss <- function(baseforWontieloss,basefolder,filenames,col_names,extrasta
     message(filename)
     col=col+1
     df<-read_csv(paste(basefolder,"/",filename,sep=""))
+    message("ommitting KDD datasets if any")
+    df<- df[!grepl("kdd",df$dataset), ]
     result["accuracy (macro average)",col]<-round(mean(df$accuracy),2)
     if (baseforWontieloss[col])
     {
@@ -40,8 +42,31 @@ wontieloss <- function(baseforWontieloss,basefolder,filenames,col_names,extrasta
       won <-sum(merged$accuracy_current>merged$accuracy_base)
       tie <-sum(merged$accuracy_current==merged$accuracy_base)
       loss <-sum(merged$accuracy_current<merged$accuracy_base)
+      
+      if (includeToACCdifference[col]){
+        
+        if (!reverseDifference)
+        {
+            acc_diff<-as.numeric(merged$accuracy_current>merged$accuracy_base)
+        }
+        else
+        {
+        acc_diff<-as.numeric(merged$accuracy_base>merged$accuracy_current)
+        }
+        
+        dfDiff<-data.frame(merged$dataset,acc_diff)
+        colnames(dfDiff)<-c("dataset",filename)
+        if (file.exists("accdifferencebydataset.csv"))
+        {
+            df_t<-read_csv("accdifferencebydataset.csv")
+            dfDiff<-merge(df_t,dfDiff, by="dataset",all = TRUE)
+        }
+        write.csv(dfDiff,"accdifferencebydataset.csv",row.names = FALSE)
+        print(filename)
+      }
+      #end new
       result["won/tie/loss",col] <- c(paste0(won,"/",tie,"/",loss))  
-      result["p-value (accuracy difference)",col] <- round(pValue,5)
+      result["p-value (accuracy difference)",col] <- round(pValue,3)
       if(decreaseInModelSize)
       {
         # micro average
@@ -59,11 +84,19 @@ wontieloss <- function(baseforWontieloss,basefolder,filenames,col_names,extrasta
       result["avg number of rules"  ,col]<-round(mean(df$rules),1)
       result["avg conditions / rule"  ,col]<-round(mean(df$antlength),1)
       #macro
-      #result["avg conditions / model",col]<-round(mean(df$rules)*mean(df$antlength),1)
+      result["avg conditions / model (macro)",col]<-round(mean(df$rules)*mean(df$antlength),1)
       #micro
-      result["avg conditions / model",col]<-round(mean(df$rules*df$antlength),1)
-      buildtime<-round(median(df$buildtime),1)
-      result["median build time [s]",col]<-buildtime
+      result["avg conditions / model (micro)",col]<-round(mean(df$rules*df$antlength),1)
+      
+      #MEDIAN
+      buildtime_med<-round(median(df$buildtime),1)
+      result["median build time [s]",col]<-buildtime_med
+      
+      #MEAN
+      buildtime_me<-round(mean(df$buildtime),1)
+      se <- round(sqrt(var(df$buildtime) / length(df$buildtime)),1) 
+      result["mean build time [s]",col]<-paste(buildtime_me, "+/-",se)
+      
       if (baseforWontieloss[col])
       {
         result["median build time norm",col]<-1.0
@@ -72,7 +105,16 @@ wontieloss <- function(baseforWontieloss,basefolder,filenames,col_names,extrasta
       else 
       {
         result["median build time norm",col]<-round(median(df$buildtime)/buildtimeRef,2)
-
+      }
+      
+      if (baseforWontieloss[col])
+      {
+        result["mean build time norm",col]<-1.0
+        buildtimeRef_mean <-mean(df$buildtime)
+      }
+      else 
+      {
+        result["mean build time norm",col]<-round(mean(df$buildtime)/buildtimeRef_mean,2)
       }
     }
   if (AUC)
@@ -87,20 +129,27 @@ wontieloss <- function(baseforWontieloss,basefolder,filenames,col_names,extrasta
   write.csv(result,paste(basefolder,"/stats.csv",sep=""))
   return(result)
 }
+if (file.exists("accdifferencebydataset.csv"))
+{
+    unlink("accdifferencebydataset.csv")
+}
 # IDS
 baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE)
+includeToACCdifference<-c(FALSE,TRUE,FALSE,FALSE,FALSE)
 basefolder<-"IDS_results"
 filenames<-c("IDS.csv","IDSQCBA_R_noPruning_ATTPRUNING_TRUE.csv", "IDSQCBA_R_transactionBased_ATTPRUNING_TRUE.csv", "IDSQCBA_R_noPruning_ATTPRUNING_FALSE.csv","IDSQCBA_R_transactionBased_ATTPRUNING_FALSE.csv")
 col_names<-c("only IDS","IDS+QCBA #5","IDS+QCBA #6","IDS+QCBA #5 No AttPruning","IDS+QCBA #6 No AttPruning")
-result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names)
+result<-wontieloss(baseforWontieloss,includeToACCdifference,basefolder,filenames,col_names)
 result
+
 
 # CBA # auc datasets
 baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE)
+includeToACCdifference<-c(FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE)
 basefolder<-"CBA_results"
 filenames<-c("117-noExtend-D-mci=-1-cba.csv","120-noExtend-mci=-1-qcba.csv", "114-noExtend-A-mci=-1-qcba.csv", "42-noExtend-T-A-mci=-1-qcba.csv", "186-numericOnly-T-A-mci=-1-qcba.csv",  "198-numericOnly-T-Pcba-A-mci=-1-qcba.csv", "196-numericOnly-T-Pcba-A-transactionBased-mci=-1-qcba.csv", "197-numericOnly-T-Pcba-A-rangeBased-mci=-1-qcba.csv")
 col_names<-c("only CBA","CBA+QCBA #1 (+ refit)","CBA+QCBA #2 (+att pruning)", "CBA+QCBA #3 (+trimming)","CBA+QCBA #4 (+extension)","CBA+QCBA #5 (+postpruning)","CBA+QCBA #6 (+tran. based pruning)","CBA+QCBA #7 (+rangeBased pruning)")
-result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names, extrastats=TRUE,decreaseInModelSize=FALSE, AUC=TRUE)
+result<-wontieloss(baseforWontieloss,includeToACCdifference,basefolder,filenames,col_names, extrastats=TRUE,decreaseInModelSize=FALSE, AUC=TRUE)
 result
 
 
@@ -109,10 +158,11 @@ result
 #SBRL+QCBA is compared against SBRL only,
 #i.e. TRUE means that SBRL-1.csv will be used as a base accuracy to compare against for both SBRLQCBA-noPruning-1.csv and SBRLQCBA-transactionBased-1.csv
 baseforWontieloss<-c(TRUE,FALSE,FALSE,TRUE,FALSE,FALSE)
+includeToACCdifference<-c(FALSE,FALSE,FALSE,FALSE,TRUE,FALSE)
 basefolder<-"SBRL_results"
 filenames<-c("SBRL-1.csv","SBRLQCBA-noPruning-1.csv", "SBRLQCBA-transactionBased-1.csv","SBRL-Long.csv", "SBRLQCBA-noPruning-Long.csv","SBRLQCBA-transactionBased-Long.csv")
 col_names<-c("only SBRL (Short)","SBRL+QCBA (Short) #5","SBRL+QCBA (Short) #6","only SBRL (long)","SBRL+QCBA (long) #5","SBRL+QCBA (long) #6")
-result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names)
+result<-wontieloss(baseforWontieloss,includeToACCdifference,basefolder,filenames,col_names)
 result
 
 
@@ -120,19 +170,38 @@ result
 
 # summary of effects of postprocessing by QCBA#5 
 baseforWontieloss<-c(TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE)
-basefolder<-"QCBA_Postprocessing_results"
+includeToACCdifference<-c(FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE)
+
+basefolder<-"QCBA_eval_IDS_SBRL"
 filenames<-c("../CBA_results/120-noExtend-mci=-1-cba.csv","../CBA_results/117-noExtend-D-mci=-1-cba.csv","../CBA_results/198-numericOnly-T-Pcba-A-mci=-1-qcba.csv", "../SBRL_results/SBRL-Long.csv", "../SBRL_results/SBRLQCBA-noPruning-Long.csv", "../IDS_results/IDS.csv", "../IDS_results/IDSQCBA_R_noPruning_ATTPRUNING_TRUE.csv"  )
 col_names<-c("CBA(dc)","CBA(dc+dr)","CBA(dc)+QCBA#5","SBRL","SBRL+QCBA#5" ,"IDS","IDS+QCBA#5")
-result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names,extrastats=FALSE,decreaseInModelSize=TRUE)
-
+result<-wontieloss(baseforWontieloss,includeToACCdifference,basefolder,filenames,col_names,extrastats=FALSE,decreaseInModelSize=TRUE)
 
 result
 
-# QCBA#5 against other symbolic learners
+# FOIL2+QCBA#5 against other symbolic learners
 baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE,FALSE)
+includeToACCdifference<-c(FALSE,TRUE,TRUE,TRUE,TRUE,TRUE)
 basefolder<-"WEKA_results"
 filenames<-c("../CBA_results/198-numericOnly-T-Pcba-A-mci=-1-qcba.csv", "../CORELS_results/CORELS.csv",  "J48-accuracy.csv","PART-accuracy.csv", "RIPPER-accuracy.csv", "FURIA-accuracy_missing_omitted.csv")
+
 col_names<-c("CBA+QCBA #5","CORELS", "J48","PART","RIPPER", "FURIA")
-result<-wontieloss(baseforWontieloss,basefolder,filenames,col_names,extrastats=FALSE)
+#reverseDifference=TRUE: the reason is that baseforWontieloss is a QCBA model but in other calls to wontieloss it is the non-QCBA model.
+result<-wontieloss(baseforWontieloss,includeToACCdifference,basefolder,filenames,col_names,extrastats=FALSE, reverseDifference=TRUE)
 result
 
+# QCBA#5 against other rule learners
+baseforWontieloss<-     c(TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE)
+includeToACCdifference<-c(FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE)
+basefolder<-"QCBA_eval_PRM_FOIL2_CMAR_CPAR"
+filenames<-c("../CMAR_results/CMAR-default_mci-1-noPruning.csv","../CMAR_results/CMAR_QCBA-default_mci-1-noPruning.csv","../CPAR_results/CPAR-default_mci-1-noPruning.csv","../CPAR_results/CPAR_QCBA-default_mci-1-noPruning.csv","../FOIL2_results/FOIL2-default_mci-1-noPruning.csv","../FOIL2_results/FOIL2_QCBA-default_mci-1-noPruning.csv","../PRM_results/PRM-default_mci-1-noPruning.csv","../PRM_results/PRM_QCBA-default_mci-1-noPruning.csv")
+col_names<-c("CMAR","CMAR+QCBA #5","CPAR","CPAR+QCBA #5","FOIL2","FOIL2+QCBA #5","PRM","PRM+QCBA #5")
+result<-wontieloss(baseforWontieloss,includeToACCdifference,basefolder,filenames,col_names)
+result
+
+
+df<-read_csv("accdifferencebydataset.csv")
+#how many perecent of recorded results are wins (for some algorithms and datasets, there are no results)
+df$qcbawins<-rowSums(df[,-1],na.rm=TRUE)/rowSums(!is.na(df[,-1]))
+write.csv(df,"accdifferencebydataset.csv",row.names = FALSE)
+print("Statistics of the number of wins of QCBA by dataset and baseline algorithm written to accdifferencebydataset.csv")

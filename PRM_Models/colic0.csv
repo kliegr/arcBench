@@ -1,0 +1,17 @@
+"","rules","support","confidence","lift","laplace"
+"1","{surgery=yes,pulse=(58; Inf],capillary_refill_time=<3,outcome=lived} => {surgical_lesion=yes}",0.112121212121212,1,1.58653846153846,0.974358974358974
+"2","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0939393939393939,1,2.70491803278689,0.96969696969697
+"3","{surgery=yes,packed_cell_volume=(49.5; Inf],outcome=died} => {surgical_lesion=yes}",0.0848484848484849,1,1.58653846153846,0.966666666666667
+"4","{surgery=yes,capillary_refill_time=<3,outcome=died} => {surgical_lesion=yes}",0.0818181818181818,1,1.58653846153846,0.96551724137931
+"5","{surgery=no,peripheral_pulse=normal,abdominal_distension=slight,outcome=lived} => {surgical_lesion=no}",0.0696969696969697,1,2.70491803278689,0.96
+"6","{surgery=yes,abdomen=distended small intestine} => {surgical_lesion=yes}",0.124242424242424,0.976190476190476,1.54876373626374,0.954545454545455
+"7","{surgery=yes,abdominocentesis_appearance=serosanguinous} => {surgical_lesion=yes}",0.124242424242424,0.953488372093023,1.51274597495528,0.933333333333333
+"8","{respiratory_rate=(59; Inf]} => {surgical_lesion=yes}",0.0757575757575758,0.961538461538462,1.52551775147929,0.928571428571429
+"9","{surgery=no,temp_extremities=normal} => {surgical_lesion=no}",0.112121212121212,0.948717948717949,2.56620428751576,0.926829268292683
+"10","{outcome=died} => {surgical_lesion=yes}",0.218181818181818,0.9,1.42788461538462,0.890243902439024
+"11","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.263636363636364,0.887755102040816,2.40130478420877,0.88
+"12","{surgery=yes} => {surgical_lesion=yes}",0.512121212121212,0.875647668393782,1.38924870466321,0.871794871794872
+"13","{peristalsis=normal,abdomen=normal} => {surgical_lesion=no}",0.0151515151515152,1,2.70491803278689,0.857142857142857
+"14","{surgery=} => {surgical_lesion=yes}",0.00606060606060606,1,1.58653846153846,0.75
+"15","{abdomen=normal} => {surgical_lesion=no}",0.0606060606060606,0.740740740740741,2.00364298724954,0.724137931034483
+"16","{} => {surgical_lesion=yes}",0,0,0,0

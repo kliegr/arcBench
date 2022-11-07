@@ -1,0 +1,19 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{block_of_affere=yes,changes_in_node=lac_margin,no_of_nodes_in=[-Inf;2]} => {class=metastases}",0.276119410991669,1,1,37
+"2","{lym_nodes_enlar=[3;Inf],changes_in_node=lac_central} => {class=malign_lymph}",0.126865670084953,1,1,17
+"3","{changes_in_stru=coarse,no_of_nodes_in=[-Inf;2]} => {class=metastases}",0.119402982294559,1,1,5
+"4","{block_of_affere=yes,changes_in_stru=diluted,no_of_nodes_in=[-Inf;2]} => {class=metastases}",0.0895522385835648,1,1,2
+"5","{early_uptake_in=no,defect_in_node=lac_central,changes_in_node=lac_margin} => {class=metastases}",0.0671641826629639,1,1,6
+"6","{changes_in_stru=stripped} => {class=malign_lymph}",0.0522388070821762,1,1,3
+"7","{lymphatics=arched,by_pass=yes,regeneration_of=no} => {class=metastases}",0.0522388070821762,1,1,2
+"8","{by_pass=yes,lym_nodes_dimin=[2;Inf]} => {class=fibrosis}",0.0298507455736399,1,1,4
+"9","{block_of_affere=yes,changes_in_stru=diluted,no_of_nodes_in=[3;Inf]} => {class=malign_lymph}",0.0223880596458912,1,1,2
+"10","{lymphatics=normal} => {class=normal}",0.0149253727868199,1,1,2
+"11","{block_of_affere=no,changes_in_lym=round,changes_in_stru=drop_like} => {class=malign_lymph}",0.0149253727868199,1,1,2
+"12","{bl_of_lymph_c=yes,changes_in_stru=drop_like} => {class=malign_lymph}",0.00746268639340997,1,1,1
+"13","{block_of_affere=yes,special_forms=chalices} => {class=metastases}",0.208955228328705,0.965517222881317,1,6
+"14","{lym_nodes_enlar=[-Inf;2],changes_in_lym=round} => {class=metastases}",0.156716421246529,0.954545438289642,1,6
+"15","{block_of_affere=no,early_uptake_in=yes,special_forms=vesicles} => {class=malign_lymph}",0.20149253308773,0.931034505367279,0.944444444444444,17
+"16","{changes_in_node=lacunar,exclusion_of_no=no} => {class=metastases}",0.0671641826629639,0.899999976158142,0.75,3
+"17","{extravasates=no,special_forms=no,dislocation_of=yes} => {class=metastases}",0.0671641826629639,0.899999976158142,1,5
+"18","{} => {class=malign_lymph}",0.410447746515274,0.410447746515274,1,12

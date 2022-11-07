@@ -1,0 +1,93 @@
+"","rules","support","confidence","lift","laplace"
+"1","{checking_status=no checking,credit_history=critical/other existing credit,other_payment_plans=none} => {class=good}",0.128888888888889,0.974789915966387,1.39255702280912,0.966942148760331
+"2","{personal_status=male single,foreign_worker=no} => {class=good}",0.0255555555555556,1,1.42857142857143,0.96
+"3","{checking_status=no checking,credit_amount=(3913.5; Inf],employment=4<=X<7} => {class=good}",0.02,1,1.42857142857143,0.95
+"4","{purpose=used car,personal_status=male single,job=high qualif/self emp/mgmt} => {class=good}",0.02,1,1.42857142857143,0.95
+"5","{checking_status=no checking,employment=>=7,num_dependents=1} => {class=good}",0.0822222222222222,0.961038961038961,1.37291280148423,0.949367088607595
+"6","{checking_status=no checking,purpose=used car,savings_status=<100} => {class=good}",0.0155555555555556,1,1.42857142857143,0.9375
+"7","{checking_status=no checking,purpose=used car} => {class=good}",0.0488888888888889,0.956521739130435,1.36645962732919,0.9375
+"8","{duration=[-Inf;34.5],purpose=used car,property_magnitude=car} => {class=good}",0.0288888888888889,0.962962962962963,1.37566137566138,0.931034482758621
+"9","{checking_status=no checking,purpose=furniture/equipment,personal_status=male single} => {class=good}",0.0277777777777778,0.961538461538462,1.37362637362637,0.928571428571429
+"10","{checking_status=0<=X<200,savings_status=no known savings,property_magnitude=car} => {class=good}",0.0122222222222222,1,1.42857142857143,0.923076923076923
+"11","{checking_status=>=200,credit_history=existing paid,own_telephone=yes} => {class=good}",0.0122222222222222,1,1.42857142857143,0.923076923076923
+"12","{purpose=furniture/equipment,other_payment_plans=stores,housing=own} => {class=good}",0.0122222222222222,1,1.42857142857143,0.923076923076923
+"13","{duration=[-Inf;34.5],other_parties=guarantor,housing=own} => {class=good}",0.0333333333333333,0.9375,1.33928571428571,0.911764705882353
+"14","{credit_history=critical/other existing credit,credit_amount=[-Inf;3913.5],other_payment_plans=none} => {class=good}",0.172222222222222,0.911764705882353,1.30252100840336,0.906976744186046
+"15","{checking_status=no checking,credit_history=delayed previously,purpose=radio/tv} => {class=good}",0.00888888888888889,1,1.42857142857143,0.9
+"16","{purpose=retraining,housing=own} => {class=good}",0.00888888888888889,1,1.42857142857143,0.9
+"17","{savings_status=no known savings,personal_status=male single,housing=own} => {class=good}",0.0777777777777778,0.909090909090909,1.2987012987013,0.89873417721519
+"18","{checking_status=no checking,credit_history=existing paid,credit_amount=[-Inf;3913.5]} => {class=good}",0.141111111111111,0.894366197183099,1.27766599597586,0.888888888888889
+"19","{credit_history=critical/other existing credit,purpose=new car,num_dependents=2} => {class=good}",0.0166666666666667,0.9375,1.33928571428571,0.888888888888889
+"20","{credit_history=delayed previously,employment=1<=X<4,other_payment_plans=none} => {class=good}",0.0244444444444444,0.916666666666667,1.30952380952381,0.884615384615385
+"21","{credit_history=critical/other existing credit,purpose=business} => {class=good}",0.0155555555555556,0.933333333333333,1.33333333333333,0.882352941176471
+"22","{checking_status=<0,purpose=education,housing=own} => {class=bad}",0.00666666666666667,1,3.33333333333333,0.875
+"23","{checking_status=0<=X<200,credit_history=delayed previously,employment=4<=X<7} => {class=good}",0.00666666666666667,1,1.42857142857143,0.875
+"24","{checking_status=>=200,personal_status=female div/dep/mar,property_magnitude=car} => {class=good}",0.00666666666666667,1,1.42857142857143,0.875
+"25","{credit_history=existing paid,other_parties=co applicant,housing=rent} => {class=bad}",0.00555555555555556,1,3.33333333333333,0.857142857142857
+"26","{purpose=furniture/equipment,personal_status=male single,other_parties=guarantor} => {class=good}",0.00555555555555556,1,1.42857142857143,0.857142857142857
+"27","{checking_status=no checking,purpose=furniture/equipment,employment=4<=X<7} => {class=good}",0.0122222222222222,0.916666666666667,1.30952380952381,0.857142857142857
+"28","{credit_amount=[-Inf;3913.5],other_payment_plans=bank,own_telephone=yes} => {class=good}",0.0244444444444444,0.88,1.25714285714286,0.851851851851852
+"29","{checking_status=>=200,job=skilled,own_telephone=none} => {class=good}",0.0177777777777778,0.888888888888889,1.26984126984127,0.85
+"30","{checking_status=<0,duration=(34.5; Inf],job=skilled} => {class=bad}",0.0288888888888889,0.866666666666667,2.88888888888889,0.84375
+"31","{property_magnitude=no known property,other_payment_plans=stores} => {class=bad}",0.00444444444444444,1,3.33333333333333,0.833333333333333
+"32","{purpose=other,employment=unemployed} => {class=good}",0.00444444444444444,1,1.42857142857143,0.833333333333333
+"33","{credit_history=all paid,savings_status=500<=X<1000,housing=own} => {class=good}",0.00444444444444444,1,1.42857142857143,0.833333333333333
+"34","{checking_status=no checking,employment=1<=X<4,property_magnitude=no known property} => {class=good}",0.0155555555555556,0.875,1.25,0.833333333333333
+"35","{checking_status=>=200,foreign_worker=no} => {class=good}",0.00444444444444444,1,1.42857142857143,0.833333333333333
+"36","{credit_amount=(3913.5; Inf],housing=own,job=unskilled resident} => {class=good}",0.02,0.857142857142857,1.22448979591837,0.826086956521739
+"37","{purpose=radio/tv,personal_status=male single,property_magnitude=car} => {class=good}",0.0477777777777778,0.826923076923077,1.18131868131868,0.814814814814815
+"38","{credit_history=all paid,personal_status=female div/dep/mar,job=high qualif/self emp/mgmt} => {class=bad}",0.00333333333333333,1,3.33333333333333,0.8
+"39","{purpose=repairs,employment=<1} => {class=bad}",0.00333333333333333,1,3.33333333333333,0.8
+"40","{credit_history=delayed previously,employment=>=7,property_magnitude=life insurance} => {class=good}",0.00333333333333333,1,1.42857142857143,0.8
+"41","{other_payment_plans=bank,job=unemp/unskilled non res} => {class=good}",0.00333333333333333,1,1.42857142857143,0.8
+"42","{checking_status=<0,duration=(34.5; Inf],employment=unemployed} => {class=good}",0.00333333333333333,1,1.42857142857143,0.8
+"43","{checking_status=0<=X<200,purpose=new car,savings_status=100<=X<500} => {class=bad}",0.0111111111111111,0.833333333333333,2.77777777777778,0.785714285714286
+"44","{checking_status=0<=X<200,employment=<1,housing=rent} => {class=bad}",0.0133333333333333,0.8,2.66666666666667,0.764705882352941
+"45","{purpose=business,credit_amount=(3913.5; Inf],savings_status=<100} => {class=bad}",0.02,0.782608695652174,2.60869565217391,0.76
+"46","{purpose=repairs,savings_status=>=1000} => {class=bad}",0.00222222222222222,1,3.33333333333333,0.75
+"47","{checking_status=0<=X<200,duration=(34.5; Inf],other_parties=guarantor} => {class=bad}",0.00222222222222222,1,3.33333333333333,0.75
+"48","{checking_status=>=200,purpose=new car,employment=4<=X<7} => {class=bad}",0.00222222222222222,1,3.33333333333333,0.75
+"49","{checking_status=<0,housing=for free,job=high qualif/self emp/mgmt} => {class=good}",0.0122222222222222,0.785714285714286,1.12244897959184,0.75
+"50","{checking_status=0<=X<200,savings_status=<100,property_magnitude=no known property} => {class=bad}",0.0166666666666667,0.75,2.5,0.727272727272727
+"51","{credit_history=existing paid,property_magnitude=no known property,num_dependents=2} => {class=good}",0.01,0.75,1.07142857142857,0.714285714285714
+"52","{checking_status=<0,housing=for free,job=skilled} => {class=bad}",0.0144444444444444,0.722222222222222,2.40740740740741,0.7
+"53","{housing=for free,num_dependents=2,own_telephone=none} => {class=bad}",0.0111111111111111,0.714285714285714,2.38095238095238,0.6875
+"54","{checking_status=0<=X<200,duration=[-Inf;34.5],credit_history=existing paid} => {class=good}",0.0811111111111111,0.688679245283019,0.983827493261456,0.685185185185185
+"55","{checking_status=<0,credit_history=all paid,other_parties=none} => {class=bad}",0.01,0.692307692307692,2.30769230769231,0.666666666666667
+"56","{credit_amount=(3913.5; Inf],employment=1<=X<4,personal_status=female div/dep/mar} => {class=bad}",0.0122222222222222,0.6875,2.29166666666667,0.666666666666667
+"57","{checking_status=>=200,property_magnitude=real estate,job=unskilled resident} => {class=bad}",0.00333333333333333,0.75,2.5,0.666666666666667
+"58","{employment=>=7,property_magnitude=no known property,job=high qualif/self emp/mgmt} => {class=bad}",0.0144444444444444,0.684210526315789,2.28070175438596,0.666666666666667
+"59","{personal_status=male mar/wid,other_parties=co applicant,housing=own} => {class=bad}",0.00111111111111111,1,3.33333333333333,0.666666666666667
+"60","{savings_status=no known savings,other_parties=guarantor,property_magnitude=life insurance} => {class=bad}",0.00111111111111111,1,3.33333333333333,0.666666666666667
+"61","{checking_status=0<=X<200,credit_history=all paid,personal_status=male single} => {class=good}",0.00555555555555556,0.714285714285714,1.02040816326531,0.666666666666667
+"62","{duration=(34.5; Inf],credit_history=no credits/all paid,housing=own} => {class=good}",0.00555555555555556,0.714285714285714,1.02040816326531,0.666666666666667
+"63","{checking_status=<0,credit_history=all paid,savings_status=100<=X<500} => {class=good}",0.00111111111111111,1,1.42857142857143,0.666666666666667
+"64","{duration=(34.5; Inf],purpose=radio/tv,job=high qualif/self emp/mgmt} => {class=good}",0.00333333333333333,0.75,1.07142857142857,0.666666666666667
+"65","{checking_status=<0,savings_status=<100,housing=rent} => {class=bad}",0.0355555555555556,0.653061224489796,2.17687074829932,0.647058823529412
+"66","{checking_status=<0,purpose=new car,num_dependents=1} => {class=bad}",0.0355555555555556,0.615384615384615,2.05128205128205,0.611111111111111
+"67","{checking_status=0<=X<200,purpose=new car,savings_status=<100} => {class=bad}",0.0155555555555556,0.608695652173913,2.02898550724638,0.6
+"68","{checking_status=no checking,purpose=new car,other_payment_plans=bank} => {class=bad}",0.00555555555555556,0.625,2.08333333333333,0.6
+"69","{checking_status=0<=X<200,purpose=radio/tv,property_magnitude=no known property} => {class=bad}",0.00555555555555556,0.625,2.08333333333333,0.6
+"70","{checking_status=>=200,purpose=business,property_magnitude=real estate} => {class=bad}",0.00222222222222222,0.666666666666667,2.22222222222222,0.6
+"71","{purpose=education,savings_status=100<=X<500,housing=own} => {class=bad}",0.00222222222222222,0.666666666666667,2.22222222222222,0.6
+"72","{duration=(34.5; Inf],purpose=education,num_dependents=2} => {class=good}",0.00222222222222222,0.666666666666667,0.952380952380952,0.6
+"73","{checking_status=0<=X<200,duration=(34.5; Inf],employment=1<=X<4} => {class=bad}",0.0133333333333333,0.6,2,0.590909090909091
+"74","{checking_status=0<=X<200,credit_history=critical/other existing credit,credit_amount=(3913.5; Inf]} => {class=good}",0.00777777777777778,0.583333333333333,0.833333333333333,0.571428571428571
+"75","{checking_status=<0,duration=[-Inf;34.5],credit_history=existing paid} => {class=good}",0.07,0.525,0.75,0.524590163934426
+"76","{checking_status=0<=X<200,purpose=furniture/equipment,savings_status=<100} => {class=bad}",0.0133333333333333,0.521739130434783,1.73913043478261,0.52
+"77","{checking_status=<0,credit_history=existing paid,housing=own} => {class=bad}",0.0533333333333333,0.51063829787234,1.70212765957447,0.510416666666667
+"78","{checking_status=no checking,other_payment_plans=bank,job=unskilled resident} => {class=bad}",0.00555555555555556,0.5,1.66666666666667,0.5
+"79","{credit_history=no credits/all paid,purpose=repairs,housing=own} => {class=bad}",0.00111111111111111,0.5,1.66666666666667,0.5
+"80","{property_magnitude=life insurance,job=unemp/unskilled non res} => {class=bad}",0.00111111111111111,0.5,1.66666666666667,0.5
+"81","{purpose=repairs,employment=1<=X<4,property_magnitude=car} => {class=bad}",0.00111111111111111,0.5,1.66666666666667,0.5
+"82","{credit_history=existing paid,employment=1<=X<4,personal_status=female div/dep/mar} => {class=bad}",0.0288888888888889,0.456140350877193,1.52046783625731,0.457627118644068
+"83","{credit_history=delayed previously,savings_status=<100,job=skilled} => {class=bad}",0.0144444444444444,0.419354838709677,1.39784946236559,0.424242424242424
+"84","{checking_status=no checking,duration=(34.5; Inf],savings_status=<100} => {class=bad}",0.00777777777777778,0.388888888888889,1.2962962962963,0.4
+"85","{savings_status=<100,employment=>=7,property_magnitude=life insurance} => {class=bad}",0.00888888888888889,0.380952380952381,1.26984126984127,0.391304347826087
+"86","{checking_status=0<=X<200,purpose=radio/tv,other_parties=none} => {class=bad}",0.0177777777777778,0.347826086956522,1.15942028985507,0.354166666666667
+"87","{purpose=business,credit_amount=[-Inf;3913.5],property_magnitude=car} => {class=bad}",0.00444444444444444,0.307692307692308,1.02564102564103,0.333333333333333
+"88","{checking_status=>=200,purpose=radio/tv,personal_status=male single} => {class=bad}",0.00444444444444444,0.285714285714286,0.952380952380952,0.3125
+"89","{checking_status=no checking,credit_history=existing paid,credit_amount=(3913.5; Inf]} => {class=bad}",0.00888888888888889,0.258064516129032,0.860215053763441,0.272727272727273
+"90","{purpose=radio/tv,employment=4<=X<7,property_magnitude=car} => {class=bad}",0.00333333333333333,0.157894736842105,0.526315789473684,0.19047619047619
+"91","{employment=>=7,property_magnitude=car,housing=own} => {class=bad}",0.0122222222222222,0.17741935483871,0.591397849462366,0.1875
+"92","{} => {class=good}",0,0,0,0

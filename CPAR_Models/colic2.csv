@@ -1,0 +1,16 @@
+"","rules","support","confidence","lift","laplace"
+"1","{surgery=yes,abdomen=distended small intestine} => {surgical_lesion=yes}",0.117824773413897,1,1.58373205741627,0.975609756097561
+"2","{surgery=no,pain=alert no pain,outcome=lived} => {surgical_lesion=no}",0.0966767371601208,1,2.71311475409836,0.970588235294118
+"3","{surgery=yes,nasogastric_tube=slight} => {surgical_lesion=yes}",0.181268882175227,0.983606557377049,1.55776923680289,0.968253968253968
+"4","{surgery=no,abdomen=other,outcome=lived} => {surgical_lesion=no}",0.0513595166163142,1,2.71311475409836,0.947368421052632
+"5","{surgery=yes,mucous_membranes=pale pink} => {surgical_lesion=yes}",0.105740181268882,0.972222222222222,1.53973950026582,0.947368421052632
+"6","{abdomen=distended small intestine} => {surgical_lesion=yes}",0.138972809667674,0.958333333333333,1.51774322169059,0.94
+"7","{surgery=no,peristalsis=hypermotile,outcome=lived} => {surgical_lesion=no}",0.0906344410876133,0.967741935483871,2.62559492332099,0.939393939393939
+"8","{surgery=yes,peristalsis=} => {surgical_lesion=yes}",0.0664652567975831,0.956521739130435,1.51487414187643,0.92
+"9","{surgery=yes} => {surgical_lesion=yes}",0.51963746223565,0.900523560209424,1.42618803076229,0.896373056994819
+"10","{surgery=no,outcome=lived} => {surgical_lesion=no}",0.27190332326284,0.9,2.44180327868852,0.892156862745098
+"11","{abdominal_distension=moderate} => {surgical_lesion=yes}",0.202416918429003,0.893333333333333,1.41480063795853,0.883116883116883
+"12","{surgery=no,rectal_examination=increased} => {surgical_lesion=no}",0.0181268882175227,1,2.71311475409836,0.875
+"13","{peripheral_pulse=absent} => {surgical_lesion=yes}",0.0302114803625378,0.909090909090909,1.43975641583297,0.846153846153846
+"14","{surgery=no} => {surgical_lesion=no}",0.311178247734139,0.741007194244604,2.01043755159807,0.737588652482269
+"15","{} => {surgical_lesion=yes}",0,0,0,0

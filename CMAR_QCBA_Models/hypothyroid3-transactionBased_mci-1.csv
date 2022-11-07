@@ -1,0 +1,21 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{TSH=[-Inf;6],TT4=[49;Inf]} => {Class=negative}",0.896287560462952,1,1,3042
+"2","{query.hypothyroid=f,TSH=[-Inf;6],FTI=[55;Inf]} => {Class=negative}",0.849145531654358,1,1,12
+"3","{TSH=[-Inf;6],T4U=[1;Inf]} => {Class=negative}",0.351502656936646,1,1,2
+"4","{sex=M,query.hypothyroid=f,TSH=[-Inf;6]} => {Class=negative}",0.271655857563019,1,1,3
+"5","{sex=M,TSH=[-Inf;6],FTI.measured=t} => {Class=negative}",0.261638194322586,1,1,1
+"6","{query.hypothyroid=f,FTI=[135;Inf]} => {Class=negative}",0.135827928781509,1,1,3
+"7","{on.thyroxine=t,FTI=[60;Inf]} => {Class=negative}",0.12139069288969,1,1,51
+"8","{TSH=[-Inf;6.4],referral.source=SVHC} => {Class=negative}",0.0987035930156708,1,1,1
+"9","{TT4=[149;Inf]} => {Class=negative}",0.0984089598059654,1,1,6
+"10","{thyroid.surgery=f,TSH=[14.4;Inf],FTI=[-Inf;64]} => {Class=primary_hypothyroid}",0.0200353562831879,1,1,68
+"11","{thyroid.surgery=f,TSH=[18.4;Inf],TT4=[-Inf;62]} => {Class=primary_hypothyroid}",0.0191514436155558,1,1,4
+"12","{TSH=[5.6;Inf],T4U=[-Inf;1.08],FTI=[-Inf;64]} => {Class=primary_hypothyroid}",0.0120801413431764,1,1,5
+"13","{TSH=[14.4;Inf],TT4=[-Inf;Inf],FTI=[26;64]} => {Class=primary_hypothyroid}",0.0111962286755443,1,1,1
+"14","{TSH=[5.6;Inf],FTI=[-Inf;64],referral.source=SVI} => {Class=primary_hypothyroid}",0.00913376547396183,1,1,3
+"15","{TSH=[5.3;Inf],T4U=[0.77;1.16],FTI=[20;60]} => {Class=primary_hypothyroid}",0.0070713022723794,1,1,1
+"16","{on.thyroxine=f,TSH=[34;Inf],FTI=[106;141]} => {Class=primary_hypothyroid}",0.00147318793460727,1,1,1
+"17","{TSH=[11.1;Inf],T4U.measured=f,referral.source=SVI} => {Class=primary_hypothyroid}",0.00147318793460727,1,1,1
+"18","{T4U.measured=f,referral.source=STMW} => {Class=primary_hypothyroid}",0.000589275208767503,1,1,1
+"19","{query.hypothyroid=t,TT4=[-Inf;66],FTI=[84;Inf]} => {Class=secondary_hypothyroid}",0.000294637604383752,1,1,1
+"20","{} => {Class=compensated_hypothyroid}",0.0512669421732426,0.0512669421732426,0.93048128342246,174

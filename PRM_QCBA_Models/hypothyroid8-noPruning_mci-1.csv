@@ -1,0 +1,20 @@
+"","rules","support","confidence","orderedConf","orderedSupp"
+"1","{TSH=[-Inf;6],TT4=[49;430]} => {Class=negative}",0.897526502609253,1,1,3048
+"2","{sex=F,on.thyroxine=f,thyroid.surgery=f,TSH=[6.1;23],TT4=[72;158]} => {Class=compensated_hypothyroid}",0.0276796221733093,1,1,94
+"3","{on.thyroxine=f,thyroid.surgery=f,TSH=[6.1;25],T3=[1.1;3.3],TT4=[72;108]} => {Class=compensated_hypothyroid}",0.0235571265220642,1,1,21
+"4","{on.thyroxine=f,thyroid.surgery=f,TSH=[5.7;Inf],FTI=[65;86]} => {Class=compensated_hypothyroid}",0.0197290927171707,1,1,35
+"5","{thyroid.surgery=f,TSH=[5.6;Inf],FTI=[-Inf;53]} => {Class=primary_hypothyroid}",0.0179623086005449,1,1,61
+"6","{TSH=[14.4;Inf],FTI=[27;64]} => {Class=primary_hypothyroid}",0.012661955319345,1,1,15
+"7","{on.thyroxine=f,TSH=[13;Inf],T4U.measured=t,FTI=[69;112]} => {Class=compensated_hypothyroid}",0.0108951712027192,1,1,6
+"8","{TSH=[5.6;Inf],FTI=[-Inf;64],referral.source=SVI} => {Class=primary_hypothyroid}",0.00853945780545473,1,1,3
+"9","{TT4=[-Inf;18]} => {Class=primary_hypothyroid}",0.00824499409645796,1,1,2
+"10","{psych=t,TSH=[6.1;Inf]} => {Class=compensated_hypothyroid}",0.00235571269877255,1,1,2
+"11","{query.hypothyroid=t,TT4=[-Inf;66],FTI.measured=f} => {Class=secondary_hypothyroid}",0.000294464087346569,1,1,1
+"12","{sex=F,TSH=[-Inf;Inf],TT4=[48;51],referral.source=other} => {Class=secondary_hypothyroid}",0.000294464087346569,1,1,1
+"13","{TSH=[-Inf;6]} => {Class=negative}",0.903710246086121,0.999348759651184,1,21
+"14","{TSH=[18.4;143],TT4=[23;62]} => {Class=primary_hypothyroid}",0.00853945780545473,0.966666638851166,0.5,1
+"15","{TSH=[5.6;Inf],FTI=[27;64]} => {Class=primary_hypothyroid}",0.0150176677852869,0.962264180183411,0.5,2
+"16","{on.thyroxine=f,TSH=[6.1;23],TT4=[90;158]} => {Class=compensated_hypothyroid}",0.0212014131247997,0.959999978542328,0.7,7
+"17","{TSH=[6.1;23],T4U.measured=f} => {Class=compensated_hypothyroid}",0.00412249704822898,0.933333337306976,0.666666666666667,2
+"18","{TSH=[8.3;42],T4U.measured=f} => {Class=compensated_hypothyroid}",0.0035335689317435,0.857142865657806,0.5,2
+"19","{} => {Class=negative}",0.922555923461914,0.922555923461914,0.888888888888889,56
