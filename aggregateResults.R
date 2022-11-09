@@ -31,11 +31,14 @@ wontieloss <- function(baseforWontieloss,includeToACCdifference,basefolder,filen
     {
       result["won/tie/loss",col] <- ""
       df_base <- df
+      base_filename <- filename
     }
     else{
       colnames(df)
       colnames(df_base)
       merged <- merge(df,df_base,by="dataset",suffixes=c("_current","_base"))
+      accuracy_current_not_rounded <-merged$accuracy_current
+      accuracy_base_not_rounded <- merged$accuracy_base
       merged$accuracy_current<-round(merged$accuracy_current,2)
       merged$accuracy_base<-round(merged$accuracy_base,2)
       pValue <- wilcox.test(merged$accuracy_current, merged$accuracy_base, paired=TRUE)$p.value
@@ -51,17 +54,27 @@ wontieloss <- function(baseforWontieloss,includeToACCdifference,basefolder,filen
         }
         else
         {
-        acc_diff<-as.numeric(merged$accuracy_base>merged$accuracy_current)
+            acc_diff<-as.numeric(merged$accuracy_base>merged$accuracy_current)
         }
         
         dfDiff<-data.frame(merged$dataset,acc_diff)
         colnames(dfDiff)<-c("dataset",filename)
+        
+        dfAcc<-data.frame(merged$dataset,accuracy_base_not_rounded,accuracy_current_not_rounded)
+        colnames(dfAcc)<-c("dataset",base_filename,filename)
+        
         if (file.exists("accdifferencebydataset.csv"))
         {
             df_t<-read_csv("accdifferencebydataset.csv")
             dfDiff<-merge(df_t,dfDiff, by="dataset",all = TRUE)
         }
+        if (file.exists("accbydataset.csv"))
+        {
+            df_t2<-read_csv("accbydataset.csv")
+            dfAcc<-merge(df_t2,dfAcc, by="dataset",all = TRUE)
+        }
         write.csv(dfDiff,"accdifferencebydataset.csv",row.names = FALSE)
+        write.csv(dfAcc,"accbydataset.csv",row.names = FALSE)
         print(filename)
       }
       #end new
@@ -132,6 +145,7 @@ wontieloss <- function(baseforWontieloss,includeToACCdifference,basefolder,filen
 if (file.exists("accdifferencebydataset.csv"))
 {
     unlink("accdifferencebydataset.csv")
+    unlink("accbydataset.csv")
 }
 # IDS
 baseforWontieloss<-c(TRUE,FALSE,FALSE,FALSE,FALSE)
@@ -200,8 +214,16 @@ result<-wontieloss(baseforWontieloss,includeToACCdifference,basefolder,filenames
 result
 
 
+
+df_acc<-read_csv("accbydataset.csv")
+best<-colnames(df_acc)[apply(df_acc,1,which.max)]
+n<-ncol(df_acc)-1
+
 df<-read_csv("accdifferencebydataset.csv")
 #how many perecent of recorded results are wins (for some algorithms and datasets, there are no results)
 df$qcbawins<-rowSums(df[,-1],na.rm=TRUE)/rowSums(!is.na(df[,-1]))
+df$max <- do.call(pmax, c(df_acc[2:n], list(na.rm=TRUE)))
+df$bestAlg<-best
+
 write.csv(df,"accdifferencebydataset.csv",row.names = FALSE)
-print("Statistics of the number of wins of QCBA by dataset and baseline algorithm written to accdifferencebydataset.csv")
+print("Statistics of the number of wins of QCBA by dataset and baseline algorithm and best algorithm and result for each dataset saved written to accdifferencebydataset.csv")
