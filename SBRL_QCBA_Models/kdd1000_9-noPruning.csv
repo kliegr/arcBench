@@ -1,5 +1,0 @@
-"","rules","support","confidence","orderedConf","orderedSupp"
-"1","{duration=[0;1],dst_bytes=[36;8098]} => {label=1}",0.132222220301628,1,1,119
-"2","{src_bytes=[30;480]} => {label=1}",0.158888891339302,0.993055582046509,0.974358974358974,38
-"3","{dst_host_serror_rate=[-Inf;0.81],protocol_type=b'tcp',dst_host_count=[-Inf;253]} => {label=1}",0.112222224473953,0.990196049213409,1,26
-"4","{} => {label=0}",0.79666668176651,0.79666668176651,1,716

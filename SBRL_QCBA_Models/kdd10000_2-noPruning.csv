@@ -1,7 +1,0 @@
-"","rules","support","confidence","orderedConf","orderedSupp"
-"1","{duration=0,dst_bytes=[24;8302],dst_host_serror_rate=0} => {label=1}",0.124666668474674,1,1,1122
-"2","{protocol_type=b'tcp',dst_host_same_srv_rate=[0.34;0.99],dst_host_same_src_port_rate=[0.01;1]} => {label=1}",0.020888889208436,1,1,123
-"3","{src_bytes=[29;333]} => {label=1}",0.14922222495079,0.994814813137054,0.982005141388175,382
-"4","{service=b'http'} => {label=1}",0.123888887465,0.960379004478455,0.705128205128205,110
-"5","{protocol_type=b'tcp',flag=b'SF'} => {label=1}",0.147888883948326,0.95755398273468,0.855670103092783,83
-"6","{} => {label=0}",0.797777771949768,0.797777771949768,1,7113

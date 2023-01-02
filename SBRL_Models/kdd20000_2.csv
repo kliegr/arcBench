@@ -1,8 +1,0 @@
-"","rules","support","confidence","lift"
-"1","{src_bytes=(28.5;333.5],num_root=[-Inf;0.5],dst_host_rerror_rate=[-Inf;0.005]} => {label=1}",1,1,1
-"2","{flag=b'S0',su_attempted=0,srv_diff_host_rate=[-Inf;0.005]} => {label=0}",1,1,1
-"3","{su_attempted=0,dst_bytes=(2;2189.5],num_failed_logins=0} => {label=1}",1,1,1
-"4","{protocol_type=b'tcp',dst_host_same_src_port_rate=(0.005;0.995],dst_host_srv_rerror_rate=[-Inf;0.005]} => {label=1}",1,1,1
-"5","{service=b'http',land=0,num_compromised=[-Inf;0.5]} => {label=1}",1,1,1
-"6","{num_root=[-Inf;0.5],srv_count=[-Inf;2.5],dst_host_count=(9.5;254.5]} => {label=0}",1,1,1
-"7","{} => {label=0}",1,1,1

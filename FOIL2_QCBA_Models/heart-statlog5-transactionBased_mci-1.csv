@@ -1,8 +1,0 @@
-"","rules","support","confidence","orderedConf","orderedSupp"
-"1","{sex=1,chest=4,number_of_major_vessels=[1;Inf]} => {class=present}",0.201646089553833,0.980000019073486,0.98,49
-"2","{chest=4,number_of_major_vessels=[1;Inf],thal=[6;Inf]} => {class=present}",0.172839507460594,0.976744174957275,1,7
-"3","{exercise_induced_angina=1,slope=[2;Inf],number_of_major_vessels=[1;Inf]} => {class=present}",0.131687238812447,0.969696998596191,1,4
-"4","{slope=[2;Inf],number_of_major_vessels=[1;Inf],thal=[6;Inf]} => {class=present}",0.172839507460594,0.954545438289642,0.875,7
-"5","{chest=4,slope=[2;Inf],thal=[6;Inf]} => {class=present}",0.193415641784668,0.939999997615814,0.882352941176471,15
-"6","{chest=4,thal=[6;Inf]} => {class=present}",0.255144029855728,0.898550748825073,0.555555555555556,5
-"7","{} => {class=absent}",0.555555582046509,0.555555582046509,0.858108108108108,127

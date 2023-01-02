@@ -1,6 +1,0 @@
-"","rules","support","confidence","orderedConf","orderedSupp"
-"1","{pension=,longterm.disability.assistance=} => {class=good}",0.39215686917305,1,1,20
-"2","{wage.increase.first.year=[3;Inf],longterm.disability.assistance=yes} => {class=good}",0.215686276555061,1,1,11
-"3","{wage.increase.first.year=[3;Inf],pension=empl_contr} => {class=good}",0.117647059261799,1,1,1
-"4","{vacation=} => {class=good}",0.0784313753247261,1,1,1
-"5","{} => {class=bad}",0.352941185235977,0.352941185235977,1,18

@@ -1,8 +1,0 @@
-"","rules","support","confidence","orderedConf","orderedSupp"
-"1","{plas=[158;Inf],insu=[68;Inf],age=[27;Inf]} => {class=tested_positive}",0.0492040514945984,0.944444417953491,0.944444444444444,34
-"2","{plas=[149;Inf],insu=[-Inf;66],mass=[29.9;Inf]} => {class=tested_positive}",0.0578871183097363,0.930232584476471,0.930232558139535,40
-"3","{preg=[7;Inf],mass=[29.5;Inf],pedi=[0.719;Inf]} => {class=tested_positive}",0.0303907375782728,0.91304349899292,0.875,14
-"4","{plas=[159;Inf],mass=[28.6;Inf]} => {class=tested_positive}",0.102749638259411,0.887499988079071,0.714285714285714,10
-"5","{plas=[128;196],mass=[30;Inf],age=[29;Inf]} => {class=tested_positive}",0.138929083943367,0.793388426303864,0.654545454545455,36
-"6","{insu=[122;Inf],age=[29;60]} => {class=tested_positive}",0.101302459836006,0.744680821895599,0.580645161290323,18
-"7","{} => {class=tested_negative}",0.651230096817017,0.651230096817017,0.820564516129032,407

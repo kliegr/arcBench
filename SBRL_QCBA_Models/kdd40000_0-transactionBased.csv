@@ -1,6 +1,0 @@
-"","rules","support","confidence","orderedConf","orderedSupp"
-"1","{dst_bytes=[4;2071],dst_host_serror_rate=[0;0.03]} => {label=1}",0.117805555462837,1,1,4241
-"2","{flag=b'SF',src_bytes=[29;333],num_access_files=0} => {label=1}",0.147111117839813,0.999433875083923,0.998519249753208,2023
-"3","{service=b'http',num_compromised=0,serror_rate=[-Inf;0.77]} => {label=1}",0.124055556952953,0.998658299446106,0.989228007181329,551
-"4","{serror_rate=[-Inf;0.5],wrong_fragment=0,hot=[-Inf;1]} => {label=1}",0.195500001311302,0.240008190274239,0.0108777693912889,245
-"5","{} => {label=0}",0.803472220897675,0.803472220897675,0.997745378024951,6638

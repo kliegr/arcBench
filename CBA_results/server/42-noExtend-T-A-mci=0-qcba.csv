@@ -1,3 +1,0 @@
-dataset,accuracy,rules,antlength,buildtime,auc
-kdd1000_,0.976,7.1,1.31785714285714,0.41,0
-kdd10000_,0.9815,32,2.31896440516578,4.75,0

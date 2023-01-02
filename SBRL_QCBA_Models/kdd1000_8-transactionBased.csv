@@ -1,5 +1,0 @@
-"","rules","support","confidence","orderedConf","orderedSupp"
-"1","{dst_bytes=[36;8098],is_guest_login=0} => {label=1}",0.156666666269302,1,1,141
-"2","{wrong_fragment=0,dst_host_same_src_port_rate=[0.01;0.99]} => {label=1}",0.105555556714535,1,1,30
-"3","{src_bytes=[30;480]} => {label=1}",0.161111116409302,0.99315071105957,0.923076923076923,12
-"4","{} => {label=0}",0.79666668176651,0.79666668176651,1,716
